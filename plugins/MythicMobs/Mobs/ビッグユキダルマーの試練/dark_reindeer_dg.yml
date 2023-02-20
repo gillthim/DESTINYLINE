@@ -1,0 +1,41 @@
+DARK_REINDEER_dg:
+  Mobtype: RAVAGER
+  Display: '&A&L闇のトナカイ Lv<mob.level>'
+  Health: 1500
+  Damage: 80
+  BossBar:
+    Enabled: true
+    Title: '&A&L闇のトナカイ Lv<mob.level>'
+    Range: 20
+  Options:
+    AtacckSpeed: 1.8
+    AlwaysShowName: true
+    Despawn: false
+    FollowRange: 50
+    MovementSpeed: 0.3
+    PreventItemPickup: false
+    PreventOtherDrops: true
+    Silent: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players  
+  AIGoalSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  2 randomstrolls
+  LevelModifiers:
+  -  Health: 50
+  -  Damage: 2
+  Drops:
+  -  mmoitems{type=MATERIAL;id=DARK_REINDEER} 1-5 100%
+  Skills:
+  -  skill{s=BOX_EFFECT_BIG} @self ~onTimer:5
+  -  currencygive{amount=3000-5000} @pir{r=20} ~onDeath
+  -  skill{s=HELL_WORLD_FIRE} @self ~onTimer:300
+  -  skill{s=TARKYZYUSO} @self ~onTimer:250
+  -  skill{s=PRESENT_EXPLO} @self ~onTimer:200
+  -  skill{s=TRAPSWAP} @self ~onTimer:100
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に闇の儀式によって処刑された！'
+  -  '&l&4<DeadLog>&f<target.name>は引き殺された！'

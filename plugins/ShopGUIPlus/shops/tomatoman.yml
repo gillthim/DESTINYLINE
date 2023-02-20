@@ -1,0 +1,16 @@
+tomatoman:
+  name: "&8&l八百屋 (page %page%)"
+  size: 54
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item:
+        mmoItems:
+          type: MATERIAL
+          id: RIPE_TOMATOES
+      buyPrice: 800
+      sellPrice: 80
+      slot: 10

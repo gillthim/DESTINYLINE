@@ -1,0 +1,19 @@
+FIREZOMBIEE_FIRE:
+  Conditions: 
+  - playernotwithin{d=20} false
+  Skills:
+  - potion{t=SLOW;d=50;l=5} @self
+  - delay 18
+  - missile{ot=FIREZOMBIEE_FIRE_TICK;oh=FIREZOMBIEE_FIRE__HIT;v=5;i=3;hR=0.4;vR=0.4;in=50;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 12
+  - delay 10
+FIREZOMBIEE_FIRE_TICK:
+  Skills:
+  - effect:particles{p=flame;a=15:hs=2;vs=2} @origin
+  - effect:particlering{p=flame;a=50;radius=0.4;uel=true} @origin
+  - sound{s=minecraft:entity.generic.extinguish_fire;p=2;v=1} @origin
+FIREZOMBIEE_FIRE__HIT:
+  Skills:
+  - effect:explosion{a=5;hs=1.5;vs=2} 
+  - sound{s=minecraft:entity.generic.extinguish_fire;p=0.2;v=2} 
+  - damage{a=300;i=false;type=Fire} 

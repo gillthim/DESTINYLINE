@@ -1,0 +1,50 @@
+TEST:
+  base:
+    material: IRON_HOE
+SHADOW_OF_DEATH:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 7.0
+    name: '&bシャドウ・オブ・デス'
+    required-level: 50.0
+    attack-damage: 33.0
+    lifesteal: 10.0
+    unbreakable: true
+    blunt-rating: 4.0
+    skill-damage: 12.0
+    mana-regeneration: 0.3
+    element:
+      darkness:
+        damage: 20.0
+    tier: LEGENDARY
+    ability:
+      ability1:
+        type: DEATH_MARK
+        mode: ATTACK
+        duration: 3.0
+        damage: 35.0
+        amplifier: 4.0
+        cooldown: 8.0
+      ability3:
+        type: CURSED_BEAM
+        mode: SHIFT_LEFT_CLICK
+        duration: 8.0
+        damage: 36.0
+        mana: 15.0
+        cooldown: 12.0
+      ability2:
+        type: CORRUPTED_FANGS
+        mode: SHIFT_RIGHT_CLICK
+        damage: 38.0
+        mana: 25.0
+        fangs: 8.0
+        cooldown: 10.0
+    skill-critical-strike-chance: 8.0
+    skill-critical-strike-power: 28.0
+    max-mana: 70.0
+    defense: -2.0
+    undead-damage: 8.0
+    lore:
+    - '&f呪術の力を得た鎌'
+    - '&f呪いの光線や地面からアギトを召喚する'
+    - 非売品

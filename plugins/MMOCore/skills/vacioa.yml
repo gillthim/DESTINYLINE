@@ -1,0 +1,37 @@
+name: グラビティ
+lore:
+- '&f黒魔術により錬成した重力低下弾を前方に放つ'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: Black Wool
+damage:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+level:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

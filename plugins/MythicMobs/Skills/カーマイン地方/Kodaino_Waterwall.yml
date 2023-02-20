@@ -1,0 +1,10 @@
+Kodaino_Waterwall:
+  Conditions: 
+  - playernotwithin{d=30} false
+  Skills:
+  - sound{s=castmode;v=0.2} @target
+  - message{m="<mob.name>&f<&co> 束縛術！！"} @PlayersInRadius{r=30}
+  - delay 20
+  - sound{s=iceclespell} @target
+  - delay 90
+  - prison{material=WEB;duration=120;breakable=true} @target

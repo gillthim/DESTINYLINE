@@ -1,0 +1,25 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: kurono1928
+  UUID: 9cde9599-2d7f-4ba1-80c3-596d362a0924
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1671768896454
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -13.0
+      y: -51.0
+      z: 197.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1671768896454
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1671768997407
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 6.0
+      y: -51.0
+      z: 219.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1671768997407

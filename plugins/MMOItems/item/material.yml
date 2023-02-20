@@ -1,0 +1,622 @@
+BATTIKOI:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&6バッチコイ本条'
+    durability: 0.0
+    lore:
+    - '&f本条はいつでも行ける...そう、君が夢を追いかけるように！'
+    - '&a交換用アイテムです。レイル・ジ・カートスへ行ってみましょう！'
+    tier: VERY_RARE
+    unbreakable: true
+FIREBONE:
+  base:
+    material: BONE
+    name: ファイヤーボーン
+    tier: COMMON
+    disable-crafting: true
+FIRESOUL:
+  base:
+    material: ENDER_EYE
+    name: ファイアーソウル
+    tier: RARE
+    disable-crafting: true
+SKELETONBONE:
+  base:
+    material: BONE
+    name: '&9スケルトン討伐の証'
+ATHENAENOSYUGO:
+  base:
+    material: GOLD_INGOT
+    name: '&9アテネの守護'
+ZERRYPOWDER:
+  base:
+    material: SLIME_BALL
+    name: '&aゼリーパウダー'
+    tier: UNCOMMON
+    unbreakable: true
+ZOMBIEE_BONE:
+  base:
+    material: BONE
+    name: '&Fゾンビーの骨'
+    tier: COMMON
+    will-break: true
+    lore:
+    - '&Fただの骨、ちょっと臭う'
+KODAINOHOUSEKI:
+  base:
+    material: NETHERITE_INGOT
+    enchants:
+      protection: 3.0
+    name: '&9古代の宝石'
+    unbreakable: true
+    tier: RARE
+    lore:
+    - '&fゾーン古代遺跡にて出現した魔法の宝石'
+    - '&f集めると装備などと交換してもらえる'
+ISEKAINOBUSSITU:
+  base:
+    material: NETHERITE_INGOT
+    name: '&9異世界の物質'
+    lore:
+    - '&fさすらいの剣士が持っていた異世界の物質'
+    - '&f集めたら何かと交換してもらえるかも'
+    unbreakable: true
+    tier: RARE
+    enchants:
+      sharpness: 5.0
+CHICKEN_FEATHER:
+  base:
+    material: FEATHER
+    name: '&F呪詛ニワトリの羽根'
+    will-break: true
+    tier: COMMON
+    lore:
+    - '&F呪いのこもった羽根'
+    - '&F純白な見た目に騙されてはいけない'
+CHICKEN_MEAT:
+  base:
+    material: CHICKEN
+    name: '&F呪詛ニワトリの肉'
+    will-break: true
+    tier: COMMON
+    lore:
+    - '&F呪いがこもった肉'
+    - '&F不味くて食べられない'
+SLIME_BALL:
+  base:
+    material: SLIME_BALL
+    name: '&Fゼリリの肉片'
+    will-break: true
+    tier: COMMON
+    lore:
+    - '&Fスライム状の肉片'
+    - '&F打撃や斬撃を吸収する'
+CRAWLERBAT_EYE:
+  base:
+    material: SPIDER_EYE
+    will-break: true
+    tier: UNCOMMON
+    name: '&Aクラウラーバットの目'
+    lore:
+    - '&F禍々しい目'
+    - '&F暗闇で赤く光る'
+CRAWLERBAT_DROPPINGS:
+  base:
+    material: GRAY_DYE
+    will-break: true
+    name: '&Fコウモリの糞'
+    tier: COMMON
+    lore:
+    - '&F肥料に使われる'
+BUZOKUON:
+  base:
+    material: DIAMOND
+    name: '&9部族恩の証'
+    tier: RARE
+    unbreakable: true
+    lore:
+    - '&f住民達の願いを叶えた報酬'
+    - 何かと交換できるかも
+SPADINE_STRING:
+  base:
+    material: STRING
+    name: '&F可燃性の糸'
+    will-break: true
+    tier: COMMON
+    lore:
+    - '&F自爆するクモが吐く糸'
+    - '&Fよく燃える'
+BADMEN_GOLD:
+  base:
+    material: GOLD_NUGGET
+    will-break: true
+    tier: COMMON
+    name: '&F盗品'
+    lore:
+    - '&F盗まれた金塊'
+    hide-enchants: true
+BEE_SUGAR:
+  base:
+    material: SUGAR
+    lore:
+    - '&F白いハチミツ'
+    - '&Fこの地域のハチから取れる'
+    will-break: true
+    tier: COMMON
+    name: '&Fビーの蜜'
+FIREOCELOT_LEATHER:
+  base:
+    material: LEATHER
+    name: '&Fファイアオセロットの皮'
+    will-break: true
+    tier: COMMON
+    lore:
+    - '&Fとても暖かい'
+    - '&F冬の衣服に使われる'
+WORLDTREE_BRANCH:
+  base:
+    material: STICK
+    enchants:
+      unbreaking: 5.0
+    name: '&b世界樹の枝'
+    tier: LEGENDARY
+    lore:
+    - '&fこの世に一本しか生えていない世界樹の枝'
+    - '&f枝は非常に頑丈で炎でも燃えない'
+    hide-enchants: true
+MAGICCRYSTAL:
+  base:
+    material: AMETHYST_CLUSTER
+    name: '&b魔力水晶'
+    tier: LEGENDARY
+    lore:
+    - '&f魔力がこもった水晶'
+    - '&f扱いが難しく、熟練の者でしか扱えない'
+    displayed-type: トレード不可
+WRATH:
+  base:
+    material: SCUTE
+    name: '&b飛竜の逆鱗'
+    tier: LEGENDARY
+    lore:
+    - '&f竜のあごの下にある逆さの鱗'
+    - '&fその価値は値段では表せない'
+    displayed-type: トレード不可
+ZOMBIEE_BEAF:
+  base:
+    material: ROTTEN_FLESH
+    name: '&fゾンビーの大きな肉'
+    lore:
+    - '&fゾンビーから採れた肉'
+    - '&f腐ってる'
+    - '&fとてもサイズが大きい'
+    unbreakable: true
+MASHROOMCHUNK:
+  base:
+    material: RED_MUSHROOM_BLOCK
+    name: '&9マッシュルームチャンク'
+    tier: RARE
+    lore:
+    - '&fたくさんのキノコが塊となって出来ているキノコ'
+    - '&f非常に珍しく、マニアの間では高値で取引されている'
+    enchants:
+      fortune: 5.0
+FIREMUSHROOM:
+  base:
+    material: CRIMSON_FUNGUS
+    name: ファイアーキノコ
+    lore:
+    - '&f常に燃え続けてるキノコ'
+    - '&fかなり熱く、素人が扱うと大やけどする'
+POLARBEAR_HAIR:
+  base:
+    material: WHITE_WOOL
+    name: '&9獰猛なシロクマの毛皮'
+    lore:
+    - '&f獰猛なシロクマから取れる毛皮'
+    - '&f過酷な場所にいたせいか非常に丈夫で価値が高い'
+TYPE_OF_SWORD:
+  base:
+    material: PAPER
+    name: '&a剣の型'
+    unbreakable: true
+    tier: UNCOMMON
+    lore:
+    - '&fとある剣の設計図'
+    - '&fその剣は自然回復量を増やし、痛みを和らげる'
+TYPE_OF_STAFF:
+  base:
+    material: PAPER
+    name: '&a杖の型'
+    lore:
+    - '&fとあるスタッフの設計図'
+    - '&fそのスタッフは地震を起こし、敵を浄化する光を発生させる'
+    tier: UNCOMMON
+TYPE_OF_DAGGER:
+  base:
+    material: PAPER
+    name: '&aダガーの型'
+    lore:
+    - '&fとあるダガーの設計図'
+    - '&fそのダガーは突進力を上げ、相手を弱らせる力を持つ'
+    tier: UNCOMMON
+RIPE_TOMATOES:
+  base:
+    material: RED_DYE
+    name: '&f熟れたトマト'
+    tier: COMMON
+    lore:
+    - '&f完熟したトマト'
+    - '&f普通よりも味がよい'
+ICE_POWDER:
+  base:
+    material: LIGHT_BLUE_DYE
+    lore:
+    - '&f凍ったスケルトンから落とす氷の粉'
+    - '&f適度に冷たくドリンクに入れるのにぴったりだ'
+    tier: UNCOMMON
+    name: '&a氷の粉'
+IGNITION_AGENT:
+  base:
+    material: WHITE_DYE
+    name: '&f着火剤'
+    lore:
+    - '&fよく燃える着火剤'
+    - '&f調理などによく使われる'
+VIAL_OF_SOUL:
+  base:
+    material: EXPERIENCE_BOTTLE
+    name: '&a魂の小瓶'
+    tier: UNCOMMON
+    lore:
+    - '&f魂が入っている小瓶'
+    - '&f耳にあてると、少し声が聞こえる'
+VENOM_GLAND:
+  base:
+    material: LIME_DYE
+    name: '&a土蜘蛛の毒腺'
+    lore:
+    - '&f洞窟蜘蛛から採取した毒腺'
+    - '&f毒性が強く、扱いには要注意しなければならない'
+SPIDER_GUTS:
+  base:
+    material: FERMENTED_SPIDER_EYE
+    name: '&a氷鬼蜘蛛の腸'
+    lore:
+    - '&f氷鬼蜘蛛から取り出した腸'
+    - '&f触ると何か液体が出てきて、あまり触りたくない'
+SPIRIT_STONE:
+  base:
+    material: QUARTZ
+    name: '&a精霊石'
+    lore:
+    - '&fエレメントの依り代'
+    - '&fあまり出回らなく、稀少価値はある'
+ICE_MAGIC_STONE:
+  base:
+    material: DIAMOND
+    name: '&9氷の魔晶石'
+    lore:
+    - '&f氷の力を宿した魔晶石'
+    - '&fゴーレムの心臓部でもあるため、非常に稀少価値が高いクリスタル'
+    enchants:
+      protection: 4.0
+    hide-enchants: true
+REILL_GOLD:
+  base:
+    material: GOLD_INGOT
+    name: '&aレイル・ジ・カートスの金貨'
+    lore:
+    - '&f一つで10,000ゴールド分の価値がある金貨'
+    - '&fレイル・ジ・カートスでしか使えない'
+    tier: UNCOMMON
+TEST:
+  base:
+    material: COMPASS
+GUNPOWDER_BALL:
+  base:
+    material: FIREWORK_STAR
+    name: '&a火薬玉'
+    lore:
+    - '&fプレゼントゾンビの体内にあった火薬玉'
+    - '&fわずかの振動で爆発するため、非常に危険'
+METAL_FITTINGS:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&aトラップエンダーの金具'
+    lore:
+    - '&fトラップエンダーが持っていた金具'
+    - '&f割と頑丈で何かに使えそうだ'
+HELL_POWDER:
+  base:
+    material: BLAZE_POWDER
+    name: '&a地獄の粉'
+    lore:
+    - '&fかなりの熱量を持った粉'
+    - '&f火薬に近いが、危険性は段違いだ'
+HATRED_FEATHER:
+  base:
+    material: FEATHER
+    name: '&a憎悪の羽'
+    lore:
+    - '&f憎悪の七面鳥の羽'
+    - '&f黒ずんでいて、触るとなぜか寒気を覚える'
+DARK_REINDEER:
+  base:
+    material: ENDER_PEARL
+    name: '&9闇のトナカイの心臓'
+    lore:
+    - '&f黒く禍々しい心臓'
+    - '&fまるで石のように冷たく、気味が悪い'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+NARIKINKA:
+  base:
+    material: GOLD_INGOT
+    name: '&9成金貨'
+    lore:
+    - '&f成金ゴブリンと取引できる金貨'
+    - '&f品質のいい金で作られている'
+BIRDBOOK:
+  base:
+    material: BOOK
+    name: '&9詩の古文書'
+    lore:
+    - '&f古代語で作られた唄を現代語で説明している古文書'
+    - '&e【ストーリーアイテム】'
+    tier: RARE
+NORMALARROW:
+  base:
+    material: ARROW
+    name: '&f普通の矢'
+    required-level: 5.0
+    tier: UNCOMMON
+    lore:
+    - '&fどこにでもある一般的な矢'
+HIMAWARIROCK:
+  base:
+    material: SUNFLOWER
+    name: '&6ヒマワリの化石'
+    lore:
+    - '&fサザンドル遺跡で発見した古びた化石'
+    - '&f考古学的にとても価値があるものらしい'
+    - '&e【ストーリーアイテム】'
+    tier: VERY_RARE
+    unbreakable: true
+WALK_HIMAWARI:
+  base:
+    material: SUNFLOWER
+    enchants:
+      depth_strider: 5.0
+MEZURASHIPULATINA:
+  base:
+    material: IRON_INGOT
+    unbreakable: true
+    name: '&9珍しいプラチナ'
+    lore:
+    - '&f品質の良い希少価値の高そうなプラチナ'
+    - '&f成金ゴブリンの里で何かアイテムと交換できるかも'
+    - '&a【交換用アイテム】'
+    enchants:
+      soul_speed: 1.0
+    hide-enchants: true
+    revision-id: 1
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    required-level: 35.0
+    tier: VERY_RARE
+    amphibian: UNRESTRICTED
+    displayed-type: トレード不可
+MOUNT_CHICKET1:
+  base:
+    material: NAME_TAG
+    name: '&a低級マウント引き換え券'
+    lore:
+    - '&f一般的なマウントを引き換えることができるチケット'
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: UNCOMMON
+    unbreakable: true
+    displayed-type: トレード不可
+KING_MAGIC_STONE:
+  base:
+    material: END_CRYSTAL
+    name: '&b王家の魔法石'
+    lore:
+    - '&fレイル・ジ・カートスの地下にある巨大な要塞から'
+    - '&f発見された非常に価値の高そうな魔法石'
+    - '&a【交換用アイテム】'
+    displayed-type: トレード不可
+    enchants:
+      sharpness: 1.0
+    hide-enchants: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    unbreakable: true
+    tier: LEGENDARY
+KIRAKIRA_SHELL:
+  base:
+    material: NAUTILUS_SHELL
+    name: '&b綺麗な貝殻'
+    lore:
+    - '&f暖気のある地方で採れるとてもきれいな貝殻'
+    - '&e【クエストアイテム】'
+    unbreakable: true
+    tier: LEGENDARY
+    displayed-type: トレード不可
+UMIKAGE_MEAT:
+  base:
+    material: MUTTON
+    name: '&a海影の生肉'
+    lore:
+    - '&f海影からとれた肉'
+    - '&fその味は珍味であり、大人には受けがいい'
+    - '&a【調理用アイテム】'
+    displayed-type: 素材
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: UNCOMMON
+    unbreakable: true
+UMIKAGE_AMULET:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&9海影のお守り'
+    lore:
+    - '&f海影が持っているお守り'
+    tier: RARE
+    unbreakable: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+FRAGMENT:
+  base:
+    material: IRON_NUGGET
+    name: '&a業火のアルカナ・ゴーレムのかけら'
+    lore:
+    - '&f業火のアルカナ・ゴーレムのかけら'
+    - '&f手に持つとほんのり暖かい'
+    tier: UNCOMMON
+    unbreakable: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+MOUNTCHCKET1:
+  base:
+    material: NAME_TAG
+    name: '&a最下級マウント引換券(ノーマル)'
+    lore:
+    - '&f最下級のマウントを交換できる'
+    - '&a馬:スピード、ジャンプ力が標準的な補正'
+    displayed-type: トーレド不可
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    tier: COMMON
+    disable-interaction: true
+MOUNTCHCKET2:
+  base:
+    material: NAME_TAG
+    name: '&9最下級マウント引換券(レア)'
+    displayed-type: トレード不可
+    lore:
+    - '&f最下級のマウントを交換できる'
+    - '&aロバ:ジャンプ力が少し高い'
+    - '&aラバ:スピードが少し速い'
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    tier: RARE
+    disable-interaction: true
+MOUNTCHCKET3:
+  base:
+    material: NAME_TAG
+    name: '&6最下級マウント引換券(ベリーレア)'
+    tier: VERY_RARE
+    displayed-type: トレード不可
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    lore:
+    - '&f最下級のマウントを交換できる'
+    - '&aゾンビホース:ジャンプ力が高い'
+    - '&aスケルトンホース:スピードが速い'
+    disable-interaction: true
+USIA_GOLD:
+  base:
+    material: GOLD_INGOT
+    name: '&aユージア・グラムの金貨'
+    lore:
+    - '&fユージア・グラムで使用できる通貨'
+    - '&f1個で50,000ゴールド分の価値がある'
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    displayed-type: トレード可能
+SITYOON:
+  base:
+    material: EMERALD
+    name: '&e市長恩'
+    tier: VERY_RARE
+    lore:
+    - '&f街全体への貢献が認められた者へ送られる証'
+    - '&b【交換用アイテム】'
+    displayed-type: トレード不可
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    unbreakable: true
+KOKKAON:
+  base:
+    material: NETHER_STAR
+    name: '&b国家恩'
+    tier: LEGENDARY
+    lore:
+    - '&f国家全体への貢献が認められた者へ送られる証'
+    - '&b【交換用アイテム】'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    unbreakable: true
+GOODPOTATO:
+  base:
+    material: POTATO
+    name: '&a良質なジャガイモ'
+    lore:
+    - '&f味も成分もしっかり良いジャガイモ'
+    - '&a【調理用アイテム】'
+    displayed-type: 素材
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    unbreakable: true
+    tier: UNCOMMON
+DASIBONE:
+  base:
+    material: BONE
+    name: '&9ダシが出そうな骨'
+    lore:
+    - '&f料理に使えば美味しいダシが出そう'
+    - '&a【調理用アイテム】'
+    displayed-type: 素材
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: RARE
+    unbreakable: true
+RAREWATER:
+  base:
+    material: PAPER

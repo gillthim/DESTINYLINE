@@ -1,0 +1,66 @@
+# -------------------------------- #
+#
+# ~ MAGNIFIC TELEPADS v2.0.4-EARTH ~
+# By @DeivydSao
+#
+# -------------------------------- #
+
+telepad:
+  material: END_PORTAL_FRAME
+  data: 0
+  name: '&aMagnific TelePad'
+  lore:
+  - '&7Place this TelePad to use'
+  - '&7it as a teleport when connecting'
+  - '&7to another TelePad.'
+  enchantments:
+  - DURABILITY;1
+  hide-enchantments: true
+  activity: JUMP
+  limit-character-name: 12
+settings:
+  default-colors: true
+  compatibility:
+    fabled-skyblock: false
+    fabled-skyblock-types:
+      visitor: true
+      coop: true
+      member: true
+      operator: true
+    askyblock: false
+    bentobox: false
+    bentobox-world: bskyblock_world
+    superiorskyblock2: false
+  cooldown-teleport:
+    enable: false
+    time: 5
+  world-list:
+    mode: BLACKLIST
+    worlds: []
+  holograms: true
+sounds:
+  on-telepad-use: ENTITY_ENDER_DRAGON_FLAP
+  on-rename-pad: BLOCK_ANVIL_USE
+  on-interact-pad: BLOCK_NOTE_BLOCK_HAT
+  open-change-destination: BLOCK_NOTE_BLOCK_HAT
+  interact-change-direction: BLOCK_NOTE_BLOCK_HAT
+  open-change-color: BLOCK_NOTE_BLOCK_HAT
+  interact-rename: ENTITY_BAT_TAKEOFF
+  interact-pickup: ENTITY_ITEM_PICKUP
+  interact-close: BLOCK_NOTE_BLOCK_HAT
+  interact-back: BLOCK_NOTE_BLOCK_HAT
+  interact-change-destination: BLOCK_NOTE_BLOCK_PLING
+  back-change-destination: BLOCK_NOTE_BLOCK_PLING
+  next-change-destination: BLOCK_NOTE_BLOCK_PLING
+  interact-change-color: BLOCK_NOTE_BLOCK_PLING
+  back-change-color: BLOCK_NOTE_BLOCK_PLING
+  next-change-color: BLOCK_NOTE_BLOCK_PLING
+  interact-change-mode: BLOCK_NOTE_BLOCK_HAT
+  error-change-destination: BLOCK_ANVIL_LAND
+  error-change-color: BLOCK_ANVIL_LAND
+  on-private-telepad: BLOCK_ANVIL_LAND
+  on-friend-telepad: BLOCK_ANVIL_LAND
+  on-island-member-telepad: BLOCK_ANVIL_LAND
+  world-not-allowed: BLOCK_ANVIL_LAND
+  change-floating-item: BLOCK_NOTE_BLOCK_PLING
+  remove-floating-item: BLOCK_ANVIL_LAND

@@ -1,0 +1,15 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: maruhi12
+  UUID: 78bf21e2-2d22-4a40-9b3f-ac01f868d580
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1676792341346
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 89.0
+      y: -61.0
+      z: 34.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1676792341346

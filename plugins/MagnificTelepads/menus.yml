@@ -1,0 +1,216 @@
+# -------------------------------- #
+#
+# ~ MENUS ~
+# By @DeivydSao
+#
+# -------------------------------- #
+
+telepad:
+  gui:
+    rows: 4
+    title: » TelePad Settings
+    fill-inventory: true
+    change-destination:
+      material: ENDER_PEARL
+      data: 0
+      slot: 10
+      name: '&aChange Destination'
+      lore:
+      - '&7Change the'
+      - '&7Pad''s Destination.'
+      - ''
+      - '&7Current Destination'
+      - '&a<destination>'
+      - ''
+      - '&eClick to change!'
+    teleport-direction:
+      material: COMPASS
+      data: 0
+      slot: 12
+      name: '&aChange Teleport Direction'
+      lore:
+      - '&7Change the direction you'
+      - '&7are facing when you'
+      - '&7teleport to this Teleport'
+      - '&7Pad.'
+      - ''
+      - '&7Current Direction:'
+      - '&a<direction>'
+      - ''
+      - '&eClick to change!'
+    change-color:
+      material: END_PORTAL_FRAME
+      data: 0
+      slot: 14
+      name: '&aChange Color'
+      lore:
+      - '&7Change the TelePad''s'
+      - '&7color.'
+      - ''
+      - '&7Current Color'
+      - <color>
+      - ''
+      - '&eClick to change!'
+    rename:
+      material: NAME_TAG
+      data: 0
+      slot: 16
+      name: '&aRename Pad'
+      lore:
+      - '&7Change the TelePad''s'
+      - '&7name.'
+      - ''
+      - '&7Name'
+      - <name>
+      - ''
+      - '&eClick to change name!'
+    mode:
+      material: IRON_DOOR
+      data: 0
+      slot: 27
+      name: '&aChange Mode'
+      lore:
+      - '&7Change the mode'
+      - '&7in which the TelePad'
+      - '&7will be allowed'
+      - '&7to be use.'
+      - ''
+      - '&7Current Mode:'
+      - '&a<mode>'
+      - ''
+      - '&eClick to change!'
+    pickup:
+      material: BEDROCK
+      data: 0
+      slot: 35
+      name: '&aPickup TelePad'
+      lore:
+      - '&eClick to pickup!'
+    item:
+      material: GLASS_BOTTLE
+      data: 0
+      slot: 29
+      name: '&aDisplay Item'
+      lore:
+      - '&7Change floating'
+      - '&7item above of TelePad.'
+      - ''
+      - '&2Actual Item: &a<item>'
+      - ''
+      - '&ePut item here!'
+      - '&cor Right Click to remove.'
+    close:
+      material: BARRIER
+      data: 0
+      slot: 31
+      name: '&cClose'
+      lore:
+      - ''
+    fill:
+      material: BLACK_STAINED_GLASS_PANE
+      data: 15
+      name: '&r'
+      lore:
+      - ''
+change-destination:
+  gui:
+    title: » Set Destination | <page>
+    fill-inventory: true
+    color-item: 1
+    available-color:
+      name: <color> TelePad
+      lore:
+      - '&7Click to set the'
+      - '&7TelePad''s destination to'
+      - <color>&7!
+      - ''
+      - '&eClick to change!'
+    same-color:
+      name: <color> TelePad
+      lore:
+      - ''
+      - '&cThe destination cannot be'
+      - '&cthe same TelePad!'
+    no-exist-color:
+      name: <color> TelePad
+      lore:
+      - ''
+      - '&cYou dont have a'
+      - '&cTelePad with this color!'
+    selected-color:
+      name: <color> TelePad
+      lore:
+      - ''
+      - '&aSELECTED!'
+    back:
+      material: ARROW
+      data: 0
+      name: '&cPrevious'
+      lore:
+      - ''
+    next:
+      material: ARROW
+      data: 0
+      name: '&aNext'
+      lore:
+      - ''
+    close:
+      material: BARRIER
+      data: 0
+      name: '&aGo Back'
+      lore:
+      - ''
+    fill:
+      material: BLACK_STAINED_GLASS_PANE
+      data: 15
+      name: '&r'
+      lore:
+      - ''
+change-color:
+  gui:
+    title: » Set Color | <page>
+    fill-inventory: true
+    color-item: 1
+    available-color:
+      name: <color> TelePad
+      lore:
+      - '&7Click to set the'
+      - '&7TelePad''s color to'
+      - <color>&7!
+      - ''
+      - '&eClick to change!'
+    already-selected:
+      name: <color> TelePad
+      lore:
+      - ''
+      - '&cThere is already a'
+      - '&cTelePad set to this color!'
+    selected-color:
+      name: <color> TelePad
+      lore:
+      - ''
+      - '&aSELECTED!'
+    back:
+      material: ARROW
+      data: 0
+      name: '&cPrevious'
+      lore:
+      - ''
+    next:
+      material: ARROW
+      data: 0
+      name: '&aNext'
+      lore:
+      - ''
+    close:
+      material: BARRIER
+      data: 0
+      name: '&aGo Back'
+      lore:
+      - ''
+    fill:
+      material: BLACK_STAINED_GLASS_PANE
+      data: 15
+      name: '&r'
+      lore:
+      - ''

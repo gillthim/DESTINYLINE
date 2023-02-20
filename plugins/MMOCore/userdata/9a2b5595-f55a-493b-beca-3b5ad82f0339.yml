@@ -1,0 +1,45 @@
+class-points: 0
+skill-points: 0
+skill-reallocation-points: 0
+attribute-points: 0
+attribute-realloc-points: 0
+level: 25
+experience: 0.0
+class: HUMAN
+waypoints: []
+friends: []
+last-login: 1676844119446
+skill-tree-points:
+  global: 0
+skill-tree-reallocation-points: 0
+bound-skills: []
+attribute:
+  dexterity: 60
+  strength: 0
+  intelligence: 15
+profession:
+  enchanting:
+    exp: 0.0
+    level: 0
+  smithing:
+    exp: 0.0
+    level: 0
+  woodcutting:
+    exp: 0.0
+    level: 0
+  farming:
+    exp: 0.0
+    level: 0
+  fishing:
+    exp: 0.0
+    level: 0
+  alchemy:
+    exp: 0.0
+    level: 0
+  mining:
+    exp: 0.0
+    level: 0
+  smelting:
+    exp: 0.0
+    level: 0
+quest: {}

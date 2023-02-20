@@ -1,0 +1,31 @@
+SUNENAGEY:
+  Conditions: 
+  - playernotwithin{d=20} false
+  - hastag{t=SUNBLADE} false
+  Skills:
+  - addtag{t=SUNENAGEY} @self
+  - setAI{ai=false} @self
+  - potion{t=SLOW;d=60;l=5} @self
+  - delay 20
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.3;points=1}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.5;points=1}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.6;points=2}
+  - delay 20
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.3;points=1}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.5;points=2}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.6;points=2}
+  - delay 20
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.3;points=1}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.5;points=1}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.6;points=2}
+  - sound{s=grandheal;v=1;p=0.7} @self
+  - sound{s=minecraft:entity.villager.work_toolsmith;v=1.5;p=0.8} @self
+  - delay 5
+  - sound{s=minecraft:entity.villager.work_toolsmith;v=1.5;p=0.8} @self
+  - delay 5
+  - sound{s=minecraft:entity.villager.work_toolsmith;v=1.5;p=0.8} @self
+  - sound{s=minecraft:entity.villager.work_toolsmith;v=1.5;p=1.} @self
+  - message{m="<mob.name>&f<&co> バリアを張る！"} @PlayersInRadius{r=20}
+  - shieldpercent{ms=0.3} @self
+  - setAI{ai=true} @self
+  - removetag{t=SUNENAGEY} @self

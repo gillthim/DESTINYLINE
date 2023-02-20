@@ -1,0 +1,211 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: &id001
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: PARTY
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -20.0
+    z: -10.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -18.0
+    z: -8.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -19.0
+    z: -9.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: ARCANA_GOLEM_WATER
+  delay: 0
+  level: 1
+  interval: 0
+  targetType: &id002
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: NONE
+  location:
+    ==: org.bukkit.Location
+    x: -70.0
+    y: -21.0
+    z: -9.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 6.0
+    conditions: []
+  maxCount: 1
+  yaw: -87.3003158569336
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -18.0
+    z: -9.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: UMIKAGE
+  delay: 0
+  level: 14
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -44.0
+    y: -21.0
+    z: 4.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 4.0
+    conditions: []
+  maxCount: 3
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -20.0
+    z: -8.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -19.0
+    z: -8.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: UMIKAGE
+  delay: 0
+  level: 12
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -55.0
+    y: -21.0
+    z: -19.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 4
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -19.0
+    z: -10.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -18.0
+    z: -10.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -20.0
+    z: -9.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: UMIKAGE
+  delay: 0
+  level: 15
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -58.0
+    y: -21.0
+    z: 3.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 3
+  yaw: 0.0

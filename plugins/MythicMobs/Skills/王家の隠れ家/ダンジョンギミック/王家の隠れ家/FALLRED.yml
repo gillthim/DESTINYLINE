@@ -1,0 +1,7 @@
+FALLBLUE:
+  Skills:
+  - effect:blockmask{m=BLUE_CONCRETE;r=7;d=120} @self
+  - effect:blockwave{duration=100;material=BLUE_CONCRETE;radius=5;radiusY=5;velocity=5;shape=sphere} @selflocation
+  - setblock{m=BLUE_CONCRETE;md=11} @selflocation
+  - sound{s=minecraft:block.respawn_anchor.deplete;p=1.2;v=0.7} @selflocation
+  - sound{s=minecraft:ambient.cave;p=1.6;v=2} @selflocation

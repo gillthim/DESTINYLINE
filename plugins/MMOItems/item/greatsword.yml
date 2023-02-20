@@ -1,0 +1,88 @@
+DRAGON_SWORD:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000006E7
+    name: '&b飛竜の大剣'
+    two-handed: true
+    attack-damage: 24.0
+    weapon-damage: 6.0
+    tier: LEGENDARY
+    element:
+      fire:
+        damage: 20.0
+    ability:
+      ability2:
+        type: TARGETED_FIREBALL
+        ignite: 5.0
+        damage: 55.0
+        mode: SHIFT_RIGHT_CLICK
+        cooldown: 15.0
+        stamina: 8.0
+      ability1:
+        type: EARTHQUAKE
+        mode: SHIFT_LEFT_CLICK
+        duration: 3.0
+        damage: 60.0
+        stamina: 10.0
+        cooldown: 8.0
+      ability3:
+        type: SKY_SMASH
+        mode: RIGHT_CLICK
+        damage: 40.0
+        cooldown: 8.0
+        knock-up: 2.0
+        stamina: 8.0
+    max-health: 50.0
+    unbreakable: true
+    stamina-cost: 1.5
+    attack-speed: 1.1
+    required-level: 35.0
+    cooldown-reduction: -10.0
+    lore:
+    - '&f飛竜の力を宿した両手剣'
+    - '&f火の玉を出せ、地震を起こせる力を持つ'
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED
+    - RED
+    max-stamina: 200.0
+    stamina-regeneration: 5.0
+    max-stamina-regeneration: 3.0
+BATTLE_BAMBOO:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000011E7
+    name: '&9バトルバンブー'
+    attack-damage: 22.0
+    required-level: 25.0
+    attack-speed: 1.8
+    block-power: 20.0
+    block-rating: 25.0
+    weapon-damage: 5.0
+    max-health: 50.0
+    stamina-cost: 2.0
+    max-stamina: 20.0
+    defense: 1.0
+    ability:
+      ability2:
+        type: SKY_SMASH
+        mode: SHIFT_LEFT_CLICK
+        damage: 25.0
+        cooldown: 10.0
+        stamina: 8.0
+      ability1:
+        type: CIRCULAR_SLASH
+        mode: SHIFT_RIGHT_CLICK
+        damage: 24.0
+        stamina: 10.0
+        knockback: 1.0
+        cooldown: 12.0
+    tier: RARE
+    lore:
+    - '&f戦闘用に作られた竹竿'
+    - '&f反発力や遠心力を利用し、敵を倒す'
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED

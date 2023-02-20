@@ -1,0 +1,40 @@
+GROUNDSKELETONKNIGHT:
+  Mobtype: SKELETON
+  Display: '&A&L平野のスケルトンナイト Lv<mob.level>'
+  Health: 1580
+  Damage: 1280
+  Equipment:
+  -  iron_sword HAND
+  -  iron_helmet HEAD
+  -  iron_chestplate CHEST
+  -  iron_leggings LEGS
+  -  iron_boots FEET
+  -  shield OFFHAND
+  Modules:
+    ThreatTable: true
+  Options:
+    Despawn: true
+    AttackSpeed: 0.8
+    AlwaysShowName: true
+    MovementSpeed: 0.28
+    FollowRange: 28
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelectors:
+  -  0 clear
+  -  2 randomstroll
+  LevelModifiers:
+  -  Health: 20
+  -  Damage: 5
+  Drops:
+  -  mmoitems{type=MATERIAL;id=DASIBONE} 1-2 2%
+  Skills:
+  -  skill{s=SWORDATTACK} @self ~onDamaged 0.2
+  -  skill{s=KNIGHTGUARD} @self ~onTimer:300
+  -  currencygive{amount=1500-2600} @pir{r=20} ~onDeath

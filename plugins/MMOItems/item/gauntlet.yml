@@ -1,0 +1,48 @@
+FLAMELION_CROW:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 9.0
+    name: '&5炎獅子の鉤爪'
+    attack-damage: 31.0
+    required-level: 40.0
+    tier: MYTHICAL
+    unbreakable: true
+    blunt-power: 3.0
+    ability:
+      ability1:
+        type: STUN
+        mode: ATTACK
+        stamina: 5.0
+        duration: 3.0
+        cooldown: 8.0
+      ability2:
+        type: TARGETED_FIREBALL
+        mode: SHIFT_LEFT_CLICK
+        ignite: 8.0
+        damage: 35.0
+        stamina: 15.0
+        cooldown: 10.0
+      ability3:
+        type: LIGHT_DASH
+        mode: SHIFT_RIGHT_CLICK
+        damage: 33.0
+        stamina: 12.0
+        cooldown: 6.0
+        length: 0.4
+    max-health: 100.0
+    element:
+      fire:
+        damage: 30.0
+      earth:
+        defense: -20.0
+      water:
+        defense: -20.0
+    dodge-rating: 20.0
+    critical-strike-chance: 12.0
+    attack-speed: 1.8
+    pvp-damage: 10.0
+    weapon-damage: 12.0
+    lore:
+    - '&f炎獅子のツメを加工して作った一品'
+    - '&fそのツメは熱を帯び、あらゆるものを焼き切る'
+    - '&f獅子のように回避でき、相手に一気に近づき喉笛を搔き切る'

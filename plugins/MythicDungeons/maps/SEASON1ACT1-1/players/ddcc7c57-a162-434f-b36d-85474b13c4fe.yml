@@ -1,0 +1,15 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: yuuki_05230
+  UUID: ddcc7c57-a162-434f-b36d-85474b13c4fe
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1672857515861
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -20.0
+      y: -61.0
+      z: 37.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1672857515861

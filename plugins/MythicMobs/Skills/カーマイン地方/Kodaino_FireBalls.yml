@@ -1,0 +1,25 @@
+Kodaino_FireBalls:
+  Conditions: 
+  - playernotwithin{d=30} false
+  Skills:
+  - message{m="<mob.name>&f<&co> 火炎術！！"} @PlayersInRadius{r=30}
+  - delay 20
+  - shootfireball{y=3;v=0.1;i=false;ft=20;sml=true} @target
+  - damage{a=320} @LivingInCone{a=45.0;r=11.0;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=5} @LivingInCone{a=45.0;r=11.0;rot=0.0}
+  - delay 10
+  - shootfireball{y=3;v=0.2;i=false;ft=30;sml=true} @target
+  - damage{a=300} @LivingInCone{a=45.0;r=12.0;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=5} @LivingInCone{a=45.0;r=12.0;rot=0.0}
+  - delay 34
+  - shootfireball{y=1;v=0.3;i=false;sml=false} @target
+  - damage{a=300} @LivingInCone{a=45.0;r=14.0;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=5} @LivingInCone{a=45.0;r=14.0;rot=0.0}
+  - delay 4
+  - shootfireball{y=1;v=0.3;i=false;sml=false} @target
+  - damage{a=500} @LivingInCone{a=45.0;r=10.0;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=5} @LivingInCone{a=45.0;r=10.0;rot=0.0}
+  - delay 4
+  - shootfireball{y=1;v=0.3;i=false;sml=false} @target
+  - damage{a=200;i=true} @LivingInCone{a=45.0;r=10.0;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=5} @LivingInCone{a=45.0;r=10.0;rot=0.0}

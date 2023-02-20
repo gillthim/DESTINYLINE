@@ -1,0 +1,34 @@
+Zyusoniwatori2:
+  Mobtype: ZOMBIE
+  Display: '&A&L呪詛ニワトリ Lv<mob.level>'
+  Health: 17
+  Disguise: CHICKEN
+  Damage: 2000
+  Options:
+    Despawn: true
+    AttackSpeed: 1.1
+    MovementSpeed: 0.2
+    PreventSunburn: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  2 randomstroll
+  LevelModifiers:
+  -  Health: 7
+  -  Damage: 40
+  Skills:
+  -  skill{s=zyuso} @target ~onTimer:87 0.74
+  -  currencygive{amount=145-175} @pir{r=20} ~onDeath
+  Drops:
+  -  exp 5 0.5
+  -  lapis_lazuli 1-2 0.32
+  -  DT_EXPRANK1
+  -  mmoitems{type=MATERIAL;id=CHICKEN_FEATHER} 1-3 80%
+  -  mmoitems{type=MATERIAL;id=CHICKEN_MEAT} 1-3 20%
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に呪力をすべてを奪われた！!'
+  -  '&l&4<DeadLog>&f<target.name>はKFCの工場に輸送された！!'
+  -  '&l&4<DeadLog>&f<mob.name>たちは<target.name>にチキン以下であることを証明した！'

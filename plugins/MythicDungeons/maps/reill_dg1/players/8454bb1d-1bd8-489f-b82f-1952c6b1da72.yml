@@ -1,0 +1,15 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: AO2324
+  UUID: 8454bb1d-1bd8-489f-b82f-1952c6b1da72
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1672741270681
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 6.0
+      y: -51.0
+      z: 219.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1672741270681

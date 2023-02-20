@@ -1,0 +1,16 @@
+Athenae_Arrow:
+  CoolDown: 8
+  Skills:
+  -  delay 40
+  -  arrowvolley{a=1;s=100;v=10;f=0;rd=80}
+  -  Delay 9
+  -  arrowvolley{a=2;s=90;v=12;f=0;rd=80}
+  -  Delay 8
+  -  arrowvolley{a=3;s=57;v=18;f=0;rd=80}
+  -  Delay 7
+  -  arrowvolley{a=4;s=48;v=22;f=0;rd=80}
+  -  Delay 6
+  -  arrowvolley{a=5;s=30;v=27;f=0;rd=80}
+  -  Delay 4
+  -  arrowvolley{a=6;s=20;v=30;f=1;rd=80}
+  -  Delay 40

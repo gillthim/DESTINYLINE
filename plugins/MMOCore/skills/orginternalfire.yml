@@ -1,0 +1,38 @@
+name: インターナルファイア
+lore:
+- '&f周囲の敵を自動的に捕捉し'
+-  '&f拘束しダメージを与える火炎の柱を生み出す'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: Blaze Powder
+damage:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+level:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

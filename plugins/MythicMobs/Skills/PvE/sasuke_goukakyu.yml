@@ -1,0 +1,51 @@
+sasuke_goukakyu:
+  Conditions: 
+  - offgcd
+  - hastag{t=chakura} false
+  - hastag{t=housenka} false
+  - hastag{t=tidori} false
+  - playernotwithin{d=40} false
+  Skills:
+  - gcd 300
+  - addtag{t=goukakyu} @self
+  - sound{s=inmusubi1;p=0.8;v=2} @self
+  - delay 12
+  - disengage @target
+  - delay 1
+  - disengage @target
+  - jump{velocity=0.9} @self
+  - delay 1
+  - disengage @target
+  - delay 1
+  - disengage @target
+  - potion{t=SLOW;d=100;l=7} @self
+  - delay 7
+  - sound{s=inmusubi1;p=0.9;v=2} @self
+  - delay 8
+  - sound{s=inmusubi1;p=0.8;v=2} @self
+  - delay 12
+  - sound{s=inmusubi2;p=1.1;v=2} @self
+  - delay 7
+  - sound{s=inmusubi1;p=1.5;v=2} @self
+  - delay 8
+  - sound{s=inmusubi1;p=1.6;v=2} @self
+  - sound{s=zyutu;v=2;p=1} @self
+  - message{m="<mob.name>&f<&co>火遁・豪火球の術！！"} @PlayersInRadius{r=30} 
+  - delay 25
+# - Missile{in=50;oT=housenkashot;onHit=housekahit;i=6;hR=1;vR=1;md=100;v=7}
+  - leap{velocity=200} @PlayersInRadius{r=25;limit=1;sort=RANDOM}
+  - delay 1
+  - jump{velocity=0.6} @target
+  - delay 10
+  - missile{ot=Homer_TICK2;oh=Homer_HIT2;v=25;i=0.2;hR=4;vR=4;in=20;md=40;mr=45} @PlayersInRadius{r=30;limit=1;sort=FURTHEST}
+  - delay 30
+  - removetag{t=goukakyu} @self
+Homer_TICK2:
+  Skills:
+  - effect:particles{p=flame;a=200:hs=3;vs=3} @origin
+  - effect:particlesphere{p=flame;a=1500;radius=4} @origin
+Homer_HIT2:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=entity.generic.explode;v=1;p=0}
+  - damage{a=5000;i=true;type=Fire}

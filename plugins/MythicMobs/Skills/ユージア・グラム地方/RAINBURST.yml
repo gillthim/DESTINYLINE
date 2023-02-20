@@ -1,0 +1,23 @@
+RAINBURST:
+  Conditions: 
+  - playernotwithin{d=40} false
+  - raining{} true
+  Skills:
+  - disengage @target
+  - delay 10
+  - disengage @target
+  - potion{t=SLOW;d=40;l=7} @self
+  - delay 20
+  - missile{ot=RAINBURST_TICK;oh=RAINBURST_HIT;v=18;i=1.4;hR=0.3;vR=0.3;in=20;md=40;mr=45;syo=2} @PlayersInRadius{r=20;limit=1}
+  - delay 20
+RAINBURST_TICK:
+  Skills:
+  - effect:particles{p=drip_water;a=200:hs=3;vs=3} @origin
+  - effect:particlesphere{p=REDDUST;c=#4925f6;a=200;radius=0.3} @origin
+  - effect:sound{s=minecraft:item.bottle.fill;v=2;p=1.2}
+  - effect:sound{s=minecraft:item.bottle.fill;v=2;p=0.5}
+RAINBURST_HIT:
+  Skills:
+  - effect:sound{s=minecraft:item.bottle.fill;v=2;p=1;repeat=5;repeatInterval=5}
+  - effect:sound{s=minecraft:entity.tropical_fish.hurt.blow_up;v=2;p=0.5}
+  - damage{a=800;i=true;type=Water}

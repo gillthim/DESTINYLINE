@@ -1,0 +1,1666 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionRandomReward
+  cooldownDisabled: false
+  resetDay: 1
+  period: 0
+  overrideCooldown: false
+  xp: 0
+  targetType: &id002
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: PARTY
+  location:
+    ==: org.bukkit.Location
+    x: -18.0
+    y: -61.0
+    z: 53.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: reaperPvE
+    count: 1
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  rewards:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"飛竜の撃剣"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Catalyst (Offhand)"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 35"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"10"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20%"}],"text":"■
+        Block Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+15%"}],"text":"■
+        Block Rating: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +80"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+50"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.06"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Circular
+        Slash"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Damaged By Entity
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"20"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"0"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"4"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"0.2"}],"text":":
+        "}],"text":" Knockback"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Burn"}],"text":"|
+        "}],"text":"|"}],"text":"|"}],"text":"Attack "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"3"}],"text":":
+        "}],"text":" Duration"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"飛竜の力を宿した剣"}'
+      - '{"italic":false,"color":"white","text":"相手に攻撃をされたら反撃ができる"}'
+      - '{"italic":false,"color":"white","text":"防御用の剣であり、左手に持たないと意味がない"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"aqua","text":"LEGENDARY"}],"text":"Tier:
+        "}],"text":" "}'
+      custom-model-data: 10000002
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/81VXW/bVBg+GlJVECAGg0lcHVlgAauqLGm3KBeQE/ssseqPYp9sRFVluYmzRk1jcNyNqos0h910H5qYxphUxoeK6GDSJOCCISSQth+w/4CVVvsXvHYcpyYS1/jC0nmf933Oc9738fELCE2jo4qiSYwqhklVoUJUZqAjS8tT6HgSV7SzVKEqM41FSsUPhB/fy1Sz1hR6bZxBPjIrlMisUmQoeqbRSwkqazpF95Y4vvlsd+fgwVeB/3BwdSfo3xo8/Cvwvwz8bwbbu9wM4Ac7j/a3rwX+g/3bf+zf+gxSAv+LoH8dUoL+9uDmjTDow3Iv8G8E/WtR0bO7vwz+/O7g9v2Qd3s3AvtB/2pw2R/89kPMd90POfyfAv9K4N/fv3Jz8PmvEVMY4eC4xxK5JVkTFsxF7RzVi3Oj07yawOHbZLVFil7UzpwxBcKIXDPYNHolSSElSZZYDT1d2uKkBlfgBEkXqjLRTUMmRgVUC1bXU5yGDZhIFFKmolmqwQAYlAEMUKvZst0uV9jiGta6dR4ys5nZzAzX9az1VsfiCtGq7jjthnOxwxXmwuVax6mvrVj1tRDO9noz8f6lqq6mdyWMEWFhYqsN1/JaDtDl0uz52UyvB116Y3zGiMAcqi++NTl1JlEdPS/TMlVFoteeQ28mkFA1mKaAr0QqAwMj6O6d/uEGRj2WRHRM1ElZU02jomlMUsvGOU0XD1tTpx9WJR26J9OzVC6SyxMyVKJQdJRfSawHFgKXTKHX/zVwnYQ7FGdHJxnjYg1IJCHy8ZHfwcd1wfKs9mbXw+9ozeaq1Wm8C50MzWjr9icbLdfuYvlCG+fm43AO86f//voRJp4Hw8FiNNEC5psnMwl851tcasP48KJz0XZD8EQ28/YkrMOEOucj/OT8GL/3Pa7YVttbLfB1fCKf4lWsT7Ex9E1UN59GnQv2ut3xsPGxbTeiBPDWqVi69T6fvwSZQ80NXNrEtOO1vE0Mcd6+NET5ttBy6xtty8VG2+quQiXmc2Epfzo+Lp8PqbOZFBSrGmJpSIjNN8TmUtjCyOdx4Ww2lJo/rDdudVpkacPtpKXFhh/y5P5DQD7ux//2Dhs7jbVC/zzeW3m8106+v/QdF17YBgNXq6QojRz/csVgem38GyhucTAfD26LUQh20MqG57ibXAHutok/h/nk567nQsHSMtdb7qF/AIs9DAphBgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"飛竜の大剣"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Greatsword"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 35"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"24"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"1.1"}],"text":"➸
+        Attack Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+6%"}],"text":"■
+        Weapon Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +50"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+200"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5"}],"text":"■
+        Stamina Regeneration: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","text":"■ Two
+        Handed"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-10%"}],"text":"■
+        Skill Cooldown Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"blue","text":"1.5
+        Stamina"}],"text":"■ Uses "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"red","extra":[{"color":"gray","text":" 20 Fire Damage"}],"text":"🔥"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Targeted
+        Fireball"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Right Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Ignite"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"55"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"15"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Earthquake"}],"text":"|
+        "}],"text":"|"}],"text":"|"}],"text":"Shift Left Click "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"3"}],"text":":
+        "}],"text":" Duration"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"60"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"10"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Sky
+        Smash"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Right Click "}],"text":"|
+        "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"40"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"2"}],"text":":
+        "}],"text":" Knock Up"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty RED Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty RED Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"飛竜の力を宿した両手剣"}'
+      - '{"italic":false,"color":"white","text":"火の玉を出せ、地震を起こせる力を持つ"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"aqua","text":"LEGENDARY"}],"text":"Tier:
+        "}],"text":" "}'
+      custom-model-data: 10000006
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/7VW3W/bVBR3AVVlAsRgfAiEdLGYX9ZV+Wi6kAeWO/s2sWrHnX1DiarIcmOnteLGbeJSqq7SsodNZYgHkDagBYZW1IdJE0ggJiQEGv/JQlf2sAfeeOT6s7bSVvCApUTy/f3OOb9z7rnn+gRFjVAviqLEYyQqagmJqoKlClKo7DqNFpecNcWynS5dmKXT9Kj3kxEX/NdH6ZKx2HXstuEy6hvD1OuRK1aSBE6aqaiEWWUxL1V+e4vynhHqZMRCFbYMK1ihnpitD8eEiPA9tYyggMtFPrR6NkIFSUbU3CzNNB/d3tq/s93v3d37cKt/5ZO9u7/2ezf7va//uPfNw83re5u3iVSmud+7Qyj7H2+6lGs/93tb/cu9ve3vHm1fIyt//vhTv/epu3jluu/m4Ue9fm+Hrg/FFOEZSSVSOcQNDVNvRMsKhiJfgSTLEqogGbqJFk+Fkl+IeO6/imvTiDpRkhHEyowkc8PUm4mMD3U24jsbpk5F3EleRioHRVhCxfEw1vMRDC/wAo9rQ8uz6zSv0wUaQ7mEMOI8wwtQEEhVWK3riLZuEFgp85NYlflSGauswLNTBCaQ2TSNDtnYddqcb5sOYebGUqO0ri1q8+6L99Z1tEWzrdGFvPvWsG1Lt1fbdCFN0I2N0UAAgjIuX6zCKXRYZAFNHhFYX+lojmkTf9l46IlUInQ6lYydj4dWpmqqIkKlnIx8TLZhlPHUcQl6r6223WidXVmiCxk3Jmnhlw92AWPIToXblB/sYswjmXpacPeag3ItbjuD4LRUCW1f9W2fpF47OF1VckxFVZQ4JBAahtRnN67Ge8DrN56jnuFkWCKugn57JSLI6GKVdANHqv8uEorwctBlLw20Nisp+Pzf1AAeJKhMI8Sd/+tz9/kinl8Fiog6ycwdnNGdXXIiR2IuuBoh8ax3oJ/C5EA3Sh1Dc7qrdkcn2+IeXkM2llfMjtEFwvsWyOaC5Sxgzj346h6AjqM1WoDz9qwAmGZm/BBYWTIM3UXTY+kIvnELzBjakt2OWZ+ZOB3hX+6AsqFZzkKBaYAzuVTcUNQ+AIrfGZ5ZJpWAAwjIxrzRNvwe9ni5OAuv2qCstXVDT9i2TMsCbNBoxIW+0gjtz6ZTp+PcapfUhXk7PZYLQwblaTy+9cvjH75lzoFMCkyS8gU5BrD2DpO/RHwoC2bTAbI5v+AA1jJJpcg6Y1zyUcbCWmfecAzdczGnWRYxBkzWtSaueW8sMHlXWS6B+MECJAkFOn0sn4DCnH0s7dUqPyhXMJqHq0Vax1lYXtFaRlJMMER8t9kjhU6kjhaaTh2jND8g9OiKKq01oCxq3YUjZYwfI+O4eiWxKXcygeqSj2XCfX9w8yrwrnWQBuTuBgphGc6/h8jA+A+gd/n+r1f0wTDAZHwXwP3dufu7VjRT6Xr82oxdsUUznMfPlRUs1w4+RIrrNCm5415awRKJIJUUx+6skY+cdXrg20X9/fuu0yEGs3V6o75B/QMu0uo4VAkAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"飛竜の大杖"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Greatstaff"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 35"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"25"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"1.4"}],"text":"➸
+        Attack Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"10"}],"text":"■
+        Blunt Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+30%"}],"text":"■
+        Magic Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-5"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-5"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+280"}],"text":"■
+        Max Mana: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+100"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+10"}],"text":"■
+        Mana Regeneration: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+3"}],"text":"■
+        Stamina Regeneration: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-0.3"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","text":"■ Two
+        Handed"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"blue","text":"2
+        Stamina"}],"text":"■ Uses "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"red","extra":[{"color":"gray","text":" 20 Fire Damage"}],"text":"🔥"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Targeted
+        Fireball"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Right Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Ignite"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"130"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"80"}],"text":":
+        "}],"text":" Mana"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"7"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"10"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Life
+        Ender"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Left Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"200"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"150"}],"text":":
+        "}],"text":" Mana"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"10"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"1"}],"text":":
+        "}],"text":" Knockback"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"10"}],"text":":
+        "}],"text":" Radius"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Circular
+        Slash"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Right Click "}],"text":"|
+        "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"80"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"9"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"0.4"}],"text":":
+        "}],"text":" Knockback"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Radius"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty BLUE Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty BLUE Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"飛竜の力を宿した大杖"}'
+      - '{"italic":false,"color":"white","text":"炎を操り、全体攻撃を得意とする"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"aqua","text":"LEGENDARY"}],"text":"Tier:
+        "}],"text":" "}'
+      custom-model-data: 8
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/62W72/bRBjHXRBRmMTERgEJCclYkDd0VdI0atoXW1z7kljxj2K7HVUVWW5ySU0de3PclakrWsuPF0OAtKJVYwMmAeokpEpIvECCMTRe8W8stBMv9pYXvOKxEyd20hSQsOQkd5+758f3ubvcCYKIE88JgsSpSFC0AhI0RZVEpBCZDQo1LriXFdN2m9TMEpWixvx3lp9HwVd5jCrgRtO1LeyNKW/GiBe7xgRpAQlIVDVlDiH2/sqO+9Nb7/wVI0a7I8AG4DnpPJJzrxL+MxKKRj0vaUVaZBE7EidOd7u9T01dnEPEiYKMaFVR6Xw+RpzqOabfhFekcxev+jZjxEshJtKajApIRDKtcpIYOI4RL3QH0apKMyWNpQW6gHLT7QFx4pleZBySiad5zwxLy4tPhhww8yCgAMmziAcLKu1NjREne8ZlQZJ/GQ28vtwFJVFiSrOeYxkpHGQlMujcbze957OwrjJ6Y56TEavxaAHxOTpI8vn++H3dz/1Z858wB9sCBzowkqLmiCCS0YiAnTG5xQA/28UsyiNRQUEO8ZD0SGSgYqpCPLFUDgvGSzIiFpaoRO2Pr249+vZ2a2v/4Nqt1vb1g/37ra3d1taXB1/vHX5+AxZWovZo+2Mghzsftbavta5uHbx/9/d7O4ef/nh4/V1vxs+7h+990tq629q62dr+kCqHNQwyi1Q4PphhHgQM6jsZ4FeOEiBqqptyTw16luM5dXFkf2mD4qrUDKXScgGpUB/PySzN85AUozddwa5iwEqRy6uazBWKqsbwHFMCDMioGdiBTbRBGXXLcGFkZjw5RlX1hl6HRiqd9JoN3dKpmaz/u+nqDcNrTnmtim2bVXvdgqFANzfHOtHwXB5BWVgkHxUGj/JDoggcTyRDjlOZqOfMoOcxatWyK6vLemUVOry2o1eNtWZ/XAwnM/M8LWsKTyvFaGzHiBOE1SfBdDSQbF8cyfHJXhwZL4xyuIT+icKxxGlWkumCJGq9cyW8iEVaQMSpxHJvCftrNryzYEFxTLCwzhIDO1MpcTzft/DiIc4ughOw4O2XpxqwXyoFB+su5FmrgRTe9sAyvrhmOLhJ8pdMMp3pdKfJxNTDL34gadeFlEnW12mGTNQmMkdg5QLGVY+mxie7+MYdctZcs1xyzl7Hjk+TYSjodaMSsvx6OvlamCurhmmG+USUs7iGraaPzvSCun2HpJ2G7Qx2l4ICkjJuGqCBVTnSrqC/Da+lt1k22c+U9irxcSrZhy0drNexhR3dNWyrMyiSVnv64LB0xJJ9CTcwiNeV9kxyPDJCXbfJom5VcTXcO9+ESiamJwI3nXJWHt+59/j7bxJT5ESSzEO5O7p2sH42kb0CFpQVo+aSslFfcUnGNEAq6E/gK22aMFXdqWMXV30Ty7ppwmQykfZmg2nOP2kSWS/aTIS0nbUJHD0R5mnWJtko6GTQZlMRxHS2Zseir292MBEe147OgzdqmESgnTM0zInksDDh1BoeZ+af4uzB7nrs0AiU/dNlaH7DS8QYTmXN1B1SMfXmytD0jtN6+pgcsselkPR3/9FJBAeL/nD3A9K/CpIpEm57pAImsPvvkXdT/C/UvwP879eE3impGt7h9mBv+cGe2b3CUfCHcLKoqPJi7w6T26BAZhf+kIIuMCEVFNd2LsNtd4MauPZov37XdB2YsFSmNsubxN86xh3IXwsAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(5000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 5000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf29/V19HMJZkiNrlZyzs/NTcxLUbJSys3NT84vSlVITMnNzFNIrShQSM8sS1VQLchJrEwtis9LzE1VVchNBMqZGhgYKOkouaQCZZSsDPQMdIDG5BXn56QqWaUl5hSn6ij5F0CZtbHIVrv6OXs4+oUEMzBFA8UF4OIgMt7ThYHPNSLAOSgyOMTRB2QJG4M4XEmQa2CoZ5CrS7yPa5irj4MlAxhwMPDCVfg5+royKKslPd/a83LF5KcNSx43rX/cvOpx087HTfsfN6/WABkJtECTg0EUrsklEqjN0znexz/IlaE5WkktGeSV0tzEJKBvdJSASC01KLWwNLMotVjBpyxHwcgUKmysoGb+aNoCBWgIWimopemTFoYKYDM01NKAQQhmFmsqAYNFCDVYQiIDXBm4nP39gkN9HZ18XDkY+DyCQ4IiEYHpUK0UXJJYAoxDmBDQff7uwSX5RcD4AUYyRvjHH95YXFIE1BAdq1QbW8sAAF0+vv0iAgAA
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Zyusoniwatori2
+  delay: 0
+  level: 30
+  interval: 45
+  targetType: &id001
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: NONE
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: -61.0
+    z: 58.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 20.0
+    conditions: []
+  maxCount: 12
+  yaw: -173.39854431152344
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: reaperPvE
+  delay: 100
+  level: 3
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: -61.0
+    z: 51.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: Witcher2
+    count: 4
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: MagicalSkeletonPvE
+  delay: 50
+  level: 20
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: -61.0
+    z: 73.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: DispererBat2
+    count: 6
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  maxCount: 8
+  yaw: -173.5485076904297
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Witcher2
+  delay: 50
+  level: 1
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -61.0
+    z: 80.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: MagicalSkeletonPvE
+    count: 14
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  maxCount: 8
+  yaw: -176.39837646484375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SpadinePvE
+  delay: 50
+  level: 20
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 8.0
+    y: -61.0
+    z: 65.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: Zyusoniwatori2
+    count: 10
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  maxCount: 8
+  yaw: -179.99612426757812
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Zombieekill
+  delay: 0
+  level: 0
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 10.0
+    y: -61.0
+    z: 17.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+  fadeOut: 20
+  fadeIn: 5
+  subtitle: 古代文明の謎
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -15.0
+    y: -61.0
+    z: 53.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: reaperPvE
+    count: 1
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  title: §6ACT1-2 VICTORY
+  stay: 140
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 22.0
+    y: -61.0
+    z: 22.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerPlayerDeath
+    allowRetrigger: true
+    deathsRequired: 5
+    oneDeathPerPlayer: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: DispererBat2
+  delay: 50
+  level: 20
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -12.0
+    y: -61.0
+    z: 66.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: SpadinePvE
+    count: 6
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  maxCount: 8
+  yaw: -155.25111389160156
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: MagicalSkeletonPvE
+  delay: 50
+  level: 20
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 4.0
+    y: -61.0
+    z: 73.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: DispererBat2
+    count: 6
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  maxCount: 8
+  yaw: -173.5485076904297

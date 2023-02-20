@@ -1,0 +1,39 @@
+name: ガードスタンス
+lore:
+- '&f一定時間最大体力を増加させ'
+- '&f強力なヘルスリジェネ効果をまとう'
+- '&f移動速度が一時的に低下する'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: Shield
+damage:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+level:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

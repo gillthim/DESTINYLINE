@@ -1,0 +1,8 @@
+Jumpattack:
+  Cooldown: 1
+  Skills:
+  -  leap{velocity=270} @target 
+  -  delay 20
+  -  jump{velocity=0.6} @target
+  -  sound{s=item.trident.throw} @self
+  -  damage{amount="6*<caster.level>/5"} @EntitiesInRadius{r=3;target=player}

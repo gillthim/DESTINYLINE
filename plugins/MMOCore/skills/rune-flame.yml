@@ -1,0 +1,38 @@
+name: ルーンフレイム
+lore:
+- '&f詠唱後前方に炎の玉を3回放つ魔法'
+- '&fダメージの計算式に武器ダメージと'
+- '&f魔法ダメージが含まれる'
+- '&e{cooldown}s クールダウン'
+- '&9コスト {mana} {mana_name}'
+material: campfire
+damage:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+level:
+  base: 1
+  per-level: 1
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

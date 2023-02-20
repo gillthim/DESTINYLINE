@@ -1,0 +1,44 @@
+name: グランドヒール
+lore:
+- '&f少し長い詠唱の後'
+- '&f16m半径の味方最大5名に対して'
+- '&fヘルス回復効果をもたらす'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: Lime Concrete Powder
+damage:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+level:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+heal:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

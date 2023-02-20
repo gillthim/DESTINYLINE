@@ -1,0 +1,4 @@
+zyuso:
+  Skills:
+  - Damage{amount=1200;ignoreArmor=true}
+  - sound{s=minecraft:ambient.crimson_forest.mood;p=2;v=0.8} @target

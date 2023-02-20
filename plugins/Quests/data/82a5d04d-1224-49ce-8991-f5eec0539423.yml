@@ -1,0 +1,75 @@
+currentQuests:
+- custom7
+- custom26
+- custom32
+- custom8
+- custom33
+currentStages:
+- 0
+- 0
+- 0
+- 0
+- 0
+quest-points: 9
+questData:
+  custom7:
+    custom-objective-counts:
+    - 0
+  custom26:
+    custom-objective-counts:
+    - 4
+  custom32:
+    custom-objective-counts:
+    - 11
+  custom8:
+    custom-objective-counts:
+    - 0
+  custom33:
+    custom-objective-counts:
+    - 1
+completed-Quests:
+- custom23
+- custom24
+- custom27
+- custom28
+- custom29
+- custom30
+- custom31
+- custom9
+completedRedoableQuests:
+- custom29
+- custom28
+- custom9
+- custom24
+- custom31
+- custom23
+- custom30
+- custom27
+completedQuestTimes:
+- 1676896790159
+- 1676896729744
+- 1676898268763
+- 1676897404029
+- 1676900310066
+- 1676897454671
+- 1676898349710
+- 1676896640350
+amountsCompletedQuests:
+- custom29
+- custom28
+- custom9
+- custom24
+- custom31
+- custom30
+- custom23
+- custom27
+amountsCompleted:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 2
+- 2
+- 1
+lastKnownName: HoippuCream_0443

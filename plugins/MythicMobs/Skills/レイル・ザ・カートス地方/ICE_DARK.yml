@@ -1,0 +1,11 @@
+ICE_DARK:
+  Conditions:
+  - playernotwithin{d=20} false
+  Skills:
+  - potion{t=SLOW;d=60;l=5} @self
+  - delay 15
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#f242f2;radius=0.8;uel=true;hs=1;vs=2;a=100} @target
+  - delay 5
+  - Damage{amount=30;ignoreArmor=false} @target
+  - sound{s=minecraft:ambient.crimson_forest.mood;p=2;v=1.1} @target
+  - delay 40

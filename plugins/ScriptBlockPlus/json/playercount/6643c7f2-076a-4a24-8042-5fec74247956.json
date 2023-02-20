@@ -1,0 +1,77 @@
+[
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-242,66,8",
+    "amount": 10
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "world,-105,69,128",
+    "amount": 9
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "world,-105,74,128",
+    "amount": 10
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "world,-105,69,135",
+    "amount": 5
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "world,-118,71,108",
+    "amount": 156
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-250,71,28",
+    "amount": 33
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-250,71,22",
+    "amount": 11
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-250,71,12",
+    "amount": 6
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "world,-151,69,68",
+    "amount": 11
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-250,71,6",
+    "amount": 5
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-240,66,7",
+    "amount": 3
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "world,-121,71,106",
+    "amount": 1
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-236,71,12",
+    "amount": 12
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "tairiku,-236,71,6",
+    "amount": 6
+  },
+  {
+    "scriptkey": "INTERACT",
+    "blockcoords": "world,-91,74,128",
+    "amount": 4
+  }
+]

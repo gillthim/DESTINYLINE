@@ -1,0 +1,11 @@
+[
+  {
+    "normalscripts": [
+      "INTERACT|tairiku,-240,66,9",
+      "INTERACT|tairiku,-240,66,7"
+    ],
+    "deathscripts": [],
+    "invincible": true,
+    "projectile": false
+  }
+]

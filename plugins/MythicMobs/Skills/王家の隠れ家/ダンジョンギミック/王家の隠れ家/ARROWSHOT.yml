@@ -1,0 +1,5 @@
+CURSEPOINT:
+  Skills:
+  -  potion{type=SLOW;duration=60;level=3}
+  -  Damage{amount=5000;ignoreArmor=true}
+  -  sound{s=minecraft:ambient.crimson_forest.mood;p=1.6;v=2} @target

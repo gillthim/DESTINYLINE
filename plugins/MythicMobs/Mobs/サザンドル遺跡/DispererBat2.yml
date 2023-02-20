@@ -1,0 +1,45 @@
+DispererBat2:
+  Mobtype: BLAZE
+  Display: '&A&Lディスペラーバット Lv<mob.level>'
+  Health: 130
+  Disguise: BAT
+  Damage: 180
+  Options:
+    AlwaysShowName: true
+    Despawn: true
+    AttackSpeed: 0.8
+    MovementSpeed: 0.4
+    FollowRange: 30
+    PreventSunburn: true
+    PrevventItemPickup: true
+    PreventMobkillDrops: true
+    PreventOtherDrops: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  2 randomstroll
+  LevelModifiers:
+  -  Damage: 2
+  -  Health: 25
+  Drops:
+  -  mmoitems{type=MATERIAL;id=MASHROOMCHUNK} 1-2 10%
+  -  mmoitems{type=MATERIAL;id=FIREMUSHROOM} 1-5 70%
+  -  mmoitems{type=CONSUMABLE;id=TERIYAKINOKO} 1-2 20%
+  -  mmoitems{type=ARMOR;id=BLADE_HELMET} 1 0.3%
+  -  mmoitems{type=ARMOR;id=BLADE_ARMOR} 1 0.3%
+  -  mmoitems{type=ARMOR;id=BLADE_BOOTS} 1 0.3%
+  -  mmoitems{type=ARMOR;id=BLADE_LEGGINGS} 1 0.3%
+  -  mmoitems{type=BOW;id=NPCBOW} 1 0.5%
+  Skills:
+  -  skill{s=DispererFireBalls} @target ~onTimer:400
+  -  skill{s=DispererFire} @target ~onDamaged 0.1
+  -  skill{s=DispererCold} @target ~onTimer:320
+  -  currencygive{amount=700-1000} @pir{r=20} ~onDeath
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に絶望した！!'
+  -  '&l&4<DeadLog>&f<target.name>は邪教に殺された！!'
+  -  '&l&4<DeadLog>&f<mob.name>たちは<target.name>を呪い殺した！'

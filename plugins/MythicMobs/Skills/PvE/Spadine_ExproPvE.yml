@@ -1,0 +1,9 @@
+Spadine_ExproPvE:
+  Conditions: 
+  - playernotwithin{d=20} false
+  Skills:
+  - sound{s=minecraft:block.anvil.place;p=0.1}
+  - delay 15
+  - potion{t=SLOW;d=70;l=5}
+  - effect:particlering{p=largeexplode;a=20;vs=0.5;hs=0.5;s=0;y=0.3;points=10;radius=3} @Self
+  - damage{a=1500;i=true;target=players} @EIR{r=5;target=players}

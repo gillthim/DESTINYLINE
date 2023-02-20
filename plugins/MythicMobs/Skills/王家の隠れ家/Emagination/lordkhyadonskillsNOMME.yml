@@ -1,0 +1,819 @@
+garoBolt:   #GARO  #######################################################################
+  Conditions:
+  - offgcd true
+  - stance{s=notcasting} true
+  - targetwithin 50
+  - targetinlineofsight true
+  Skills:
+  - variableadd{var=caster.combor;amount=1} @Self
+  - setstance{stance=casting} @self
+  - state{s=attack1;li=2;lo=4;n=false;frame=0} @self
+  - potion{type=SLOW;duration=2;lvl=6;force=true} @self
+  - potion{type=SLOW;duration=25;lvl=7;delay=2;force=true} @self
+  - delay 16
+  - sound{s=custom.khyadon.attack;p=1;v=1.5} @selflocation 0.75
+  - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @self
+  - missile{bulletType=MYTHICITEM;material=va1;oE=gbxd;onTick=gb-Tick;onHit=gb-Hit;v=19;i=1;hR=1;vR=1;g=0.2;syo=1.5;HitNonPlayers=true;in=50}
+  - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @self
+  - sound{s=custom.spell.darlight;p=1;v=2} @selflocation
+  - delay 10
+  - setstance{stance=notcasting} @self
+  - skill{s=garoBolt2} @target 0.55
+garoBolt2:
+  Conditions:
+  - offgcd true
+  - stance{s=notcasting} true
+  - targetwithin 50
+  - targetinlineofsight true
+  Skills:
+  - setstance{stance=casting} @self
+  - variableadd{var=caster.combor;amount=1} @Self
+  - state{s=attack2;li=2;lo=4;n=false;frame=0} @self
+  - potion{type=SLOW;duration=2;lvl=6;force=true} @self
+  - potion{type=SLOW;duration=25;lvl=7;delay=2;force=true} @self
+  - delay 16
+  - sound{s=custom.khyadon.attack;p=1;v=1.5} @selflocation 0.75
+  - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @self
+  - missile{bulletType=MYTHICITEM;material=va1;oE=gbxd;onTick=gb-Tick;onHit=gb-Hit;v=19;i=1;hR=1;vR=1;g=0.2;syo=1.5;HitNonPlayers=true;in=50}
+  - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @self
+  - sound{s=custom.spell.darlight;p=1;v=2} @selflocation
+  - sound{s=custom.spell.darlight;p=1;v=2} @selflocation
+  - delay 9
+  - setstance{stance=notcasting} @self
+  - skill{s=garoBolt3} @target 0.55
+garoBolt3:
+  Conditions:
+  - offgcd true
+  - stance{s=notcasting} true
+  - targetwithin 50
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>5} true
+  Skills:
+  - look{headOnly=false;immediately=true} @Target
+  - setstance{stance=casting} @self
+  - variableadd{var=caster.combor;amount=1} @Self
+  - state{s=attack3;li=2;lo=4;n=false;frame=0} @self
+  - potion{type=SLOW;duration=2;lvl=6;force=true} @self
+  - potion{type=SLOW;duration=25;lvl=7;delay=2;force=true} @self
+  - sound{s=custom.khyadon.attack2;p=1;v=1.5;delay=5} @selflocation 1
+  - delay 19
+  - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @self
+  - missile{bulletType=MYTHICITEM;material=va2;oE=gbxd;onTick=vait;onHit=vahit1;v=19;i=1;hR=1;vR=1;g=0.2;syo=1.5;HitNonPlayers=true;in=50;onEnd=vaend}
+  - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @self
+  - sound{s=custom.spell.darmed;p=1;v=2} @selflocation
+  - gcd{ticks=40}
+  - delay 9
+  - setstance{stance=notcasting} @self
+gb-Tick:
+  Skills:
+  - effect:particles{p=smoke;y=0;amount=3;speed=0.02;hS=0.2;vS=0.2;size=2} @Origin
+  - effect:particles{p=reddust;color=#000000;y=0.2;amount=3;speed=1;hS=0.4;vS=0.2;size=0.3} @Origin
+gb-Hit:
+  Skills:
+  - effect:particles{p=largeexplode;amount=1;speed=0.6;hS=0.2;vS=0.2;repeat=2;repeatinterval=2} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=120;radius=1;size=1} @origin
+  - effect:particles{p=reddust;color=#000000;y=0.5;amount=57;speed=0.1;hS=0.7;vS=0.3} @Origin
+  - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
+  - potion{type=SLOW;duration=9;lvl=2} @EntitiesNearOrigin{r=4}
+  - potion{type=SLOW;duration=18;lvl=1;delay=9;force=true} @EntitiesNearOrigin{r=4}
+  - sound{s=entity.player.attack.crit;volume=2;pitch=0.6;cooldown=1} @origin
+  - sound{s=custom.spell.darkhit;p=1;v=1.5} @origin
+gbxd:
+  Skills:
+  - damage{a=1000} @EntitiesNearOrigin{radius=4}
+  - damage{a=2000;ignorearmor=true} @EntitiesNearOrigin{radius=4}
+  - effect:particles{p=largeexplode;amount=1;speed=0.6;hS=0.2;vS=0.2;repeat=2;repeatinterval=2} @origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @Origin
+  - effect:sound{s=block.beacon.deactivate;volume=0.3;pitch=0.1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=120;radius=1;size=1} @origin
+  - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=1.6} @origin
+  - potion{type=SLOW;duration=29;lvl=2} @EntitiesNearOrigin{radius=4}
+vait1:
+  Skills:
+  - effect:particles{p=smoke;y=0;amount=3;speed=0.02;hS=0.2;vS=0.2;size=2} @Origin
+  - effect:particles{p=reddust;color=#000000;y=0.2;amount=3;speed=1;hS=0.4;vS=0.2;size=5} @Origin
+  - pull{velocity=1;to=true} @EntitiesNearOrigin{r=2.7}
+vahit1:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;y=0.5;amount=57;speed=0.1;hS=0.7;vS=0.3} @Origin
+  - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
+  - sound{s=custom.spell.agujero.hit;v=1} @origin
+  - damage{a=2600;ignorearmor=true} @EntitiesNearOrigin{r=2;target=monsters;ignore=players}
+  - potion{type=SLOW;duration=10;lvl=2;p=false} @EntitiesNearOrigin{r=1}
+  - potion{type=SLOW;duration=10;lvl=1;delay=10;p=false} @EntitiesNearOrigin{r=1}
+  - sound{s=entity.player.attack.crit;volume=2;pitch=0.6;cooldown=1} @EntitiesNearOrigin{r=1}
+  - effect:bloodyScreen{d=30} @EntitiesNearOrigin{r=1.6}
+vaend1:
+  Skills:
+  - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @Origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @Origin
+  - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+  - sound{s=custom.spell.agujero.hit;v=1} @origin
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=0.2} @origin
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=0.1} @origin
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=0.5} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=2;size=3} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=30;radius=1.3;size=10;repeat=16;repeatinterval=2} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=2.6;delay=2;size=3} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3.2;delay=4;size=3} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3.8;delay=6;size=2} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=4.8;delay=6;size=1.2} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=6;delay=6;size=0.8} @origin
+  - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=0.6} @origin
+  - sound{s=custom.spell.darkhit2;p=1;v=1.5} @origin
+  - damage{a=2000;ignorearmor=false} @EntitiesNearOrigin{r=2.2}
+  - damage{a=2500;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
+  - sound{s=entity.player.attack.crit;volume=2;pitch=0.6;cooldown=1} @origin
+  - totem{charges=1;onStart=ueco}
+  - summon{type=vac1;amount=1;radius=0} @origin
+  - potion{type=SLOW;duration=35;lvl=0;p=false} @EntitiesNearOrigin{r=3}
+  - potion{type=CONFUSION;duration=10;lvl=2;p=false} @EntitiesNearOrigin{r=3}
+uecoab1:
+  Cooldown: 0
+  Skills:
+  - pull{velocity=0.5;to=true} @EntitiesNearOrigin{r=5;ignore=samefaction}
+  - potion{type=WEAKNESS;duration=10;lvl=0;p=false;force=true} @EntitiesNearOrigin{r=5}
+  - potion{type=CONFUSION;duration=30;lvl=0;p=false} @EntitiesNearOrigin{r=5}
+  - potion{type=SLOW_FALLING;duration=5;lvl=1;p=false;force=true} @EntitiesNearOrigin{r=3.5}
+garomelee1:
+  Cooldown: 2
+  Conditions:
+  - stance{s=notcasting} true
+  Skills:
+  - setstance{stance=casting} @self
+  - equip{item=imbootsgaro2:1}
+  - state{s=attackmelee1b;li=1;lo=4;n=false} @self
+  - variableadd{var=caster.combor;amount=2} @Self
+  - randomskill{s=meleesound1,meleesound2;sync=true} @Self
+  - delay 3
+  - effect:particles{p=reddust;color=#000000;amount=3;speed=15;hS=0.2;vS=0.2;size=0.8;repeat=28;repeatinterval=1} @ModelPart{m=gononeita;p=agujero;offset=LOCAL;y=0}
+  - delay 10
+  - sound{s=custom.spell.darkhit;v=1} @SelfLocation
+  - sound{s=entity.player.attack.crit;v=1;pitch=0.7}  @LivingInCone{a=50.0;r=3;rot=0.0}
+  - Aura{auraName=meleefire;onStacrt=damagemeleefirestart;onTick=damagemeleefire;interval=22;duration=88;Charges=5} @LivingInCone{a=40.0;r=3;rot=0.0} 0.6
+  - damage{amount=2000;ignorearmor=true} @LivingInCone{a=40.0;r=3;rot=0.0}
+  - damage{amount=2500;ignorearmor=false} @LivingInCone{a=40.0;r=3;rot=0.0}
+  - damage{amount=3000;ignorearmor=false} @LivingInCone{a=40.0;r=3;rot=78.0}
+  - skill{s=meleehitwave;sync=true} @Target
+  - delay 8
+  - equip{item=imbootsgaro:1}
+  - setstance{stance=notcasting} @self
+meleesound1:
+  Cooldown: 2
+  Skills:
+  - sound{s=custom.khyadon.meelee;v=1} @SelfLocation 1
+meleesound2:
+  Cooldown: 2
+  Skills:
+  - sound{s=custom.khyadon.forceattack;v=1} @SelfLocation 1
+garomelee2:
+  Cooldown: 2
+  Conditions:
+  - stance{s=notcasting} true
+  Skills:
+  - equip{item=imbootsgaro2:1}
+  - setstance{stance=casting} @self
+  - state{s=attack2;li=1;lo=4;n=false} @self
+  - variableadd{var=caster.combor;amount=2} @Self
+  - randomskill{s=meleesound1,meleesound2;sync=true} @Self
+  - delay 3
+  - effect:particles{p=reddust;color=#000000;amount=3;speed=15;hS=0.2;vS=0.2;size=0.8;repeat=28;repeatinterval=1} @ModelPart{m=gononeita;p=agujero;offset=LOCAL;y=0}
+  - delay 10
+  - sound{s=custom.spell.darkhit;v=1} @SelfLocation
+  - sound{s=entity.player.attack.crit;v=1;pitch=0.7}  @LivingInCone{a=50.0;r=3;rot=0.0}
+  - Aura{auraName=meleefire;onStacrt=damagemeleefirestart;onTick=damagemeleefire;interval=22;duration=88;Charges=5} @LivingInCone{a=40.0;r=3;rot=0.0} 0.55
+  - damage{amount=2000;ignorearmor=true} @LivingInCone{a=40.0;r=3;rot=0.0}
+  - damage{amount=2500;ignorearmor=false} @LivingInCone{a=40.0;r=3;rot=0.0}
+  - damage{amount=3000;ignorearmor=false} @LivingInCone{a=40.0;r=3;rot=78.0}
+  - skill{s=meleehitwave;sync=true} @target
+  - delay 8
+  - equip{item=imbootsgaro:1}
+  - setstance{stance=notcasting} @self
+meleehitwave:
+  Skills:
+  - projectile{onTick=meleehittick;v=15;i=1;hR=1;vR=1;g=2.5;sB=true;md=60;mr=7;syo=-0.5;tyo=3.3} @Cone{angle=120;points=36;range=90;rotation=360}
+meleehittick:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=2;speed=0.02;hS=0.3;vS=0.3;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=1;speed=10;hS=0.1;vS=0.1;size=1.5} @Origin
+damagemeleefirestart:
+  Skills:
+  - effect:particles{particle=spell_mob;color=#000000;amount=35;hS=1;vS=0.4;speed=0.1;sideOffset=0}
+  - sound{s=entity.generic.burn;v=1} @Origin
+  - sound{s=custom.spell.darkhit2;v=1} @Origin
+  - Damage{amount=3000;ignorearmor=true} @Trigger
+damagemeleefire:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=4;speed=10;hS=0.3;vS=0.7;y=1.5;size=1.5;repeat=22;repeatinterval=1} @Trigger
+  - effect:particles{particle=spell_mob;color=#000000;amount=5;hS=1;vS=0.4;speed=0.1;sideOffset=0;repeat=22;repeatinterval=1} @Trigger
+  - sound{s=entity.player.hurt_on_fire;v=1} @Origin
+  - Damage{amount=2000;ignorearmor=true} @Trigger
+garodamage1:
+  Cooldown: 1
+  Skills:
+   - state{mid=gononeita;s=hurt;n=false;li=0;lo=2;cooldown=1} @self
+   - sound{s=custom.khyadon.hurt;volume=1;pitch=0.9to1.2} @SelfLocation 0.8
+garodamage2:
+  Cooldown: 1
+  Skills:
+   - state{mid=gononeita;s=hurt2;n=false;li=0;lo=2;cooldown=1} @self
+   - sound{s=custom.khyadon.hurt;volume=1;pitch=0.9to1.2} @SelfLocation 0.8
+garoshockwaveA:
+  Cooldown: 1
+  Conditions:
+  - stance{s=notcasting} true
+  - targetwithin{d=50} true
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>30} true
+  - variableInRange{var=caster.combor;value=>45} castinstead garoshockwave1
+  Skills:
+  - skill{s=garoshockwave1;sync=true} 0.4
+garoshockwave1:
+  Cooldown: 25
+  Conditions:
+  - offgcd true
+  - stance{s=notcasting} true
+  - targetwithin{d=10} true
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>29} true
+  Skills:
+  - equip{item=imbootsgaro2:1}
+  - look{headOnly=false;immediately=true} @Target
+  - stun{d=20;f=false} @Self
+  - setstance{stance=casting} @self
+  - variablesubtract{var=caster.combor;amount=1} @Self 0
+  - effect:particles{particle=dragon_breath;amount=3;hS=0.1;vS=0.01;speed=0.05;repeat=30;repeatinterval=1;sideOffset} @ModelPart{m=gononeita;p=RABot;offset=LOCAL;y=-0.4}
+  - effect:particlesphere{p=smoke;amount=15;radius=0.5;size=1;speed=0.1} @ModelPart{m=gononeita;p=RABot;offset=LOCAL;y=-0.4}
+  - state{s=shockwave1;li=2;lo=4;n=false;frame=0} @self
+  - potion{type=SLOW;duration=35;lvl=6} @self
+  - sound{s=custom.khyadon.forcecast;p=1;v=1.5;delay=5} @selflocation 1
+  - delay 17
+  - sound{s=custom.spell.nullzone;p=1;v=2} @selflocation
+  - delay 4
+  - skill{s=shockwavegr;sync=true}
+  - effect:sound{s=block.conduit.deactivate;volume=2.5;pitch=1.9} @origin
+  - effect:particles{particle=flash;amount=1;hS=0.1;vS=0.01;speed=0.05;repeat=2;repeatinterval=1;ForwardOffset=1.2} @origin
+  - sound{s=custom.spell.darkhit2;p=1;v=2} @selflocation
+  - effect:particles{particle=smoke;amount=25;hS=0.3;vS=0.2;speed=0.05;y=1.5} @self
+  - projectile{onTick=debugxd;oE=totemvac6;v=11.2;i=1;hR=1.2;vR=1;g=0;syo=1.3;sfo=2.4;sB=false;sE=false;HitNonPlayers=false;in=50;md=200;tyo=1.5;mr=35} @Forward{f=15;y=0.0}
+  - projectile{bulletType=MOB;mob=vac6;onTick=shockwavetick2;v=11;i=1;hR=1.2;vR=1;g=0;syo=1.3;sfo=2.4;sB=false;sE=false;HitNonPlayers=false;in=50;md=70;tyo=1.5;mr=30} @Forward{f=15;y=0.0}
+  - projectile{bulletType=MOB;mob=vac7;v=111;i=1;hR=1.2;vR=1;g=0;syo=1.3;sfo=2.4;sB=false;sE=false;HitNonPlayers=false;in=50;md=70;tyo=1.5;mr=30} @Forward{f=15;y=0.0}
+  - missile{bulletType=MYTHICITEM;material=va2;oE=gbxd;onTick=vait;onHit=vahit1;v=19;i=1;hR=1;vR=1;g=0.2;syo=1.5;HitNonPlayers=true;in=50;onEnd=vaend} 0
+  - effect:particles{particle=smoke;amount=45;hS=0.3;vS=0.2;speed=0.05;y=1.5;size=3;forwardOffset=0.2} @self
+  - sound{s=custom.spell.darmed;p=1;v=2} @selflocation
+  - gcd{ticks=75}
+  - delay 9
+  - equip{item=imbootsgaro:1}
+  - setstance{stance=notcasting} @self
+debugxd:
+  Skills:
+  - effect:particles{p=dragon_breath;y=0;amount=4;speed=0.01;hS=0.1;vS=0.1;size=0.6} @Origin
+totemvac6:
+  Skills:
+  - totem{charges=2;onHit=vac6end;i=2;hR=1;vR=4;md=20;hp=true;hnp=true} @Origin
+vac6end:
+  Skills:
+  - Aura{auraName=imaginafire;onTick=imaginafire;interval=22;duration=124;Charges=5} @EntitiesNearOrigin{r=3}
+  - signal{s=DIEVAC6} @EntitiesNearOrigin{r=5}
+  - potion{type=SLOW;duration=20;lvl=7;hasParticles=false;hasIcon=false} @EntitiesNearOrigin{r=4}
+  - potion{type=SLOW;duration=40;lvl=0;hasParticles=false;hasIcon=false;delay=20;force=true} @EntitiesNearOrigin{r=4}
+  - potion{type=SLOW_DIGGING;duration=60;lvl=3;hasParticles=false;hasIcon=false;force=true} @EntitiesNearOrigin{r=4}
+  - potion{type=CONFUSION;duration=150;lvl=3;hasParticles=false;hasIcon=false;force=true} @EntitiesNearOrigin{r=4}
+  - stun{d=20;f=false} @EntitiesNearOrigin{r=4}
+  - actionmessage{m="&E&LSTUNNED!!";delay=0} @EntitiesNearOrigin{r=3.5}
+  - sound{s=custom.spell.slam;p=1;v=2} @Origin
+  - damage{a=2000;ignorearmor=true} @EntitiesNearOrigin{r=4}
+  - damage{a=2000} @EntitiesNearOrigin{r=4}
+  - sudoskill{s=vac6end2;cat=false} @EntitiesNearOrigin{r=4;limit=1;sort=NEAREST}
+vac6end2:
+  Skills:
+  - projectile{onTick=shockwavevac6tick4;v=15;i=1;hR=0.5;vR=1;g=0.5;sB=true;sE=false;md=60;mr=20;syo=0.2;tyo=0;sso=0} @Cone{angle=360;points=72;range=15;rotation=0}
+  - projectile{onTick=shockwavevac6tick2b;v=15;i=1;hR=0.5;vR=1;g=0.5;sB=true;sE=false;md=60;mr=20;syo=0.2;tyo=0;sso=0} @Cone{angle=360;points=72;range=15;rotation=0}
+  - sound{s=custom.spell.slam;p=1;v=2} @Origin
+shockwavevac6tick:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=5;speed=0.01;hS=0.1;vS=0.1;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=2;speed=1;hS=0.1;vS=0.1;size=1.5} @Origin
+shockwavevac6tick2:
+  Skills:
+  - effect:particles{p=cloud;y=0;amount=2;speed=0.01;hS=0.1;vS=0.1;size=0.01} @Origin
+  - effect:particles{p=explosion_large;y=0;amount=1;speed=0.2;hS=0.3;vS=0.4;y=0} @Origin
+shockwavevac6tick2b:
+  Skills:
+  - effect:particles{p=cloud;y=0;amount=2;speed=0.01;hS=0.1;vS=0.1;size=0.01} @Origin
+shockwavevac6tick3:
+  Skills:
+  - projectile{onTick=shockwavevac6tick4;v=9;i=1;hR=0.5;vR=1;g=1;sB=true;sE=false;md=60;mr=20;syo=0.05;tyo=0;sso=0} @Cone{angle=360;points=8;range=15;rotation=0}
+  - sound{s=block.grass.break;p=0.2;v=2} @Origin
+  - damage{a=0.5;preventknockback=true} @EntitiesNearOrigin{r=3}
+shockwavevac6tick4:
+  Skills:
+  - effect:particles{p=block_crack;m=dirt;y=0;amount=2;speed=0.2;hS=0.3;vS=0.4} @Origin
+shockwavetick2:
+  Skills:
+  - damage{a=2000;ignorearmor=false;cooldown=0.3} @EntitiesNearOrigin{r=3}
+  - damage{a=2800;ignorearmor=true;cooldown=0.3} @EntitiesNearOrigin{r=3}
+  - pull{velocity=8.1;to=true} @EntitiesNearOrigin{r=3;ignore=samefaction}
+  - actionmessage{m="&E&LKNOCKED AIRBORNE!";cooldown=0.5} @EntitiesNearOrigin{r=3}
+shockwavegr:
+  Skills:
+  - projectile{onTick=shockwavetick;v=9;i=1;hR=0.5;vR=1;g=0.2;sB=true;sE=false;md=60;mr=20;syo=1.3;tyo=0;sso=1} @Cone{angle=45;points=360;range=15;rotation=0}
+  - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+shockwavetick:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=2;speed=0.02;hS=0.3;vS=0.3;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=2;speed=100;hS=0.1;vS=0.1;size=1.5} @Origin
+garochuvatr0:
+  Cooldown: 1
+  Conditions:
+  - stance{s=notcasting} true
+  - targetwithin{d=50} true
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>14} true
+  - variableInRange{var=caster.combor;value=>20} castinstead garochuvatr
+  Skills:
+  - skill{s=garochuvatr;sync=true} 0.6
+garochuvatr:
+  Cooldown: 38
+  Conditions:
+  - offgcd true
+  - stance{s=notcasting} true
+  - targetwithin{d=50} true
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>20} true ##### ROTO
+  Skills:
+  - gcd{ticks=200}
+  - sound{s=custom.spell.shadow1;p=1;v=2} @selflocation
+  - sound{s=custom.spell.shockwavecast;p=1;v=1.3} @selflocation
+  - sound{s=custom.spell.attack2;p=1;v=1.3} @selflocation
+  - state{s=cast;li=2;lo=4;n=false;frame=0;speed=1} @self 
+  - setstance{stance=casting} @self
+  - throw{velocity=3;velocityY=1} @EntitiesNearOrigin{r=5}
+  - throw{velocity=4;velocityY=1} @EntitiesNearOrigin{r=3}
+  - look{headOnly=false;immediately=true} @Target
+  - effect:particles{p=reddust;color=#000000;amount=150;speed=0.6;hS=3;vS=3;y=1.5} @self
+  - potion{type=SLOW;duration=60;lvl=7;hasParticles=false;hasIcon=false} @self
+  - orbital{onTick=chuvaTick;points=70;interval=1;r=2.5;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100} @self 1
+  - orbital{onTick=chuvaTick;points=67;interval=1;r=2.5;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=0.62;delay=4} @self 
+  - orbital{onTick=chuvaTick;points=65;interval=1;r=1.5;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=1.25;delay=8} @self
+  - orbital{onTick=chuvaTick;points=62;interval=1;r=1.5;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=1.87;delay=12} @self
+  - orbital{onTick=chuvaTick;points=55;interval=1;r=1.5;duration=34;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=2.49;delay=16} @self
+  - orbital{onTick=chuvaTick;points=50;interval=1;r=1.5;duration=33;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=3.11;delay=20} @self
+  - orbital{onTick=chuvaTick;points=45;interval=1;r=1.5;duration=32;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=3.73;delay=24} @self
+  - orbital{onTick=chuvaTick;points=40;interval=1;r=1.5;duration=31;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=4.35;delay=28} @self
+  - orbital{onTick=chuvaTick;points=35;interval=1;r=1.5;duration=30;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=4.97;delay=32} @self
+  - orbital{onTick=chuvaTick;points=30;interval=1;r=1.5;duration=29;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=5.59;delay=34} @self
+  - delay 43
+  - skill{s=chuvaplode;sync=true} 
+  - delay 43
+  - setstance{stance=notcasting} @self
+chuvaplode:
+  Skills:
+  - sound{s=custom.spell.cucast;p=1;v=2} @selflocation
+  - sound{s=custom.spell.darmed;p=1;v=2} @selflocation
+  - sound{s=custom.spell.darlight;p=1.4;v=1.5;delay=3} @selflocation
+  - sound{s=custom.spell.darlight;p=1.2;v=1.5;delay=5} @selflocation
+  - sound{s=custom.spell.darlight;p=1.7;v=1.5;delay=7} @selflocation
+  - sound{s=custom.spell.darlight;p=1;v=1.5;delay=9} @selflocation
+  - projectile{onTick=chuvaplodetick;v=6;i=1;hR=1;vR=1;g=0;md=41;mr=8;syo=3.5;tyo=3.7} @Ring{radius=6;points=56}
+  - projectile{onStart=triadstart;onTick=nul-Tick0b;v=5;i=1;hR=1;vR=1;g=0;md=41;mr=2;syo=3.5;tyo=3.7} @Cone{angle=360;points=18;range=2;rotation=360}
+  - projectile{onTick=nul-tick;v=10;i=1;hR=1;vR=1;g=0;md=41;mr=8;syo=3.5;tyo=3.7} @Ring{radius=6;points=56}
+  - projectile{bulletType=MYTHICITEM;material=va2;onStart=triadstart;onTick=nul-Tick;v=23;i=1;hR=1;vR=1;g=0;syo=1.4;md=80;mr=150} @Forward{f=5;y=90.0}
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=6;speed=0.02;hS=2;vS=2;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=15;speed=2;hS=1.8;vS=1.5;size=1.5} @Origin
+  - delay 70
+  - skill{s=chuvasuperplode;sync=true;repeat=20;repeatInterval=5} @RLNTE{a=1;r=18;s=5;minr=1}
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 0.8
+  - delay 30
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 0.9
+  - delay 30
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 1
+  - delay 30
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 0.9
+  - skill{s=chuvaploxd;sync=true} 0.6
+chuvaploxd:
+  Skills:
+  - skill{s=chuvasuperplode;sync=true;repeat=10;repeatInterval=10} @RLNTE{a=1;r=18;s=5;minr=1}
+  - skill{s=chuvasuperplode;sync=true;repeat=10;repeatInterval=10;delay=10} @RLNTE{a=1;r=18;s=5;minr=1}
+  - skill{s=chuvasuperplode;sync=true;repeat=10;repeatInterval=10;delay=5} @RLNTE{a=1;r=18;s=5;minr=1}
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 0.6
+  - delay 30
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 0.7
+  - delay 30
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 1
+  - delay 30
+  - skill{s=chuvasuperplode;sync=true} @PLIR{r=22} 0.9
+chuvaplodetick:
+  Skills:
+  - effect:particles{p=dragon_breath;color=#fff400;y=0;amount=2;speed=0.02;hS=0.3;vS=0.2;size=2} @Origin
+chuvaTick:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=6;speed=0.02;hS=0.3;vS=0.3;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=2;speed=10;hS=0.3;vS=0.3;size=1.5} @Origin
+chuvaTick2:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=1;speed=10;hS=0.3;vS=0.3;size=2} @Origin
+chuvasuperplode:
+  Skills:
+  - projectile{type=METEOR;bulletType=MYTHICITEM;material=va1;onStart=triadstart;onEnd=chuvaplodehit;onTick=chuvaTick2;v=45;i=1;hR=1;vR=1;g=2;md=80;mr=150;hfs=40;sB=true;delay=5}
+  - projectile{type=METEOR;onEnd=marcachuvaplode;v=2;i=1;hR=0.5;vR=1;g=10;md=160;mr=200;hfs=15;sB=true}
+  - sound{s=custom.spell.darmed;p=1;v=2} @selflocation
+  - sound{s=custom.spell.darlight;p=1.4;v=1.5;delay=3} @selflocation
+  - sound{s=custom.spell.darlight;p=1.2;v=1.5;delay=5} @selflocation
+marcachuvaplode:
+  Skills:
+  - effect:particlering{particle=reddust;d=40;radius=2;points=40;amount=3;hS=0;vS=0;speed=0.3;size=1.3;yOffset=-0.4} @Origin
+  - randomskill{s=marcachuvaplodeA;marcachuvaplodeB;marcachuvaplodeC;sync=true} @origin
+marcachuvaplodeA:
+  Skills:  
+  - sound{s=custom.spell.cutravel;p=1;v=2.5} @origin
+marcachuvaplodeB:
+  Skills:  
+  - sound{s=custom.spell.cutravel;p=0.7;v=2.5} @origin
+marcachuvaplodeC:
+  Skills:  
+  - sound{s=custom.spell.cutravel;p=1.3;v=2.5} @origin
+chuvaplodehit:
+  Skills:
+  - summon{type=vac5;amount=1;radius=0} @Origin
+  - damage{a=2000} @EntitiesNearOrigin{r=4}
+  - damage{a=2800;ignorearmor=true} @EntitiesNearOrigin{r=4}
+  - effect:particles{p=largeexplode;amount=1;speed=0.6;hS=0.2;vS=0.2;repeat=2;repeatinterval=2} @origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @Origin
+  - effect:particles{p=flash;color=#fff400;y=0;amount=10;speed=0.5;hS=1.8;vS=0.3} @Origin
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=0.1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=120;radius=1;size=1} @origin
+  - sound{s=entity.dragon_fireball.explode;volume=1;pitch=1.2} @origin
+  - potion{type=SLOW;duration=29;lvl=2} @EntitiesNearOrigin{r=4}
+  - potion{type=WITHER;duration=70;lvl=1} @EntitiesNearOrigin{r=4}
+  - Aura{auraName=chuvaplodetoxic;onTick=damagechupaplodetoxic;interval=15;duration=80;Charges=5} @EntitiesNearOrigin{r=4}
+chuvaplodehitwave:
+  Skills:
+  - projectile{onTick=chuvaplodehittick;v=15;i=1;hR=1;vR=1;g=1.5;sB=true;md=60;mr=7;syo=-0.5;tyo=0.3} @Cone{angle=180;points=56;range=90;rotation=360}
+chuvaplodehittick:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=2;speed=0.02;hS=0.3;vS=0.3;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=1;speed=10;hS=0.1;vS=0.1;size=1.5} @Origin
+damagechupaplodetoxic:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=4;speed=10;hS=0.3;vS=0.7;y=1.5;size=1.5;repeat=15;repeatinterval=1}
+garotriadtr0:
+  Cooldown: 1
+  Conditions:
+  - stance{s=notcasting} true
+  - targetwithin{d=50} true
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>7} true
+  - variableInRange{var=caster.combor;value=>14} castinstead garotriadtr
+  Skills:
+  - skill{s=garotriadtr;sync=true} 0.6
+garotriadtr:
+  Cooldown: 15 
+  Conditions:
+  - offgcd true
+  - stance{s=notcasting} true
+  - targetwithin{d=50} true
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>7} true
+  Skills:
+  - gcd{ticks=160}
+  - state{s=cast2;li=2;lo=4;n=false;frame=0;speed=1} @self 
+  - setstance{stance=casting} @self
+  - throw{velocity=10;velocityY=1} @EntitiesNearOrigin{r=5}
+  - throw{velocity=12;velocityY=1} @EntitiesNearOrigin{r=3}
+  - look{headOnly=false;immediately=true} @Target
+  - actionmessage{m="&f&cLord Khyadon &fchannels a spell!"} @Target
+  - effect:particles{p=reddust;color=#000000;amount=150;speed=0.6;hS=3;vS=3;y=1.5} @self
+  - potion{type=SLOW;duration=60;lvl=5;hasParticles=false;hasIcon)false} @self
+  - projectile{bulletType=MYTHICITEM;material=va1;onStart=triadstart;onTick=triadorbitick2;v=2;i=1;hR=1;vR=1;g=0;syo=1.4;md=41;sso=1.5} @Forward{f=5;y=90.0} #
+  - projectile{bulletType=MYTHICITEM;material=va1;onStart=triadstart;onTick=triadorbitick2;v=2;i=1;hR=1;vR=1;g=0;syo=1.1;md=49;sso=-1.5} @Forward{f=5;y=90.0}
+  - projectile{bulletType=MYTHICITEM;material=va1;onStart=triadstart;onTick=triadorbitick2;v=2;i=1;hR=1;vR=1;g=0;syo=1.9;md=53;sso=0.8;sfo=-1.8} @Forward{f=5;y=90.0}
+  - projectile{bulletType=MYTHICITEM;material=va1;onStart=triadstart;onTick=triadorbitick2;v=2;i=1;hR=1;vR=1;g=0;syo=2.3;md=60;sso=-0.7;sfo=-2} @Forward{f=5;y=90.0}
+  - orbital{onTick=triadorbitick;points=70;interval=1;r=4;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100} @self 1
+  - orbital{onTick=triadorbitick;points=67;interval=1;r=4;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=0.62;delay=14} @self 
+  - orbital{onTick=triadorbitick;points=65;interval=1;r=4;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=1.25;delay=8} @self
+  - orbital{onTick=triadorbitick;points=62;interval=1;r=4;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=1.87;delay=12} @self
+  - orbital{onTick=triadorbitick;points=58;interval=1;r=4;duration=34;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=2.49;delay=16} @self
+  - orbital{onTick=triadorbitick;points=55;interval=1;r=4;duration=31;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=3.11;delay=20} @self
+  - orbital{onTick=triadorbitick;points=52;interval=1;r=4;duration=28;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=3.73;delay=24} @self
+  - orbital{onTick=triadorbitick;points=48;interval=1;r=4;duration=26;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=4.35;delay=28} @self
+  - orbital{onTick=triadorbitick;points=44;interval=1;r=4;duration=35;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=4.97;delay=32} @self
+  - orbital{onTick=triadorbitick;points=40;interval=1;r=4;duration=25;charges=1;hp=false;StopAtEntity=false;StopAtBlock=false;oy=1.2;ry=3.14;rz=1.25;vy=100;rx=5.59;delay=34} @self
+  - delay 7
+  - jump{velocity=0.5}
+  - potion{type=LEVITATION;duration=17;lvl=2;p=false} @self
+  - effect:particles{particle=dragon_breath;amount=3;hS=0.1;vS=0.01;speed=0.05;repeat=30;repeatinterval=1;sideOffset} @ModelPart{m=gononeita;p=LABottom;offset=LOCAL;x=0.7;y=-0.4;z=-0.5}
+  - effect:particles{particle=dragon_breath;amount=3;hS=0.1;vS=0.01;speed=0.05;repeat=30;repeatinterval=1;sideOffset} @ModelPart{m=gononeita;p=RABot;offset=LOCAL;x=-0.7;y=-0.4;z=-0.5}
+  - effect:particles{p=reddust;color=#000000;amount=120;speed=0.6;hS=3;vS=3;y=1.5} @self
+  - sound{s=custom.khyadon.forcecast;p=1;v=1} @selflocation 0.79
+  - sound{s=custom.spell.shadow1;p=1;v=2} @selflocation
+  - sound{s=custom.spell.shadow1;p=1;v=2} @selflocation
+  - delay 17
+  - potion{type=LEVITATION;duration=10;lvl=1;p=false;force=true} @self
+  - potion{type=LEVITATION;duration=9;lvl=0;p=false;delay=10;force=true} @self
+  - potion{type=SLOW_FALLING;duration=34;lvl=100;p=false} @self #Tick 25
+  - delay 17
+  - skill{s=garotriad}
+  - delay 2
+  - throw{velocity=-4;velocityY=1} @self #Tick 44
+  - potion{type=LEVITATION;duration=15;lvl=0;p=false;force=true} @self
+  - potion{type=SLOW_FALLING;duration=10;lvl=2;p=false;delay=15} @self #Tick 59
+  - potion{type=SLOW_FALLING;duration=25;lvl=0;p=false;delay=25} @self #Tick 69
+  - delay 92
+  - setstance{stance=notcasting} @self
+triadorbitick2:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=1;speed=10;hS=0.05;vS=0.05;size=1} @Origin
+  - effect:particles{p=smoke;y=0;amount=3;speed=0.05;hS=0.02;vS=0.02;size=1;y=0.8} @Origin
+triadorbitick:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=1;speed=10;hS=0;vS=0;size=2} @Origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=1;speed=0.02;hS=0;vS=0;size=3} @Origin
+triadstart:
+  Conditions:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=25;speed=4;hS=0.2;vS=0.2;size=1} @Origin 0
+  - effect:particles{p=reddust;color=#000000;amount=25;speed=4;hS=0.8;vS=0.4;size=1;delay=1} @Origin 0
+  - effect:particles{p=reddust;color=#000000;amount=25;speed=4;hS=1.2;vS=0.6;size=1;delay=2} @Origin 0
+garotriad:
+  repeat: 3
+  Conditions:
+  - targetwithin 50
+  - targetinlineofsight true
+  Skills:
+  - gcd{ticks=80}
+  - sound{s=custom.khyadon.forcecast1;p=0.9;v=1.5} @selflocation
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=1.9} @origin
+  - effect:sound{s=block.conduit.deactivate;volume=2.5;pitch=1.9} @origin
+  - missile{bulletType=MYTHICITEM;material=va2;oE=triadxd;onTick=triad-Tick;onHit=triad-Hit;v=17;i=1;hR=1;vR=1;g=0.1;syo=2;sso=1.5;HitNonPlayers=true;in=25;md=90}
+  - effect:particlesphere{p=reddust;color=#000000;amount=20;radius=2;size=3} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=20;radius=2.6;delay=2;size=3} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=17;radius=3.2;delay=4;size=3} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=14;radius=3.8;delay=6;size=2} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=10;radius=4.8;delay=6;size=1.2} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=5;radius=6;delay=6;size=0.8} @self
+  - effect:particles{p=smoke;y=0;amount=15;speed=0.02;hS=1.7;vS=0.2;size=2} @self
+  - sound{s=entity.blaze.shoot;p=0.3;v=2} @self
+  - sound{s=custom.spell.darmed;p=0.9;v=2} @selflocation
+  - effect:particles{p=smoke;y=0;amount=30;speed=0.3;hS=0.02;vS=0.02;size=1;y=0.8} @Origin
+  - delay 6
+  - missile{bulletType=MYTHICITEM;material=va2;oE=triadxd;onTick=triad-Tick;onHit=triad-Hit;v=17;i=1;hR=1;vR=1;g=0.1;syo=2.4;sso=-1.5;HitNonPlayers=true;in=25;md=90}
+  - sound{s=custom.spell.darmed;p=1.2;v=2} @selflocation
+  - delay 6
+  - missile{bulletType=MYTHICITEM;material=va2;oE=triadxd;onTick=triad-Tick;onHit=triad-Hit;v=19;i=1;hR=1;vR=1;g=0.1;syo=3;sso=0.8;sfo=-1.8;HitNonPlayers=true;in=12;md=90}
+  - sound{s=custom.spell.darmed;p=1;v=2} @selflocation
+  - delay 10
+  - effect:particles{p=smoke;y=0;amount=30;speed=0.3;hS=0.02;vS=0.02;size=1;y=0.8} @Origin
+  - missile{bulletType=MYTHICITEM;material=va2;oE=triadxd;onTick=triad-Tick;onHit=triad-Hit;v=21;i=1;hR=1;vR=1;g=0.1;syo=3;sso=-0.7;sfo=-2;HitNonPlayers=true;in=7;md=90}
+  - sound{s=custom.spell.darmed;p=0.9;v=2} @selflocation
+triad-Tick:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=2;speed=4;hS=0.2;vS=0.2;size=3} @Origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=6;speed=0.02;hS=1.3;vS=0.2;size=3} @Origin
+triadxd:
+  Skills:
+  - damage{a=1000-4800;ignorearmor=true} @EntitiesNearOrigin{r=4}
+  - damage{a=2000;ignorearmor=false} @EntitiesNearOrigin{r=4}
+  - effect:particles{p=flame;amount=100;speed=0.6;hS=1;vS=1} @origin
+  - effect:particles{p=largeexplode;amount=2;speed=0.6;hS=1;vS=1} @origin
+  - potion{type=SLOW;duration=45;lvl=2} @EntitiesNearOrigin{r=4}
+  - potion{type=WEAKNESS;duration=140;lvl=1} @EntitiesNearOrigin{r=4}
+  - sound{s=custom.spell.agujero.hit;v=1} @origin
+  - sound{s=custom.spell.darkhit2;v=1} @origin
+  - Aura{auraName=imaginafire;onStart=damagemeleefirestart;onTick=imaginafire;interval=22;duration=88;Charges=5} @EntitiesNearOrigin{r=4} 0.5
+  - Aura{auraName=meleefire2;onStact=damagemeleefirestart;onTick=damagemeleefire2;interval=22;duration=88;Charges=5} @EntitiesNearOrigin{r=2} 1
+  - delay 8
+  - setstance{stance=notcasting} @self
+imaginafire:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=4;speed=10;hS=0.3;vS=0.7;y=1.5;size=1.5;repeat=22;repeatinterval=1} @Trigger
+  - effect:particles{particle=spell_mob;color=#000000;amount=5;hS=1;vS=0.4;speed=0.1;sideOffset=0;repeat=22;repeatinterval=1} @Trigger
+  - sound{s=custom.spell.vacuum;v=1} @Trigger
+damagemeleefire2:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=4;speed=10;hS=0.3;vS=0.7;y=1.5;size=1.5;repeat=22;repeatinterval=1} @EntitiesNearOrigin{r=1}
+  - effect:particles{particle=spell_mob;color=#000000;amount=5;hS=1;vS=0.4;speed=0.1;sideOffset=0;repeat=22;repeatinterval=1} @EntitiesNearOrigin{r=1}
+  - sound{s=entity.player.hurt_on_fire;v=1} @Origin
+  - Damage{amount=2000;ignorearmor=true} @EntitiesNearOrigin{r=1}
+  - sound{s=custom.spell.vacuum;v=1} @Origin
+meleehitwave:
+  Skills:
+  - projectile{onTick=meleehittick;v=15;i=1;hR=1;vR=1;g=2.5;sB=true;md=60;mr=7;syo=-0.5;tyo=3.3} @Cone{angle=120;points=36;range=90;rotation=360}
+meleehittick:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=2;speed=0.02;hS=0.3;vS=0.3;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=1;speed=10;hS=0.1;vS=0.1;size=1.5} @Origin
+garonullzonetr0:
+  Cooldown: 1
+  Conditions:
+  - stance{s=notcasting} true
+  - targetwithin{d=50} true
+  - targetinlineofsight true
+  - variableInRange{var=caster.combor;value=>20} true
+  - variableInRange{var=caster.combor;value=>30} castinstead garonullzonetr
+  Skills:
+  - skill{s=garonullzonetr;sync=true} 0.6
+garonullzonetr:
+  Cooldown: 30
+  Conditions:
+  - offgcd true
+  - stance{s=notcasting} true
+  - targetwithin{d=50} true
+  - targetinlineofsight true
+  Skills:
+  - sound{s=custom.spell.supermassive;volume=4;pitch=0.9to1.2} @SelfLocation
+  - throw{velocity=8;velocityY=1} @EntitiesNearOrigin{r=5}
+  - throw{velocity=10;velocityY=1} @EntitiesNearOrigin{r=3}
+  - variablesubtract{var=caster.combor;amount="1"} @Self 0.9
+  - variablesubtract{var=caster.combor;amount="1"} @Self 0.8
+  - variablesubtract{var=caster.combor;amount="1"} @Self 0.7
+  - variablesubtract{var=caster.combor;amount="1"} @Self 0.5
+  - variablesubtract{var=caster.combor;amount="1"} @Self 0.4
+  - state{s=cast3;li=2;lo=4;n=false;frame=0;speed=1} @self
+  - setstance{stance=casting} @self
+  - look{headOnly=false;immediately=true} @Target
+  - actionmessage{m="&f&cLord Khyadon &fchannels a spell!"} @Target
+  - effect:particles{p=reddust;color=#000000;amount=150;speed=0.6;hS=3;vS=3;y=1.5} @self
+  - potion{type=SLOW;duration=92;lvl=5;hasParticles=false;hasIcon)false} @self
+  - command{c="title <target.name> times 5 40 5"} @Target
+  - command{c="title <target.name> title {"text":"(!)","bold":true,"color":"dark_red"}"} @Target
+  - delay 7
+  - sound{s=custom.khyadon.attack2;p=0.9;v=1.5} @selflocation
+  - sound{s=custom.spell.shadow2;p=0.9;v=1.5} @selflocation
+  - projectile{bulletType=MYTHICITEM;material=va1;onStart=triadstart;onTick=nul-Tick;v=3;i=1;hR=1;vR=1;g=0;syo=3;md=12;sfo=-0.4} @Forward{f=5;y=90.0} #
+  - projectile{bulletType=MYTHICITEM;material=va2;onStart=triadstart;onTick=nul-Tick;v=3;i=1;hR=1;vR=1;g=0;syo=2;md=12;sfo=-0.4;delay=9} @Forward{f=5;y=90.0} #
+  - projectile{bulletType=MYTHICITEM;material=va3;onStart=triadstart;onTick=nul-Tick;v=3;i=1;hR=1;vR=1;g=0;syo=2.8;md=12;sfo=-0.4;delay=18} @Forward{f=5;y=90.0} #
+  - projectile{bulletType=MYTHICITEM;material=va4;onStart=triadstart;onEnd=garonullzonefire;onTick=nul-Tick2;v=1.5;i=1;hR=1;vR=1;g=0;syo=3.7;md=38;sfo=-0.4;delay=27} @Forward{f=5;y=90.0} #
+  - jump{velocity=0.5}
+  - potion{type=LEVITATION;duration=25;lvl=2;p=false} @self
+  - effect:particles{particle=dragon_breath;amount=3;hS=0.1;vS=0.01;speed=0.05;repeat=30;repeatinterval=1;sideOffset} @ModelPart{m=gononeita;p=LABottom;offset=LOCAL;x=0.7;y=-0.4;z=-0.5}
+  - effect:particles{particle=dragon_breath;amount=3;hS=0.1;vS=0.01;speed=0.05;repeat=30;repeatinterval=1;sideOffset} @ModelPart{m=gononeita;p=RABot;offset=LOCAL;x=-0.7;y=-0.4;z=-0.5}
+  - effect:particles{p=reddust;color=#fdff00;amount=120;speed=0.6;hS=3;vS=3;y=1.5} @self
+  - sound{s=custom.khyadon.laugh;p=1;v=1} @selflocation 0.79
+  - sound{s=custom.spell.shadow1;p=1;v=2} @selflocation
+  - delay 25
+  - potion{type=LEVITATION;duration=22;lvl=1;p=false;force=true} @self
+  - potion{type=LEVITATION;duration=18;lvl=0;p=false;delay=22;force=true} @self
+  - potion{type=SLOW_FALLING;duration=36;lvl=100;p=false} @self #Tick 32
+  - delay 30
+  - sound{s=custom.vampiro.forcecast;p=0.9;v=1.5} @selflocation
+  - delay 10
+  - throw{velocity=-4;velocityY=1} @self #Tick 72
+  - potion{type=LEVITATION;duration=8;lvl=0;p=false;force=true} @self
+  - potion{type=SLOW_FALLING;duration=22;lvl=1;p=false;delay=8} @self #Tick 59
+  - effect:particles{p=reddust;color=#fdff00;amount=90;speed=1;hS=4;vS=4;y=1.5} @self
+  - effect:particles{p=reddust;color=#fdff00;amount=45;speed=1.5;hS=5;vS=5;y=1.5} @self
+  - effect:particles{p=reddust;color=#fdff00;amount=10;speed=0.6;hS=3;vS=3;y=1.5} @self
+  - skill{s=garonullzone} @target
+  - potion{type=SLOW_FALLING;duration=2;lvl=1;p=false;delay=35} @self #Tick 59
+  - delay 60
+  - setstance{stance=notcasting} @self
+garonullzonefire:
+  Skills:
+  - projectile{onStart=triadstart;onTick=nul-Tick0;v=5;i=1;hR=1;vR=1;g=0;syo=3.7;md=41;sfo=-0.6} @Cone{angle=180;points=56;range=90;rotation=360}  
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=6;speed=0.02;hS=1.3;vS=0.2;size=3} @Origin
+garonullzone:
+  Conditions:
+  - targetwithin 50
+  - targetinlineofsight true
+  Skills:
+  - gcd{ticks=140}
+  - sound{s=custom.spell.shadow3;p=1;v=2} @selflocation
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=1.9} @origin
+  - effect:sound{s=block.conduit.deactivate;volume=2.5;pitch=1.9} @origin
+  - missile{bulletType=MYTHICITEM;material=va4;oE=nulend;onTick=nul-Tick;onHit=nul-Hit;v=5.5;i=1;hR=1;vR=1;g=0.1;sy0=4.2;sfo=-0.6;HitNonPlayers=false;in=25;md=90}
+  - missile{bulletType=MOB;mob=vac3;oE=vac3end;v=5.5;i=1;hR=1;vR=1;g=0.1;sy0=4.2;sfo=-0.6;HitNonPlayers=true;in=50;md=90;delay=20}
+  - effect:particlesphere{p=reddust;color=#000000;amount=20;radius=2;size=3} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=20;radius=2.6;delay=2;size=3} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=17;radius=3.2;delay=4;size=3} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=14;radius=3.8;delay=6;size=2} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=10;radius=4.8;delay=6;size=1.2} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=5;radius=6;delay=6;size=0.8} @self
+  - effect:particles{p=smoke;y=0;amount=15;speed=0.02;hS=1.7;vS=0.2;size=2} @self
+  - sound{s=entity.blaze.shoot;p=0.3;v=2} @self
+nullsave:
+  Skills:
+  - signal{s=NULLSAVE} @EntitiesNearOrigin{r=16}
+nullsave2:
+  Cooldown: 20
+  Skills:
+  - summon{type=vac4;amount=1;radius=0} @SelfLocation
+vac3end:
+  Skills:
+  - signal{s=DIEVAC3} @EntitiesNearOrigin{r=50}
+nul-Tick0:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=3;speed=0.02;hS=1.3;vS=0.2;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=3;speed=2;hS=0.5;vS=0.2;size=3} @Origin
+nul-Tick2:
+  Skills:
+  - effect:particles{p=reddust;color=#000000;amount=30;speed=5;hS=0.8;vS=0.8;size=3} @Origin
+nul-Tick:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=10;speed=0.02;hS=2;vS=2;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=25;speed=2;hS=0.9;vS=1;size=1.5} @Origin
+nul-Tick3:
+  Skills:
+  - projectile{onStart=triadstart;onTick=nul-Tick0b;v=1;i=2;hR=1;vR=1;g=0;md=41;mr=1.5} @Cone{angle=360;points=6;range=6;rotation=360}
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=6;speed=0.02;hS=2;vS=2;size=3} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=15;speed=2;hS=1.8;vS=1.5;size=1.5} @Origin
+nul-Tick0b:
+  Skills:
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=3;speed=0.02;hS=1.3;vS=0.2;size=2} @Origin
+  - effect:particles{p=reddust;color=#000000;amount=2;speed=4;hS=0.5;vS=0.2;size=2} @Origin
+nul-Hit:
+  Skills:
+  - damage{a=1000;ignorearmor=true} @LivingNearTargetLocation{radius=4}
+  - effect:particles{p=flame;amount=100;speed=0.6;hS=1;vS=1} @origin
+  - effect:particles{p=largeexplode;amount=2;speed=0.6;hS=1;vS=1} @origin
+  - potion{type=SLOW;duration=60;lvl=3} @LivingNearTargetLocation{radius=4}
+  - potion{type=WEAKNESS;duration=75;lvl=0} @LivingNearTargetLocation{radius=4}
+  - sound{s=custom.spell.agujero.hit;v=1} @origin
+  - effect:explosion @origin
+nulend:
+  Skills:
+  - sound{s=custom.spell.nullzone;p=1;v=2.5} @Origin
+  - sound{s=entity.wither.ambient;p=0.7;v=2} @Origin
+  - effect:particles{particle=block_crack;m=anvil;amount=24;speed=0.05;hS=1.5;vS=0.3;y=0} @Origin
+  - effect:particles{p=smoke;color=#fff400;y=0;amount=50;speed=0.05;hS=1.8;vS=0.3} @Origin
+  - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=0.2} @origin
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=0.1} @origin
+  - effect:sound{s=block.beacon.deactivate;volume=2.0;pitch=0.5} @origin
+  - effect:sound{s=block.conduit.deactivate;volume=2.5;pitch=1.9} @origin
+  - effect:sound{s=block.conduit.deactivate;volume=2.5;pitch=0.3} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=2;size=3} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3;size=18;repeat=28;repeatinterval=2;delay=6} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=2.6;delay=2;size=3} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3.2;delay=4;size=3} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3.8;delay=6;size=2.7} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=4.8;delay=8;size=2.5} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=5.8;delay=10;size=2.2} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=6.9;delay=12;size=2} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=8;delay=14;size=2} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=9;delay=16;size=1.7} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=10;delay=18;size=1.2} @origin
+  - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+  - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=0.6} @origin
+  - damage{a=1000;ignorearmor=false} @EntitiesNearOrigin{r=2.2}
+  - damage{a=1000;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2}
+  - sound{s=entity.player.attack.crit;volume=2;pitch=0.6;cooldown=1} @origin
+  - totem{charges=1;onStart=ueco}
+  - summon{type=vac2;amount=1;radius=0} @origin
+  - delay 40
+  - effect:particlesphere{p=spell_instant;color=#FFFFFF;amount=200;radius=3.1;size=4;repeat=2;repeatinterval=2} @origin
+  - delay 34
+  - effect:particles{p=largeexplode;amount=8;speed=0.6;hS=4;vS=4;repeat=8;repeatinterval=2} @origin
+  - effect:particlesphere{p=smoke_large;amount=400;radius=3;size=10;repeat=4;repeatinterval=2;speed=0.6} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=2;size=3;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=3;delay=1;size=3;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=4;delay=2;size=3;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=200;radius=5.2;delay=3;size=2.7;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=6.4;delay=4;size=2.5;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=7.8;delay=5;size=2.2;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=9.2;delay=6;size=2;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=10.6;delay=7;size=2;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=12;delay=8;size=1.7;speed=1} @origin
+  - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=14;delay=9;size=1.2;speed=1} @origin
+  - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
+  - effect:explosion @Self
+  - effect:particlering{p=cloud;color=#000000;amount=8;points=40;radius=2;size=3;speed=3;yOffset=1.2} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=8;points=46;radius=3;delay=1;size=3;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=7;points=52;radius=4;delay=2;size=3;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=7;points=59;radius=5.2;delay=3;size=2.7;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=6;points=68;radius=6.4;delay=4;size=2.5;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=6;points=80;radius=7.8;delay=5;size=2.2;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=5;points=92;radius=9.2;delay=6;size=2;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=5;points=106;radius=10.6;delay=7;size=2;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=4;points=120;radius=12;delay=8;size=1.7;speed=3;yOffset=0.6} @origin
+  - effect:particlering{p=cloud;color=#000000;amount=4;points=48;radius=14;delay=9;size=1.2;speed=3;yOffset=0.6} @origin
+  - sound{s=entity.generic.explode;volume=5;pitch=0.6} @origin
+  - sound{s=block.end_portal.spawn;volume=5;pitch=0.6} @origin
+  - sound{s=block.end_portal.spawn;volume=5;pitch=1.6} @origin
+uecoab2:
+  Cooldown: 0
+  Skills:
+  - pull{velocity=1.1;to=true} @EntitiesNearOrigin{r=17;ignore=samefaction}
+  - pull{velocity=1.4;to=true} @EntitiesNearOrigin{r=12;ignore=samefaction}
+  - pull{velocity=2.5;to=true} @EntitiesNearOrigin{r=8;ignore=samefaction}
+  - pull{velocity=5.3;to=true} @EntitiesNearOrigin{r=5;ignore=samefaction}
+  - blackscreen{d=5;cooldown=5} @EntitiesNearOrigin{r=5}
+  - potion{type=WEAKNESS;duration=10;lvl=0;p=false;force=true} @EntitiesNearOrigin{r=5}
+  - potion{type=CONFUSION;duration=250;lvl=0;p=false;force=true} @EntitiesNearOrigin{r=12}
+  - potion{type=BLINDNESS;duration=30;lvl=1;p=false} @EntitiesNearOrigin{r=6}
+  - potion{type=SLOW_FALLING;duration=2;lvl=1;p=false;force=true} @EntitiesNearOrigin{r=5}
+bam:
+  Cooldown: 0
+  Skills:
+  - Damage{a=5000;ignorearmor=false} @EntitiesNearOrigin{r=15;ignore=samefaction}
+  - Damage{a=4800;ignorearmor=false} @EntitiesNearOrigin{r=10;ignore=samefaction}
+  - Damage{a=3800;ignorearmor=false} @EntitiesNearOrigin{r=7;ignore=samefaction}
+  - signal{s=BAM} @EntitiesNearOrigin{r=100}
+  - delay 1
+  - Damage{a=2000;ignorearmor=true} @EntitiesNearOrigin{r=4.5;ignore=samefaction}
+  - Damage{a=3800;ignorearmor=true} @EntitiesNearOrigin{r=3;ignore=samefaction}
+  - throw{velocity=35;velocityY=2} @EntitiesNearOrigin{r=10}
+  - throw{velocity=56;velocityY=2} @EntitiesNearOrigin{r=8}
+cancelatacgaro:
+  Skills:
+  - CancelEvent

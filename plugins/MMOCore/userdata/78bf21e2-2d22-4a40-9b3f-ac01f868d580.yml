@@ -1,0 +1,48 @@
+class-points: 0
+skill-points: 26
+skill-reallocation-points: 0
+attribute-points: 9
+attribute-realloc-points: 0
+level: 27
+experience: 44628.29154190748
+class: ADVENTURER
+waypoints: []
+friends: []
+last-login: 1676792849316
+skill-tree-points:
+  global: 0
+skill-tree-reallocation-points: 0
+bound-skills:
+- COMBO_ATTACK
+- HEAL
+- MAGICAL_SHIELD
+attribute:
+  dexterity: 0
+  strength: 27
+  intelligence: 42
+profession:
+  enchanting:
+    exp: 0.0
+    level: 0
+  smithing:
+    exp: 0.0
+    level: 0
+  woodcutting:
+    exp: 0.0
+    level: 0
+  farming:
+    exp: 0.0
+    level: 0
+  fishing:
+    exp: 0.0
+    level: 0
+  alchemy:
+    exp: 0.0
+    level: 0
+  mining:
+    exp: 0.0
+    level: 0
+  smelting:
+    exp: 0.0
+    level: 0
+quest: {}

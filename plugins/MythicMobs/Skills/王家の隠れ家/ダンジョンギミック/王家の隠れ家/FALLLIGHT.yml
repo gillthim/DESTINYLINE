@@ -1,0 +1,4 @@
+FALLLIGHT:
+  Skills:
+  - breakblock{forcesync=true;d=false;t=false} @selflocation
+  - sound{s=minecraft:block.respawn_anchor.deplete;p=1.2;v=0.7} @selflocation

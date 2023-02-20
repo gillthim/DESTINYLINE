@@ -1,0 +1,10 @@
+Kodaino_Spadine_Attack: 
+  Conditions: 
+  - playernotwithin{d=16} false
+  Cooldown: 10
+  Skills:
+  - leap{velocity=240} @target
+  - delay 20
+  - jump{velocity=-120}
+  - effect:lightning @self
+  - damage{amount=500} @EntitiesInRadius{r=2;target=players}

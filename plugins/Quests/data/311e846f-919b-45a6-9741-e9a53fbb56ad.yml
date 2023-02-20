@@ -1,0 +1,129 @@
+currentQuests:
+- custom33
+- custom2
+- custom7
+- custom8
+- custom32
+- custom31
+- custom26
+- custom13
+- custom38
+- custom30
+currentStages:
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 4
+- 0
+quest-points: 102
+questData:
+  custom33:
+    custom-objective-counts:
+    - 0
+  custom2:
+    custom-objective-counts:
+    - 0
+  custom7:
+    custom-objective-counts:
+    - 0
+  custom8:
+    custom-objective-counts:
+    - 27
+  custom32:
+    custom-objective-counts:
+    - 0
+  custom31:
+    custom-objective-counts:
+    - 3
+  custom26:
+    custom-objective-counts:
+    - 0
+  custom13:
+    custom-objective-counts:
+    - 0
+  custom38:
+    has-talked-to:
+    - false
+  custom30:
+    custom-objective-counts:
+    - 0
+completed-Quests:
+- custom1
+- custom10
+- custom25
+- custom26
+- custom27
+- custom28
+- custom29
+- custom30
+- custom31
+- custom32
+- custom33
+- custom34
+- custom35
+- custom36
+- custom37
+- custom4
+- custom9
+completedRedoableQuests:
+- custom33
+- custom25
+- custom31
+- custom26
+- custom30
+- custom27
+- custom29
+- custom32
+- custom9
+- custom28
+- custom1
+- custom10
+- custom4
+completedQuestTimes:
+- 1671768111655
+- 1671435091119
+- 1671436586433
+- 1671767091710
+- 1671769821122
+- 1671343809633
+- 1671343911384
+- 1671768084107
+- 1671433513910
+- 1671343848215
+- 1671767307011
+- 1671767584806
+- 1671432828994
+amountsCompletedQuests:
+- custom33
+- custom25
+- custom31
+- custom26
+- custom30
+- custom27
+- custom29
+- custom32
+- custom28
+- custom9
+- custom1
+- custom10
+- custom4
+amountsCompleted:
+- 8
+- 6
+- 7
+- 3
+- 10
+- 1
+- 1
+- 12
+- 1
+- 1
+- 6
+- 1
+- 1
+lastKnownName: Zexeszcxessva

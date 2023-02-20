@@ -1,0 +1,20 @@
+ICEWAVE:
+  Conditions: 
+  - playernotwithin{d=20} false
+  Skills:
+  - potion{t=SLOW;d=50;l=5} @self
+  - delay 18
+  - missile{ot=FROZEN_SKELETON_ICEWAVE_TICK;oh=FROZEN_SKELETON_ICEWAVE__HIT;v=8;i=4;hR=0.8;vR=0.8;in=100;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 12
+  - delay 10
+FROZEN_SKELETON_ICEWAVE_TICK:
+  Skills:
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#00ffff;a=15:hs=2;vs=2} @origin
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#00ffff;radius=0.8;uel=true} @origin
+  - sound{s=minecraft:block.glass.break;p=0.8;v=0.6} @origin
+FROZEN_SKELETON_ICEWAVE__HIT:
+  Skills:
+  - potion{t=SLOW;d=40;l=2}
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#00ffff;a=30:hs=4;vs=4}
+  - sound{s=minecraft:icecleactive;p=0.8;v=2} 
+  - damage{a=38;type=ICE;i=true}

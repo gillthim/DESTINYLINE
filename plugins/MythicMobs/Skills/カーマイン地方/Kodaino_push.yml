@@ -1,0 +1,14 @@
+Kodaino_push: 
+  Conditions: 
+  - playernotwithin{d=15} false
+  Skills: 
+  - sound{s=piguruntame2.5msec} @self
+  - potion{t=DAMAGE_RESISTANCE;d=50;l=0.2;p=false} @self
+  - potion{t=SLOW;d=70;l=50;p=false} @self
+  - effect:smokeswirl{d=40}  @self
+  - delay 35
+  - effect:particles{p=cloud;d=40;a=40;hs=1;vs=1;s=0.4;size=60} @self
+  - delay 15
+  - sound{s=pigurundash3msec} @self
+  - leap{v=570;noise=1} @target
+  - damage{amount=700;i=true} @PIR{r=7;target=players}

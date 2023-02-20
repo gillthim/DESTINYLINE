@@ -1,0 +1,2852 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: DispererBat2
+    delay: 0
+    level: 15
+    interval: 0
+    targetType: &id003
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: NONE
+    location: &id001
+      ==: org.bukkit.Location
+      x: 23.0
+      y: -30.0
+      z: 92.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    maxCount: 5
+    yaw: -86.99853515625
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+    fadeOut: 10
+    fadeIn: 10
+    subtitle: ' '
+    targetType: &id002
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: PARTY
+    location: *id001
+    trigger: null
+    title: 魔物のうめき声が聞こえる･･･
+    stay: 80
+  targetType: *id002
+  location: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SNOW_ELEMENT_dg
+  delay: 0
+  level: 80
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: -32.0
+    z: 201.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: -159.29864501953125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: &id004
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: PLAYER
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -21.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: -21.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: FIREZOMBIEE2
+  delay: 0
+  level: 10
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 17.0
+    y: -31.0
+    z: 54.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 3
+  yaw: 133.50039672851562
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 35.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: BLAZEN2
+    count: 2
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: WHITEWOLF_dg
+  delay: 0
+  level: 70
+  interval: 50
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -5.0
+    y: -32.0
+    z: 148.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 5
+  yaw: 168.30120849609375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: bonemaster
+  delay: 0
+  level: 1
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -29.0
+    z: 255.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 15.0
+    conditions: []
+  maxCount: 1
+  yaw: -179.39878845214844
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -23.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: -23.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 174.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: POLARBEAR_dg
+    count: 4
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: FIREZOMBIEE2
+  delay: 0
+  level: 10
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -18.0
+    y: -31.0
+    z: 54.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 3
+  yaw: -140.11053466796875
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: -21.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -21.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: WHITEWOLF_dg
+  delay: 0
+  level: 70
+  interval: 50
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 4.0
+    y: -32.0
+    z: 147.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 5
+  yaw: 168.30120849609375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 35.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: BLAZEN2
+    count: 2
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SNOW_ELEMENT_dg
+  delay: 0
+  level: 80
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: -32.0
+    z: 187.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: -159.29864501953125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: DispererBat2
+    delay: 0
+    level: 15
+    interval: 0
+    targetType: *id003
+    location: &id005
+      ==: org.bukkit.Location
+      x: -26.0
+      y: -30.0
+      z: 93.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    maxCount: 5
+    yaw: -0.8957791328430176
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+    fadeOut: 10
+    fadeIn: 10
+    subtitle: ' '
+    targetType: *id002
+    location: *id005
+    trigger: null
+    title: ' '
+    stay: 80
+  targetType: *id002
+  location: *id005
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: FIREZOMBIEE2
+  delay: 0
+  level: 10
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 18.0
+    y: -31.0
+    z: 10.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 3
+  yaw: 42.60089111328125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 85.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: SUNGUARDIAN
+    count: 1
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SNOW_ELEMENT_dg
+  delay: 0
+  level: 80
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -4.0
+    y: -32.0
+    z: 200.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: -159.29864501953125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 204.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: SNOW_ELEMENT_dg
+    count: 5
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SUNGUARDIAN
+  delay: 0
+  level: 5
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -32.0
+    z: 61.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 6.0
+    conditions: []
+  maxCount: 1
+  yaw: -179.3999481201172
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: -24.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -24.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+  commandType: 1
+  forEachPlayer: false
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: -31.0
+    z: 207.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  command: itemstackreloaded:stackitems
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 119.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMythic
+      targetPlayer: true
+      mythicLine: day
+      targetLocation: null
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 204.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: SNOW_ELEMENT_dg
+    count: 5
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -24.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: -24.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SNOW_ELEMENT_dg
+  delay: 0
+  level: 80
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -4.0
+    y: -32.0
+    z: 186.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: -159.29864501953125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: DispererBat2
+    delay: 0
+    level: 15
+    interval: 0
+    targetType: *id003
+    location: &id006
+      ==: org.bukkit.Location
+      x: -24.0
+      y: -30.0
+      z: 93.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    maxCount: 3
+    yaw: -9.59698486328125
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+    fadeOut: 10
+    fadeIn: 10
+    subtitle: ' '
+    targetType: *id002
+    location: *id006
+    trigger: null
+    title: 魔物のうめき声が聞こえる･･･
+    stay: 80
+  targetType: *id002
+  location: *id006
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: FIREWITCH
+  delay: 0
+  level: 10
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -19.0
+    y: -31.0
+    z: 30.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 3
+  yaw: -133.5113525390625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 135.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: FROZEN_SKELETON_dg
+    count: 6
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: BLAZEN2
+  delay: 0
+  level: 0
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -19.0
+    y: -32.0
+    z: 72.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: -144.91189575195312
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: -22.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -22.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: CrawlerBat2
+    delay: 0
+    level: 15
+    interval: 0
+    targetType: *id003
+    location: &id007
+      ==: org.bukkit.Location
+      x: 27.0
+      y: -30.0
+      z: 92.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    maxCount: 5
+    yaw: -1.799468994140625
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+    fadeOut: 10
+    fadeIn: 10
+    subtitle: ' '
+    targetType: *id002
+    location: *id007
+    trigger: null
+    title: 魔物のうめき声が聞こえる･･･
+    stay: 80
+  targetType: *id004
+  location: *id007
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionRandomReward
+  cooldownDisabled: false
+  resetDay: 1
+  period: 0
+  overrideCooldown: false
+  xp: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -16.0
+    y: -32.0
+    z: 311.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  rewards:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: CHAINMAIL_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"やいばの足甲"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Armor"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.7"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+30%"}],"text":"■
+        Fall Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        Fire Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Physical Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.9"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +100"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.1"}],"text":"■
+        Health Regeneration: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty DEEPBLUE Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      enchants:
+        THORNS: 5
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/41UW2sTQRSegIbgpXipiLcyDBgKLSVpraV5MJ1spsmSvaQ7WzWkYVnjtA1NNprdiqX0oaL+AlEUhT4IfRMvIPXFh/qqf6IFFfQH+OjsJrvZkAoOs/sw33e+c5k55wgAMXBallVRJzI1ckQ2qK4qhILxdUQad5w1Wm86NkqVURKNel+WkGJGmieoMopyrGE7TYu5hMpGFJwIlLJkliiUpL8veisGTgYQUYQ8VnQKjpWRs9xsWTacRJUoONc1xjLOEUMj2XlBF1VlZhh4KxoKVcY3jTzBkp6fKfnoUIDOYknql7nWJsbAqYDo/g29VCTgMNZkVYuCiwHWluf2OaIQDbsS6U/P3fUiClBAK+ZLVBTwAf6GfX/HA7IuEg0c0rBGomAgOPVcp39/dde3CDjfrYRIcUZyNYtY1EQlF4mCSwFaUFShkMFCgeNUpDpWBJL+vDP369HQTix0GV6SYhYczUg4S4yMquo0Ai70eencTNvN2QDWyNy8yLMyJHKdSH4VI6HLuCHycmc0gguRcLIKlgkYjE/vP3i4v8n32/3NNz8/fvjx5H0MnOl6L3GeKBiSqpHInzKKV3Gr0Wzxp8Z3nGns7mqtxWwo3avDiUTneALGp/aebsEsW2SWzVIwvjiSGJvqgcyGucSgxm6vVp1a0/I4yfHLYc6sWa8fTJxI9BJ5CAcTJ3t4xeU1u1Y1/yEa9v5yC3p5dkKfDgMFq1lduWVWV7i9XbMd06qyPoFXr2GemXVnORWvwpFkIhGOQzbvQ+qYjZpleobjPWjbjosvMYu1zCC+xFiyU19z79lj6A0AmIS8zSHlETHn/yF/TPQy/CD0GuOJ725f3d2uu83g9n+oe/lr6++mQb/NB3uGAH/2sqjgmSt+sw3kqa6VumNGWke8Eg5KIf+IR6HmqNNsrfG5tY76JpPx5Z3ttLhBeSGYUAuogjYqG+Avx6n8LTIFAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: CHAINMAIL_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"やいばの膝あて"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Armor"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.7"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        Fire Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Physical Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.9"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +100"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.1"}],"text":"■
+        Health Regeneration: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty DEEPBLUE Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      enchants:
+        THORNS: 5
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/41U32vTUBS+BQ1FdPhjMvw1LhcswsZoN+dYH2xv27s0NEm73EwtXQmx3m1lbaJNJo6xhw7dn6AoDvYg7k30bb74MF8V/4cVRNA/wpu0TVuq6CXJw/2+c853Ts45pwAIgwuKkpd0olBDJIpB9bxKKJjeQqT+0N2kNdt1ULyEYmjSfzOEFFLyEkHlSSSyuuPaFvMI5W0BnA08ZcgCUSlJfF/xTxicCyCiprNY1Sk4XULumt2wHDiLygK41DPGChaJoZHMUlqX8mryBvCP0CdVwfeMLMGynk0W22gYnA9Q72voxQIBJ7Gm5DUBXA2wthX3LhKVaNgLkPj40juvBIACWiFbpFIay39VEwZnArIuEQ2c0LBGBDAS3PqhE7++eOdrCFzuJShRnJI9nwUsaZIqhgRwLUBzaj6dS+F0juNUojpW0yTx6XDx57Pxw3Bfjf0kpQwYSck4QwyZiCJ3RUPgylCgTs3bkcYCWCOLSxJPjNveIXLydjuxUF+Z70qybKQ0gnOh/nxVrBAwFplv7TxtNfnzvtV892N3r9XcaTXfhsHFnoAip0ppQ85rJPSthCIV3KjbDd5H/IkwjT3aqDaYA+XHNTgT7VzPwMjc8fN9mGErzHJYHEZWJqJTcwOQWTdXGdTYg42KW7UtnxObvt7PWeCe/0ycHeAV1jadasWs/dvp633oy+8omu8HcpZdWb9vVta5vVN1XNOqsCEHe29glpk1dy0eqcCJWDTar0Mxn0DqmvWqZfqG0wNo2447X2UWa5iBvuhUrFM28/jFLvSHFsYgH01IuSLm/j/UHe1BRleEXmU88aODW0cHNa/TvZkdD370Au+j4VEZ7Q7u6MDg8p5WJBUnb3YnaSRLda3YWw3yFuKVcFEcda+4irxIXbuxyXfNFhraJsbnD47b4Aal5WCrLKMy2i5vg9+SIZ7o5gQAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: CHAINMAIL_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"やいばの兜"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Armor"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.7"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        Fire Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Physical Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.9"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +100"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.1"}],"text":"■
+        Health Regeneration: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty DEEPBLUE Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      enchants:
+        THORNS: 5
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/41U32vTUBS+BQ1F5nA6EX+NywWLsDHazTnWB9vb9K4NzY8uydTSlRDj3VbWJppk4hh7mDj/BEWZsAdhb6Jv88WH+ar4P2zoi/4Ru0nbtKWKXpI83O8753zn5JxzBoA4uCBJiqATSTMKRDI0XZGJBqY2EWk+8je0huN7KF1FKTQRvnlCyjlxkaDaBCrQpuc7Ng0ItS0OnIs85ck8kTWS+bkcnjgYiSAi80Us6xoYqiJ/1XFtD86gGgcud42xhAvEUEl+kdcFRc7eBOHheqRK+L5RJFjUi9lKC42D8xEafA29UibgNFYlReXAtQhrWTHvBSITFQcBMp9eB+cNB1BEKxcrmsBj8a9q4uBsRNYFooJTKlYJB4aj2zB05vfX4HyLgSvdBAUN58TAZxkLqiAXYhy4HqElWeFLOcyXGK4Jmo5lnmQ+Hyz82hk7iPfUOExSyIOhnIjzhOUlSkSPgasDYdoVb8W5FMEqWVgUWFqGSO4SMXunlVasp8j3BFE0cirBpVhvtjKWCBhJzB0/e368zZ4Px9vvf+zsxsHFbugKIwm8ISoqiX2vooSF3abjsv5hT4Kq9PF63aUeFJ804HSyfT0NE7NHL/dgni5T26NpmFgeT07O9kFm01yhUKUP1y2/7tghJzV1o5czzzz/mTjTxyuvbnh1y2z82+nuHgzltxXN9QIl27HWHpjWGrP36p5v2hYdcPD2HSxSs+GvphMWHE8lk706JPMp1HyzWbfN0HCqD23ZMecr1KauGelLTqbaZTOPXr2A4bDCFGQjCTWmiPr/D3VGup/REaHXKUv8cP/24X4j6PBgVseiHz3POmhwREY7AzvaN7CslyVBxtlbnQkaLmq6WumuBHETsUr4KI06V0yFUtB8x91gO2YTDWwR48tHz3eZQXUp2iZLqIa2alvgBDbluhreBAAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: CHAINMAIL_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"やいばの鎧"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Armor"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.7"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        Fire Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Physical Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.9"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +100"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.2"}],"text":"■
+        Health Regeneration: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty DEEPBLUE Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      enchants:
+        THORNS: 5
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/41U3WvTUBS/BQ3Fj+F0In6NywWLsDHazjnWB9vb9K4NzUeXZGrpSojxbitrE00ycYw9TNRHHxVFYQ/C3kTf9uTDfBIU/4cNBNE/wpu0TVuq6CXJw/39zjm/c3LOOQZAHJyRJEXQiaQZRSIZmq7IRAPpTURa9/wNren4HsrUUApNhm+BkEpeXCSoPomKtOX5jk0DQn2LA6ciTwUyT2SNZL8vhycORiOIyHwJy7oGTtSQv+q4tgdnUJ0D53vGWMJFYqiksMjrgiLnroLwcH1SJXzbKBEs6qVctY3GwekIDb6GXq0QcBSrkqJy4FKEta2Y9yKRiYqDANnPL4PzigMoolVKVU3gsfhXNXFwMiLrAlHBERWrhAMj0W0YOvvrS3C+xsCFXoKChvNi4LOCBVWQizEOXI7Qsqzw5TzmywzXBE3HMk+yH/cWfj4Z34v31ThMUiiA43kRF0g7WgxcHIrSKXg7zLkIVsnCosCyMkRyk4i5G+2sYn01viWIopFXCS7H+pOVsUTAaGLu8NHjw232vD/cfvfj2W4cnO2FrjKSwBuiopLYtxpKWNhtOS5rH/YkqErvrzdc6kHxQRNOJzvX0zAxe/B8BxboMrU9moGJ5Ynk1OwAZLbMFQpVenfd8huOHXJS6Sv9nHnm+c/EmQFeZXXDa1hm899OX+/AUH5H0Vw/ULYda+2Oaa0xe6/h+aZt0SEHb97CEjWb/momYcGJVDLZr0MyH0LNN1sN2wwN0wNo2445X6E2dc1IX3Iq3SmbefDiKQxnFaYgm0ioMUXU/3+oO9GDjK4IvUFZ4vu71/d3m0GDB6M6Hv3oedZBwxMy1p3XsYF5Za0sCTLOXesO0EhJ09VqbyOIm4hVwkcZ1L1iKpSi5jvuBlsxm2hoiRifPni+ywxqS9EyWUJ1tFXfAr8BDZOxbt0EAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"italic":false,"color":"blue","text":"精霊の盾"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Shield"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+8%"}],"text":"■
+        Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+8%"}],"text":"■
+        Magic Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+10%"}],"text":"■
+        Projectile Damage Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+30%"}],"text":"■
+        Block Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +80"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+25"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-0.3"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"gray","text":"🌊 10 Wind Defense"}'
+      - '{"italic":false,"color":"dark_green","extra":[{"color":"gray","text":" 10
+        Earth Defense"}],"text":"₪"}'
+      - '{"italic":false,"color":"red","extra":[{"color":"gray","text":" 10 Fire Defense"}],"text":"🔥"}'
+      - '{"italic":false,"color":"aqua","extra":[{"color":"gray","text":" 10 Ice Defense"}],"text":"❄"}'
+      - '{"italic":false,"color":"dark_gray","extra":[{"color":"gray","text":" 10
+        Darkness Defense"}],"text":"☽"}'
+      - '{"italic":false,"color":"yellow","extra":[{"color":"gray","text":" 10 Thunder
+        Defense"}],"text":"★"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","text":" 10
+        Water Defense"}],"text":"🌊"}'
+      - '{"italic":false,"color":"white","extra":[{"color":"gray","text":" 10 Light
+        Defense"}],"text":"☀"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"精霊の加護が施された盾"}'
+      - '{"italic":false,"color":"white","text":"加護により、属性ダメージを軽減する"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/7WV3W/TVhjGjxCKKiQQHx1skwZHFgsXwJQ02lp6MeLGp7FXfwQfl1JVkWWSk8aQOJC4bKgqatIxTR1XTINOwBYkUKVNQwIhrdLaIrH/JBYFhHq3q13tOCaOTaqKm0VKLs7vOT7P+5zXb3YB0AcOSJIiaEjCehpJOtYUGWFwbJZB5Uv2VVyq2DVmeIqJMyfoN3uCSZNyza5YxF3NzkXAIX+7pJxFEpI1HWcQ4p4Vf7RXL1z7NxI4QGLP6TxiRY1PaqD9iYB+n46ISmpMzygTSE1+6eE+sN/H7q+uTWYQiGBeQCIX3CukkM6hUSRjlDzaefQHPp4QZO5d3gd2+1wTkAp2qqyKIuATf3VMpoZGWGpKRVjAGiun0On1lTNvrh9eCRauojPjgoo4XURnkdjxHgFHfUVGVb5CKU0QqUtWYtOI7uHG6YIid+32h3Kix0mCzCZPdfBeH3cK6e8tdJT66A3iY5+LQprX6AXj3jT2+SIkp3hW1jDYMZWNgI+6575rHXYOONhNmtWQul3UoqIioE8x0cLLJ+uv7y469UcvFpuv/vjTqd/YuLXm1H9yGjec+q8v76zTlosWOvB3p/G901h05usvHv+yMb/sLMw7C/edhVWnseI0br76a21j5Y5T/9lp/MBkg44Qq2p8byZHAmmnhdQ2xQUDUMe2Dm9vuE0FDuzGiN6FoHu9GkxAZiUE9kRP+fXTUvsCd8hNUgV15Ca14x+aVA4XTVLK0zjcRIhKLs+YVVKD4pUSTMTeLidgdLB1qwk5UiBWjQzDaOH45yFglI1pAlWSn8nZZsVqK4Y+DUokY9rMvY8wU61cIBSWyNbqeCwkHylVchdhpvI1qbZxIoDvNuGYRfF5g0pUUjNrtmHlPP/xga7u3gPIE6NkF4ejOXh8KBb2/Q3EtlE2LaO9byBUuFS5QsrEsiG+REjeFZyMfZZ4G9vgZnN1c3UxOgjjMThhWvlOgC4caDV+8wgyqnYxiHKbzbXNpw89OkqvIwjPt+596xEhFwJDraU1D3BG9SIdorUgJa2l6x7VijNWnlSDMBEyathhWmgtzXtINKeLdgC51Gjd/g625zmMQzrAIaaBE3t71H7s//eOdrtWM922eL78xfPlkjuC3df3w+5o5sdlbquRsofHmjrZHVbJWYb2gM0MM50leoCSxnalepX+V80yPfNN//txza7SDVNZZi47B/4DP7fabg8HAAA=
+      blockMaterial: SHIELD
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: BLAZE_ROD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"マグマの杖"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Wand"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"24"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"15"}],"text":"■
+        Range: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        Magic Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-2"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+120"}],"text":"■
+        Max Mana: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-0.2"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"blue","text":"4
+        Mana"}],"text":"■ Uses "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"red","extra":[{"color":"gray","text":" 10 Fire Damage"}],"text":"🔥"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Magma
+        Fissure"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Left Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"80"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Ignite"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"20"}],"text":":
+        "}],"text":" Mana"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"10"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Targeted
+        Fireball"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Right Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"80"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"6"}],"text":":
+        "}],"text":" Ignite"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"25"}],"text":":
+        "}],"text":" Mana"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty BLUE Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/51UTWvUQBgepCylYGn9vA6DBsFadrfddt1D2TSZboNJtmZSa1nWNe5O19DdpG7Sqmx7UMGfoCfFixQvouDBiyh69uJPsOCtB4+CB98km/2gVdSQDMz7zPN+PG/mHUFoGB3XtKJiUo1VClSrMLOoU4Ym24Q2N/y7rOH6HsmVSIpMhN+8ukxJeYIUeNPzXYcHYHkngca6XmS6QHVGP6DoGUbjXYjq0qKomwwdKZUT6HTXrhWvUI3qZoUtUSq/v35D+/L9xc9hdKx7Ilgr5uoSRUMroi4n0IkutKAYtCKLmlig+TNRzEQfUxN1sSIVmZkfi8HxPvBqeCB/LU62V4c4r6iKuYp+lNpEqZEcgQiaCOEYWzYoSCFZnq+5NQ4QW1QWzIpKYZFURboEKCD2ms1bIFCb1KymVYeD2eRkcoLYdcf2YZcJNk3LsUguHQJV123U3NsOyaVgv7Mz0YlsikaBmlQOa50XVfWw6IZSWPyn8DN94TOD4bNBdGjRqZ4apilKl2Kds7FcR7sHTIUaaMgQDdovYtg3RUYjkXhR73qNN+jlZShJBumuUDU/d9CtLmoUjQsX9x483bv/Kljvvfz25FECnexrYkGR4szOxS56uLwKTuCEWjTokc8lIlRXLKcGGsErcIPf2rRb3MPqVgNPJTvmKSzMfn36Fou+b1XXsRwKmMPCWnq6Cz96hg3LicypTL9Zs+p2tY90PpU+24/LfI07XghdSA8S78DnWB1ScgBzt3iTOz5mG5zXQm5ycoC97EEZwsXp0EWnkOr+s3f7b54LsziVxAtQaCetDmzNCdltoLOb9pqPVQ6L1LChYjALfDsChQYU1LSA7nmbrYCKhamACF4jb0I2yCebHICU8D+LoMwAEuQX2dODFKnzB0ZgKqw/ezBPw67fPDxR02rVuc9rYak3rEbjf5Kd+V2ymT8km40V/fr4IQ5nJ05hmJKYudV17v89FEzYQTTusQn3OYc/7s583G0EF42Uh9HoIjON1d5kzbcJ8y0fpkJsAnaxwHy3dRdGdZscGMaVT689vwWEUpnsBKN8tHc9RR2u1GRnkv8CEaIFWi4GAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: IRON_HORSE_ARMOR
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"P90"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Musket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"23"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"4%"}],"text":"■
+        Recoil: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"20"}],"text":"➸
+        Attack Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+8%"}],"text":"■
+        Crit Strike Chance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+14%"}],"text":"■
+        Crit Strike Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"15"}],"text":"■
+        Range: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+8%"}],"text":"■
+        Weapon Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+10"}],"text":"■
+        Max Stamina: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.5"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Light
+        Dash"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Right Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"20"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"0.2"}],"text":":
+        "}],"text":" Length"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty GREEN Gem Socket"}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/41UzW7TQBBeFRFFSJQCBW6wWlFfWoUkbdQ2B7BxlsSKf4LtUqIosqxk21hN7OJsW0qaK48AN8QTIHHjzpPQJ2Fi13baUonIieL5vpn9ZnZm7iCURw81zVBsqllOnWqOZRs6tdCLCaGjQ35qDQM+JtUOKZG16Fs3KdVJF/6w0ZgHPpuh3Wke3U/DUF1uSLptoYVON4eepHbNeEc1qtuO1aK09op/+lP/sTzJowcpY/br2O0WRTltx2pSO4fupaBJZUNRxSUUffJoKUWk14qq2G006kyI0idVoir1hu3UJKsBimV3zLWgz8BuNZQ3tmNGqKwqchNggLw9j4WQx4T03ZG7D8xysVBcI70gGPaDE59UK7PXIfP3+YBUi4VyZTqF1B5nCmxbkptwoibVqbgZS8yhZylBNhVbkSUV6msqTerMKiRTESfMLNQulVqGnoTC17ONiqTU0K3WdnG+vCZ9u6OYtOao9B1Vxe3E827K0CWNotvCduT49EZtLWOXmuJaIu3R1Syj6xM3kvgZXmvDCYrsqIZJF3CHCD3taHzAOFQZHoGZ7MORF7IxVo+HuFy5MK9jYfP82y8sce72DnAtuoIqFvbK6yn85Ts2WS/whjP7xso/3KxDxvqRV3HeSw49ji0eegcMywPX70WRV7dWbiK1ghMWRpzSxiWS6fqxrFJl3rzL3MPAn1N9JbbmfoTQ7sjz3TjqJXlacMxGzOeZ/NViISmM+1LYOgOiNfD2ODa9/QHH8tCDZMEusLMYFYZqhNTc8QC8sLA+cxM2LyQJW2lRMki+aOwYrFzC1KjLYwQ6PdFy/vUzjjYCLmEYfWwFvfhm/xOK9sY8DPOznK0G6T10HzSPLonPk8ZabEBDtrN1Ik4IVJLDHCcmOMOoWzwIT2EJTci1DeT8/jnmITh0umTanebQYjYtkg7jVYjPQn8Bx/0mtAkFAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"ポイズンスケイル"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Dagger"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"24.5"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"1.8"}],"text":"➸
+        Attack Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+24%"}],"text":"■
+        Crit Strike Chance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+51%"}],"text":"■
+        Crit Strike Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+12%"}],"text":"■
+        PvP Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-15%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.3"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Poison"}],"text":"|
+        "}],"text":"|"}],"text":"|"}],"text":"Attack "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"4"}],"text":":
+        "}],"text":" Duration"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"12"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Thrust"}],"text":"|
+        "}],"text":"|"}],"text":"|"}],"text":"Shift Left Click "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"50"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"8"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Cursed
+        Beam"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Right Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Duration"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"70"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"15"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"15"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty YELLOW Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty YELLOW Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"毒竜の鱗を使用した短剣"}'
+      - '{"italic":false,"color":"white","text":"その刃は毒を持ち、毒竜の息吹を扱える"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      custom-model-data: 3
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/7VVUW/bVBS+MCkKINAAAdIkwLKEhdQQxUlDoj6Mus4lsWLHxnY7RVEUeclNY5rEw3Y7TVlQk0poEzyggujLxoZAGtIEVbUXQKBJ2+v2J2bair+AeOBex3WSrqnEA36wcu/35TvfPT7nnucBiIJXJUkWdChptTyUapoul6AG0j0adi65V7S25Tr0QoVm6RhdhqIoXxj/qMboPOo4rtVFhFPtR8HLoRgs8QWupGvg2Uo1At4I9yV5BUqwpNc0BcLcB62v3N8//vTvKHgxZIiyCsHFCs00D3a3D+/e8AY//7W34w23//zj/uHXP3qDHW9w6/DWT/vXv8demKY3uIkp+9e2vMEu/gcmHnwx8AbfeZuDUOBgsLv/5a8Eur7nDa55w8/pahS8EsYk75peViCI5Lh8HqpRcDYEuSVBFPTyM5lKjxYa9AKtyIIml3Bw3nBcyWogvMfpOscX8R5em00T2TglPbqxbhuuaXXphfl4IkbXLavdsC7jJZuMJ/r9WCCoF9RlTZ8W1ArCh3pNhPjFi8IJ0kbHWMXEdIIoO67RMbsGXk7HyU6G4ZdVDeZqS5CTToqlCvnCrGDhOXz9o9iZ6djsseBk3e/jz//6OJd+mmo5TuLycDG7Ccgz+fV1AarguRWolmsqp8IIeDuEeFXQBZ4TcZGqQhHWSIHxWMTXAGfAuTETZ1OWcK3loIhj6RzBI+DNkFAsyXxxiThRoSZoOhG6/zDlP5GJllBWlCOv74LA69npqhFy4IVRQWjYG5ysdRV+tCyoOOMiXIHi4vmRQgS8NfNIinwBqovCZkB87XjeRk3zzyPyPJ5MW4mTIDjHvO9t3fSGP3jD37yte94QV/weWW7djU5o5cqYLfB+o53Zxo1Wzxmrq8jGH500FFLRJ+umjRxK3GhTqUSwnaKYzJNvf6E41zXqa1TOL4EFimkm5+PpEwjaJYQaBGfj2RD+5jbF26ZLaa5triGKbxndui8yl5x/ZxZLsS4j2yel2SmSsqFM+Jhjk2P0xm2q2LXqaxeJFRU5Ji7SINR7bHpKRbI2UAd13bHjuUQ8FZzaOM9kr2JicCi8YNDV0RbTVizTwT0RoykmRXhMhsoFjcJkidD8FMYHjTHC2CTRz04G0Vpm06VEhF9823wqnN6y1x13Opx/+pFgOjEFaaOuDLBTjGRn+FDN1dbJRvh120ENagkZnVMOn57pNHOKU/Y0qz7oO32y8xnlTyiKpfAQojT8rZF7DBrNqf+G+yPlfx0843bSTVLXD+6gB3fa5MajyI1HBtNLBXwflMczdLFH4yS5+KY+2sIScl5zLfsKnrw9+qmxW3u457g2/kOlSverffAvbDB1++sHAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: GOLDEN_APPLE
+    amount: 30
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"green","text":"美味しそうな金リンゴLv2"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 20"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"gray","text":"Health"}],"text":"500
+        "}],"text":"■ Restores "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"gray","text":"Food"}],"text":"20
+        "}],"text":"■ Restores "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"gray","text":"Mana"}],"text":"80
+        "}],"text":"■ Restores "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s
+        Cooldown"}],"text":" "}],"text":"7.2"}],"text":"■ "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjmVjEIOLg8h4Z39/Hxf/cD8HmTMgcJaRQRyuIMzRz9PHxzHe1THE08+dkYNBAFWvpwsDt7ennw9Q0t8nzJgNSWuQa2CoZ5CrS7yPa5irj4MJAxiwMYgiqQgO8Q9yjXfz93eByXMw8MLl/Rx9XRmU1RKf7+t7OnHz48bpjxvnPm5se9y46mX7xMfNqx43b37ctMWnzIgDyVCXSKA2T+d4H6DJDGujldSSnfPziktzE5NyUpV0lIBILTUotbA0syi1WMGnLEfByAAqbKygZv5o2gKFoNTiknyQrFqaqYEBUNAjNTGnJAOHEiOQCrf8/BQc8hYged/EvERkebU0cz0jMK9YwTk/PyclvzxPKZaDQQg1dEMiA1wZuJz9/YJDfR2dfFxRgxcSeB6ujj4hHg71DtDg4/MIDgmKRMS4Q7VScEliiZKVEkwI6BB/92Cg+yqVrKKrlTASSfzhjcUlRUAN0bFKtbG12GLM19HP0SEEEmMMAHAkFfFsAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+    amount: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"守護者の根源Ⅲ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 15"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"60%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+3%"}],"text":"■
+        Block Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +60"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"守護者の力を持った仲間想いな援護兵が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"red","text":"※DEEPBLUEのソケットにしか入らない"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"ARMOR,SHIELD"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/9VUXU/TUBg+erEMogS/wp05NqEXQgyIgtmNK+1xa+za2XbosixNsxQllg23oiGEhG4uopJgFPFCCcSPYDRgEI0RgiTwTzhswJ0/wXMm62b4BfaiaZ/nvO973ud9zmkEwAeaIxFF1FFEMwR0DckaCjaDyuMHJzwKyXyYk3UNHE0kfeCUh0e4W0YYcZIeDsrVqOMeKykqAr8SDNtfWprYW/yxN17E7lLpyWucf16edLH7DrtzO2tf92delAsr2H2I3U/lqW9kZan4HbuTTDsJ3Z2ew+5G6dEqdl+R5fuL0+WVlzTN0uzu3ApdktoeXxMQivZKMUQInF/H+WVcKODCBHY/V8KeloofcP4xyU+q0BhzZ31jd/pjaerLXmGdwvk8Ca1k49SIorZrYRFJAkO6Pe310ysp/HUjqtxEatBfbfekR9O3ocejCDSEyJemKzKq5ynIK0QU4K9ut14tXUQqaOhDatxQORX5QJNHVbZ09Xe1ZPO/JUUBNIZinCqInGzwPtDi0Sq6ERNVJBgS6kNS8MLhEclcBIEWtrt+QOX5n+XVZ9vFt35w9nBzJKmmqyKvi4oMjtWL5Qdnal6Kk8wiX7HAkS1igVTIGoSak0lbRGSqs6Va94YHslYOSvdt2HmZYl2Q7dmemYfacCpl5XJQNR0rAFmTtbs7Wg/iqmsEq99K5yjd33apnui1M6m7MJp5YGUrZFerx76Zh1x2MPMX7/Tg2fcwbJm2cyfApmBbd8dBpf/XtQS4wtoJ9iJrn6dfSaKhkDVvw0zayUAzDQccMg22h/4MDdkj5+q01QeobpsL1uaCTc0IqRnpOagNV4vxPNKIvTgd1c59U5j4Il67KoKjjOaYDhNgqhApoYSIB7IjTCAxyhy6XYyt5ZyTJQGJJDOWHAN/AKWckO2gBAAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+    amount: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"騎士の根源Ⅲ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 15"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"60%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"3"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+6%"}],"text":"■
+        Block Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1.5%"}],"text":"■
+        Block Rating: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1%"}],"text":"■
+        Block Cooldown Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+3%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +60"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"騎士道の力を持った王国に尽す兵士が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"red","text":"※LIGHTBLUEのソケットにしか入らない"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"LANCE,HALBERD"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/9VU20/TUBw+4WEZGokXvLxIDk3ogxADEsDshXXtYWvoWjgtIFlIU0fFxbLiViTGkNgh8YJRo6gxiBDRQCTeYkxQs5Dgf0IdSHzx0UfPGbAB8x+wD037+77f/TtnHwB+cCgaVUQNRVUdyXyEkzUVlMX6fOBIwR7lzukRxElaJCiD/OMHBwqopGAEsjGGvbCxcC83t7jhPvLcd7k7U17m4dpd13PnPHdm/d5EbirruYu5D+T9LDf+mTA99y5TR/zWJ2c8dzl386vnPiXcjbeTa58e0xjvptdnPlFKfPX6N0kMR7SQ1IUI4mWyXuajNzbmjd0iQfN+E7nx117mtue+8dwb1Mn4kV1en1zI3X//cyxLzZkMcc2HkziZR3URTgohLDCk2cpCOyFJ4dv1DqUH4eCJ7W4PF2D61rXeDgTKw+RL1RQZ7cSpkVfITEB5oWAfqN4TnlcUSVB6ZB0joYvXREVu/b2ZyweOFbicpnGELHBRLoyC/tLRayIieboR7tUxh0meiqIvjiq4GPRkAWiXSQEhGhcjVVQ1OonWF0udv8arlvzg4O5GRQHsF8S2NqIMhHXeB44XcIw6u0RSvi6hbiQFT5dWJ3NRBCrZ5k1ZkNGvzX5Z+/pgdfylH1SVDpTWo2ExPw1wYNeGfODongFiThPlcOuf7axFXOgleUU+L8uyAJFlPGwOQtWxkyZZPd2+ic3Lw4mUmYbSFQs2NFFbI2RbVp/MQnU4HjfTaYgNxwxA1mCt5vqaLb8858US5BzHiF+CgjFoDFDShcadEUKWTcAOe8RMUay2uaYUJdETyYE83HC66R8E3ratfnskCbHZPxx3EnZyk1ykPp+FXGrQ3szRsNPcniQRztMKsZlOpB0jGc9XWdtY9J5+BSOmYTkXA2wc1jbXb3X4355gYjnLWjH2DGudol99ZHVCyhiAdtKxoZGECYeIgG2hP0ND1tXqHSvVEnRTK/PmyrxFjxKkR4neCUVNqV08j1SVqg4Vr8CKCNFrb/HWDF5jVMdwmACzbSIplDCRXuoqE4hdY0ouWv37x7STIg6xPma0bxT8BT2qC8KQBQAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+    amount: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"弓術の根源Ⅲ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 15"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"60%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"0.3"}],"text":"➸
+        Attack Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"0.3"}],"text":"■
+        Arrow Velocity: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+6%"}],"text":"■
+        PvE Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+7%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+6%"}],"text":"■
+        Projectile Damage: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"弓術の力を持った自然を愛すの狩人が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"red","text":"※GREENのソケットにしか入らない"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"BOW,CROSSBOW,GREATBOW,MUSKET"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/91U70sTYRx/EBozKPpJERJPB96LErEkjb1p1+1hXm679dxtMsY4jnXK8nR2Ow0RodsUK4UirQgprQjLyBAhyhLB3vS+/8Bzm/0XPc/RtltGf0DPi+N739/f5/P5PvsB8ICj4bAoyCgsKdE4UgJcmAsi/0ngHA84UbVyGIs9ShyFRF6QE5d/tDvHCw5XPVCE7+IisgQakikvOFDVh0SMwPckw/YWv87uvpi1rZXivXk7/7A0Y9nWK9ta2J1aLk98pJqJedt6ShzK02931tdta4ZpIXHluQXb2ixOEcUT4v7z/Vxp7RFNs/KsvLBGXdLbt78EMUIRorXzG3Z+1S4U7MId23rnxEwXJ1/b+bu2tWxbEzRA3dnYLM+9Kd7/sFvYoOp8noQ6qa6IPS08FiWJCiQpJ1MhHJO6kcyQyY5UJ6NfRU5EEWgMEkmSxQhy26mSF8n8YJ/TnPtWZAFh0BhHOKFgDpOwQ/VphQDwcpjvQljh3ThgdC0mYBRQQoiA4W+tIHWqhiMWryJeFkJ/wukuH+HCCBxjO6qQlBY/l9YfbE++9ILTewckZSUZCySrGAFN/7ohDzhe44wsc3y3IkURClQY47ZL3UIoVGmyqdJkzR5IkDYF3mFQg4cwKB3UBqBkZgc1ghQFS8PazeGMoeVgaESH5y9SXTtkO7cfL0JpOJ3WcjmIVVPzQVZl9Y625t9xjs/zT5AzTTXdD6UhTbtOfHrbWtvdKTjDyN6CcU3PpjPm6F8coiMIBtQBtY9W6D3X0VzXQH9G193mzjpz1Mje0NJmRtf2pHBY/x9sC3G4xOpJ9gKrn6VSisAQMNQ+mB00s1AdhBmTAMp20p+hIX30jAseOaMZPri1pG0t6XRNIF0TJlXHnxjPI4nsBCcjf6TCn4NdhKqJ2nPkH2MkUzUZH1NRkRJikNDIGGV8yTFmzwumfFvNmQYJSKaY8dQ4+AV58GQ/KQUAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+    amount: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"隠者の根源Ⅲ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 15"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"60%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1%"}],"text":"■
+        Crit Strike Chance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+8%"}],"text":"■
+        Crit Strike Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1.5%"}],"text":"■
+        Skill Crit Chance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+10%"}],"text":"■
+        Skill Crit Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1.5%"}],"text":"■
+        PvP Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.3"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"隠遁の力を持った手練れの暗殺者が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"red","text":"※YELLOWのソケットにしか入らない"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"DAGGER,THRUSTING_SWORD,KATANA,STAVE"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/92Uz08TQRTHJxyaYqLxZ7zhusIetCEg4Ue40M3upGzYX+4sJU3TbDZ1gcrSYrtgCMGwrUQREo2iJBgD0RiMxhqCiRElJHj2n2BtCzePxpOzLS0lSPRsD830zed9++Z938wxALzglCBInAoFpEGR6aZFFYGacMQDzlfighSEAhRVDckQsl2Dj60vN27/8oCGCoF6OJ7XGIVTOYbmNaQqXA/UXDUGdv0ExY8XHK/wvKRA8C1MUv27i8u7tu3Y2dz9Z076UX4Or1869lJ+Zrbw8YOTnsNb+cWFfHZ9Z2rasedIH04qzC859mbu7rpjL2B29918fu2Jq5F9Xlhac5Ho9tTnEOR5qQ+HnfSGk151Mhknc8+x3xaTZnPTr5z0jGO/cew7bob+fWOzMP869+D9TmbDDafTOLWoxdKBAFR8arfSi1RODGioT1JYXw+t0iLtQyodhGTEC05Xjud+a2pIhqA2gFdIlURYve8GGQk3AXhKRVb3RuWgAmqDUAlpCq1AD7hQ2TqiwT9KDfaAMxVSDsoaSwt0oKr9Jw/Wx7GglkaIRpyoMdV2K/BaL6dAVuNhEPL+xrJ6/V/slqU+qPjrD7st0gIEZ6k27HXRxGx++VN+/eH29AsPqDvycCU5oixXd7i7uFKXZVROEsGlf3DJC85VVNgQLotjiqNY04VHMRowhglkJeIGNt313VCMm6OxpJEi+DGTaG51Yy0E1b79dJlAo9GokUoRim4ZnQSlU2ZbU8NeXplhkjELCyZjQwbBDOrxqEv2X2luOAqSE7eMZJHpOMCgoZhplshqncbWo6h9oeamA4w8JhOsPqwP/FlCSIwZw0YcFzRiGNeLSFNjy96x/purirkOygxTVynzsruKYP/YpD5AJOJWgtDjRMzCk0C1uz9GRszxi1W+qjG3sVsrxtaK6V5Rwr2iJH4t9wcL9TIMRPga0Sr0i+XxPdGNRzW0/8T6J0hk6RbZSZZD+C+kAJ6/5DjZGZ4gD73K2tfVlJXECeEIORmZBL8B49mCJr0FAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+    amount: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"魔力の根源Ⅲ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 15"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"60%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+6%"}],"text":"■
+        Magic Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+6%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+30"}],"text":"■
+        Max Mana: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"魔法の力を持った偉大なる魔術師が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"red","text":"※BLUEのソケットにしか入らない"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"STAFF,GREATSTAFF,WAND,TALISMAN,TOME"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/91UXUsUURg+RcgaFBVFXcU04VzUEpaksRexp5njOjQfNTNay7IMwzLK0rja7hiJCM1uUqZQlNVFhPaFkWSIN2mIYJf9iz3Nav+i96xfYxJ03cCZOfM+7/uc9+Ph7Ecohg6rqi5bRDVtookdWLNMtDeTjaEDW3ZFNwj6keGF7l+fJ2rzz2kwGz56RctPa+MBDd7RYDIMRsP30zT4RMtj4LP25ln4dYYG43wcglYnJmmwHD5YpMFL8N3mmH29OjnPXHLVe9+uKJ0EjLS8RMtztFKhlYc0mKmHjIUjH2h5lNEH95m/83NpeXXiY/j4y1plqX5qGULrTKaF29vjKYNga317A2tS3MKKbKpYi1u6Sngo7shWcextW+lrBDWmYGdaukaiODOKOrQA7WMpNkT6peKbsDScvIzqT7RnlkwM1NhFjLRtYAMYD+08UZZQo4pTsogVW2xAx7dQg1zvlA0i2QrpIkry3G5qDasEHRVaoZFsDMFsbWqhtvikOvI2hk7urgsYTcuQRUvWNXT6H/rTgI5FSoQUbQnDlyRPrOcSxc2rsqL8gcciuJSGbIGBSWjPCkgol3J7OdPvK7gwLjYx13BvD+SLbolT7njc+YvM1sIJbdUXU5w5kMu5pRJnOL6b4ARH8FqbmzbiNn1Upyef4ySn1+lhPt1nW5t2UNzKe97fYdW5C6vg1KGW5g3u/0Tn4HdJ8DLCBcE7w3ZZaKFUdHq4voLfxzkFLu/DMIQ29tPf7w2eirTWyrvFBLcy7a5Me0zFHFMxn90x+05RJCYoFlskqW3O/mAHqC29fZckh3jTd3w+wW+a4Ag9BRIoDvKJzBC/6/qxv8+V/CIEZLL8cHYY/QaPLZAGpgQAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+    amount: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"火力の根源Ⅲ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 15"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"60%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"5"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        Weapon Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+6%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"力の源である天上のユミルが"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"red","text":"※REDのソケットにしか入らない"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"SWORD,LONGSWORD,HANMMER,SPEAR"}'
+      - '{"italic":false,"color":"red","text":"GREATSWORD,AXE,GREATAXE,GREATHUMMER"}'
+      - '{"italic":false,"color":"red","text":"WHIP,GUNTLET"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+VU3WvTUBS/KoxOUFTmx5PEwPKgRfxgm/SpIbmkYfmoSbpaSgmhZKMsa2ebCWMMTONQN0Efpj6Idog6dTgZe5mTMZj/Se+66pMv/gHem65fFPwHzEM495zf+fqdc+9xAELgtCyrogFl3YQKF2MVQwdH05kQONHSS6oGwZ80zYzXFl8hb/1g+xnyVpFXRuWl2rtP+1uLWIn8D8ivIH8NeU/oMMbWlyvI26093EbeS+RVfn1ZPth8joG19df1yiaBZKv3v2uQJ87lHVTeQL6P/EfIWws8lmoL71H5MfI+I+8BgVv7O7v15Y+1p19/+jtEXS5j1yCQnlQ1PiypitCQcBuyDLWwHoesFiAEDbJGw8jegeHg2BJiCYIOcMmYGA8LCcWQoEFjFs60WCB/00jFIegXsKQbqgI77UTJqZgrcAw31QfOtSysYbDcqMmzMivA6AAIvk6CDRFqoH8MailTYzXY6ZuEbFxVenxPdZcl8iB0mIXrA+dbRg3eToi4GlOCY1CKXu1NrbAyBAPMcN1bOxzuyjc83+rC2xC42Ns7jqgbmsgZoqoAtU272RAFtsEcHkCb//C/uW8gCe994Gwroz4qSlKz7QvNutt2PoUrF7lgN4/8TpMJ21OU7hbyNp4jGaWt2XdnckW7REn3HOr6ENHdpJiR6osVSp/JZu1SidIs145QjMU4w9cGD/0CzJstinVdKztJ8daUNUFA410RkrY1Xch3WK8MDXZlmMw5Tqd5uBn/f7tEWHGLcdLMDca5TKQM5psvWhNUIe8WKCtP5Vw8OWaEHKanndlLHXMwcnYxQu2t2nurDrkeFLkedKZrURIcB3W86qwBo0pzUU7G8Jqm2i9adI7WXculI3RThVOoAt6X4iwdSc/RPY+g+WOj5BaxQzpDz2fmwV/eR1YjLAUAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 24
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(1000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 1000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/5VSTUvDQBBdPEgRFBU8eBCWlQaFUiMehJyMSbCFJindKJZSwjZuVUyakqRikYLUqzfBswcPogfx4MGTB/+JQcR/4fTDVhEFl2UZZnbem3kzYwgl0JSum1lL06mtmLouGypFvHRMFN/zWG2HSMTzfMcPOGY73n4N86M63t0/5DhZd1mTB3aNeTyJPQaxZVEUSYqoHCJEEtNiCmBqoe9yIlWZG/IUMet9s1VOoNkBNTU3DdU2DajBoJu6hgTg4k7AqpFUcX3nIA0s0V4zjGzHbYQRD9JA7/BRNPcrhp3PWmuod762qRlKRjYsikZKUMPkwN957ayKJrTtvFIoUkvOdRr6k2LLzA0pxgf/DBlamBcqbw9n79fnrydXcfsuPr2J249x+yk+vV3oAAPNYgLNDJLUIqRlFTtnFjTklojgdMRreKwC+qUIXGEFC6svF5e4PxwJC9Wl/40HdzEWhCpMp2uGiwRUmP6uglXMa2is16S8ntMSaCJDrUJxqN3aMaERi2A9Pl1Qn7lBIz+A0cP+/JDbfr4PowASSmXSKrfQB2qU5mV9AgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: END_CRYSTAL
+    amount: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"aqua","text":"経験値クリスタル(1000EXP)"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s)"}],"text":"
+        "}],"text":"0.0"}],"text":"("}],"text":" "}],"text":"/mmocore admin exp give
+        %player_name% main 1000 "}],"text":"■ Command: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/5VSTUvDQBBdPEgRFBU8eBCWlQaFUiMehJyMSbCFJindKJZSwjZuVUyakqRikYLUqzfBswcPogfx4MGTB/+JQcR/4fTDVhEFl2UZZnbem3kzYwgl0JSum1lL06mtmLouGypFvHRMFN/zWG2HSMTzfMcPOGY73n4N86M63t0/5DhZd1mTB3aNeTyJPQaxZVEUSYqoHCJEEtNiCmBqoe9yIlWZG/IUMet9s1VOoNkBNTU3DdU2DajBoJu6hgTg4k7AqpFUcX3nIA0s0V4zjGzHbYQRD9JA7/BRNPcrhp3PWmuod762qRlKRjYsikZKUMPkwN957ayKJrTtvFIoUkvOdRr6k2LLzA0pxgf/DBlamBcqbw9n79fnrydXcfsuPr2J249x+yk+vV3oAAPNYgLNDJLUIqRlFTtnFjTklojgdMRreKwC+qUIXGEFC6svF5e4PxwJC9Wl/40HdzEWhCpMp2uGiwRUmP6uglXMa2is16S8ntMSaCJDrUJxqN3aMaERi2A9Pl1Qn7lBIz+A0cP+/JDbfr4PowASSmXSKrfQB2qU5mV9AgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LAPIS_LAZULI
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"魔力の根源Ⅱ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 10"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"80%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        Magic Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+20"}],"text":"■
+        Max Mana: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"魔法の力を持った偉大なる魔術師が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"STAFF,GREATSTAFF,WAND,TALISMAN,TOME"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/81TUWvTUBS+ipROUKYovsk1ujxoH+ocbvap1+auCyapJndqKSWEkpVi1s42E8fYQyoi6kTRqg9DuqFQUZzIXnQwBts/WUw7/4Un3dqlDsFHAzf35n7f/XLO+c49jFAYHZPllMiorOlUSYwRhWnoYCYbRke6+1JKpWghw/ETv77UmiuvXWfZe7LgVl825x3Xee86dc957H1ouM4nt/oUONtLr7zvn11nnovAoVat7jrr3qNV13kL3D2N5Xet+opPMX6urbdqH73nX7cfrLVVqoD7SE5jZHQ0klQpYTvLW0QRIoxIoiYTJcJSMuUg2OPdYP23ztLXKepLwkpjKYWGAknK5DYMhcSHUPsJJspEqqJDKlFpGPX3KooC6pNJUkwQSb8aQqe6qEpvjIsqFXSJ3qRS/FxH9fT+iICrMVVMMDGloLP/kFkwNoXIFJ3gr0D5/OI7y83FH83VF1sPl0LoZCA7CFEXCMw03r8TSxDXromS9AceDuBCGv4DCr7lB56B5bmkOYk1u1Q0wQ7fEVM1704XymYFS/csfDHq713C/PDWm0WsTedyZqWCVcM2Y5g3eGskOrB7rsORjXwhhwVj0sj7nIkLQwM9EncKlvV3WDbuwygabWgwuqv9n/Yl8EZ4K8MP8tZ5f5WFkghlI49LRbuEjSIu2FBcftj/mJqyZs4ESsUKZjmGNxqXNxqW35BctsfG8USCatB8hNE469h4dAzaK713jeOznGYbNhfjOlugnkqCm+UZLpaZ5fbdfH3zW8Uuw4FMlpvLzqHfO6mpNyEEAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: GOLD_INGOT
+    amount: 20
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"green","text":"レイル・ジ・カートスの金貨"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Material"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"一つで10,000ゴールド分の価値がある金貨"}'
+      - '{"italic":false,"color":"white","text":"レイル・ジ・カートスでしか使えない"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"dark_gray","text":"UNCOMMON"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVg4IWLh3i6BjFwhPo5+wOF/JBlfPyDXBlKopXU0p7saHjcuORx43JDAx0DA4PHTVseN+953Lz6cXPn0462x43rnuxb+LQBqKDncWPT46bul+0TX2xaoaQD1Pq4ec3jpiVgtbsfN+0Ak6vBujseN+0EGvm4cfrjxu4ne/c/bux43LjqcWOLEtB9AnBXgMh4TxcGriBXTx+feHd/HxdkR/o5+royaKolErJnHcRNHAyicK0ukUDNns4Qfy4G+jPZN7EktSgzMQfocrDj6exviK3GCmrmIZmpRVYKh5ZbHFqeA4saULAIoQZLSGSAKwOHr2OIa5Cnow8HA59HcEhQJCKqHaqVgksSS5SslGBCQAv83YNL8osqlayiq5UwUkf84Y3FJUVADdGxSrWxtQwA1BWIHEUCAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: GOLD_INGOT
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"成金貨"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Material"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"成金ゴブリンと取引できる金貨"}'
+      - '{"italic":false,"color":"white","text":"品質のいい金で作られている"}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVg4IWL+/gHuTLERCuppT3rmPCyfeLjpi2Pm6c9bl71uHnz48YVT/unPd0z9XHj8seNvY+buoEKXmxaoaQDVP50cuOLzaseN6573NgCRCCtjcuf7J3zuKnzcVPP48ZlIPGmbiWgbQJw20BkvKcLA6efY5Cnt6eftyOyW/wcfV0ZuNUsIS4BWsTBIAqXdIkESns6QxycA3Rwsm9iSWpRZmIO0DlgF9HOA0KoHgiJDHBl4PB1DHEN8nT04WDg8wgOCYpEBLFDtVJwSWKJkpUSTAhoob97cEl+UaWSVXS1EkasxB/eWFxSBNQQHatUG1vLAABnJnaYvQEAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: RED_MUSHROOM_BLOCK
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"マッシュルームチャンク"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Material"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"たくさんのキノコが塊となって出来ているキノコ"}'
+      - '{"italic":false,"color":"white","text":"非常に珍しく、マニアの間では高値で取引されている"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      enchants:
+        LOOT_BONUS_BLOCKS: 5
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/81STUsCURR9ixZDYFTQXl7gql1U5G7QIYccJ2amhaiIhIIgCdO0CBF884KgLBehtdE+zIykJFwk4SLsp1ym8F/0Rmk0+gNtHpfLOeeee96dRohDc5Iki5ogqXEh5AvwIU1FrghOZXVjfzfpXsExDrkciCYKCppSeEWY7AZlRUDlCPakgFwBKQEpg3kO5BnMJ6BnYHaAFK2bYyAPQB6B1IHcW0dvn9UGK4AcgnniIPESkxlUa1a3C6T1VToFcmFLFgjQGlAGvGXCgwqTbwJpD1qXVuGO1VapYvXKw8lFR9U2P+vYtN+46GfGeTWgyLLkC2yHNicXCfGSgBY968NRFMxXoA2gLaA9oNdAmYU60A6YbQ4tOCR/mNFE3yiFd5bCjpQwkno6kWG7DNf5b6mMbC27PWtaOql73f3mar+ZsX/VDmz+d2BaeEtAnMRrgiLyQQ7NBFRNCY+PRcph1UgY2It/Wkxc3lCNrH6AvZEc/nNf8Y+XPUNnhEh0fGdRHMP5WB59Aw5O6h6UAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: DIAMOND
+    amount: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"部族恩の証"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Material"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"グレーテル・コンバットのために尽くした証"}'
+      - '{"italic":false,"color":"white","text":"何かと交換できるかも"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVg4IWLh3i6BjGwBDkGuSKL+vgHuTKkRiuppT1u2vC4ec3j5j2Pm9seN69+3Lz7cdPmx81ANOFxc/Pj5o7HjeseN85/3NT4uHH10w17Hzf2P26cDhR5sWKPkg7QgCd7pz5u7H7cuOLJriXP+mc/blz+uLH3cVM3SLCpSQnoGAG4tSAy3tOFgcMpNMrfO9TfD9lNfo6+rgyCapYvm1c8m97/rHEl0GagJRwMonAlLpFARZ7OEOdPADo/2TexJLUoMzEH6BSwa2jtHYg1xgpq5iGZqUVWCoeWmx1angMKXpBPhVB9GhIZ4MrA4esY4hrk6ejDwcDnERwSFImIKodqpeCSxBIlKyWYENBwf/fgkvyiSiWr6GoljNiNP7yxuKQIqCE6Vqk2tpYBAH6/mMIFAgAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LAPIS_LAZULI
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"守護者の根源Ⅱ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 10"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"80%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+3"}],"text":"■
+        Defense: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+2%"}],"text":"■
+        Block Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.6"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +40"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"守護者の力を持った仲間想いな援護兵が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"ARMOR,SHIELD"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/81T70sUQRieIo5LSvqJ32Jacj+kxOWF2n3p9nanu6X9YbNrdRzHsixrSeud7a2FiNBqUohglNmHEi8KjECjTCJDBPtPXO/U/6KZy1sP7h9oPiwz7/O+z7z7PO+0ABABp2RZFXUka4aAbiJFQ8koqK0oOB1CSOEznKJr4GguHwFnw7jM3TMyiJP0TFKoV50MUUnFCEznGHagsvJib/nn3tOpwF+pTL8LJl5VZ/zA/xj4izu/v+/Pv65Orgb+s8D/Up39QTIrU2uBP8N0ktLducXA36w8Xw/8tyR9f3muuvqG0qws7C6u0hRzZ2Nzd+5zZfbr3uQGoQgmJghOEYvDsoo7tYyIJIEhnZ8Le0tJKn/L6FPvIpwE9dbPhDD9Gnq2D4HjabLTdFVBjb+miwiDY5jDKAJaw2jtuhtBvLaiDdLW6EQBtKT7OSyInGKkIqAthDG63S9iJBgSuoOk5KVmKRVORqCNvd4oZLX8q7r+cnvqQxRcaG6ckGo6FnldVBVwolGIKDh/6HmWMIt8zaojM8QqK20PQc0rFmwiINXQxvajkUHXLkHpsQOvxmgsDtme7fky1EYsyy6VIDY9OwFZk3V6Y+0HdfUcwR6wCyUKD3TEG4GUU7Qewr7iE9utgV3tIfq+DDl3qPgvHrvSHQILn2DGNh3vQYK1YMe12MFd/8d8kUAv6+TYLta5THd5oojgmvdhseAVoVmAgx7Rlu2hh+FhZ/Rig1L6IFVha6l7a8mhU0WH9dAlrZ/nkUbmhNNRUq9PR2uGGJw9fJvJMUbzTI9JMPUQYVfTxEx3lEnkxpim52z8+VbyXFKQyzPj+XHwFxjxzUURBAAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LAPIS_LAZULI
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"騎士の根源Ⅱ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 10"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"80%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"2"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        Block Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1%"}],"text":"■
+        Block Rating: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.5%"}],"text":"■
+        Block Cooldown Reduction: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.6"}],"text":"✠
+        Armor: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"✠
+        Knockback Resistance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"red","text":"
+        +40"}],"text":"❤ Health:"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"騎士道の力を持った王国に尽す兵士が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"LANCE,HALBERD"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/81U30/TUBS+IWaZGggq6pOmNNIHIWb8EHAvW9detoauxdsikmVZ6ii4WFbcigQJD8UQjRI0ihqDCAYSjETUEBMlIST4jyh1m7z5J3jvYBsw/wDvw017vu+c891zzr3HAHCDE+GwLKgwrMSgxIVYSVVARSTqAqeK9jB7PRaCrKiG/DzILzeoLKKijCB4EKGZ/p1305nFlR37mWOvZh7OOhNPs1O2Yy869nxu+lFmdsOxVzKf8P4qM/kFMx17im7AfrmZecfezNxfd+yXmLvzYSa79pzEWJ3Lza8RivZrYzM38y7z+OPve9j/vTMxgXGCxEVW4mBDiBUDEPE01l1TVBYQZa4z1iX3QOSvLgg/WYTJHlN7uyA4GsRfiipL0AVqD7lzsizyco8UQ5Dv5lRBlnw/dmO5wJkil1VVFpN5NswGoR+UV0kVIAJHEItwiqqSGwrLyOc055cLnCsCnRLOHSAhEVQERSWH9C3d/RlcrRlzg+qDZxB4cJwXOjpw/yCKBVzgbBFH8Gq3gJXHRHgNiv4L5cIkNgxBDXNlt3m4qtmFb9n1J9uTb93gfHmtiB4VCflCgMoDxXeB04dqh1hVkIK+P4WsJZzvxXkFLj88FRV4eOJBfZBSLDOp466SxupIvz2cSOlpSrxjUI0eYmummLbtFwuUMhyP6+k0hTRL91KMxhjtnro9vzznzVeKtSwtfovitUFtgJD6m/ZHCBgmBrvMET1FsPqWunIUR08kB/Jw4z9gzjSNPnMkSSG9bzhuJcxknuq5dLlEfr1AsalBM7WHtO4HOpM4yg2iEenpRNrSknH9sJa5JSqka4Z108vEqfoWz94Z/4ebhi3tjBFhmhjjIvmK4j7wKW2AMpOWSWlJKmHhjjJt5GdoyBit3dcfNUHKvrXcurVskCtBrm1pNpRujoOKQqYH+tXC7FSF8Nz1lt4o/xitWJpFe+mCCUeXg3iEUqO0NzJGlz1rse+f01YKO0Si9Hh0HPwFpfdtX/4EAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LAPIS_LAZULI
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"弓術の根源Ⅱ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 10"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"80%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"0.2"}],"text":"➸
+        Attack Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"0.3"}],"text":"■
+        Arrow Velocity: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        PvE Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        Projectile Damage: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"弓術の力を持った自然を愛すの狩人が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"BOW,CROSSBOW,GREATBOW,MUSKET"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/81UUUsUURS+RcgWFFZGEBG3IeehJEwrbV/cceayTs7ubPdelWVZhmEbZXN0bXY0RHwYM4QSirTEpFR6sISMEKIkEeypt6B/4Li79i+6s7W7swk9dx+GM+d859xvvvMxRwCoAScjEVWmKEK0WDfSJCEihFGoFhRPDThdrgoYqz1aN1JUUabxth/NxRMAx8sIFBU7hCgl4GAiGQBHy3lFxQjMJTi+N/dlZm95xnXWcg8X3Imn+WnHdV67zuLe1Gph8qOXmVxwnXkGKDx6u7ux4TrTXAPrK8wuus5Wbool5hj857vZ/Pozb8zay8LiugfRdze3CrNvco/f793fdJ1Vd2KC1b1Kql3taRCxSogXhDESqBdEukgnohwjeqJM1HtqNB5D4HCYRYSqUeT/ECojDA5hAbNsbXWXLIGAgMUOhLV2v2oY3eqSMZI0BTHpQhdKup6pqI7Vm0iksvK3+P6bo0IEgTr+RlnA/NLn/MaTnQfLAXBuP392LaFYZlPVKDj7LwFqwKnKhikVxE6NxBCS2r7Ne+eFv046ZUUpkawrkazUpTijKYvFfR/4zvadChsDkNiZQYMtwtuFgY27w2nLyEJlxIRXGr1cM+Rbdp4vQTKcShnZLMS6bQQhr/Nma2P9n74i5tUnKNi2nuqHZMgwbjNMb+PlJv8IwbIy92C3YWZSaXv0N6DZD4iNICjpA3qfd0Pvpav1VQT606bpL1+rKseszB0jZadNY9+Iokf/P28zQCtvJvgm3rzoRUmmqmTpfTAzaGegPgjTNtsP3+K9DA2Zo+d9atO0YQXh9sr17RXTMzyXrHJClygiwtwtUBSiJScc62Cmi1d+A6Exjti6zQW5UopNV8PMENYoF0yMcfv+HNrXD1nbYg2JJDeeHAe/APW6mnihBAAA
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LAPIS_LAZULI
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"隠者の根源Ⅱ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 10"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"80%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.8%"}],"text":"■
+        Crit Strike Chance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        Crit Strike Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1.2%"}],"text":"■
+        Skill Crit Chance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+8%"}],"text":"■
+        Skill Crit Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+1%"}],"text":"■
+        PvP Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+0.2"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"隠遁の力を持った手練れの暗殺者が"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"DAGGER,THRUSTING_SWORD,KATANA,STAVE"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/81UXUsUURg+SCxrUFgZ3dk06VzUIqaV5o07zRzWwZ2P5hxXZFmmaRttcdy13dEQEdoNiUoowpKU0OjCCtoIg0gQwf5BP8HJXfeu6LaLzuz3Zktddi6GM+d93uf9eN5zDgLgBkdEURYwFJEGJa6flTACDcGQC5won4tyAIpQwhpSIOT7rl4Tv3x//dMF2soINCD4/RqnCljgWL+GsCoMQM1h42Dfj678coNDZbxfViFYDtLMSG5pNZdM2sn07v1lO/U4M0/2L+3kSubeg+zHD3ZqnpgyS4uZ9Mbe7Tk7OU97iFN2YcVObu3e3bCTiwSbe7uQWX/icKSfZ1fWHYj+dXMru/Bq9+G7vTubdvKNnUoRu2MJ86zPB1UP7lcHERYkn4aGZJX3DLCYlVgPwmwA0iE3OFpO1vlqeFiBoNFHdgjLEqwuBgtQBQdUVoUucLJ8WqcZuWfOWnKBY2WkElA0nhVZH+z7BvLLDZpqows8aGQRYpEgaZerpVHhlUFBhbzmhwHo97YW/F2g9S/SKPIQVL1UKVylGIkVIWhmLhFd8g1PZ1Y/ZTYe7cy9cIGWusUV6JpLdC37e0cydbAcFmQJnP4HDVzg+G81FHrkbSpFqdj5YZK2wOXHqoEhYxX2GeMUsmJRg0juqG6oxs3JSNxIUP4pkzrX4Zx1UUz3ztNVCk2Gw0YiQam6ZfRSjM6YPR1tRb8ShotHLEIYj4wZFHdDj4Yd5MjZjvaetnowJXbLiOdRF2owaCximgVkFdO59s56qApRbTBlSqF4fVwfLTL8wb/KfL7GLMamjHEjSpKdMIzrxVo6i0X/p5eS4HoYM8h0MuYZZxciWvFxfZSKRa0YpUepiEVUZ7qdn4kJc/pUlYY44rRwe+3i9prp3FQ6VDNfgxwHEblNLIZeXJqvw/1kYocrr6J3hkaWbtG9dOmIsMs+Mmbxabo3OEPve0i1z+8TVpw4BEP0bGgW/AKsz/h/cAUAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LAPIS_LAZULI
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"blue","text":"火力の根源Ⅱ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Gem Stone"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 10"}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"green","text":"80%"}],"text":"■
+        Success Rate: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"3"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+3%"}],"text":"■
+        Weapon Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        Skill Damage: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"力の源である天上のユミルが"}'
+      - '{"italic":false,"color":"white","text":"生み出した魔法の宝石"}'
+      - '{"italic":false,"color":"green","text":"使用可能なもの"}'
+      - '{"italic":false,"color":"red","text":"SWORD,LONGSWORD,HANMMER,SPEAR"}'
+      - '{"italic":false,"color":"red","text":"GREATSWORD,AXE,GREATAXE,GREATHUMMER"}'
+      - '{"italic":false,"color":"red","text":"WHIP,GUNTLET"}'
+      - '{"bold":true,"italic":false,"color":"dark_gray","extra":[{"bold":true,"color":"dark_green","extra":[{"bold":true,"color":"dark_gray","extra":[{"color":"green","extra":[{"color":"gray","text":"to
+        apply!"}],"text":"Drag onto an item "}],"text":"] "}],"text":"*"}],"text":"["}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/9VUzWsTQRQfRUoUlCp+3GRc7B40h2qLrTllzA6bpfsRZyfGEEJYwraEbpOYbIVSetgEEaqgh6oH0VQQqxYr0kutlELFf6TTNPpfOJvvUPDuHpY37/d77837vcecAiAAzmqaoVCsmRmsR6JIpyY4nkoHwOmuXzUIBr9SgjhdX37NvI3D7efMW2NehVWe1N9/Otha5k5W/cCqNVZdZ95TIci5jZUa83brj7eZ94p5tT9fVg43X3BifeNNo7bpU6yDnd3Gysf6s6+/qzvM+8wqFY77SNZMGEQKqoYutyx+L03DJGjGMCJNhkwwoi0Q3cfB5rFrROM+u8lLRJVYUI7rVMVU4G2d67bl/zM0GcPgpMwtkxo6HgIXuziiFEWmMhLSkIzDAdD8+nWhCibgBEFkICyBUczQj4QND9ZVJBBoF7gzBC51QYLvxhWCpYyK72E1fLUTfvnotTnXpESJUMXQgdFTLNMyZdRqmmvXky74b9laTF+y/j51pGFwXrzd8NbbC7D6ne/A/qN3Q+BCl2VOKaraaXu4c+8eLiV5HiXS3KZjP1L+CO05aLqFvM0H5c/KJvaD+VzJLkP1oQNvjPq+MShO7L9cheZ8NmuXy5BYrh2CoiU6k6Mj7bgm5+0WRK5rZWehZM1ZMz5peqw/Q8K2ioV8H3p9bGSgwmzOcfrh8U7+/37tuWNSdFLiTdG55ltpLqBUsmZgIe8WoJWHOZePQpzwD8Wis3ClT1ias0shuLd2a2/N8VddSA8MPR6JYJOvLaI4TDtDPxPli5nsvSfhRcF0LVcICR0Xz27IfPalBSGUWhSOPEGZn9/KbokHpNLCUnoJ/AXMB8ETqgQAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: RED_DYE
+    amount: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"green","text":"リーチイントマトジュース"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"gray","text":"Health"}],"text":"800
+        "}],"text":"■ Restores "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s
+        Cooldown"}],"text":" "}],"text":"3"}],"text":"■ "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"熟れたトマトを調理して冷えた氷を入れた飲料"}'
+      - '{"italic":false,"color":"white","text":"瞬時に使用することができ、使用者のレベル制限がない"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"dark_gray","text":"UNCOMMON"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/81S32vTUBS++jBCQZmK+hrykKc9DPbg6FNjejGRJnckt0gpJVRNUagLNBkiY7Cb60pFB8Mfk7xsgs5KN8Qf4BSUwfxPPLbd/gtvOtt1+A94Hw6Hc75zuN93vgxCEjpnWcSk2HI9bOuGZlMXnS5XJtClUT2Nnk5IIU9u2DkJDZ6EzowA1MQOkoq2TkTJHu8UiIPRi7Ki1vrNTYifANsE3gK+kcb46UFnr7/WBPYS2NtucxdYSwB6H3ZFq7uydYQ/fP2pt54oU+mOjZ1eEgPb/v1jr//8HbAE4sfAngETucC2ga3CMjvqHiyvAHsPfAd4Any72/pymKwNYB1gD5WKhCZPMjTz6IKDNd0wbY8SS6PketHU8TgdW7MwUtUq8A7w78AZxG+Afx6j9BX4VtqKv0no4mguXxKTpj6Q41RGyHFLD+bDhXvVm3VfMEvJzcjqlV/rr2THD6Og4YeyWpudnhZFw6/WozvjELU2M8hDWQ+C+u3g/vzfHf+dyMfU6F2/kZX327P77frQKOkNzp+8AS3NYZTRie0WLe1qAU+gyyOAg10q9PMMrBWokXs09OFZw6VO6di9uUXFjaqRklWGJfEJcs0Vsj5QsuVF5R/Dez8/hlFDDJQrylJlCf0Bt2fuYhgDAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: RED_DYE
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"green","text":"リーチイントマトジュース"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"gray","text":"Health"}],"text":"800
+        "}],"text":"■ Restores "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s
+        Cooldown"}],"text":" "}],"text":"3"}],"text":"■ "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"熟れたトマトを調理して冷えた氷を入れた飲料"}'
+      - '{"italic":false,"color":"white","text":"瞬時に使用することができ、使用者のレベル制限がない"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"dark_gray","text":"UNCOMMON"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/81S32vTUBS++jBCQZmK+hrykKc9DPbg6FNjejGRJnckt0gpJVRNUagLNBkiY7Cb60pFB8Mfk7xsgs5KN8Qf4BSUwfxPPLbd/gtvOtt1+A94Hw6Hc75zuN93vgxCEjpnWcSk2HI9bOuGZlMXnS5XJtClUT2Nnk5IIU9u2DkJDZ6EzowA1MQOkoq2TkTJHu8UiIPRi7Ki1vrNTYifANsE3gK+kcb46UFnr7/WBPYS2NtucxdYSwB6H3ZFq7uydYQ/fP2pt54oU+mOjZ1eEgPb/v1jr//8HbAE4sfAngETucC2ga3CMjvqHiyvAHsPfAd4Any72/pymKwNYB1gD5WKhCZPMjTz6IKDNd0wbY8SS6PketHU8TgdW7MwUtUq8A7w78AZxG+Afx6j9BX4VtqKv0no4mguXxKTpj6Q41RGyHFLD+bDhXvVm3VfMEvJzcjqlV/rr2THD6Og4YeyWpudnhZFw6/WozvjELU2M8hDWQ+C+u3g/vzfHf+dyMfU6F2/kZX327P77frQKOkNzp+8AS3NYZTRie0WLe1qAU+gyyOAg10q9PMMrBWokXs09OFZw6VO6di9uUXFjaqRklWGJfEJcs0Vsj5QsuVF5R/Dez8/hlFDDJQrylJlCf0Bt2fuYhgDAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: RED_DYE
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"green","text":"リーチイントマトジュース"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Consumable"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"gray","text":"Health"}],"text":"800
+        "}],"text":"■ Restores "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","extra":[{"color":"dark_aqua","extra":[{"color":"gray","text":"s
+        Cooldown"}],"text":" "}],"text":"3"}],"text":"■ "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"熟れたトマトを調理して冷えた氷を入れた飲料"}'
+      - '{"italic":false,"color":"white","text":"瞬時に使用することができ、使用者のレベル制限がない"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"dark_gray","text":"UNCOMMON"}],"text":"Tier:
+        "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/81S32vTUBS++jBCQZmK+hrykKc9DPbg6FNjejGRJnckt0gpJVRNUagLNBkiY7Cb60pFB8Mfk7xsgs5KN8Qf4BSUwfxPPLbd/gtvOtt1+A94Hw6Hc75zuN93vgxCEjpnWcSk2HI9bOuGZlMXnS5XJtClUT2Nnk5IIU9u2DkJDZ6EzowA1MQOkoq2TkTJHu8UiIPRi7Ki1vrNTYifANsE3gK+kcb46UFnr7/WBPYS2NtucxdYSwB6H3ZFq7uydYQ/fP2pt54oU+mOjZ1eEgPb/v1jr//8HbAE4sfAngETucC2ga3CMjvqHiyvAHsPfAd4Any72/pymKwNYB1gD5WKhCZPMjTz6IKDNd0wbY8SS6PketHU8TgdW7MwUtUq8A7w78AZxG+Afx6j9BX4VtqKv0no4mguXxKTpj6Q41RGyHFLD+bDhXvVm3VfMEvJzcjqlV/rr2THD6Og4YeyWpudnhZFw6/WozvjELU2M8hDWQ+C+u3g/vzfHf+dyMfU6F2/kZX327P77frQKOkNzp+8AS3NYZTRie0WLe1qAU+gyyOAg10q9PMMrBWokXs09OFZw6VO6di9uUXFjaqRklWGJfEJcs0Vsj5QsuVF5R/Dez8/hlFDDJQrylJlCf0Bt2fuYhgDAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: DIAMOND_HORSE_ARMOR
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"MP5-J"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Musket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 30"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"29"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"4%"}],"text":"■
+        Recoil: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"8"}],"text":"➸
+        Attack Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+9%"}],"text":"■
+        Crit Strike Chance: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+18%"}],"text":"■
+        Crit Strike Power: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"26"}],"text":"■
+        Range: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+10%"}],"text":"■
+        Dodge Rating: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"-0.3"}],"text":"■
+        Movement Speed: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","text":"■ Two
+        Handed"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Light
+        Dash"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Left Click "}],"text":"|
+        "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"4"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"0.4"}],"text":":
+        "}],"text":" Length"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"yellow","extra":[{"color":"dark_gray","extra":[{"bold":true,"color":"gray","text":"Targeted
+        Fireball"}],"text":"| "}],"text":"|"}],"text":"|"}],"text":"Shift Right Click
+        "}],"text":"| "}],"text":"\u003e"}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"25"}],"text":":
+        "}],"text":" Damage"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"5"}],"text":":
+        "}],"text":" Ignite"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"10"}],"text":":
+        "}],"text":" Stamina"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"extra":[{"color":"dark_aqua","extra":[{"color":"dark_gray","extra":[{"color":"gray","extra":[{"color":"dark_gray","extra":[{"color":"white","text":"12"}],"text":":
+        "}],"text":" Cooldown"}],"text":"|"}],"text":"\u003e"}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty GREEN Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/41UTY/TRhgekJqmSKWUqnBrR6PiS5clye5CiFQUY88m7tpxOh4WRVFkmXg2cdexaTKwQiE99g8g0VvVG+feekBCov+EQ2/9Az31tZ04sTagRonlvM/78byflxAqoy8syzY4tRy3RS3X4XaHOujWnNDJY/nMCWM5I40+qZKd9NdilHbIAF7EZCbjSCToYFFGn+duaEdrqx3uoIv9QQldz+WWfUwt2uGu06VUfzN+IV//+PO/JfRlrqHbeou6TOVGp9X8BqWfCxsE+UPbBdc61S+U0dVcnDxd3utSVLIeOEeUl9BnOcioZhtm80rmrYyu5Ih63zAN3kP/9OfE8EmDmEarzV1dddqQqObNpBX7AuRO2zjkrknhoZmGdgQoIMFJIKaQ/ZzMpDcJIo809ncrO2QYx6Efn0WkcZD8DUU0kmPSqOzuLxY7y0hcZS3Kqe4eGozeV01zW0CW0tka0fcm3gg0a2mIYBQFUizj5WSqlSKbam23slhAR66tK8C5qh1Bxpbaos3vViX6dF1wgzL0yTFlPegKoyX0dQ5pzOCGppowMcw4om7Sc402yfk6p+0xdPSR1T1wv9+cCEZ/eAAF0KG2x9Rs3jtPoKNaFH2s3AbTm2D61XvDd+2HlDVrmYfNmVrmmM5cE68ibMxcD2IYmmvajF78u0+UofVkdioklBy+imDipyfBVMyw+TTEe5WleA8rd9799idWpfSGp1hP+9HAykntbg6//B0zMYyDMJHv39hi5jwWwk/Q+qaRNg0kduQ0OBVYG3vRMHX87d0b71PqxmdimupU6wUl5kVLVrc3xXrsjwSAMohGmVmlYGbFT8VERHLN72Zld29Tg5/FuO1FvvCX9fDuKfXnADrj4ERiU8BDCwNIEcSKeJ6BSmgGo7GEas3GYISVvcRKuQN5pDOr1NNKFSBtOb8ZdlDAzHS1MgTWK+FRP0+GpTG3seHedCSk8PEhNPiRF4YF71lPM++1YmAjXbhtlAqZVCsfSKVaW5Xu3a+/4PTY4iqGq4qdeJjN3/+E0pNchFe94kEyGG9fibevwmSLcbLFZFBGl9uwN731qW7OCVCXcHtWInBhtxwZT5/BgZ+Tc9fd/euPmZyCQX9AFoNFCV1er7XagXPSyHYN/QdeooHDZQYAAA==
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: CROSSBOW
+    meta:
+      ==: ItemMeta
+      meta-type: CROSSBOW
+      display-name: '{"italic":false,"color":"blue","text":"ピストルクロスボウ"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Crossbow"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"yellow","text":"Requires Lvl 25"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"22"}],"text":"➸
+        Attack Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"0.8"}],"text":"■
+        Arrow Velocity: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+5%"}],"text":"■
+        PvE Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+4%"}],"text":"■
+        Projectile Damage: "}],"text":" "}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"color":"white","text":"+10%"}],"text":"■
+        Undead Damage: "}],"text":" "}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty 1 Gem Socket"}'
+      - '{"italic":false,"color":"green","text":"◆ Empty GREEN Gem Socket"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"gold","text":"RARE"}],"text":"Tier:
+        "}],"text":" "}'
+      enchants:
+        QUICK_CHARGE: 5
+        MULTISHOT: 5
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/41T32vTQBw/QUoQ1PkbBOE4XF8culY7XUFcTI4umh/1knaUNoQsO7fadNHktlFKX1oQ/wBRFBGf3IOI+Kav8z9ZnvwvvNYlTd2LRxJy9/l8vt+7Tz45BYAALmiaoVhYM50K1hzTMnRsglt9hLvPWc/0AxahchMV0MLkrhCMdWTzF9qNWLBNx6g9yGXKVOvYkUVNrOCVi2AycuBKioqEGGtOHauGpFiNB7/fjcd7AZxLGViXVkXdMgFsohc7ba/jeFtuuElhiffv7visHW0FjM/sHLicqmq6jEU5aXz9b2MBnE8J46djNaoYCBIxTPOhsZbVi5YlSo8T/VKiP50SLAUTcJKIBAtgbraqIoOzVYVbpzrT0tMjE/ykphAsOyrm515ZTky5OrWMGI+wZClq6tzc8Q3ooobBtfxyPHodD3/Go1fx6Es8/BaPvk6mH+LhZwFcSulygwsUyVENgk/cb6K8J4VBFK0He9xGfuUpodzekEZQ3fVhsXS0fBvm7x5+/AFFxlyvA2W3627SMsw/LRZT+M0nKIZhsAfr1A+8NuuN8cWb97KE6i7OiG+U5mfAMHhGPdb2aZZzZ4ZT296g7kYWLyzOH23SPXz7Ek4SCguQRxGagdeh7P+hSY5n4aS31aZhGR7sLx3s++PPjWwBnFk1LdKYRnO9j0zmMlRGyRJXGxWTBWGP/xB9dCzNzq/vEQu5oNn6J9UttNDK5rqFbDSwB+APILiHkJ4DAAA=
+      charged: false
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 155.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: WHITEWOLF_dg
+    count: 9
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 85.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: SUNGUARDIAN
+    count: 1
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -32.0
+    z: 89.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -22.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: -22.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionReward
+  cooldownDisabled: false
+  resetDay: 1
+  period: 0
+  overrideCooldown: false
+  xp: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: -32.0
+    z: 318.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  rewards:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: SUNFLOWER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"italic":false,"color":"gold","text":"ヒマワリの化石"}'
+      lore:
+      - '{"italic":false,"color":"red","text":"Material"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"white","text":"サザンドル遺跡で発見した古びた化石"}'
+      - '{"italic":false,"color":"white","text":"考古学的にとても価値があるものらしい"}'
+      - '{"italic":false,"color":"yellow","text":"【ストーリーアイテム】"}'
+      - '{"italic":false,"text":""}'
+      - '{"italic":false,"color":"dark_aqua","extra":[{"color":"gray","extra":[{"bold":true,"color":"yellow","text":"VERY
+        RARE"}],"text":"Tier: "}],"text":" "}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAA/81STUsCURR9tJqiooJoK2/hql1Q4KpBHznkODEzFCIiEhMIQmCzCRF870kkCn0silxkhmgkGSEVSbSwXX/jJtq/6I2SGP2BNpfHeffjnHvPBEISmlVVTTGJakRJ0OuXg6aBxsIRCU0NcVMhOhrfJHooqss6Gf0KaDpBxTB27wB7BPYEvAk8B7z+RVu95zLQWvei1avmgZ4DLXWOKkCbzqNw1i018aKo62W4gDt31W4xC7QO9AZoFRj7fCt3MiK9AJQBywsEaANYrt8p65RakDkG9gL8EPgr8FsnsmtgFeAHwK8gc4KFjJkhVydGFR+a9CuqvCXriq5510fFBGWVoAX3MvBT4JfA752mtDEgK6H5YaIvJFIV70D9h1C/rcZsKxmPJQSvvqp/uY0BtyWXe8WMW0mPq12z2rWEc1eXc1dnW3O/t2WGNgiSVNkkuiIHJDTtN0zhgqFRVlPYsGM29uAfSEzQ1gx7N7mPPeEU/uOt6PvDnp0UBeEITkfS6Bs0waZIgwIAAA==
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+  fadeOut: 50
+  fadeIn: 20
+  subtitle: ' '
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: -5.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 6.0
+    conditions: []
+  title: §eサザンドル遺跡
+  stay: 100
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 119.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions:
+    - ==: net.playavalon.mythicdungeons.dungeons.conditions.ConditionMythic
+      targetPlayer: true
+      mythicLine: day
+      targetLocation: null
+      inverted: false
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 155.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: WHITEWOLF_dg
+    count: 9
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+    fadeOut: 10
+    fadeIn: 10
+    subtitle: どこかで鍵が開く音がした
+    targetType: *id002
+    location: &id008
+      ==: org.bukkit.Location
+      x: 25.0
+      y: -30.0
+      z: 92.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    title: 太陽の印が動き出す･･･
+    stay: 80
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+    commandType: 1
+    forEachPlayer: false
+    targetType: *id003
+    location: *id008
+    trigger: null
+    command: time set 2000
+  targetType: *id002
+  location: *id008
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 291.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: bonemaster
+    count: 1
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: -23.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -23.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 174.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: POLARBEAR_dg
+    count: 4
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -25.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: -25.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SNOW_ELEMENT_dg
+  delay: 0
+  level: 80
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -4.0
+    y: -32.0
+    z: 193.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: -159.29864501953125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: FIREWITCH
+  delay: 0
+  level: 10
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 17.0
+    y: -31.0
+    z: 30.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 3
+  yaw: 136.5013885498047
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: SNOW_ELEMENT_dg
+  delay: 0
+  level: 80
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: -32.0
+    z: 193.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: -159.29864501953125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: FIREZOMBIEE2
+  delay: 0
+  level: 10
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -19.0
+    y: -31.0
+    z: 10.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 3
+  yaw: -43.2119140625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -30.0
+    z: 291.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: bonemaster
+    count: 1
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+    fadeOut: 10
+    fadeIn: 10
+    subtitle: ' '
+    targetType: *id002
+    location: &id009
+      ==: org.bukkit.Location
+      x: -28.0
+      y: -30.0
+      z: 93.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    title: 魔物のうめき声が聞こえる･･･
+    stay: 80
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: CrawlerBat2
+    delay: 0
+    level: 15
+    interval: 0
+    targetType: *id003
+    location: *id009
+    trigger: null
+    maxCount: 5
+    yaw: -2.9959774017333984
+  targetType: *id002
+  location: *id009
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -30.0
+    z: 135.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: FROZEN_SKELETON_dg
+    count: 6
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: -25.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionLeaveDungeon
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -25.0
+    z: -18.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: BLAZEN2
+  delay: 0
+  level: 0
+  interval: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 18.0
+    y: -32.0
+    z: 72.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: 154.2005615234375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+  commandType: 1
+  forEachPlayer: false
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: -7.0
+    y: -32.0
+    z: 297.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  command: time set 5500
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionStartDungeon
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: -26.0
+    z: -13.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: true
+    radius: 5.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: FROZEN_SKELETON_dg
+  delay: 0
+  level: 80
+  interval: 50
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -32.0
+    z: 131.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 7
+  yaw: -178.79747009277344
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: POLARBEAR_dg
+  delay: 0
+  level: 50
+  interval: 50
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: -32.0
+    z: 168.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 5
+  yaw: -174.2978973388672

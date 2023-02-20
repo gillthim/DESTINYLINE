@@ -1,0 +1,153 @@
+[
+  {
+    "blockcoords": "world,-118,71,108",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass playsound minecraft:originalcraft master Gillthim -120.57 70.00 109.06 2 1",
+      "@bypass mi stations open reillthecartos-station"
+    ],
+    "lastedit": "2022/09/14 18:31:43"
+  },
+  {
+    "blockcoords": "tairiku,-250,71,6",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s minecraft:strength 3600 8",
+      "@bypass tp @s -245 66 22 90 0"
+    ],
+    "lastedit": "2023/01/17 13:46:29"
+  },
+  {
+    "blockcoords": "tairiku,-250,71,12",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s minecraft:haste 3600 3",
+      "@bypass tp @s -245 66 22 90 0"
+    ],
+    "lastedit": "2023/01/17 13:45:54"
+  },
+  {
+    "blockcoords": "world,-151,69,68",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass itemstackreloaded:stackitems"
+    ],
+    "lastedit": "2022/09/17 20:32:44"
+  },
+  {
+    "blockcoords": "world,-105,69,135",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s minecraft:resistance 3600 0",
+      "@bypass tp \u003cplayer\u003e -93 69 132 0 0"
+    ],
+    "lastedit": "2023/01/11 02:43:08"
+  },
+  {
+    "blockcoords": "tairiku,-250,71,28",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s minecraft:health_boost 3600",
+      "@bypass tp @s -245 66 22 90 0"
+    ],
+    "lastedit": "2023/01/17 13:41:36"
+  },
+  {
+    "blockcoords": "tairiku,-240,66,7",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass mi stations open kirillthekitchen"
+    ],
+    "lastedit": "2023/02/18 10:49:55"
+  },
+  {
+    "blockcoords": "world,-121,71,106",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass itemstackreloaded:stackitems"
+    ],
+    "lastedit": "2022/09/17 20:34:19"
+  },
+  {
+    "blockcoords": "tairiku,-236,71,12",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s minecraft:speed 3600 0",
+      "@bypass tp @s -245 66 22 90 0"
+    ],
+    "lastedit": "2023/01/17 13:48:49"
+  },
+  {
+    "blockcoords": "world,-91,74,128",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s haste 3600 3",
+      "@bypass tp \u003cplayer\u003e -93 69 132 0 0"
+    ],
+    "lastedit": "2022/12/09 19:22:48"
+  },
+  {
+    "blockcoords": "tairiku,-236,71,6",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass tp @s -245 66 22 90 0",
+      "@bypass effect give @s minecraft:luck 3600 1"
+    ],
+    "lastedit": "2023/02/18 11:42:39"
+  },
+  {
+    "blockcoords": "world,-105,74,128",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s health_boost 3600 50",
+      "@bypass tp \u003cplayer\u003e -93 69 132 0 0"
+    ],
+    "lastedit": "2023/01/11 02:38:44"
+  },
+  {
+    "blockcoords": "world,-105,69,128",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass tp \u003cplayer\u003e -93 69 132 0 0",
+      "@bypass effect give @s strength 3600 6"
+    ],
+    "lastedit": "2023/02/18 11:40:11"
+  },
+  {
+    "blockcoords": "tairiku,-250,71,22",
+    "author": [
+      "6643c7f2-076a-4a24-8042-5fec74247956"
+    ],
+    "script": [
+      "@bypass effect give @s minecraft:resistance 3600 0",
+      "@bypass tp @s -245 66 22 90 0"
+    ],
+    "lastedit": "2023/01/17 13:44:11"
+  }
+]

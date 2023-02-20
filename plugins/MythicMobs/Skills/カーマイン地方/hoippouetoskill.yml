@@ -1,0 +1,9 @@
+hoippouetoskill:
+  Conditions:
+  - playernotwithin{d=24} false
+  Skills:
+  - sound{s=hoippouetoskill7msec} @self
+  - potion{t=SLOW;d=100;l=7} @self
+  - delay 40
+  - delay 60
+  - damage{amount=300;ignoreArmor=true} @PIR{r=18}

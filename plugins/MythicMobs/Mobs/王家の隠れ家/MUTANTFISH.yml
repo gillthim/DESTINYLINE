@@ -1,0 +1,27 @@
+MUTANTFISH:
+  Type: SILVERFISH
+  Display: '&bミュータントフィッシュ Lv<mob.level>'
+  Health: 1000
+  Damage: 1450
+  Optioons: 
+    AtacckSpeed: 1.6
+    AlwaysShowName: true
+    Despawn: false
+    FollowRange: 6
+    MovementSpeed: 0.3
+    PreventItemPickup: false
+    PreventOtherDrops: true
+    Silent: false
+    ImmuneToZombification: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelector: 
+  -  0 clear
+  -  1 meleeattack
+  -  2 randomstrolls
+  Skills:
+  -  skill{s=MUTANTDANCE} @self ~onSpawn
+  LevelModifiers:
+  -  Damage: 25
+  -  Health: 25

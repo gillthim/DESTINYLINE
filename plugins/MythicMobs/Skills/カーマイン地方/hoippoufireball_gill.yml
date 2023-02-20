@@ -1,0 +1,14 @@
+hoippoufireball_gill:
+  Conditions:
+  - playernotwithin{d=24} false
+  Skills: 
+  - sound{s=hoippoufireball1msec} @self
+  - ignite{ticks=60} @target
+  - shootfireball{y=1;v=3;small=true;i=false} @target
+  - damage{amount=80;element=FIRE} @target
+  - delay 15
+  - shootfireball{y=2;v=4;small=true;i=false} @target
+  - damage{amount=100;element=FIRE} @target
+  - delay 30
+  - shootfireball{y=2.2;v=5;i=false} @target
+  - damage{amount=120;element=FIRE;i=true} @target

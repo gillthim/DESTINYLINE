@@ -1,0 +1,36 @@
+class-points: 0
+skill-points: 1
+skill-reallocation-points: 0
+attribute-points: 6
+attribute-realloc-points: 0
+level: 6
+experience: 901.0561272300271
+class: ADVENTURER
+waypoints: []
+friends: []
+last-login: 1671512016276
+skill-tree-points:
+  global: 0
+skill-tree-reallocation-points: 0
+bound-skills:
+- COMBO_ATTACK
+- HEAL
+skill:
+  HEAL: 5
+attribute:
+  dexterity: 2
+  strength: 7
+  intelligence: 0
+profession: {}
+quest: {}
+class-info:
+  HUMAN:
+    level: 1
+    experience: 0.0
+    skill-points: 0
+    attribute-points: 0
+    attribute-realloc-points: 0
+    attribute:
+      dexterity: 0
+      strength: 0
+      intelligence: 0

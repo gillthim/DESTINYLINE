@@ -1,0 +1,25 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: Zexeszcxessva
+  UUID: 311e846f-919b-45a6-9741-e9a53fbb56ad
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1671768896449
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -13.0
+      y: -51.0
+      z: 197.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1671768896449
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1671768997402
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 6.0
+      y: -51.0
+      z: 219.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1671768997402

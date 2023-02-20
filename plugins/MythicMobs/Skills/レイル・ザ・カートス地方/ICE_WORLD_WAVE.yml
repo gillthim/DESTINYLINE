@@ -1,0 +1,27 @@
+ICE_WORLD_WAVE:
+  Conditions: 
+  - playernotwithin{d=10} false
+  - hastag{t=STUN_DASH} false
+  Skills:
+  - addtag{t=ICE_WORLD_WAVE}
+  - potion{t=SLOW;d=50;l=5} @self
+  - delay 18
+  - missile{ot=ICE_WORLD_WAVE_TICK;oh=ICE_WORLD_WAVE_HIT;v=8;i=4;hR=0.8;vR=0.8;in=1;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 5
+  - missile{ot=ICE_WORLD_WAVE_TICK;oh=ICE_WORLD_WAVE_HIT;v=8;i=4;hR=0.8;vR=0.8;in=1;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 5
+  - missile{ot=ICE_WORLD_WAVE_TICK;oh=ICE_WORLD_WAVE_HIT;v=8;i=4;hR=0.8;vR=0.8;in=1;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 7
+  - delay 10
+  - removetag{t=ICE_WORLD_WAVE}
+ICE_WORLD_WAVE_TICK:
+  Skills:
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#00ffff;a=15:hs=2;vs=2} @origin
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#00ffff;radius=0.8;uel=true} @origin
+  - sound{s=minecraft:block.glass.break;p=0.8;v=0.6} @origin
+ICE_WORLD_WAVE_HIT:
+  Skills:
+  - potion{t=SLOW;d=50;l=2}
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#00ffff;a=30:hs=4;vs=4}
+  - sound{s=minecraft:icecleactive;p=0.8;v=2} 
+  - damage{a=40;type=ICE;i=true}

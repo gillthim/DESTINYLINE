@@ -1,0 +1,9 @@
+# The internal name of the MM skill.
+mythicmobs-skill-id: Rune_Flame
+
+# Define the ability modifiers here (cooldown/mana/stamina are already implemented)
+modifiers:
+- level
+- cooldown
+- mana
+- damage

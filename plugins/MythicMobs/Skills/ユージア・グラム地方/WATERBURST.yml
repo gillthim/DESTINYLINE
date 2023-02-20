@@ -1,0 +1,26 @@
+WATERBURST:
+  Conditions: 
+  - playernotwithin{d=40} false
+  - hastag{t=WATER_KEEP} false
+  Skills:
+  - addtag{t=WATERBURST} @self
+  - potion{t=SLOW;d=40;l=7} @self
+  - delay 20
+  - missile{ot=WATERBURST_TICK;oh=WATERBURST_HIT;v=8;i=1.4;hR=0.3;vR=0.3;in=20;md=80;mr=45;syo=2} @PlayersInRadius{r=20;limit=2}
+  - delay 20
+  - missile{ot=WATERBURST_TICK;oh=WATERBURST_HIT;v=8;i=1.4;hR=0.3;vR=0.3;in=20;md=80;mr=45;syo=2} @PlayersInRadius{r=20;limit=2}
+  - delay 20
+  - missile{ot=WATERBURST_TICK;oh=WATERBURST_HIT;v=8;i=1.4;hR=0.3;vR=0.3;in=20;md=80;mr=45;syo=2} @PlayersInRadius{r=20;limit=2}
+  - delay 20
+  - removetag{t=WATERBURST} @self
+WATERBURST_TICK:
+  Skills:
+  - effect:particles{p=drip_water;a=200:hs=3;vs=3} @origin
+  - effect:particlesphere{p=REDDUST;c=#4925f6;a=200;radius=0.3} @origin
+  - effect:sound{s=minecraft:item.bottle.fill;v=2;p=1.2}
+  - effect:sound{s=minecraft:item.bottle.fill;v=2;p=0.5}
+WATERBURST_HIT:
+  Skills:
+  - effect:sound{s=minecraft:item.bottle.fill;v=2;p=1;repeat=5;repeatInterval=5}
+  - effect:sound{s=minecraft:entity.tropical_fish.hurt.blow_up;v=2;p=0.5}
+  - damage{a=1800;i=true;type=Water}

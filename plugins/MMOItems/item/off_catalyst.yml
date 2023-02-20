@@ -1,0 +1,48 @@
+DRAGON_SHOOTINGSWORD:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000002E7
+    name: '&b飛竜の撃剣'
+    attack-damage: 10.0
+    required-level: 35.0
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        damage: 20.0
+        mode: DAMAGED_BY_ENTITY
+        knockback: 0.2
+        cooldown: 4.0
+        stamina: 0.0
+      ability2:
+        type: BURN
+        mode: ATTACK
+        duration: 3.0
+        cooldown: 8.0
+    max-health: 80.0
+    tier: LEGENDARY
+    unbreakable: true
+    lore:
+    - '&f飛竜の力を宿した剣'
+    - '&f相手に攻撃をされたら反撃ができる'
+    - '&f防御用の剣であり、左手に持たないと意味がない'
+    block-power: 20.0
+    block-rating: 15.0
+    max-stamina: 50.0
+    movement-speed: 6.0E-4
+PARING_DAGGER:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 3.0
+    name: '&9パリングダガー'
+    parry-rating: 20.0
+    tier: RARE
+    parry-cooldown-reduction: 20.0
+    defense: 2.0
+MP1:
+  base:
+    material: PRISMARINE_CRYSTALS
+    max-mana: 350.0
+    unbreakable: true
+    required-level: 20.0
+    name: '&9クリスタルの束'
+    skill-damage: 5.0

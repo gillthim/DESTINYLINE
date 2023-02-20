@@ -1,0 +1,24 @@
+sasuke_kawarimi:
+  Conditions: 
+  - hastag{t=tidori} false
+  - hastag{t=chakura} false
+  - playernotwithin{d=40} false
+  Skills:
+  - addtag{t=kawarimi}
+  - potion{t=SLOW;d=30;l=7} @self
+  - delay 2
+  - sound{s=zyutu;v=2;p=1} @self
+  - delay 4
+  - message{m="<mob.name>&f<&co>変わり身の術！"} @PlayersInRadius{r=30}
+  - particles{p=cloud;a=200;hs=1;vs=2;s=2;y=1;size=10;s=0.1}
+  - effect:smoke
+  - sound{s=kawarimi;v=2;p=1} @self
+#  - hidefromplayers{d=80} @self
+  - swap @target
+  - effect:spin{duration=2;velocity=20} @target
+  - shieldbreak{duration=100} @target
+  - speak{m="&L&Fどこを見ている";cooldown=50;chat=false;o=1.1;t=65} @PlayersInRadius{r=40}
+  - sound{s=minecraft:block.glass.break;v=2;p=0.5} @target
+  - delay 20
+  - particles{p=cloud;a=200;hs=1;vs=2;s=2;y=1;size=10;s=0.1}
+  - removetag{t=kawarimi}

@@ -1,0 +1,9 @@
+dorairu_split_matt: 
+  Conditions: 
+  - playernotwithin{d=16} false
+  Skills: 
+  - sound{s=dorairupon1msec} @self
+  - effect:spin{d=50;v=200} @self
+  - effect:particlesphere{r=1} @self
+  - summon{t=dorairu_matt2} @self
+#- command{c=mm mobs spawn dorairu_matt} @self

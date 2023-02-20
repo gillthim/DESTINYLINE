@@ -1,0 +1,160 @@
+display: 
+    name: 'ブレイダー'
+    item: BOOK
+    lore: 
+    - '剣技の修練と心得を盛った世界を旅する者'
+    - '&L以下の権利を獲得し、その後の各クラスにも引き継がれる'
+    - '&9ラピスラズリはバニラアイテムと交換可能'
+    - '&9エメラルドはオリジナルアイテムまたは装備と交換可能'
+options: 
+    default: false
+    display: false
+triggers:
+    level-up:
+    - 'command{format="mmocore admin skill-points give %player% 2"}'
+    - 'command{format="mmocore admin attribute-points give %player% 3"}'
+attributes: 
+    max-health: 
+        base: 130
+        per-level: 7
+    max-mana: 
+        base: 30
+        per-level: 3
+    mana-regeneration: 
+        base: 0.02
+        per-level: 0.01
+    health-regeneration: 
+        base: 0.03
+        per-level: 0.02
+    attack_speed:
+        base: 0
+        per-level: 0
+    movement_speed:
+        base: 0
+        per-level: 0
+    knockback_resistance:
+        base: 0
+        per-level: 0
+    health_regeneration:
+        base: 0
+        per-level: 0
+    max_stamina:
+        base: 0
+        per-level: 0
+    max_stellium:
+        base: 0
+        per-level: 0
+    mana_regeneration:
+        base: 0
+        per-level: 0
+    stamina_regeneration:
+        base: 0
+        per-level: 0
+    stellium_regeneration:
+        base: 0
+        per-level: 0
+    cooldown_reduction:
+        base: 0
+        per-level: 0
+    magical_damage:
+        base: 0
+        per-level: 0
+    physical_damage:
+        base: 0
+        per-level: 0
+    projectile_damage:
+        base: 0
+        per-level: 0
+    weapon_damage:
+        base: 0
+        per-level: 0
+mana:
+    char: '♦'
+    icon: '&9♦'
+    color:
+        full: BLUE
+        half: BLUE
+        empty: RED
+    name: 'マナ'
+subclasses:
+    MAGICIAN: 30
+    ADVENTURER: 0
+exp-curve: Maglevels
+max-level: 35
+skills:
+    orginternalfire:
+        level: 18
+        max-level: 10
+        damage:
+             base: 150
+             per-level: 10
+        cooldown:
+            base: 25
+            per-level: -0.3
+        mana:
+            base: 100
+            per-level: -2
+    test:
+        level: 15
+        max-level: 30
+        damage:
+             base: 50
+             per-level: 100
+        cooldown:
+            base: 1
+            per-level: -0.3
+        mana:
+            base: 100
+            per-level: -2
+override-vanilla-exp: false
+cast-particle:
+    particle: REDSTONE
+    color:
+        red: 255
+        green: 180
+        blue: 0
+main-exp-sources: 
+- killmob{type=ZOMBIE;amount=10-20}
+- killmob{type=WITCH;amount=70-90}
+- killmob{type=WITHER_SKELETON;amount=500-620}
+- killmob{type=SLIME;amount=90-100}
+- killmob{type=ZOMBIE_VILLAGER;amount=80-90}
+- killmob{type=SKELETON;amount=100-150}
+- killmob{type=SILVERFISH;amount=110-130}
+- killmob{type=GHAST;amount=50-800}
+- killmob{type=MAGMA_CUBE;amount=200-250}
+- killmob{type=BLAZE;amount=250-300}
+- killmob{type=CREEPER;amount=100}
+- killmob{type=PHANTOM;amount=200-300}
+- killmob{type=HUSK;amount=80-160}
+- killmob{type=Spider;amount=60-120}
+- killmob{type=ENDERMAN;amount=500}
+- killmythicmob{type=Athenae;amount=100000}
+- killmythicmob{type=CrawlerBat;amount=350-600}
+- killmythicmob{type=DaggerSkeleton;amount=500-800}
+- killmythicmob{type=DispererBat;amount=900-1000}
+- killmythicmob{type=koZeriri;amount=200}
+- killmythicmob{type=MagicalSkeleton;amount=500-800}
+- killmythicmob{type=MasterZeriri;amount=5000-7000}
+- killmythicmob{type=MasterZeriri_PvE;amount=10000}
+- killmythicmob{type=Zeriri;amount=300}
+- killmythicmob{type=Zombiee;amount=150-350}
+- killmythicmob{type=Zyusoniwatori;amount=350-500}
+- killmythicmob{type=hoippou_gill;amount=150000}
+- killmythicmob{type=dorairu_matti;amount=500-600}
+- killmythicmob{type=doruiru_matt;amount=1000}
+- killmythicmob{type=pigurun_gill;amount=300-320}
+- killmythicmob{type=Kodaino_Pigurun;amount=1200-1500}
+- killmythicmob{type=Kodaino_Skeleton;amount=20000}
+- killmythicmob{type=Kodaino_Spadine;amount=1000-1200}
+- killmythicmob{type=Kodaino_Zombiee;amount=1000-1200}
+- killmythicmob{type=Wicther;amount=500-700}
+- killmythicmob{type=Kodaino_Skeleton;amount=20000}
+- killmythicmob{type=Reaper;amount=50000}
+- killmythicmob{type=Wicther;amount=500-700}
+- killmythicmob{type=FireOcelot;amount=350-500}
+- killmythicmob{type=Spadine;amount=150-300}
+- killmythicmob{type=Bee;amount=150-300}
+- killmythicmob{type=Badmen;amount=200-300}
+- killmythicmob{type=Kodaino_Giant;amount=1500}
+- killmythicmob{type=Kodaino_Rounder;amount=1200-1300}
