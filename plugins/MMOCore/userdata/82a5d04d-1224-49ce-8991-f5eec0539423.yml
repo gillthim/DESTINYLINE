@@ -4,11 +4,11 @@ skill-reallocation-points: 0
 attribute-points: 0
 attribute-realloc-points: 0
 level: 8
-experience: 9788.44459039424
+experience: 9788.0
 class: ADVENTURER
 waypoints: []
 friends: []
-last-login: 1676901324888
+last-login: 1676904488157
 skill-tree-points:
   global: 0
 skill-tree-reallocation-points: 0

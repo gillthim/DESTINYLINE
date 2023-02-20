@@ -20,13 +20,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: -112.80244
+        bodyYaw: 75.32828
         world: world
         x: '-164.4423'
         y: '71.0'
         z: '72.5988'
-        yaw: '-112.8024'
-        pitch: '0.0'
+        yaw: '75.3283'
+        pitch: '-78.9029'
       spawned: true
       type: PLAYER
       lookclose:
@@ -63,13 +63,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 68.71303
+        bodyYaw: -31.32586
         world: world
         x: '-113.7737'
         y: '70.0'
         z: '73.7857'
-        yaw: '68.713'
-        pitch: '-1.4251'
+        yaw: '-31.3259'
+        pitch: '-8.1713'
       spawned: true
       type: PLAYER
       lookclose:
@@ -608,7 +608,7 @@ npc:
           meta:
             encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAACHQAAj09dAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAAEbG9yZXQAE2F0dHJpYnV0ZS1tb2RpZmllcnN0AAlJdGVtRmxhZ3N0AAZEYW1hZ2V0AAhpbnRlcm5hbHVxAH4ABgAAAAh0AAhJdGVtTWV0YXQADUxFQVRIRVJfQVJNT1J0AEV7Iml0YWxpYyI6ZmFsc2UsImNvbG9yIjoid2hpdGUiLCJ0ZXh0Ijoi44OP44O844OJ44Os44K244O844OW44O844OEIn1zcgA2Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVMaXN0JFNlcmlhbGl6ZWRGb3JtAAAAAAAAAAACAAFbAAhlbGVtZW50c3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVxAH4ABgAAAAx0AIx7ImV4dHJhIjpbeyJib2xkIjpmYWxzZSwiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lZCI6ZmFsc2UsInN0cmlrZXRocm91Z2giOmZhbHNlLCJvYmZ1c2NhdGVkIjpmYWxzZSwiY29sb3IiOiJyZWQiLCJ0ZXh0IjoiQXJtb3IifV0sInRleHQiOiIifXQAC3sidGV4dCI6IiJ9dACYeyJleHRyYSI6W3siYm9sZCI6ZmFsc2UsIml0YWxpYyI6ZmFsc2UsInVuZGVybGluZWQiOmZhbHNlLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwib2JmdXNjYXRlZCI6ZmFsc2UsImNvbG9yIjoieWVsbG93IiwidGV4dCI6IlJlcXVpcmVzIEx2bCA1In1dLCJ0ZXh0IjoiIn10AAt7InRleHQiOiIifXQBhHsiZXh0cmEiOlt7ImJvbGQiOmZhbHNlLCJpdGFsaWMiOmZhbHNlLCJ1bmRlcmxpbmVkIjpmYWxzZSwic3RyaWtldGhyb3VnaCI6ZmFsc2UsIm9iZnVzY2F0ZWQiOmZhbHNlLCJjb2xvciI6ImRhcmtfYXF1YSIsInRleHQiOiIgIn0seyJib2xkIjpmYWxzZSwiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lZCI6ZmFsc2UsInN0cmlrZXRocm91Z2giOmZhbHNlLCJvYmZ1c2NhdGVkIjpmYWxzZSwiY29sb3IiOiJncmF5IiwidGV4dCI6IuKWoCBEZWZlbnNlOiAifSx7ImJvbGQiOmZhbHNlLCJpdGFsaWMiOmZhbHNlLCJ1bmRlcmxpbmVkIjpmYWxzZSwic3RyaWtldGhyb3VnaCI6ZmFsc2UsIm9iZnVzY2F0ZWQiOmZhbHNlLCJjb2xvciI6IndoaXRlIiwidGV4dCI6IisxIn1dLCJ0ZXh0IjoiIn10AYJ7ImV4dHJhIjpbeyJib2xkIjpmYWxzZSwiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lZCI6ZmFsc2UsInN0cmlrZXRocm91Z2giOmZhbHNlLCJvYmZ1c2NhdGVkIjpmYWxzZSwiY29sb3IiOiJkYXJrX2FxdWEiLCJ0ZXh0IjoiICJ9LHsiYm9sZCI6ZmFsc2UsIml0YWxpYyI6ZmFsc2UsInVuZGVybGluZWQiOmZhbHNlLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwib2JmdXNjYXRlZCI6ZmFsc2UsImNvbG9yIjoiZ3JheSIsInRleHQiOiLinKAgQXJtb3I6ICJ9LHsiYm9sZCI6ZmFsc2UsIml0YWxpYyI6ZmFsc2UsInVuZGVybGluZWQiOmZhbHNlLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwib2JmdXNjYXRlZCI6ZmFsc2UsImNvbG9yIjoid2hpdGUiLCJ0ZXh0IjoiKzEifV0sInRleHQiOiIifXQBlHsiZXh0cmEiOlt7ImJvbGQiOmZhbHNlLCJpdGFsaWMiOmZhbHNlLCJ1bmRlcmxpbmVkIjpmYWxzZSwic3RyaWtldGhyb3VnaCI6ZmFsc2UsIm9iZnVzY2F0ZWQiOmZhbHNlLCJjb2xvciI6ImRhcmtfYXF1YSIsInRleHQiOiIgIn0seyJib2xkIjpmYWxzZSwiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lZCI6ZmFsc2UsInN0cmlrZXRocm91Z2giOmZhbHNlLCJvYmZ1c2NhdGVkIjpmYWxzZSwiY29sb3IiOiJncmF5IiwidGV4dCI6IuKcoCBLbm9ja2JhY2sgUmVzaXN0YW5jZTogIn0seyJib2xkIjpmYWxzZSwiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lZCI6ZmFsc2UsInN0cmlrZXRocm91Z2giOmZhbHNlLCJvYmZ1c2NhdGVkIjpmYWxzZSwiY29sb3IiOiJ3aGl0ZSIsInRleHQiOiIrMC4xJSJ9XSwidGV4dCI6IiJ9dAALeyJ0ZXh0IjoiIn10AKp7ImV4dHJhIjpbeyJib2xkIjpmYWxzZSwiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lZCI6ZmFsc2UsInN0cmlrZXRocm91Z2giOmZhbHNlLCJvYmZ1c2NhdGVkIjpmYWxzZSwiY29sb3IiOiJ3aGl0ZSIsInRleHQiOiLkuIjlpKvjgarpnanjgafkvZzjgonjgozjgZ/pmLLlhbcifV0sInRleHQiOiIifXQAC3sidGV4dCI6IiJ9dAFweyJleHRyYSI6W3siYm9sZCI6ZmFsc2UsIml0YWxpYyI6ZmFsc2UsInVuZGVybGluZWQiOmZhbHNlLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwib2JmdXNjYXRlZCI6ZmFsc2UsImNvbG9yIjoiZGFya19hcXVhIiwidGV4dCI6IiAifSx7ImJvbGQiOmZhbHNlLCJpdGFsaWMiOmZhbHNlLCJ1bmRlcmxpbmVkIjpmYWxzZSwic3RyaWtldGhyb3VnaCI6ZmFsc2UsIm9iZnVzY2F0ZWQiOmZhbHNlLCJjb2xvciI6ImdyYXkiLCJ0ZXh0IjoiVGllcjogIn0seyJib2xkIjp0cnVlLCJpdGFsaWMiOmZhbHNlLCJ1bmRlcmxpbmVkIjpmYWxzZSwic3RyaWtldGhyb3VnaCI6ZmFsc2UsIm9iZnVzY2F0ZWQiOmZhbHNlLCJ0ZXh0IjoiQ09NTU9OIn1dLCJ0ZXh0IjoiIn10AJ57ImV4dHJhIjpbeyJib2xkIjpmYWxzZSwiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lZCI6ZmFsc2UsInN0cmlrZXRocm91Z2giOmZhbHNlLCJvYmZ1c2NhdGVkIjpmYWxzZSwiY29sb3IiOiJncmF5IiwidGV4dCI6IkR1cmFiaWxpdHk6IDk5NiAvIDEwMDAifV0sInRleHQiOiIifXNyABdqYXZhLnV0aWwuTGlua2VkSGFzaE1hcDTATlwQbMD7AgABWgALYWNjZXNzT3JkZXJ4cgARamF2YS51dGlsLkhhc2hNYXAFB9rBwxZg0QMAAkYACmxvYWRGYWN0b3JJAAl0aHJlc2hvbGR4cD9AAAAAAAAMdwgAAAAQAAAAAXQAFEdFTkVSSUNfQVRUQUNLX1NQRUVEc3IAE2phdmEudXRpbC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAF3BAAAAAFzcQB+AABzcQB+AAN1cQB+AAYAAAAFcQB+AAh0AAZhbW91bnR0AARuYW1ldAAEdXVpZHQACW9wZXJhdGlvbnVxAH4ABgAAAAV0ACZvcmcuYnVra2l0LmF0dHJpYnV0ZS5BdHRyaWJ1dGVNb2RpZmllcnNyABBqYXZhLmxhbmcuRG91YmxlgLPCSilr+wQCAAFEAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAAAAAAAdAANbW1vaXRlbXNEZWNveXQAJDg3ODUxZTI4LWFmMTItNDNmNi04OThlLWM2MmJkZTZiZDBlY3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cQB+ADQAAAAAeHgAc3EAfgAoAAAAAXcEAAAAAXQAD0hJREVfQVRUUklCVVRFU3hzcQB+ADgAAAABdAKoSDRzSUFBQUFBQUFBLytOaVlHQmpFUEQxOWZjTWNmVU5qbmR4ZFhQMUMzYTEvOEFBQmh3TWduQXBWejluRDBlL2tHQUdwdWhZRGdaZXVMaVBmNUFyZzNxMGtscmFreDBkVDVlc2Z0eTQ2dVhjbFk4Ymx6L1pPK2R4VStmanBwN0hqZk5menRqMHRIVzdFbENqRUZ3amlJd1BpUXh3WldCMURQTDFEMEkyTk1UVE5ZaUJ6ZGtmS09ESHpDQ01jRjlva0tPVHA0OW5TQ1FEQS9NVE5nWSt1QXpZQ0ppNzJSaGs0UkxlZnY3TzNrNk96dDd4UWE3Qm5zRWhqbjdPcnZZQlNiNlhQcTc4dzRIa2RiQnpQRjBZQkQwY2cxeDhYQjFEUEZ5RDRwMzgvVU9DMlJqRTRhcUNYQU5EUFlOY1hlSjlYTU5jZlJ4RUlQWXhJamt4M05QSEo5NHB5TlhSbTVFWlNhT3ZZd1NxNjE4Zys5ZlAwZGVWUWZweGMvL2o1ajJQbXpzZk42OTUzTFFOeko0R0psczRHRVFSZ1JBSlZPN3BEQW41KzhDUVQzWXN5czB2VXRKUkFpSzExS0RVd3RMTW90UmlCWit5SEFWVHFLaXhncHI1bzJrTEZGeFMwMUx6aWxPdEZOVFN0QTNoRW5NV0tJQ053QlQyenN0UHprNUtUTTVXQ0VvdHppd3VTY3hMaG1nMjBETlVoWnBOUk1RakhCR1NtUXEwNXRCeTgwUExjeUR4QzVJeGR5a3RTa3pLek1rc3FiUlNNRFF3TUZEUUIxT2dGTVBuRVJ3U0ZJbElmdzdWU3NFbGlTVktWa293SWFBSi91N0JKZmxGbFVwVzBkVktHRWsyL3ZERzRwSWlvSWJvV0tYYTJGb0dBSGxIbXJiMUFnQUE=
       sentinel:
-        stats_ticksSpawned: 44218656
+        stats_ticksSpawned: 44290655
         stats_timesSpawned: 173
         stats_arrowsFired: 0
         stats_potionsThrow: 0
@@ -810,7 +810,7 @@ npc:
       owner:
         uuid: 6643c7f2-076a-4a24-8042-5fec74247956
       sentinel:
-        stats_ticksSpawned: 44227489
+        stats_ticksSpawned: 44299488
         stats_timesSpawned: 173
         stats_arrowsFired: 0
         stats_potionsThrow: 0
@@ -930,13 +930,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 84.863525
+        bodyYaw: 53.332443
         world: world
         x: '-83.8022'
         y: '71.0625'
         z: '89.6495'
-        yaw: '84.8635'
-        pitch: '-11.0773'
+        yaw: '53.3324'
+        pitch: '0.0'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1494,12 +1494,12 @@ npc:
           '0': 0.0
           '1': 360.0
       location:
-        bodyYaw: -118.5575
+        bodyYaw: 25.069603
         world: world
         x: '-79.499'
         y: '72.0'
         z: '35.5146'
-        yaw: '-118.5575'
+        yaw: '25.0696'
         pitch: '0.0'
       spawned: true
     traitnames: lookclose,location,skintrait,type,mounttrait,age,scoreboardtrait,smoothrotationtrait,inventory,spawned,owner
@@ -1539,13 +1539,13 @@ npc:
           '0': 0.0
           '1': 360.0
       location:
-        bodyYaw: 132.38684
+        bodyYaw: 32.338364
         world: world
         x: '-96.6914'
         y: '70.0'
         z: '64.5695'
-        yaw: '167.3868'
-        pitch: '-5.7013'
+        yaw: '32.3384'
+        pitch: '-5.8685'
       spawned: true
       waypoints:
         linear:
@@ -1566,13 +1566,13 @@ npc:
       owner:
         uuid: 6643c7f2-076a-4a24-8042-5fec74247956
       location:
-        bodyYaw: 97.128815
+        bodyYaw: 100.84418
         world: world
         x: '-69.9038'
         y: '72.0'
         z: '35.2034'
-        yaw: '132.1288'
-        pitch: '-9.1095'
+        yaw: '135.8442'
+        pitch: '-15.1728'
       skintrait:
         fetchDefaultSkin: true
         signature: Wbu3qEZk9lLLMZK/OI2uyaBK/BZPaIduifV9w7OA9KZjt4AmC3igQlQW47/sJTisYOjWgxXD7i/erDXNWlq0wP7tUjQ0lCrfIBs1KEDsXv1GDBgpc9AAdxA1tEOEyQejqxSq8nu7RdkDxnOGw8hr3fS0CbE/zPr65iwxuZfjdjrattFAsNbRNXgzNaNo0PGEz5thRkHiA6mx/BrUGlX9Le5OpTa7gj+9zvEXO8ottVeudO0pllu4yhiabuPTUVZ3j4W+/sB72i2w350KxCblw6lnhu7RsUVj4DJO4qDIFMmylMtJqe+lFEJYnY0v1GcyxzWYiyt+W9dowkdNnoNsKl34X2Hw/ICEfDlgbY9sGf0wVzZfTsc6h/uYeXTYo3KV+vUDiVHZfyQH+WveMkgP9fcBZoNDl+rB3TFQnigGHXT2eEsMFsZfYsWxFH0PTtmuqiuGLncvZ3vrI00OaXkLoXjgnDottEcHik05Ec0BU8GE1dq3BD6Xj3ybm+mHMCJbxoaWipHTqVt+uL0utaKqbuq47VDQdqJT7M+4/zy73wWht5qiS+aUpnRF0vpBmO2SyhrEBlRC2AwEaOVeMc7WHFBHsb3CupOj2r7NGZ1gMQPQkItIjdlQ7yX+440Kym87R5LBZ5f+D9tR31JZM7Uz02w6kV4jHxNfFUnuWDIiLm8=
@@ -1610,13 +1610,13 @@ npc:
     traits:
       type: PLAYER
       location:
-        bodyYaw: -90.83524
+        bodyYaw: -33.95144
         world: world
         x: '-29.3391'
         y: '66.0'
         z: '-21.7078'
-        yaw: '-90.8352'
-        pitch: '0.0'
+        yaw: '-33.9514'
+        pitch: '-11.6944'
       spawned: true
       lookclose:
         range: '5.0'
@@ -1685,12 +1685,12 @@ npc:
           '0': 0.0
           '1': 360.0
       location:
-        bodyYaw: -154.95258
+        bodyYaw: -87.87709
         world: world
         x: '-103.8344'
         y: '70.0'
         z: '89.5332'
-        yaw: '-154.9526'
+        yaw: '-87.8771'
         pitch: '0.0'
     traitnames: lookclose,location,skintrait,type,mounttrait,age,scoreboardtrait,smoothrotationtrait,inventory,spawned,owner
     navigator:
@@ -1730,13 +1730,13 @@ npc:
           '0': 0.0
           '1': 360.0
       location:
-        bodyYaw: -94.447845
+        bodyYaw: 71.6761
         world: world
         x: '-106.0574'
         y: '70.0'
         z: '60.8364'
-        yaw: '-94.4478'
-        pitch: '0.0'
+        yaw: '71.6761'
+        pitch: '-30.968'
       waypoints:
         linear:
           cachePaths: false
@@ -1780,13 +1780,13 @@ npc:
           '0': 0.0
           '1': 360.0
       location:
-        bodyYaw: -43.668747
+        bodyYaw: 74.41783
         world: world
         x: '-111.2425'
         y: '70.0'
         z: '61.0226'
-        yaw: '-43.6687'
-        pitch: '-11.8146'
+        yaw: '74.4178'
+        pitch: '-36.613'
     traitnames: lookclose,location,skintrait,type,mounttrait,age,scoreboardtrait,smoothrotationtrait,inventory,spawned,owner
     navigator:
       speedmodifier: '1.0'
@@ -1799,13 +1799,13 @@ npc:
     uuid: abf1f7c3-0010-44d6-b7d0-64769cb94db0
     traits:
       location:
-        bodyYaw: 88.70447
+        bodyYaw: -50.720776
         world: world
         x: '5.8085'
         y: '63.0'
         z: '-101.9857'
-        yaw: '98.5631'
-        pitch: '-1.5006'
+        yaw: '-50.7208'
+        pitch: '0.0'
       owner:
         uuid: 6643c7f2-076a-4a24-8042-5fec74247956
       spawned: true
@@ -3561,13 +3561,13 @@ npc:
       owner:
         uuid: 6643c7f2-076a-4a24-8042-5fec74247956
       location:
-        bodyYaw: 119.60121
+        bodyYaw: -135.06305
         world: tairiku
         x: '-359.3499'
         y: '110.0'
         z: '-93.588'
-        yaw: '154.6012'
-        pitch: '-14.7779'
+        yaw: '-135.063'
+        pitch: '-11.9493'
       age:
         age: 0
         locked: true
