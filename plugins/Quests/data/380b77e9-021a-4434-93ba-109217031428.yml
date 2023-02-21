@@ -1,0 +1,80 @@
+currentQuests:
+- custom13
+- custom31
+- custom33
+- custom32
+- custom12
+currentStages:
+- 0
+- 0
+- 0
+- 0
+- 0
+quest-points: 29
+questData:
+  custom13:
+    custom-objective-counts:
+    - 0
+  custom31:
+    custom-objective-counts:
+    - 1
+  custom33:
+    custom-objective-counts:
+    - 4
+  custom32:
+    custom-objective-counts:
+    - 0
+  custom12:
+    custom-objective-counts:
+    - 0
+completed-Quests:
+- custom23
+- custom24
+- custom26
+- custom27
+- custom28
+- custom29
+- custom30
+- custom31
+- custom32
+completedRedoableQuests:
+- custom26
+- custom24
+- custom29
+- custom31
+- custom30
+- custom32
+- custom28
+- custom27
+- custom23
+completedQuestTimes:
+- 1676975210714
+- 1676970672948
+- 1676970279501
+- 1676975934766
+- 1676973927955
+- 1676977963734
+- 1676970118546
+- 1676969807841
+- 1676969416238
+amountsCompletedQuests:
+- custom26
+- custom24
+- custom29
+- custom31
+- custom30
+- custom32
+- custom28
+- custom27
+- custom23
+amountsCompleted:
+- 5
+- 1
+- 1
+- 2
+- 4
+- 6
+- 1
+- 1
+- 1
+lastKnownName: Flora30

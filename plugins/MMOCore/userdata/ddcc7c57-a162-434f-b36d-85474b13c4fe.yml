@@ -1,30 +1,27 @@
 class-points: 0
-skill-points: 2
+skill-points: 0
 skill-reallocation-points: 0
-attribute-points: 3
+attribute-points: 0
 attribute-realloc-points: 0
-level: 40
-experience: 0.0
-class: ADVENTURER
+level: 5
+experience: 120765.42622551593
+class: BLADER
 waypoints: []
 friends: []
-last-login: 1675569783089
+last-login: 1676912641824
 skill-tree-points:
   global: 0
 skill-tree-reallocation-points: 0
 bound-skills:
-- COMBO_ATTACK
-- HEAL
-- THRUST
+- TRIPLE_SLASH
+- REN
 skill:
-  HEAL: 17
-  COMBO_ATTACK: 16
-  MAGICAL_SHIELD: 5
-  THRUST: 3
+  TRIPLE_SLASH: 5
+  REN: 5
 attribute:
-  dexterity: 45
-  strength: 45
-  intelligence: 24
+  dexterity: 5
+  strength: 2
+  intelligence: 5
 profession:
   enchanting:
     exp: 10.0
@@ -51,3 +48,19 @@ profession:
     exp: 0.0
     level: 0
 quest: {}
+class-info:
+  ADVENTURER:
+    level: 40
+    experience: 0.0
+    skill-points: 2
+    attribute-points: 3
+    attribute-realloc-points: 0
+    skill:
+      COMBO_ATTACK: 16
+      MAGICAL_SHIELD: 5
+      HEAL: 17
+      THRUST: 3
+    attribute:
+      dexterity: 45
+      strength: 45
+      intelligence: 24

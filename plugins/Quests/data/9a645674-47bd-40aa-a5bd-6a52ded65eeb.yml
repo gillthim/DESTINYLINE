@@ -2,13 +2,28 @@ currentQuests: none
 currentStages: none
 quest-points: 0
 completed-Quests:
+- custom27
+- custom28
+- custom29
 - custom45
 completedRedoableQuests:
 - custom45
+- custom28
+- custom29
+- custom27
 completedQuestTimes:
 - 1676886504178
+- 1676970255222
+- 1676970271274
+- 1676970208223
 amountsCompletedQuests:
 - custom45
+- custom28
+- custom29
+- custom27
 amountsCompleted:
+- 1
+- 1
+- 1
 - 1
 lastKnownName: RilyAbyss

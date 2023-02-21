@@ -4,7 +4,7 @@ RewardsInfo:
   UUID: 8454bb1d-1bd8-489f-b82f-1952c6b1da72
   Loot:
   - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
-    LootedTime: 1672741270681
+    LootedTime: 1676912363666
     LootLocation:
       ==: org.bukkit.Location
       x: 6.0
@@ -12,4 +12,4 @@ RewardsInfo:
       z: 219.0
       pitch: 0.0
       yaw: 0.0
-    ResetTime: 1672741270681
+    ResetTime: 1676912363666

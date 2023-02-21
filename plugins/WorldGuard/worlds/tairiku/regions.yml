@@ -14,10 +14,10 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagramfield, night: syukusainoyoru, fighting: usiagrambattle}
             interact: allow
+            bgm: {day: carmine, night: carminenight, fighting: carminebattle}
+            lighter: deny
+            vehicle-destroy: deny
             pvp: deny
             chest-access: allow
             ride: allow
@@ -25,8 +25,8 @@ regions:
             vehicle-place: deny
             potion-splash: allow
             damage-animals: allow
-            greeting-title: §aアルカナ平原Ⅲ
             tnt: deny
+            greeting-title: §aアルカナ平原Ⅲ
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
@@ -80,10 +80,10 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagramfield, night: syukusainoyoru, fighting: usiagrambattle}
             interact: allow
+            bgm: {day: carmine, night: carminenight, fighting: carminebattle}
+            lighter: deny
+            vehicle-destroy: deny
             pvp: deny
             chest-access: allow
             ride: allow
@@ -91,8 +91,8 @@ regions:
             vehicle-place: deny
             potion-splash: allow
             damage-animals: allow
-            greeting-title: §aアルカナ平原Ⅱ
             tnt: deny
+            greeting-title: §aアルカナ平原Ⅱ
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
@@ -164,10 +164,10 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagramfield, night: syukusainoyoru, fighting: usiagrambattle}
             interact: allow
+            bgm: {day: carmine, night: carminenight, fighting: carminebattle}
+            lighter: deny
+            vehicle-destroy: deny
             pvp: deny
             chest-access: allow
             ride: allow
@@ -175,8 +175,8 @@ regions:
             vehicle-place: deny
             potion-splash: allow
             damage-animals: deny
-            greeting-title: §aアルカナ平原Ⅰ
             tnt: deny
+            greeting-title: §aアルカナ平原Ⅰ
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
@@ -232,10 +232,10 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagram, night: usianight, fighting: meikyousisui}
             interact: allow
+            bgm: {day: lighttown, night: syukusainoyoru, fighting: meikyousisui}
+            lighter: deny
+            vehicle-destroy: deny
             pvp: deny
             chest-access: allow
             mob-spawning: deny
@@ -245,8 +245,8 @@ regions:
             game-mode: adventure
             potion-splash: allow
             damage-animals: allow
-            greeting-title: §eユージア・グラム
             tnt: deny
+            greeting-title: §eユージア・グラム
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
@@ -333,10 +333,10 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagram, night: syukusainoyoru}
             interact: allow
+            bgm: {day: usiagram, night: syukusainoyoru}
+            lighter: deny
+            vehicle-destroy: deny
             pvp: deny
             chest-access: allow
             ride: deny
@@ -344,8 +344,8 @@ regions:
             vehicle-place: deny
             potion-splash: allow
             damage-animals: allow
-            greeting-title: §2隠者の隠れ家
             tnt: deny
+            greeting-title: §2隠者の隠れ家
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]

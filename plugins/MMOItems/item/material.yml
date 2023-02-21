@@ -617,6 +617,54 @@ DASIBONE:
     disable-repairing: true
     tier: RARE
     unbreakable: true
+
 RAREWATER:
   base:
-    material: PAPER
+    material: POTION
+    name: '&9アルカナゴーレムの無色水'
+    tier: RARE
+    potion-color: 200 200 200
+    vanilla-eating: true
+    displayed-type: 素材
+    lore:
+    - '&f余分な物のない純粋な水。'
+    - '&f料理に使えば、素材本来のうま味を引き出せる。'
+    - '&a【調理用アイテム】'
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    unbreakable: true
+
+
+MANAWATER:
+  base:
+    material: POTION
+    tier: UNCOMMON
+    potion-color: 20 200 20
+    vanilla-eating: true
+    displayed-type: 素材
+    lore:
+    - '&f少量の魔力が溶け込んだ水。'
+    - '&f独特な苦味は、料理の隠し味にぴったり。'
+    - '&a【調理用アイテム】'
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    unbreakable: true
+    name: '&aアルカナゴーレムの魔水'
+
+GOLEM_HUSK:
+  base:
+    material: nether_brick
+    name: '&a&lアルカナゴーレムの外殻'
+    tier: UNCOMMON
+    lore:
+    - '&f魔力を通すと硬くなる奇妙な外殻。'
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    unbreakable: true
+

@@ -12,11 +12,11 @@
   {
     "scriptkey": "INTERACT",
     "blockcoords": "world,-91,74,128",
-    "amount": 12
+    "amount": 18
   },
   {
     "scriptkey": "INTERACT",
     "blockcoords": "world,-118,71,108",
-    "amount": 86
+    "amount": 108
   }
 ]

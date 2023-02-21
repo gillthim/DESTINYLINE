@@ -1,28 +1,64 @@
 currentQuests:
-- custom31
-- custom32
+- custom19
+- custom13
 - custom33
+- custom32
+- custom24
+- custom20
+- custom31
+- custom27
+- custom14
 currentStages:
 - 0
 - 0
 - 0
-quest-points: 100
+- 0
+- 0
+- 0
+- 0
+- 1
+- 0
+quest-points: 286
 questData:
-  custom31:
+  custom19:
     custom-objective-counts:
-    - 5
-  custom32:
+    - 0
+  custom13:
     custom-objective-counts:
-    - 8
+    - 63
   custom33:
     custom-objective-counts:
-    - 1
+    - 13
+  custom32:
+    custom-objective-counts:
+    - 0
+  custom24:
+    custom-objective-counts:
+    - 4
+  custom20:
+    custom-objective-counts:
+    - 0
+  custom31:
+    custom-objective-counts:
+    - 2
+  custom27:
+    has-talked-to:
+    - false
+  custom14:
+    custom-objective-counts:
+    - 0
 completed-Quests:
 - custom14
 - custom19
+- custom21
+- custom22
 - custom23
+- custom27
+- custom28
+- custom29
 - custom31
 - custom32
+- custom33
 - custom34
 - custom35
 - custom36
@@ -31,27 +67,51 @@ completed-Quests:
 - custom39
 - custom40
 completedRedoableQuests:
-- custom14
-- custom31
+- custom19
+- custom22
+- custom33
 - custom23
 - custom32
-- custom19
+- custom29
+- custom28
+- custom31
+- custom21
+- custom27
+- custom14
 completedQuestTimes:
-- 1676898919675
-- 1676901399602
-- 1676898754985
-- 1676901414801
 - 1676898916490
+- 1676972564571
+- 1676911626590
+- 1676972664715
+- 1676972870082
+- 1676913882337
+- 1676913871145
+- 1676972815938
+- 1676972332631
+- 1676913858794
+- 1676898919675
 amountsCompletedQuests:
-- custom14
-- custom31
+- custom19
+- custom22
+- custom33
 - custom23
 - custom32
-- custom19
+- custom29
+- custom28
+- custom31
+- custom21
+- custom27
+- custom14
 amountsCompleted:
 - 1
-- 12
 - 1
-- 10
+- 2
+- 4
+- 53
+- 1
+- 1
+- 59
+- 1
+- 1
 - 1
 lastKnownName: AO2324

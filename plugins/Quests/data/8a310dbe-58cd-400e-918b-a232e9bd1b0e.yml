@@ -1,0 +1,50 @@
+currentQuests:
+- custom23
+- custom27
+- custom13
+- custom12
+- custom11
+currentStages:
+- 0
+- 1
+- 0
+- 0
+- 0
+quest-points: 10
+questData:
+  custom23:
+    custom-objective-counts:
+    - 4
+  custom27:
+    has-talked-to:
+    - false
+  custom13:
+    custom-objective-counts:
+    - 0
+  custom12:
+    custom-objective-counts:
+    - 0
+  custom11:
+    custom-objective-counts:
+    - 0
+completed-Quests:
+- custom10
+- custom23
+- custom24
+completedRedoableQuests:
+- custom24
+- custom23
+- custom10
+completedQuestTimes:
+- 1676919238410
+- 1676917557197
+- 1676918730013
+amountsCompletedQuests:
+- custom24
+- custom23
+- custom10
+amountsCompleted:
+- 6
+- 8
+- 5
+lastKnownName: sinoa3939

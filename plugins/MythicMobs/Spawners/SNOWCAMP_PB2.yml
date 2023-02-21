@@ -13,7 +13,7 @@ SNOWCAMP_PB2:
   MobLevel: '1'
   MobsPerSpawn: 1
   Cooldown: 20
-  CooldownTimer: 0
+  CooldownTimer: 12
   Warmup: 0
   WarmupTimer: 0
   CheckForPlayers: true

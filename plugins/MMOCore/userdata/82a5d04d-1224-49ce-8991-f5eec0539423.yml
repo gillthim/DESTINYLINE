@@ -1,14 +1,14 @@
 class-points: 0
-skill-points: 7
+skill-points: 11
 skill-reallocation-points: 0
 attribute-points: 0
 attribute-realloc-points: 0
-level: 8
-experience: 9788.44459039424
+level: 12
+experience: 13944.684448527982
 class: ADVENTURER
 waypoints: []
 friends: []
-last-login: 1676901324888
+last-login: 1676911632163
 skill-tree-points:
   global: 0
 skill-tree-reallocation-points: 0
@@ -17,7 +17,7 @@ bound-skills:
 - HEAL
 attribute:
   dexterity: 0
-  strength: 21
+  strength: 33
   intelligence: 0
 profession:
   enchanting:

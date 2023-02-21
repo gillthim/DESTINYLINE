@@ -144,7 +144,7 @@ CURSE_WAND:
         damage: 50.0
     unbreakable: true
     armor: -0.3
-    max-mana: 180.0
+    max-mana: 380.0
     defense: -0.3
     mana-regeneration: 0.3
     enchants:
@@ -154,3 +154,5 @@ CURSE_WAND:
     - '&fその昔、僧侶が使用していた杖'
     - '&fしかし仲間から裏切りに会い、命を落とした。'
     - '&fその僧侶は人を恨み続け、その怨嗟が杖に宿った'
+    required-class:
+    - マジシャン
