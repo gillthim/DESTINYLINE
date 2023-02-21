@@ -635,7 +635,7 @@ RAREWATER:
 MANAWATER:
   base:
     material: POTION
-    name: '&9&lアルカナゴーレムの魔水'
+    name: '&aアルカナゴーレムの魔水'
     tier: UNCOMMON
     potion-color: 20 200 20
     vanilla-eating: true
@@ -648,8 +648,30 @@ MANAWATER:
 GOLEM_HUSK:
   base:
     material: nether_brick
-    name: '&a&lアルカナゴーレムの外殻'
+    name: '&aアルカナゴーレムの外殻'
     tier: UNCOMMON
     lore:
     - '&f魔力を通すと硬くなる奇妙な外殻。'
        
+SOUPSTOCK_KELP:
+  base:
+    material: dried_kelp
+    name: '&a乾燥した昆布'
+    vanilla-eating: true
+    tier: UNCOMMON
+    lore:
+    - '&fうま味が凝縮された乾燥昆布。'
+    - '&f鍋で煮込めば、優しい出汁が取れるだろう。'
+    - '&a【調理用アイテム】'
+
+SPICES_BERRIES:
+  base:
+    material: sweet_berries
+    name: '&aペイパーベリー'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - '&f香辛料として広く使われる木の実。'
+    - '&a【調理用アイテム】'
+
+
