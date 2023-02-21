@@ -13,7 +13,7 @@ RTC_SP_13:
   MobLevel: '7'
   MobsPerSpawn: 1
   Cooldown: 15
-  CooldownTimer: 0
+  CooldownTimer: 5
   Warmup: 0
   WarmupTimer: 0
   CheckForPlayers: true

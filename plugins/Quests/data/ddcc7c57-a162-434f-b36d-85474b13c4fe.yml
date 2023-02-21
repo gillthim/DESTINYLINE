@@ -1,25 +1,60 @@
 currentQuests:
 - custom14
-- custom13
+- custom24
 - custom20
+- custom19
+- custom8
+- custom33
 - custom7
+- custom30
+- custom26
+- custom32
+- custom13
 currentStages:
 - 0
 - 0
 - 0
 - 0
-quest-points: 380
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+quest-points: 403
 questData:
   custom14:
     custom-objective-counts:
     - 0
-  custom13:
+  custom24:
     custom-objective-counts:
-    - 0
+    - 5
   custom20:
     custom-objective-counts:
     - 0
+  custom19:
+    custom-objective-counts:
+    - 0
+  custom8:
+    custom-objective-counts:
+    - 14
+  custom33:
+    custom-objective-counts:
+    - 11
   custom7:
+    custom-objective-counts:
+    - 0
+  custom30:
+    custom-objective-counts:
+    - 6
+  custom26:
+    custom-objective-counts:
+    - 2
+  custom32:
+    custom-objective-counts:
+    - 4
+  custom13:
     custom-objective-counts:
     - 0
 completed-Quests:
@@ -32,6 +67,7 @@ completed-Quests:
 - custom18
 - custom19
 - custom20
+- custom21
 - custom23
 - custom24
 - custom25
@@ -48,95 +84,100 @@ completed-Quests:
 - custom38
 - custom39
 - custom40
+- custom52
 - custom6
 - custom8
 - custom9
 completedRedoableQuests:
-- custom8
-- custom9
-- custom10
-- custom32
-- custom31
-- custom6
-- custom19
-- custom24
-- custom30
-- custom23
-- custom1
-- custom17
-- custom14
-- custom16
 - custom15
+- custom16
+- custom9
+- custom24
+- custom14
+- custom23
+- custom19
+- custom8
 - custom20
-- custom3
-- custom26
-- custom18
 - custom33
 - custom25
+- custom6
+- custom21
+- custom17
+- custom31
+- custom3
+- custom18
+- custom30
+- custom32
+- custom26
+- custom1
+- custom10
 completedQuestTimes:
-- 1674231284077
-- 1672763030915
-- 1672762927954
-- 1673420624261
-- 1673420674712
-- 1673544743693
-- 1674624214963
-- 1671961536605
-- 1671962259980
-- 1671961445961
-- 1672473509749
-- 1673185907936
-- 1674231436473
-- 1672803815210
 - 1674623856793
+- 1672803815210
+- 1676910311425
+- 1676909738218
+- 1674231436473
+- 1676910058525
+- 1674624214963
+- 1676909394115
 - 1672856696889
-- 1673373842334
-- 1671962154381
-- 1673377742576
-- 1673420718405
+- 1676911506672
 - 1672461475173
+- 1673544743693
+- 1676907132633
+- 1673185907936
+- 1676912027828
+- 1673373842334
+- 1673377742576
+- 1671962259980
+- 1676911710161
+- 1671962154381
+- 1672473509749
+- 1672762927954
 amountsCompletedQuests:
-- custom8
-- custom9
-- custom10
-- custom32
-- custom31
-- custom6
-- custom19
-- custom24
-- custom30
-- custom23
-- custom1
-- custom17
-- custom14
-- custom16
 - custom15
+- custom16
+- custom9
+- custom24
+- custom14
+- custom23
+- custom8
+- custom19
 - custom20
-- custom3
-- custom26
-- custom18
 - custom33
 - custom25
+- custom6
+- custom21
+- custom17
+- custom31
+- custom3
+- custom18
+- custom32
+- custom30
+- custom26
+- custom1
+- custom10
 amountsCompleted:
-- 1
-- 1
-- 1
-- 22
-- 24
-- 4
-- 7
-- 5
-- 2
-- 6
-- 4
-- 1
-- 5
-- 1
 - 29
+- 1
 - 2
+- 9
+- 5
+- 18
 - 2
+- 7
+- 2
+- 19
+- 1
+- 4
+- 1
+- 1
+- 30
 - 2
 - 1
-- 18
+- 24
+- 2
+- 2
+- 4
 - 1
 lastKnownName: yuuki_05230

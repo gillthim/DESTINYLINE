@@ -3,11 +3,6 @@ lastsummersong:
   volume: 1
   milliSecsToPlay: 0
   playbackTimeMilliSecs: 311808
-town1:
-  sound: town1
-  volume: 1
-  milliSecsToPlay: 0
-  playbackTimeMilliSecs: 128628
 sazandoll:
   sound: sazandoll
   volume: 0.8
@@ -43,16 +38,6 @@ fuusetunosyou:
   volume: 0.7
   milliSecsToPlay: 0
   playbackTimeMilliSecs: 114000
-kokugen:
-  sound: kokugen
-  volume: 1
-  milliSecsToPlay: 0
-  playbackTimeMilliSecs: 122400
-kokugennonaka:
-  sound: kokugennonaka
-  volume: 0.8
-  milliSecsToPlay: 0
-  playbackTimeMilliSecs: 119117
 carmine:
   sound: carmine
   volume: 1
@@ -163,21 +148,6 @@ guildhouse:
   volume: 0.6
   milliSecsToPlay: 0
   playbackTimeMilliSecs: 76184
-usiagram:
-  sound: usiagram
-  volume: 0.6
-  milliSecsToPlay: 0
-  playbackTimeMilliSecs: 170526
-usiagramfield:
-  sound: usiagramfield
-  volume: 0.8
-  milliSecsToPlay: 0
-  playbackTimeMilliSecs: 102857
-usiagrambattle:
-  sound: usiagrambattle
-  volume: 0.5
-  milliSecsToPlay: 0
-  playbackTimeMilliSecs: 73846
 kuronosaidantheme:
   sound: kuronosaidantheme
   volume: 1
@@ -278,28 +248,33 @@ rivacombat:
   volume: 0.6
   milliSecsToPlay: 0
   playbackTimeMilliSecs: 125000
-kousensinwa:
-  sound: kousensinwa
+deadcarnival:
+  sound: deadcarnival
+  volume: 1
+  milliSecsToPlay: 0
+  playbackTimeMilliSecs: 77199
+glichlife:
+  sound: glichlife
   volume: 0.6
   milliSecsToPlay: 0
-  playbackTimeMilliSecs: 86747
-kurokisasayaki:
-  sound: kurokisasayaki
-  volume: 0.8
+  playbackTimeMilliSecs: 123334
+windbattle:
+  sound: windbattle
+  volume: 0.9
   milliSecsToPlay: 0
-  playbackTimeMilliSecs: 77838
-matinami:
-  sound: matinami
+  playbackTimeMilliSecs: 84774
+maitunagi:
+  sound: maitunagi
   volume: 0.7
   milliSecsToPlay: 0
-  playbackTimeMilliSecs: 135849
-seizyakunokokusyoku:
-  sound: seizyakunokokusyoku
+  playbackTimeMilliSecs: 157176
+lighttown:
+  sound: lighttown
   volume: 0.8
   milliSecsToPlay: 0
-  playbackTimeMilliSecs: 80000
-usianight:
-  sound: usianight
-  volume: 0.8
+  playbackTimeMilliSecs: 114066
+inisie:
+  sound: inisie
+  volume: 0.7
   milliSecsToPlay: 0
-  playbackTimeMilliSecs: 141176
+  playbackTimeMilliSecs: 141923

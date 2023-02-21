@@ -16,8 +16,8 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
+            vehicle-destroy: deny
             bgm: {day: sinkbattle, night: sinkbattle}
             lighter: deny
             pvp: deny
@@ -38,8 +38,8 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
+            vehicle-destroy: deny
             bgm: {day: lastsummersong, night: lastsummersong}
             lighter: deny
             pvp: deny
@@ -60,9 +60,9 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: sazandoll, night: sazandoll, fighting: sazandollbattle}
+            vehicle-destroy: deny
+            bgm: {day: inisie, night: inisie, fighting: windbattle}
             lighter: deny
             pvp: deny
             chest-access: allow

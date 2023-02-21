@@ -14,7 +14,7 @@ regions:
         min: {x: -39, y: 14, z: -33}
         max: {x: -17, y: 22, z: -7}
         members: {}
-        flags: {use: allow, vehicle-destroy: deny, interact: allow, lighter: deny,
+        flags: {use: allow, interact: allow, vehicle-destroy: deny, lighter: deny,
             pvp: deny, chest-access: allow, ride: deny, sleep: deny, vehicle-place: deny,
             potion-splash: allow, damage-animals: deny, tnt: deny, greeting-title: §b試練の間,
             respawn-anchors: deny}
@@ -28,9 +28,9 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: kokugen, night: kokugen, fighting: seppaku}
+            vehicle-destroy: deny
+            bgm: {day: maitunagi, night: maitunagi, fighting: deadcarnival}
             lighter: deny
             pvp: deny
             chest-access: allow
@@ -52,9 +52,9 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: kokugen, night: kokugen, fighting: seppaku}
+            vehicle-destroy: deny
+            bgm: {day: maitunagi, night: maitunagi, fighting: deadcarnival}
             lighter: deny
             pvp: deny
             chest-access: allow
@@ -76,8 +76,8 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
+            vehicle-destroy: deny
             bgm: {day: tenshinotameiki, night: tenshinotameiki}
             lighter: deny
             pvp: deny

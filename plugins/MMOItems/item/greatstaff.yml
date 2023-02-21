@@ -196,7 +196,6 @@ APOCALYPSE_GREATSTAFF:
     tier: RARE
     armor: -0.2
     attack-speed: 1.1
-    max-mana: 70.0
     ability:
       ability1:
         type: LIGHTNING_BEAM
@@ -225,3 +224,6 @@ APOCALYPSE_GREATSTAFF:
     - '1'
     - '1'
     - BLUE
+    required-class:
+    - マジシャン
+    max-mana: 200.0

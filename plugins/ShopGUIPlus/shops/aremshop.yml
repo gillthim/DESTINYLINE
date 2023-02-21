@@ -1,0 +1,24 @@
+aremshop:
+  name: "&4&l武器屋 (page %page%)"
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item:
+        mmoItems:
+          type: STAFF
+          id: CRYSTAL_WAND
+      buyPrice: 880000
+      sellPrice: 300000
+      slot: 10
+    2:
+      type: item
+      item:
+        mmoItems:
+          type: STAFF
+          id: ROARING_SEA_WAND
+      buyPrice: 1680000
+      sellPrice: 600000
+      slot: 11
