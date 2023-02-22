@@ -1,3 +1,0 @@
-DOORLIGHT:
-  Skills:
-  - sound{s=minecraft:entity.snow_golem.hurt;p=2;v=2;repeat=10;repeatInterval=20} @selflocation

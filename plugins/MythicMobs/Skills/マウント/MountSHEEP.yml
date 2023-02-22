@@ -1,3 +1,0 @@
-MountSHEEP:
-  Skills:
-  - mounttarget @target ~onInteract

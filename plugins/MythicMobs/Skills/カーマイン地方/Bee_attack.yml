@@ -1,7 +1,0 @@
-Bee_Attack:
-  Conditions: 
-  - playernotwithin{d=20} false
-  Skills:
-  - sound{s=minecraft:entity.bat.loop;p=1.4}
-  - lunge{velocity=1.3;velocityY=0.2} @Self
-

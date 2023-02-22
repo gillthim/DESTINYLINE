@@ -1,8 +1,0 @@
-DispererFire:
-  Cooldown: 1
-  Skills:
-  -  delay 100
-  -  effect:particles{p=flame;hs=1;vs=1;a=100;s=0.1;} @target
-  -  sound{s=minecraft:entity.generic.extinguish_fire} @target
-  -  damage{a=3;ignorearmor=true;}
-  -  ignite{d=220}

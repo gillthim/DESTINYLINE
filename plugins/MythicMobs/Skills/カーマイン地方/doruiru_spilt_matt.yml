@@ -1,8 +1,0 @@
-doruiru_split_matt: 
-  Conditions: 
-  - playernotwithin{d=16} false
-  Skills: 
-  - sound{s=dorairupon1msec} @self
-  - effect:spin{d=50;v=200} @self
-  - effect:particlesphere{r=1} @self
-  - summon{t=doruiru_matt2} @self

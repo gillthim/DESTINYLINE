@@ -1,6 +1,0 @@
-MANTA_DOWN:
-  Conditions:
-  - isburning{} true
-  Skills:
-  - potion{t=SLOW;d=70;l=5} @self
-  - stun{d=200;g=true;ai=true} @self

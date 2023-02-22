@@ -1,7 +1,0 @@
-crafting-queue:
-  reillthecartos-station:
-    recipe-aa65f20b-544d-4088-b4cd-69c978440ccb:
-      recipe: reachin_tomatojuice
-      started: 1676898984519
-      delay: 10000
-permissions-from-items: []

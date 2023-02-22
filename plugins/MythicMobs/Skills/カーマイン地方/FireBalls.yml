@@ -1,5 +1,0 @@
-FireBalls:
-  Conditions: 
-  - playernotwithin{d=20} false
-  Skills:
-  -  shootfireball{y=0.3;v=0.3} @target

@@ -1,9 +1,0 @@
-DispererCold:
-  Cooldown: 1
-  Skills:
-  -  effect:particles{p=spell_mob;Size=2;c=#89DBFB} @Self
-  -  delay 100  
-  -  effect:particlering{particle=spell;amount=200;radius=3;c=#89DBFB}
-  -  delay 30
-  -  potion{type=SLOW;duration=43;level=3}
-  -  damage{amount=200}

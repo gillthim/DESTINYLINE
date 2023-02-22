@@ -1,4 +1,0 @@
-TARKYZYUSO:
-  Skills:
-  - Damage{amount=40;ignoreArmor=true} @target
-  - sound{s=minecraft:ambient.crimson_forest.mood;p=2;v=0.8} @target

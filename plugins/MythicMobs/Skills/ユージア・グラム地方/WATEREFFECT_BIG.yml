@@ -1,3 +1,0 @@
-WATEREFFECT_BIG:
-  Skills:
-  - effect:particlering{particle=REDDUST;c=#041cf6;radius=0.1;points=24;amount=5;hS=0.3;vS=2} @self

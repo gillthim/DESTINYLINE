@@ -1,7 +1,0 @@
-DispererFireBalls:
-  Cooldown: 1
-  Skills:
-  -  delay 64
-  -  shootfireball{y=0.4;v=0.4} @target
-
-

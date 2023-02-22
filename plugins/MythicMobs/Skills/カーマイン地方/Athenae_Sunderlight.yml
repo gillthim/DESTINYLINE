@@ -1,7 +1,0 @@
-Athenae_Sunderlight:
-  cooldown: 18
-  Skills:
-  -  Delay 100
-  -  lightning{d=100;repeat=10;repeatInterval=18} @RLNTE{a=1;r=15} 
-  -  Delay 190
-

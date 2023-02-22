@@ -1,6 +1,0 @@
-HEALPOINT:
-  Skills:
-  - sound{s=spellout;v=1;p=2} @self
-  - sound{s=grandheal;v=2;p=1.7} @self
-  - effect:particles{particle=Villager_happy;amount=500;hS=4;vS=1} @self
-  - heal{a=1200} @EntitiesNearOrigin{r=4;limit=5;target=player}

@@ -1,4 +1,0 @@
-EpicTitle_Reaper:
-  Skills:
-  - sound{s=killingthegod;v=0.7} @self
-  - sendtitle{title="&e&l古代の遺産";subtitle="偉業を成し遂げた！";d=200;fi=20fo=60} @PlayersInRadius{r=30}
