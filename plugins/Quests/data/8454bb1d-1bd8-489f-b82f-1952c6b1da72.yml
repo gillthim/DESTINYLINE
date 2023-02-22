@@ -1,8 +1,14 @@
 currentQuests:
 - custom31
-- custom32
+- custom7
 - custom33
+- custom32
+- custom9
+- custom8
 currentStages:
+- 0
+- 0
+- 0
 - 0
 - 0
 - 0
@@ -11,12 +17,21 @@ questData:
   custom31:
     custom-objective-counts:
     - 5
-  custom32:
+  custom7:
     custom-objective-counts:
-    - 8
+    - 0
   custom33:
     custom-objective-counts:
     - 1
+  custom32:
+    custom-objective-counts:
+    - 8
+  custom9:
+    custom-objective-counts:
+    - 0
+  custom8:
+    custom-objective-counts:
+    - 0
 completed-Quests:
 - custom14
 - custom19
@@ -31,23 +46,23 @@ completed-Quests:
 - custom39
 - custom40
 completedRedoableQuests:
-- custom14
-- custom31
 - custom23
-- custom32
+- custom31
 - custom19
+- custom32
+- custom14
 completedQuestTimes:
-- 1676898919675
-- 1676901399602
 - 1676898754985
-- 1676901414801
+- 1676901399602
 - 1676898916490
+- 1676901414801
+- 1676898919675
 amountsCompletedQuests:
-- custom14
-- custom31
 - custom23
-- custom32
+- custom31
 - custom19
+- custom32
+- custom14
 amountsCompleted:
 - 1
 - 12

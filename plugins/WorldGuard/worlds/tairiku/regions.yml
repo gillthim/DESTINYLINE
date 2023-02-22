@@ -14,12 +14,12 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagramfield, night: syukusainoyoru, fighting: usiagrambattle}
             interact: allow
-            pvp: deny
+            lighter: deny
+            bgm: {day: carmine, night: carminenight, fighting: carminebattle}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: allow
             sleep: deny
             vehicle-place: deny
@@ -80,12 +80,12 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagramfield, night: syukusainoyoru, fighting: usiagrambattle}
             interact: allow
-            pvp: deny
+            lighter: deny
+            bgm: {day: carmine, night: carminenight, fighting: carminebattle}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: allow
             sleep: deny
             vehicle-place: deny
@@ -164,12 +164,12 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagramfield, night: syukusainoyoru, fighting: usiagrambattle}
             interact: allow
-            pvp: deny
+            lighter: deny
+            bgm: {day: carmine, night: carminenight, fighting: carminebattle}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: allow
             sleep: deny
             vehicle-place: deny
@@ -232,14 +232,14 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
-            lighter: deny
-            bgm: {day: usiagram, night: usianight, fighting: meikyousisui}
             interact: allow
-            pvp: deny
+            lighter: deny
+            bgm: {day: lighttown, night: syukusainoyoru, fighting: meikyousisui}
+            vehicle-destroy: deny
             chest-access: allow
-            mob-spawning: deny
+            pvp: deny
             ride: allow
+            mob-spawning: deny
             sleep: allow
             vehicle-place: deny
             game-mode: adventure
@@ -333,12 +333,12 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
+            interact: allow
             lighter: deny
             bgm: {day: usiagram, night: syukusainoyoru}
-            interact: allow
-            pvp: deny
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: deny
             sleep: deny
             vehicle-place: deny

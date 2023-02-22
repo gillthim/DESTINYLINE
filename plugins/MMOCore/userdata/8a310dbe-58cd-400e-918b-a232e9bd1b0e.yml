@@ -1,0 +1,39 @@
+class-points: 0
+skill-points: 1
+skill-reallocation-points: 0
+attribute-points: 3
+attribute-realloc-points: 0
+level: 26
+experience: 38652.14565076377
+class: ADVENTURER
+waypoints: []
+friends: []
+last-login: 0
+skill-tree-points:
+  global: 0
+skill-tree-reallocation-points: 0
+bound-skills:
+- HEAL
+- THRUST
+- MAGICAL_SHIELD
+skill:
+  HEAL: 13
+  MAGICAL_SHIELD: 2
+  THRUST: 12
+attribute:
+  dexterity: 0
+  strength: 72
+  intelligence: 0
+profession: {}
+quest: {}
+class-info:
+  HUMAN:
+    level: 6
+    experience: 100.0
+    skill-points: 0
+    attribute-points: 0
+    attribute-realloc-points: 0
+    attribute:
+      dexterity: 0
+      strength: 0
+      intelligence: 0

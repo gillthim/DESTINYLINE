@@ -3,23 +3,26 @@ skill-points: 0
 skill-reallocation-points: 0
 attribute-points: 0
 attribute-realloc-points: 0
-level: 7
-experience: 310846.420174087
+level: 10
+experience: 441786.0
 class: MAGICIAN
 waypoints: []
 friends: []
-last-login: 1676901540272
+last-login: 1676988719899
 skill-tree-points:
   global: 0
 skill-tree-reallocation-points: 0
 bound-skills:
 - RUNE_FLAME
+- VACIOC
+- ORGGRANDHEAL
 skill:
-  RUNE_FLAME: 13
+  RUNE_FLAME: 14
+  ORGGRANDHEAL: 6
 attribute:
-  dexterity: 0
+  dexterity: 5
   strength: 0
-  intelligence: 18
+  intelligence: 22
 profession:
   enchanting:
     exp: 830.0

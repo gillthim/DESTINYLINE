@@ -53,7 +53,6 @@ RUNE_STAFF:
 CRYSTAL_WAND:
   base:
     material: STICK
-    repair-type: マジシャン
     mana-cost: 2.5
     range: 12.0
     required-level: 10.0
@@ -87,6 +86,8 @@ CRYSTAL_WAND:
         damage: 12.0
         cooldown: 7.0
     armor: -0.3
+    required-class:
+    - マジシャン
 ROARING_SEA_WAND:
   base:
     material: DIAMOND_HOE
@@ -113,7 +114,6 @@ ROARING_SEA_WAND:
     skill-damage: 5.0
     magic-damage: 8.0
     tier: RARE
-    repair-type: マジシャン
     element:
       water:
         damage: 30.0
@@ -128,3 +128,5 @@ ROARING_SEA_WAND:
     lore:
     - '&f海の力を宿した杖'
     - '&f自分を中心に相手の行動を低下させる'
+    required-class:
+    - マジシャン

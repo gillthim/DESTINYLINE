@@ -1,23 +1,29 @@
 class-points: 0
-skill-points: 7
+skill-points: 0
 skill-reallocation-points: 0
 attribute-points: 0
 attribute-realloc-points: 0
-level: 8
-experience: 9788.44459039424
+level: 26
+experience: 34104.698599427196
 class: ADVENTURER
 waypoints: []
 friends: []
-last-login: 1676901324888
+last-login: 1676989663156
 skill-tree-points:
   global: 0
 skill-tree-reallocation-points: 0
 bound-skills:
 - COMBO_ATTACK
 - HEAL
+- COMBO_ATTACK
+- THRUST
+- MAGICAL_SHIELD
+- COMBO_ATTACK
+skill:
+  COMBO_ATTACK: 26
 attribute:
   dexterity: 0
-  strength: 21
+  strength: 75
   intelligence: 0
 profession:
   enchanting:

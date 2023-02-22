@@ -17,10 +17,10 @@ regions:
         flags:
             use: allow
             potion-splash: allow
-            bgm: {day: dgdoukutu, night: dgdoukutu, fighting: dgdoukutuboss}
             interact: allow
-            chest-access: allow
+            bgm: {day: dgdoukutu, night: dgdoukutu, fighting: dgdoukutuboss}
             greeting-title: §5氷層の洞窟
+            chest-access: allow
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
         type: cuboid

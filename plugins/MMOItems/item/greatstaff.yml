@@ -212,7 +212,6 @@ APOCALYPSE_GREATSTAFF:
         mana: 18.0
         cooldown: 15.0
         radius: 6.0
-    repair-type: マジシャン
     two-handed: true
     mana-regeneration: 0.3
     health-regeneration: 0.5
@@ -225,3 +224,5 @@ APOCALYPSE_GREATSTAFF:
     - '1'
     - '1'
     - BLUE
+    required-class:
+    - マジシャン

@@ -16,12 +16,12 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: sinkbattle, night: sinkbattle}
             lighter: deny
-            pvp: deny
+            bgm: {day: sinkbattle, night: sinkbattle}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: deny
             sleep: deny
             vehicle-place: deny
@@ -38,12 +38,12 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: lastsummersong, night: lastsummersong}
             lighter: deny
-            pvp: deny
+            bgm: {day: lastsummersong, night: lastsummersong}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: deny
             sleep: deny
             vehicle-place: deny
@@ -60,12 +60,12 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: sazandoll, night: sazandoll, fighting: sazandollbattle}
             lighter: deny
-            pvp: deny
+            bgm: {day: inisie, night: inisie, fighting: windbattle}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: deny
             sleep: deny
             vehicle-place: deny

@@ -14,9 +14,9 @@ regions:
         min: {x: -39, y: 14, z: -33}
         max: {x: -17, y: 22, z: -7}
         members: {}
-        flags: {use: allow, vehicle-destroy: deny, interact: allow, lighter: deny,
-            pvp: deny, chest-access: allow, ride: deny, sleep: deny, vehicle-place: deny,
-            potion-splash: allow, damage-animals: deny, tnt: deny, greeting-title: §b試練の間,
+        flags: {use: allow, interact: allow, lighter: deny, vehicle-destroy: deny,
+            chest-access: allow, pvp: deny, ride: deny, sleep: deny, vehicle-place: deny,
+            potion-splash: allow, damage-animals: deny, greeting-title: §b試練の間, tnt: deny,
             respawn-anchors: deny}
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
@@ -28,19 +28,19 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: kokugen, night: kokugen, fighting: seppaku}
             lighter: deny
-            pvp: deny
+            bgm: {day: maitunagi, night: maitunagi, fighting: deadcarnival}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: deny
             sleep: deny
             vehicle-place: deny
             potion-splash: allow
             damage-animals: deny
-            tnt: deny
             greeting-title: §c王家の隠れ家
+            tnt: deny
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
@@ -52,19 +52,19 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: kokugen, night: kokugen, fighting: seppaku}
             lighter: deny
-            pvp: deny
+            bgm: {day: maitunagi, night: maitunagi, fighting: deadcarnival}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: deny
             sleep: deny
             vehicle-place: deny
             potion-splash: allow
             damage-animals: deny
-            tnt: deny
             greeting-title: §b常世の間
+            tnt: deny
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
@@ -76,19 +76,19 @@ regions:
         members: {}
         flags:
             use: allow
-            vehicle-destroy: deny
             interact: allow
-            bgm: {day: tenshinotameiki, night: tenshinotameiki}
             lighter: deny
-            pvp: deny
+            bgm: {day: tenshinotameiki, night: tenshinotameiki}
+            vehicle-destroy: deny
             chest-access: allow
+            pvp: deny
             ride: deny
             sleep: deny
             vehicle-place: deny
             potion-splash: allow
             damage-animals: deny
-            tnt: deny
             greeting-title: §c王の間
+            tnt: deny
             respawn-anchors: deny
         owners:
             unique-ids: [6643c7f2-076a-4a24-8042-5fec74247956]
