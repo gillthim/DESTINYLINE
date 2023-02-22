@@ -35,13 +35,13 @@ ARCANA_GOLEM_WATER:
   Modules:
     ThreatTable: true
   Drops:
-  -  mmoitems{type=CONSUMABLE;id=ARICANAFIREGOLEM_FIRESTONE} 1-3 5%
-  -  mmoitems{type=MATERIAL;id=FRAGMENT} 1-5 50%
+  -  mmoitems{type=MATERIAL;id=GOLEM_HUSK} 1-5 50%
+  -  mmoitems{type=MATERIAL;id=MANAWATER} 1-3 50%
+  -  mmoitems{type=MATERIAL;id=RAREWATER} 1-2 10%
   Skills:
   -  currencygive{amount=5000} @pir{r=20} ~onDeath
   -  skill{s=WATEREFFECT_BIG} @self ~onTimer:5
   -  skill{s=WATERBURST} @self ~onTimer:421
-#  -  skill{s=FLAME_LOCK} @self ~onTimer:461
   -  skill{s=WATER_KEEP} @self ~onTimer:301
   KillMessages:
   -  '&l&4<DeadLog>&f<target.name>は<mob.name>に喰らわれた！'

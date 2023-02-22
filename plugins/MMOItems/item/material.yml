@@ -630,12 +630,15 @@ RAREWATER:
     - '&f余分な物のない純粋な水。'
     - '&f料理に使えば、素材本来のうま味を引き出せる。'
     - '&a【調理用アイテム】'
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
 
 
 MANAWATER:
   base:
     material: POTION
-    name: '&9&lアルカナゴーレムの魔水'
     tier: UNCOMMON
     potion-color: 20 200 20
     vanilla-eating: true
@@ -644,6 +647,11 @@ MANAWATER:
     - '&f少量の魔力が溶け込んだ水。'
     - '&f独特な苦味は、料理の隠し味にぴったり。'
     - '&a【調理用アイテム】'
+    name: '&aアルカナゴーレムの魔水'
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
 
 GOLEM_HUSK:
   base:
@@ -652,4 +660,8 @@ GOLEM_HUSK:
     tier: UNCOMMON
     lore:
     - '&f魔力を通すと硬くなる奇妙な外殻。'
-       
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+
