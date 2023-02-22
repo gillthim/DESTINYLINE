@@ -1,4 +1,4 @@
 /*
 !.gitignore
-!/plugins/MMOItems
-!/plugins/MythicMobs
+!/plugins/MMOItems/
+!/plugins/MythicMobs/
