@@ -1,0 +1,25 @@
+TRAPSWAP:
+  Conditions: 
+  - playernotwithin{d=10} false
+  Skills:
+  - potion{t=SLOW;d=50;l=5} @self
+  - delay 18
+  - missile{ot=TRAPSWAP_TICK;oh=TRAPSWAP_HIT;v=6;i=5;hR=0.8;vR=0.8;in=100;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 12
+  - delay 10
+TRAPSWAP_TICK:
+  Skills:
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#00ffff;a=15:hs=2;vs=2} @origin
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#00ffff;radius=0.8;uel=true} @origin
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#db00db;radius=0.8;uel=true} @origin
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#ddbb00;radius=0.8;uel=true} @origin
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#d30229;radius=0.8;uel=true} @origin
+  - sound{s=minecraft:item.chorus_fruit.teleport;p=2;v=1} @origin
+TRAPSWAP_HIT:
+  Skills:
+  - potion{t=SLOW;d=40;l=2}
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#00ffff;a=30:hs=4;vs=4}
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#db00db;a=30:hs=4;vs=4}
+  - sound{s=minecraft:entity.illusioner.prepare_mirror;p=1.5;v=1}
+  - sound{s=minecraft:item.chorus_fruit.teleport;p=1;v=1}
+  - swap

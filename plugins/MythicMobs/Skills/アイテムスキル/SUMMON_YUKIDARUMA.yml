@@ -1,0 +1,36 @@
+SUMMON_YUKIDARUMA:
+  Skills:
+  - summon{type=YUKIDARUMA;amount=1;radius=1;yu=true;yr=0;level="<modifier.level>"} @TL
+YUKIDARUMA_SPEEDDOWN:
+  Skills:
+  - sound{s=minecraft:item.elytra.flying;repeat=2;repeatInterval=38;p=1.2;v=0.5} @origin
+  - potion{t=SLOW;d=240;l=1} @EntitiesNearOrigin{r=12;ignore=players}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=12;points=14}
+  - delay 40
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=12;points=14}
+  - delay 40
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=12;points=14}
+  - delay 40
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=12;points=14}
+  - delay 40
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=12;points=14}
+  - delay 40
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=12;points=14}
+  - delay 40
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#84ffea;db=1;ys=3;a=10} @Ring{r=12;points=14}
+  - delay 1
+  - remove @self

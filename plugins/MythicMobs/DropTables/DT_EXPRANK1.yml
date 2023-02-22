@@ -1,0 +1,8 @@
+DT_EXPRANK1:
+  TotalItems: 1
+  MinItems: 1
+  MaxItems: 1
+  BonusLuckItems: 0.2to0.3
+  BonusLevelItems: 0.2to3
+  Drops:
+  -  exp 2-3 0.7

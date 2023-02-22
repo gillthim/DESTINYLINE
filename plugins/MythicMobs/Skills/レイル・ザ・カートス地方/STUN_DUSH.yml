@@ -1,0 +1,19 @@
+STUN_DASH: 
+  Conditions: 
+  - playernotwithin{d=16} false
+  - hastag{t=ICE_WORLD_WAVE} false
+  Skills: 
+  - addtag{t=STUN_DASH}
+  - sound{s=piguruntame2.5msec} @self
+  - potion{t=DAMAGE_RESISTANCE;d=50;l=1;p=false} @self
+  - potion{t=SLOW;d=70;l=50;p=false} @self
+  - effect:smokeswirl{d=40}  @self
+  - delay 35
+  - effect:particles{p=cloud;d=40;a=40;hs=1;vs=1;s=0.4;size=60} @self
+  - delay 15
+  - sound{s=pigurundash3msec;p=0.7} @self
+  - leap{v=370;noise=1} @target
+  - delay 8
+  - damage{a=10} @PIR{r=3;target=players}
+  - stun{d=50;f=true} @PIR{r=3;target=players}
+  - removetag{t=STUN_DASH}

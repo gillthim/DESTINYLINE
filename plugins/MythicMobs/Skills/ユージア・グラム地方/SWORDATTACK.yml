@@ -1,0 +1,12 @@
+SWORDATTACK:
+  Conditions: 
+  - playernotwithin{d=28} false
+  - hastag{t=KNIGHTGUARD} false
+  Skills:
+  - addtag{t=SWORDATTACK} @self
+  - leap{velocity=170} @target 
+  - delay 12
+  - jump{velocity=0.2} @target
+  - sound{s=item.trident.throw} @self
+  - damage{amount="1500*<caster.level>/8"} @EntitiesInRadius{r=4;target=players}
+  - removetag{t=SWORDATTACK} @self

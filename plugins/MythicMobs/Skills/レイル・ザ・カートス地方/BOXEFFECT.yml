@@ -1,0 +1,6 @@
+BOX_EFFECT:
+  Skills:
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#00ffff;radius=0.01;points=10;amount=2;hS=0.2;vS=1} @self
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#db00db;radius=0.01;points=10;amount=2;hS=0.2;vS=1} @self
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#ddbb00;radius=0.01;points=10;amount=2;hS=0.2;vS=1} @self
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#d30229;radius=0.01;points=10;amount=2;hS=0.2;vS=1} @self

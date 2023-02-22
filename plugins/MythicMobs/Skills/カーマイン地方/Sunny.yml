@@ -1,0 +1,7 @@
+Sunny:
+  Skills:
+  -  Delay 200
+  -  weather{} 
+  -  message{m="空が晴れてゆく"} @PIR{r=20}
+  Conditions:
+  -  thundering{} true

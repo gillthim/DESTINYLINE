@@ -1,0 +1,117 @@
+
+# Name which will be displayed
+# when opening the station
+name: 'キリルの調理場 (#page#/#max#)'
+
+# The maximum amount of items in the crafting queue ie. the
+# max number of items players are able to craft simultaneously.
+# Must be between 1 and 64.
+max-queue-size: 10
+
+# The sound that plays whenever an action is
+# completed in the crafting station.
+# GET SOUND NAMES HERE:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+sound: ENTITY_EXPERIENCE_ORB_PICKUP
+# This is how the gui looks. You can define your own
+# in crafting-stations/layouts by creating a new
+# file with the name of the file as the id.
+layout: default
+
+# Configure GUI items here
+items:
+    fill:
+        material: AIR
+    no-recipe:
+        material: GRAY_STAINED_GLASS_PANE
+        name: '&aNo Recipe'
+    no-queue-item:
+        material: GRAY_STAINED_GLASS_PANE
+        name: '&aNo Item in Queue'
+
+# Station recipes
+recipes:
+    rune_brade:
+        output:
+            type: SWORD
+            id: RUNE_BRADE
+            amount: 1
+        crafting-time: 600
+        conditions:
+        ingredients:
+        - mmoitem{type=MATERIAL,id=TYPE_OF_SWORD,amount=1,display="&a剣の型"}
+        - mmoitem{type=MATERIAL,id=WORLDTREE_BRANCH,amount=10,display="&b世界樹の枝"}
+        - mmoitem{type=MATERIAL,id=POLARBEAR_HAIR,amount=30,display="&9獰猛なシロクマの毛"}
+        - vanilla{type=IRON_INGOT,amount=10,display="鉄のインゴット"}
+    rune_staff:
+        output:
+            type: STAFF
+            id: RUNE_STAFF
+            amount: 1
+        crafting-time: 600
+        conditions:
+        ingredients:
+        - mmoitem{type=MATERIAL,id=TYPE_OF_STAFF,amount=1,display="&a杖の型"}
+        - mmoitem{type=MATERIAL,id=WORLDTREE_BRANCH,amount=10,display="&b世界樹の枝"}
+        - mmoitem{type=MATERIAL,id=POLARBEAR_HAIR,amount=30,display="&9獰猛なシロクマの毛"}
+        - vanilla{type=IRON_INGOT,amount=10,display="鉄のインゴット"}
+    rune_dagger:
+        output:
+            type: DAGGER
+            id: RUNE_DAGGER
+            amount: 1
+        crafting-time: 600
+        conditions:
+        ingredients:
+        - mmoitem{type=MATERIAL,id=TYPE_OF_DAGGER,amount=1,display="&aダガーの型"}
+        - mmoitem{type=MATERIAL,id=WORLDTREE_BRANCH,amount=10,display="&b世界樹の枝"}
+        - mmoitem{type=MATERIAL,id=POLARBEAR_HAIR,amount=30,display="&9獰猛なシロクマの毛"}
+        - vanilla{type=IRON_INGOT,amount=10,display="鉄のインゴット"}
+    reachin_tomatojuice:
+        output:
+            type: CONSUMABLE
+            id: REACHIN_TOMATOJUICE
+            amount: 1
+        crafting-time: 10
+        conditions:
+        ingredients:
+        - mmoitem{type=MATERIAL,id=RIPE_TOMATOES,amount=5,display="熟れたトマト"}
+        - mmoitem{type=MATERIAL,id=ICE_POWDER,amount=10,display="&a氷の粉"}
+    baked_wolfmeat:
+        output:
+            type: CONSUMABLE
+            id: BAKED_WOLFMEAT
+            amount: 1
+        crafting-time: 10
+        conditions:
+        ingredients:
+        - mmoitem{type=MATERIAL,id=IGNITION_AGENT,amount=5,display="着火剤"}
+        - mmoitem{type=CONSUMABLE,id=WOLF_MEAT,amount=10,display="&a白狼の肉"}
+
+#    steel-sword:
+#    
+#        # The item which the recipe gives
+#        output:
+#            type: SWORD
+#            id: STEEL_SWORD
+#            amount: 1
+#        
+#        # Time it takes to craft the item
+#        crafting-time: 3
+#        
+#        # Recipe options
+#        options:
+#            output-item: true # Set to false to give no item
+#            silent-craft: false # No sound when item is claimed
+#            hide-when-locked: false # Hide in the GUI when conditions are not met
+#        
+#        # Conditions to unlock the recipe
+#        conditions:
+#        - level{level=5}
+#        - permission{list="mmoitems.recipe.steel-sword,mmoitems.recipe.station.steel"}
+#        
+#        # Ingredients needed for the recipe
+#        # Available properties: type, id, amount, display, level (optional)
+#        ingredients:
+#        - mmoitem{type=MATERIAL,id=STEEL_INGOT,amount=4,display="Steel Ingot"}
+#        - vanilla{type=STICK,amount=2,display="Wooden Stick"}

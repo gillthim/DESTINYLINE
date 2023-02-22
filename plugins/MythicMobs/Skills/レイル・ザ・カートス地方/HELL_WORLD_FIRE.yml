@@ -1,0 +1,21 @@
+HELL_WORLD_FIRE:
+  Conditions: 
+  - playernotwithin{d=20} false
+  Skills:
+  - potion{t=SLOW;d=100;l=5} @self
+  - delay 10
+  - missile{ot=HELL_FIRE_TICK;oh=HELL_FIRE__HIT;v=9;i=5;hR=0.8;vR=0.8;in=50;md=40;mr=45} @PlayersInRadius{r=15;sort=RANDOM;ignore=self,creatures}
+  - delay 10
+  - missile{ot=HELL_FIRE_TICK;oh=HELL_FIRE__HIT;v=9;i=5;hR=0.8;vR=0.8;in=50;md=40;mr=45} @PlayersInRadius{r=15;sort=RANDOM;ignore=self,creatures}
+  - delay 10
+  - missile{ot=HELL_FIRE_TICK;oh=HELL_FIRE__HIT;v=9;i=5;hR=0.8;vR=0.8;in=50;md=40;mr=45} @PlayersInRadius{r=15;sort=RANDOM;ignore=self,creatures}
+HELL_FIRE_TICK:
+  Skills:
+  - effect:particles{p=flame;a=30:hs=2;vs=2} @origin
+  - effect:particlering{p=flame;a=50;radius=0.8;uel=true} @origin
+  - sound{s=minecraft:entity.generic.extinguish_fire;p=0.1;v=0.1} @origin
+HELL_FIRE__HIT:
+  Skills:
+  - effect:explosion{a=5;hs=1.5;vs=2}
+  - sound{s=minecraft:entity.generic.extinguish_fire;p=0.2;v=2}
+  - damage{a=50;i=true;type=Fire}

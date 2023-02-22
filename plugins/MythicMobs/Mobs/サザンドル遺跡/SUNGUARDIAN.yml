@@ -1,0 +1,63 @@
+SUNGUARDIAN:
+  Mobtype: SKELETON
+  Display: '&e&L太陽の守護者 Lv<mob.level>'
+  Disguise: WITHER_SKELETON
+  Health: 5000
+  Damage: 570
+  BossBar: 
+    Enabled: true
+    Title: '&e&L太陽の守護者 Lv<mob.level>'
+    Range: 35
+    Color: YELLOW
+  Options:
+    Despawn: false
+    AttackSpeed: 1.4
+    MovementSpeed: 0.4
+    FollowRange: 50
+    PreventSunburn: true
+    PrevventItemPickup: true
+    PreventMobkillDrops: true
+    PreventOtherDrops: true
+    Silent: false
+  Equipment:
+  -  golden_sword HAND
+  -  sunflower HEAD
+  -  mmoitems{type=SHIELD;id=SUNSHIELD} OFFHAND
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  -  2 hurtbytarget
+  AIGoalSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  2 avoidarrows
+  LevelModifiers:
+  -  Damage: 5
+  -  Health: 200
+  Drops:
+  -  mmoitems{type=MATERIAL;id=MASHROOMCHUNK} 3-5 70%
+  -  mmoitems{type=SWORD;id=DURANDAL} 1 5%
+  -  mmoitems{type=DAGGER;id=GLADIUS} 1 5%
+  -  mmoitems{type=BOW;id=NPCBOW} 1 5%
+  -  mmoitems{type=ARMOR;id=BLADE_HELMET} 1 3%
+  -  mmoitems{type=ARMOR;id=BLADE_ARMOR} 1 3%
+  -  mmoitems{type=ARMOR;id=BLADE_BOOTS} 1 3%
+  -  mmoitems{type=ARMOR;id=BLADE_LEGGINGS} 1 3%
+  -  mmoitems{type=GEM_STONE;id=ARCHER_B} 1-3 5%
+  -  mmoitems{type=GEM_STONE;id=ASSASIN_B} 1-3 5%
+  -  mmoitems{type=GEM_STONE;id=DIFFENCER_B} 1-3 5%
+  -  mmoitems{type=GEM_STONE;id=GUARDIAN_B} 1-3 5%
+  -  mmoitems{type=GEM_STONE;id=ATTACK_B} 1-3 5%
+  -  mmoitems{type=GEM_STONE;id=MAGICAL_B} 1-3 5%
+  Skills:
+  -  threat{amount=10000} @NearestPlayer ~onTimer:60
+  -  skill{s=SUN_EFFECT} @self ~onTimer:5
+  -  skill{s=SUNENAGEY} @self ~onTimer:1000
+  -  skill{s=SUNBREAK} @self ~onTimer:300
+  -  skill{s=SUNLIGHTNING} @self ~onTimer:250
+  -  currencygive{amount=5000-7000} @pir{r=20} ~onDeath
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に太陽の輝きを見せつけられた!'
+  -  '&l&4<DeadLog>&f<target.name>は太陽の魔法を喰らった！'
+  -  '&l&4<DeadLog>&f<mob.name>は<target.name>を溶かしてしまった！'

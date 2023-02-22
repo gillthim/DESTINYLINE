@@ -1,0 +1,8 @@
+hogehoge:
+  Type: HUSK
+  Display: '&6Skeleton King'
+  Health: 500
+  Damage: 10
+  Skills:
+  - model{mid=bonemaster;n=false} @self ~onSpawn
+  - state{mid=bonemaster;s=attack} @self ~onAttack

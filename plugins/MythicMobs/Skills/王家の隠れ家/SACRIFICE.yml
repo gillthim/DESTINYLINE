@@ -1,0 +1,25 @@
+SACRIFICE: 
+  Conditions: 
+  - playernotwithin{d=25} false
+  Skills:
+  - missile{ot=SACRIF_TICK;oh=SACRIF_HIT;v=50;i=1;hR=0.5;vR=0.5;in=20;md=40;mr=45} @PlayersInRadius{r=15;limit=4;sort=RANDOM}
+  - delay 10
+  - missile{ot=SACRIF_TICK;oh=SACRIF_HIT;v=50;i=1;hR=0.5;vR=0.5;in=20;md=40;mr=45} @PlayersInRadius{r=15;limit=4;sort=RANDOM}
+  - delay 10
+  - missile{ot=SACRIF_TICK;oh=SACRIF_HIT;v=50;i=1;hR=0.5;vR=0.5;in=20;md=40;mr=45} @PlayersInRadius{r=15;limit=4;sort=RANDOM}
+  - delay 10
+SACRIF_TICK:
+  Skills:
+  - effect:particles{p=CRIT_MAGIC;a=20:hs=3;vs=3} @origin
+  - effect:particlesphere{p=CRIT_MAGIC;a=200;radius=0.6} @origin
+  - sound{s=minecraft:item.chorus_fruit.teleport;p=2;v=1}
+SACRIF_HIT:
+  Skills:
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#00ffff;radius=0.05;points=16;amount=2;hS=0.4;vS=1} 
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#db00db;radius=0.05;points=16;amount=2;hS=0.4;vS=1} 
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#ddbb00;radius=0.05;points=16;amount=2;hS=0.4;vS=1} 
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#d30229;radius=0.05;points=16;amount=2;hS=0.4;vS=1}
+  - effect:particlebox{particle=flame;amount=150;radius5} @target
+  - sound{s=minecraft:entity.illusioner.prepare_mirror;p=1.5;v=1}
+  - sound{s=minecraft:item.chorus_fruit.teleport;p=1;v=1}
+  - teleportto{location=15,-5,-45}

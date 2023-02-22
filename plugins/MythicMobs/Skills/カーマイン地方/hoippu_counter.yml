@@ -1,0 +1,10 @@
+hoippu_counter:
+  Skills: 
+  - sound{s=hoippoucounter1msec} @self
+  - potion{t=SLOW;d=60;l=7} @self
+  - delay 20
+  - leap{v=300;noise=4} @target
+  - damage{amount=50} @target
+  - delay 15
+  - leap{v=350} @target
+  - damage{amount=100} @target

@@ -1,0 +1,8 @@
+SingleTargetFire:
+  Cooldown: 1
+  Skills:
+  -  message{m="<mob.name>&Aは詠唱を始めた！"} @target
+  -  delay 50
+  -  effect:particles{p=flame;hs=1;vs=1;a=50;s=0.1;} @target  
+  -  damage{a=500;ignorearmor=true;}
+  -  ignite{d=40}

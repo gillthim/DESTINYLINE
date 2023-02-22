@@ -1,0 +1,19 @@
+KNIGHTGUARD:
+  Conditions: 
+  - playernotwithin{d=28} false
+  - hastag{t=SWORDATTACK} false
+  Skills:
+  - addtag{t=KNIGHTGUARD} @self
+  - potion{t=SLOW;d=20;l=5} @self
+  - delay 20
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.3;points=1}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.5;points=1}
+  - effect:particleline{p=WAX_ON;color=#fef3c3;db=1;ys=2;a=20} @Ring{r=0.6;points=2}
+  - sound{s=grandheal;v=1;p=1.7} @self
+  - sound{s=minecraft:entity.villager.work_toolsmith;v=1.5;p=0.8} @self
+  - delay 5
+  - sound{s=minecraft:entity.villager.work_toolsmith;v=1.5;p=0.8} @self
+  - delay 5
+  - shieldpercent{ms=0.2} @self
+  - potion{type=DAMAGE_RESISTANCE;duration=100;level=0} @EntitiesNearOrigin{r=7;ignore=players}
+  - removetag{t=KNIGHTGUARD} @self

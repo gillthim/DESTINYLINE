@@ -1,0 +1,40 @@
+FROZEN_SKELETON:
+  Type: HUSK
+  Disguise: STRAY
+  Display: '&A凍ったスケルトン Lv<mob.level>'
+  Health: 18
+  Damege: 15
+  Optioons: 
+    AtacckSpeed: 1.4
+    AlwaysShowName: true
+    Despawn: true
+    FollowRange: 11
+    MovementSpeed: 0.2
+    PreventItemPickup: false
+    PreventOtherDrops: true
+    Silent: true
+    AbleToHunt: true
+    ImmuneToZombification: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelector: 
+  -  0 clear
+  -  1 meleeattack
+  -  2 randomstrolls
+  Drops:
+  - mmoitems{type=MATERIAL;id=ICE_POWDER} 1-5 40%
+  Skills:
+  -  skill{s=ICE_EFFECT} @self ~onTimer:5
+  -  skill{s=ICEWAVE} @self ~onTimer:100
+  -  currencygive{amount=250-350} @pir{r=20} ~onDeath
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  Equipment: 
+  -  stick hand
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に魔法で凍らされた!'
+  -  '&l&4<DeadLog>&f<target.name>はカチコチにされた'
+  -  '&l&4<DeadLog>&f<mob.name>たちは<target.name>をこちらの世界へ連れ去った！'
+  LevelModifiers:
+  -  Damage: 6
+  -  Health: 15

@@ -1,0 +1,44 @@
+SNOW_ELEMENT_dg:
+  Type: IRON_GOLEM
+  Display: '&A雪のエレメント Lv<mob.level>'
+  Health: 60
+  Damege: 80
+  Options: 
+    AtacckSpeed: 1
+    AlwaysShowName: true
+    Despawn: false
+    FollowRange: 14
+    MovementSpeed: 0.15
+    PreventItemPickup: false
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    Silent: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelector: 
+  -  0 clear
+  -  1 randomstrolls
+  Drops: 
+  -  mmoitems{type=MATERIAL;id=SPIRIT_STONE} 1-3 70%
+  -  mmoitems{type=ARMOR;id=BLACKKNIGHT} 1 2%
+  -  mmoitems{type=ARMOR;id=BLACKKNIGHT_ARMOR} 1 2%
+  -  mmoitems{type=ARMOR;id=BLACKKNIGHT_INSTEP} 1 2%
+  -  mmoitems{type=ARMOR;id=BLACKNIGHT_HELMET} 1 2%
+  -  mmoitems{type=GEM_STONE;id=ARCHER_B} 1-3 10%
+  -  mmoitems{type=GEM_STONE;id=ASSASIN_B} 1-3 10%
+  -  mmoitems{type=GEM_STONE;id=DIFFENCER_B} 1-3 10%
+  -  mmoitems{type=GEM_STONE;id=GUARDIAN_B} 1-3 10%
+  -  mmoitems{type=GEM_STONE;id=ATTACK_B} 1-3 10%
+  -  mmoitems{type=GEM_STONE;id=MAGICAL_B} 1-3 10%
+  Skills:
+  -  skill{s=ICE_EFFECT_BIG} @self ~onTimer:5
+  -  skill{s=ELEMENT_ICE} @self ~onTimer:200
+  -  currencygive{amount=1500-2500} @pir{r=20} ~onDeath
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に凍らされた!'
+  -  '&l&4<DeadLog>&f<target.name>は魔法で死んだ'
+  LevelModifiers:
+  -  Damage: 1.2
+  -  Health: 10

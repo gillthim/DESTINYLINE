@@ -1,0 +1,440 @@
+ATTACK_A:
+  base:
+    material: REDSTONE
+    name: '&a火力の根源Ⅰ'
+    required-level: 5.0
+    attack-damage: 1.0
+    weapon-damage: 2.0
+    skill-damage: 2.0
+    tier: UNCOMMON
+    success-rate: 100.0
+    unbreakable: true
+    item-type-restriction:
+    - SWORD
+    - LONG_SWORD
+    - GAUNTLET
+    - HAMMER
+    - SPEAR
+    - GREATSWORD
+    - AXE
+    - GREATAXE
+    - GREATHAMMER
+    - WHIP
+    lore:
+    - '&f力の源である天上のユミルが'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cSWORD,LONGSWORD,HANMMER,SPEAR'
+    - '&cGREATSWORD,AXE,GREATAXE,GREATHUMMER'
+    - '&cWHIP,GUNTLET'
+    disable-interaction: true
+ATTACK_B:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9火力の根源Ⅱ'
+    unbreakable: true
+    tier: RARE
+    weapon-damage: 3.0
+    attack-damage: 3.0
+    required-level: 10.0
+    success-rate: 80.0
+    skill-damage: 4.0
+    item-type-restriction:
+    - SWORD
+    - LONG_SWORD
+    - GAUNTLET
+    - HAMMER
+    - SPEAR
+    - GREATSWORD
+    - AXE
+    - GREATAXE
+    - GREATHAMMER
+    - WHIP
+    lore:
+    - '&f力の源である天上のユミルが'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cSWORD,LONGSWORD,HANMMER,SPEAR'
+    - '&cGREATSWORD,AXE,GREATAXE,GREATHUMMER'
+    - '&cWHIP,GUNTLET'
+ATTACK_C:
+  base:
+    material: EMERALD
+    name: '&6火力の根源Ⅲ'
+    required-level: 15.0
+    attack-damage: 5.0
+    weapon-damage: 5
+    skill-damage: 6.0
+    tier: VERY_RARE
+    unbreakable: true
+    success-rate: 60.0
+    lore:
+    - '&f力の源である天上のユミルが'
+    - '&f生み出した魔法の宝石'
+    - '&c※REDのソケットにしか入らない'
+    - '&a使用可能なもの'
+    - '&cSWORD,LONGSWORD,HANMMER,SPEAR'
+    - '&cGREATSWORD,AXE,GREATAXE,GREATHUMMER'
+    - '&cWHIP,GUNTLET'
+    item-type-restriction:
+    - SWORD
+    - LONG_SWORD
+    - GAUNTLET
+    - HAMMER
+    - SPEAR
+    - GREATSWORD
+    - AXE
+    - GREATAXE
+    - GREATHAMMER
+    - WHIP
+    gem-color: RED
+MAGICAL_A:
+  base:
+    material: REDSTONE
+    name: '&a魔力の根源Ⅰ'
+    required-level: 5.0
+    magic-damage: 2.0
+    max-mana: 10
+    skill-damage: 2.0
+    tier: UNCOMMON
+    success-rate: 100.0
+    unbreakable: true
+    lore:
+    - '&f魔法の力を持った偉大なる魔術師が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cSTAFF,GREATSTAFF,WAND,TALISMAN,TOME'
+    item-type-restriction:
+    - STAFF
+    - GREATSTAFF
+    - WAND
+    - TALISMAN
+    - TOME
+    disable-interaction: true
+MAGICAL_B:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9魔力の根源Ⅱ'
+    unbreakable: true
+    tier: RARE
+    magic-damage: 4.0
+    max-mana: 20
+    required-level: 10.0
+    success-rate: 80.0
+    skill-damage: 4.0
+    lore:
+    - '&f魔法の力を持った偉大なる魔術師が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cSTAFF,GREATSTAFF,WAND,TALISMAN,TOME'
+    item-type-restriction:
+    - STAFF
+    - GREATSTAFF
+    - WAND
+    - TALISMAN
+    - TOME
+MAGICAL_C:
+  base:
+    material: EMERALD
+    name: '&6魔力の根源Ⅲ'
+    required-level: 15.0
+    magic-damage: 6.0
+    skill-damage: 6.0
+    max-mana: 30
+    tier: VERY_RARE
+    unbreakable: true
+    success-rate: 60.0
+    lore:
+    - '&f魔法の力を持った偉大なる魔術師が'
+    - '&f生み出した魔法の宝石'
+    - '&c※BLUEのソケットにしか入らない'
+    - '&a使用可能なもの'
+    - '&cSTAFF,GREATSTAFF,WAND,TALISMAN,TOME'
+    item-type-restriction:
+    - STAFF
+    - GREATSTAFF
+    - WAND
+    - TALISMAN
+    - TOME
+    gem-color: BLUE
+ASSASIN_A:
+  base:
+    material: REDSTONE
+    name: '&a隠者の根源Ⅰ'
+    tier: UNCOMMON
+    success-rate: 100.0
+    required-level: 5.0
+    critical-strike-chance: 0.5
+    critical-strike-power: 3.0
+    skill-critical-strike-chance: 0.8
+    skill-critical-strike-power: 5.0
+    pvp-damage: 0.5
+    movement-speed: 0.001
+    unbreakable: true
+    lore:
+    - '&f魔法の力を持った偉大なる魔術師が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cDAGGER,THRUSTING_SWORD,KATANA,STAVE'
+    item-type-restriction:
+    - DAGGER
+    - THRUSTING_SWORD
+    - KATANA
+    - STAVE
+    disable-interaction: true
+ASSASIN_B:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9隠者の根源Ⅱ'
+    unbreakable: true
+    tier: RARE
+    critical-strike-chance: 0.8
+    critical-strike-power: 5
+    skill-critical-strike-chance: 1.2
+    skill-critical-strike-power: 8
+    pvp-damage: 1
+    movement-speed: 0.002
+    required-level: 10.0
+    success-rate: 80.0
+    skill-damage: 4.0
+    lore:
+    - '&f隠遁の力を持った手練れの暗殺者が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cDAGGER,THRUSTING_SWORD,KATANA,STAVE'
+    item-type-restriction:
+    - DAGGER
+    - THRUSTING_SWORD
+    - KATANA
+    - STAVE
+ASSASIN_C:
+  base:
+    material: EMERALD
+    name: '&6隠者の根源Ⅲ'
+    critical-strike-chance: 1
+    critical-strike-power: 8
+    skill-critical-strike-chance: 1.5
+    skill-critical-strike-power: 10
+    pvp-damage: 1.5
+    movement-speed: 0.003
+    required-level: 15
+    tier: VERY_RARE
+    unbreakable: true
+    success-rate: 60.0
+    lore:
+    - '&f隠遁の力を持った手練れの暗殺者が'
+    - '&f生み出した魔法の宝石'
+    - '&c※YELLOWのソケットにしか入らない'
+    - '&a使用可能なもの'
+    - '&cDAGGER,THRUSTING_SWORD,KATANA,STAVE'
+    item-type-restriction:
+    - DAGGER
+    - THRUSTING_SWORD
+    - KATANA
+    - STAVE
+    gem-color: YELLOW
+ARCHER_A:
+  base:
+    material: REDSTONE
+    name: '&a弓術の根源Ⅰ'
+    tier: UNCOMMON
+    success-rate: 100.0
+    required-level: 5.0
+    attack-speed: 0.1
+    pve-damage: 2.0
+    arrow-velocity: 0.2
+    projectile-damage: 2.0
+    skill-damage: 4
+    lore:
+    - '&f弓術の力を持った自然を愛すの狩人が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cBOW,CROSSBOW,GREATBOW,MUSKET'
+    item-type-restriction:
+    - BOW
+    - CROSSBOW
+    - GREATBOW
+    - MUSKET
+    disable-interaction: true
+ARCHER_B:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9弓術の根源Ⅱ'
+    unbreakable: true
+    tier: RARE
+    success-rate: 80.0
+    required-level: 10
+    attack-speed: 0.2
+    pve-damage: 4
+    arrow-velocity: 0.3
+    projectile-damage: 4
+    skill-damage: 5
+    lore:
+    - '&f弓術の力を持った自然を愛すの狩人が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cBOW,CROSSBOW,GREATBOW,MUSKET'
+    item-type-restriction:
+    - BOW
+    - CROSSBOW
+    - GREATBOW
+    - MUSKET
+ARCHER_C:
+  base:
+    material: EMERALD
+    name: '&6弓術の根源Ⅲ'
+    attack-speed: 0.3
+    pve-damage: 6
+    arrow-velocity: 0.3
+    projectile-damage: 6
+    skill-damage: 7
+    required-level: 15
+    tier: VERY_RARE
+    unbreakable: true
+    success-rate: 60.0
+    lore:
+    - '&f弓術の力を持った自然を愛すの狩人が'
+    - '&f生み出した魔法の宝石'
+    - '&c※GREENのソケットにしか入らない'
+    - '&a使用可能なもの'
+    - '&cBOW,CROSSBOW,GREATBOW,MUSKET'
+    item-type-restriction:
+    - BOW
+    - CROSSBOW
+    - GREATBOW
+    - MUSKET
+    gem-color: GREEN
+DIFFENCER_A:
+  base:
+    material: REDSTONE
+    name: '&a騎士の根源Ⅰ'
+    tier: UNCOMMON
+    success-rate: 100.0
+    required-level: 5.0
+    attack-damage: 1.0
+    block-power: 2.0
+    block-rating: 0.5
+    block-cooldown-reduction: 0.2
+    armor: 0.3
+    max-health: 20.0
+    knockback-resistance: 0.02
+    lore:
+    - '&f騎士道の力を持った王国に尽す兵士が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cLANCE,HALBERD'
+    item-type-restriction:
+    - LANCE
+    - HALBERD
+    disable-interaction: true
+DIFFENCER_B:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9騎士の根源Ⅱ'
+    unbreakable: true
+    required-level: 10.0
+    tier: RARE
+    success-rate: 80
+    attack-damage: 2
+    block-power: 4
+    block-rating: 1
+    block-cooldown-reduction: 0.5
+    armor: 0.6
+    max-health: 40
+    knockback-resistance: 0.04
+    lore:
+    - '&f騎士道の力を持った王国に尽す兵士が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cLANCE,HALBERD'
+    item-type-restriction:
+    - LANCE
+    - HALBERD
+DIFFENCER_C:
+  base:
+    material: EMERALD
+    name: '&6騎士の根源Ⅲ'
+    required-level: 15
+    tier: VERY_RARE
+    unbreakable: true
+    success-rate: 60.0
+    attack-damage: 3
+    block-power: 6
+    block-rating: 1.5
+    block-cooldown-reduction: 1
+    armor: 1.0
+    max-health: 60
+    knockback-resistance: 0.03
+    lore:
+    - '&f騎士道の力を持った王国に尽す兵士が'
+    - '&f生み出した魔法の宝石'
+    - '&c※LIGHTBLUEのソケットにしか入らない'
+    - '&a使用可能なもの'
+    - '&cLANCE,HALBERD'
+    item-type-restriction:
+    - LANCE
+    - HALBERD
+    gem-color: LIGHTBLUE
+GUARDIAN_A:
+  base:
+    material: REDSTONE
+    name: '&a守護者の根源Ⅰ'
+    tier: UNCOMMON
+    success-rate: 100.0
+    required-level: 5.0
+    armor: 0.1
+    max-health: 20
+    block-power: 1.0
+    lore:
+    - '&f守護者の力を持った仲間想いな援護兵が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cARMOR,SHIELD'
+    item-type-restriction:
+    - ARMOR
+    - SHIELD
+    disable-interaction: true
+    defense: 0.1
+GUARDIAN_B:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9守護者の根源Ⅱ'
+    unbreakable: true
+    success-rate: 80
+    tier: RARE
+    required-level: 10
+    defense: 0.2
+    max-health: 40
+    block-power: 2
+    lore:
+    - '&f守護者の力を持った仲間想いな援護兵が'
+    - '&f生み出した魔法の宝石'
+    - '&a使用可能なもの'
+    - '&cARMOR,SHIELD'
+    item-type-restriction:
+    - ARMOR
+    - SHIELD
+    armor: 0.2
+GUARDIAN_C:
+  base:
+    material: EMERALD
+    name: '&6守護者の根源Ⅲ'
+    tier: VERY_RARE
+    unbreakable: true
+    success-rate: 60.0
+    required-level: 15
+    defense: 0.3
+    max-health: 60
+    block-power: 3
+    lore:
+    - '&f守護者の力を持った仲間想いな援護兵が'
+    - '&f生み出した魔法の宝石'
+    - '&c※DEEPBLUEのソケットにしか入らない'
+    - '&a使用可能なもの'
+    - '&cARMOR,SHIELD'
+    item-type-restriction:
+    - ARMOR
+    - SHIELD
+    gem-color: DEEPBLUE
+    armor: 0.3
+    hide-enchants: true

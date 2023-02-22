@@ -1,0 +1,6 @@
+SUN_EFFECT:
+  Skills:
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#7954ca;radius=0.05;points=7;amount=2;hS=0.4;vS=1} @self
+  - effect:particlering{particle=WAX_ON;color=#fef3c3;radius=0.05;points=8;amount=1;hS=0.4;vS=1} @self
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#dbcf4c;radius=0.05;points=16;amount=2;hS=0.4;vS=1} @self
+  - effect:particlering{particle=DUST_COLOR_TRANSITION;color=#cc0011;radius=0.05;points=5;amount=2;hS=0.4;vS=1} @self

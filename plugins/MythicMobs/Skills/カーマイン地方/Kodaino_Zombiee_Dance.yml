@@ -1,0 +1,15 @@
+Kodaino_Zombiee_Dance: 
+  Conditions: 
+  - playernotwithin{d=16} false
+  Skills:
+  - potion{type=SLOW;duration=100;level=7} @self
+  - delay 20
+  - sound{s=minecraft:item.trident.riptide_2;p=0.6;repeat=4;repeatinterval=20;v=0.5} @self
+  - effect:spin{duration=80;velocity=10} @self
+  - delay 80
+  - potion{type=SPEED;duration=200;level=4} @EntitiesNearOrigin{r=7;ignore=players}
+  - sound{s=minecraft:item.honey_bottle.drink;p=0.4} @self
+  - delay 10
+  - sound{s=minecraft:item.honey_bottle.drink;p=0.9} @self
+  - delay 10
+  - sound{s=minecraft:item.honey_bottle.drink;p=1.5} @self

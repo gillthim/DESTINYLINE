@@ -1,0 +1,31 @@
+SUNLIGHTNING2:
+  Conditions: 
+  - playernotwithin{d=20} false
+  - hastag{t=BONEMASTER_WORLD_FIRE} false
+  - hastag{t=BONEWEB} false
+  Skills:
+  - addtag{t=SUNLIGHTNING2} @self
+  - message{m="<mob.name>&f<&co>サンライトニング！"} @PlayersInRadius{r=20}
+  - potion{t=SLOW;d=40;l=5} @self
+  - missile{ot=SUNL_TICK2;oh=SUNL_HIT2;v=8;i=4;hR=1;vR=1;in=20;md=40;mr=45} @PlayersInRadius{r=20;limit=4;sort=RANDOM}
+  - delay 10
+  - missile{ot=SUNL_TICK2;oh=SUNL_HIT2;v=8;i=4;hR=1;vR=1;in=20;md=40;mr=45} @PlayersInRadius{r=25;limit=4;sort=RANDOM}
+  - delay 10
+  - missile{ot=SUNL_TICK2;oh=SUNL_HIT2;v=8;i=4;hR=1;vR=1;in=20;md=40;mr=45} @PlayersInRadius{r=30;limit=4;sort=RANDOM}
+  - delay 10
+  - missile{ot=SUNL_TICK2;oh=SUNL_HIT2;v=8;i=4;hR=1;vR=1;in=20;md=40;mr=45} @PlayersInRadius{r=20;limit=4;sort=RANDOM}
+  - delay 10
+  - missile{ot=SUNL_TICK2;oh=SUNL_HIT2;v=8;i=4;hR=1;vR=1;in=20;md=40;mr=45} @PlayersInRadius{r=25;limit=4;sort=RANDOM}
+  - delay 10
+  - missile{ot=SUNL_TICK2;oh=SUNL_HIT2;v=8;i=4;hR=1;vR=1;in=20;md=40;mr=45} @PlayersInRadius{r=30;limit=4;sort=RANDOM}
+  - delay 10
+  - removetag{t=SUNLIGHTNING2} @self
+SUNL_TICK2:
+  Skills:
+  - effect:particles{p=FLASH;a=10:hs=2;vs=2} @origin
+  - effect:particlesphere{p=FLASH;a=3;radius=1} @origin
+SUNL_HIT2:
+  Skills:
+  - effect:explosion
+  - effect:sound{s=entity.generic.explode;v=1;p=1}
+  - damage{a=525;i=true;type=LIGHT}

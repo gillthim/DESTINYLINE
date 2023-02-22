@@ -1,0 +1,65 @@
+bonemaster:
+  Type: ZOMBIE
+  BossBar:
+    Enabled: true
+    Title: '&d&lボーンマスターLv<mob.level>'
+    Range: 40
+    Color: RED
+  Display: '&d&lボーンマスターLv<mob.level>'
+  Health: 15000
+  Damage: 2500
+  AIGoalsSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  1 randomstroll
+  AiTargetSelectors:
+  -  0 clear
+  -  1 players
+  -  2 hurtbytarget
+  Drops:
+  -  mmoitems{type=SHIELD;id=SEIREI_SHIELD} 1 3%
+  -  mmoitems{type=MATERIAL;id=MASHROOMCHUNK} 5-8 70%
+  -  mmoitems{type=SWORD;id=DURANDAL} 1 5%
+  -  mmoitems{type=DAGGER;id=GLADIUS} 1 5%
+  -  mmoitems{type=BOW;id=NPCBOW} 1 5%
+  -  mmoitems{type=ARMOR;id=BLADE_HELMET} 1 5%
+  -  mmoitems{type=ARMOR;id=BLADE_ARMOR} 1 5%
+  -  mmoitems{type=ARMOR;id=BLADE_BOOTS} 1 5%
+  -  mmoitems{type=ARMOR;id=BLADE_LEGGINGS} 1 5%
+  Skills:
+  -  model{mid=bonemaster;n=false} @self ~onSpawn
+  -  state{mid=bonemaster;s=attack} @self ~onAttack
+  -  threat{amount=10000} @NearestPlayer ~onTimer:60
+  -  sound{s=entity.wither_skeleton.hurt;p=0.5;v=1} @self ~onDamaged
+  -  sound{s=entity.phantom.ambient;p=0.5;v=1} @self ~onDamaged
+  -  sound{s=entity.wither.hurt;p=0.5;v=1} @self ~onDamaged
+  -  sound{s=entity.wither.hurt;p=0.8;v=1.8} @self ~onDamaged <70%
+  -  sound{s=entity.wither.hurt;p=1;v=2.4} @self ~onDamaged <35%
+  -  speak{m="&4&l太陽に焼かれろ！";cooldown=50} @PlayersInRadius{r=40}
+     ~onCombat >0 0.2
+  -  sound{s=entity.phantom.flap;p=1.2;v=0.3} @self ~onCombat
+  -  effect:particlering{p=reddust;color=#191616;a=100;hS=1;vS=0.2;radius=1.1} @self ~onTimer:80 <70%
+  -  effect:particlering{p=reddust;color=#5c0f15;a=100;hS=0.8;vS=0.2;radius=1} @self ~onTimer:80 <70%
+  -  effect:particlering{p=reddust;color=#191616;a=100;hS=1;vS=0.2;radius=1.1} @self ~onTimer:100 <35%
+  -  effect:particlering{p=reddust;color=#b71722;a=100;hS=0.8;vS=0.2;radius=1} @self ~onTimer:100 <35%
+  -  skill{s=SUNLIGHTNING2} @self ~onTimer:458
+  -  skill{s=BONEMASTER_WORLD_FIRE} @self ~onTimer:251
+  -  skill{s=BONEWEB} @self ~onTimer:986
+  -  skill{s=FORCUSLIGHT} @self ~onTimer:308
+  -  currencygive{amount=50000} @pir{r=20} ~onDeath
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  Options:
+    AlwaysShowName: false
+    Collidable: true
+    Silent: true
+    MovementSpeed: 0.32
+    MaxCombatDistance: 50
+    FollowRange: 70
+    PreventOtherDrops: true
+    PreventSunburn: true
+    KnockbackResistance: 0.8
+    Despawn: false
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>は狩り殺された!'
+  -  '&l&4<DeadLog>&f<target.name>は古代の攻撃を喰らった！'
+  -  '&l&4<DeadLog>&f<mob.name>は<target.name>を切り裂いてしまった!'

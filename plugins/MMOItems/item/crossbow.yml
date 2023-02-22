@@ -1,0 +1,75 @@
+TEST:
+  base:
+    material: CROSSBOW
+    name: テスト用
+    attack-damage: 20.0
+    required-level: 20.0
+    skill-critical-strike-chance: 3.5
+    skill-critical-strike-power: 8.0
+ENTEI_CROSSBOW:
+  base:
+    material: BOW
+    custom-model-data: 4.0
+    name: '&6炎帝のクロスボウ'
+    tier: VERY_RARE
+    arrow-velocity: 1.2
+    required-level: 35.0
+    attack-damage: 28.0
+    projectile-damage: 12.0
+    defense: -1.0
+    skill-critical-strike-chance: 6.0
+    skill-critical-strike-power: 17.0
+    ability:
+      ability1:
+        type: BURN
+        mode: ARROW_HIT
+        duration: 4.0
+        cooldown: 2.0
+      ability2:
+        type: ARCANE_HAIL
+        mode: SHIFT_LEFT_CLICK
+        duration: 5.0
+        damage: 50.0
+        stamina: 5.0
+        radius: 4.0
+        cooldown: 8.0
+      ability3:
+        type: FIREBOLT
+        mode: SHIFT_RIGHT_CLICK
+        damage: 100.0
+        ignite: 4.0
+        cooldown: 5.0
+    cooldown-reduction: 8.0
+    unbreakable: true
+    element:
+      fire:
+        damage: 60.0
+    max-stamina: 40.0
+    lore:
+    - '&f炎帝の力を宿しているクロスボウ'
+    - '&fその炎はあらゆるものを焼き、灰と化す'
+    gem-sockets:
+    - '1'
+    - '1'
+    - GREEN
+    - GREEN
+PISTOL_CROSSBOW:
+  base:
+    material: CROSSBOW
+    name: '&9ピストルクロスボウ'
+    required-level: 25.0
+    arrow-velocity: 0.8
+    attack-damage: 22.0
+    enchants:
+      quick_charge: 5.0
+      multishot: 5.0
+    unbreakable: true
+    tier: RARE
+    projectile-damage: 4.0
+    hide-enchants: true
+    gem-sockets:
+    - '1'
+    - '1'
+    - GREEN
+    pve-damage: 5.0
+    undead-damage: 10.0

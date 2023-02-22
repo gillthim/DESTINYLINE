@@ -1,0 +1,52 @@
+sasuke_syaringan:
+  Conditions: 
+  - playernotwithin{d=40} false
+  Skills:
+  - gcd 400
+  - addtag{t=syaringan} @self
+  - disengage @target
+  - delay 1
+  - disengage @target
+  - jump{velocity=0.9} @self
+  - delay 1
+  - disengage @target
+  - delay 1
+  - potion{t=SLOW;d=30;l=7} @self
+  - delay 30
+  - potion{type=SPEED;duration=400;level=2}
+  - potion{type=INCREASE_DAMAGE;duration=400;level=3}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - message{m="<mob.name>&f<&co>写輪眼！！"} @PlayersInRadius{r=40}
+  - sound{s=syaringan;v=2;p=1} @self
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.8;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.9;points=13}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=10;points=14}
+  - effect:particlering{p=reddust;color=#133337;db=1;ys=3;a=20} @Ring{r=0.8;points=12}
+  - effect:particlering{p=reddust;color=#133337;db=1;ys=3;a=20} @Ring{r=0.9;points=13}
+  - effect:particlering{p=reddust;color=#133337;db=1;ys=3;a=20} @Ring{r=10;points=14}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - delay 50
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.4;points=12}
+  - effect:particleline{p=reddust;color=#c34a50;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - potionclear{} @self
+  - removetag{t=syaringan} @self

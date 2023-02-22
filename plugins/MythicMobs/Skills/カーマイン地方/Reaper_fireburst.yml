@@ -1,0 +1,19 @@
+reaper_fireburst:
+  Conditions: 
+  - playernotwithin{d=30} false
+  - offgcd
+  Skills:
+  - gcd 80
+  - message{m="<mob.name>&f<&co> 至極の業火を！"} @PlayersInRadius{r=30}
+  - delay 20
+  - shootfireball{y=3;v=0.1;i=false;ft=20;sml=true} @target
+  - damage{a=2000} @LivingInCone{a=50.0;r=14.0;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=1} @LivingInCone{a=50;r=14.0;rot=0.0}
+  - delay 30
+  - shootfireball{y=3;v=0.2;i=false;ft=30;sml=true} @target
+  - damage{a=3000} @LivingInCone{a=45.0;r=12.0;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=5} @LivingInCone{a=45.0;r=12.0;rot=0.0}
+  - delay 30
+  - shootfireball{y=1;v=0.3;i=false;sml=false} @target
+  - damage{a=3000} @LivingInCone{a=35;r=10;rot=0.0}
+  - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=1} @LivingInCone{a=35;r=10.0;rot=0.0}

@@ -1,0 +1,44 @@
+POLARBEAR_dg:
+  Mobtype: HUSK
+  Disguise: POLAR_BEAR
+  Display: '&A&L獰猛なシロクマ Lv<mob.level>'
+  Health: 150
+  Damage: 50
+  Options:
+    Despawn: false
+    AttackSpeed: 1
+    MovementSpeed: 0.25
+    PreventItemPickup: false
+    PreventOtherDrops: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  2 randomstroll
+  LevelModifiers:
+  -  Health: 4
+  -  Damage: 3
+  Skills:
+  -  skill{s=ICE_EFFECT_BIG} @self ~onTimer:5
+  -  skill{s=STUN_DASH} @self ~onTimer:140
+  -  skill{s=ICE_WORLD_WAVE} @self ~onDamaged 0.3
+  -  currencygive{amount=1500-2000} @pir{r=20} ~onDeath
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  Drops:
+  -  mmoitems{type=MATERIAL;id=POLARBEAR_HAIR} 5-10 70%
+  -  mmoitems{type=ARMOR;id=BLACKKNIGHT} 1 5%
+  -  mmoitems{type=ARMOR;id=BLACKKNIGHT_ARMOR} 1 5%
+  -  mmoitems{type=ARMOR;id=BLACKKNIGHT_INSTEP} 1 5%
+  -  mmoitems{type=ARMOR;id=BLACKNIGHT_HELMET} 1 5%
+  -  mmoitems{type=GEM_STONE;id=ARCHER_B} 1-2 8%
+  -  mmoitems{type=GEM_STONE;id=ASSASIN_B} 1-2 8%
+  -  mmoitems{type=GEM_STONE;id=DIFFENCER_B} 1-2 8%
+  -  mmoitems{type=GEM_STONE;id=GUARDIAN_B} 1-2 8%
+  -  mmoitems{type=GEM_STONE;id=ATTACK_B} 1-2 8%
+  -  mmoitems{type=GEM_STONE;id=MAGICAL_B} 1-2 8%
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に食われた！'
+  -  '&l&4<DeadLog>&f<target.name>は餌になった！'
+  -  '&l&4<DeadLog>&f<mob.name>はサウザンドサニー号を死守した！'

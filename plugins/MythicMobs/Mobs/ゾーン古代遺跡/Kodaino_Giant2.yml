@@ -1,0 +1,55 @@
+Kodaino_Giant2:
+  Mobtype: HUSK
+  Disguise: GIANT
+  Display: '&9&L古代のジャイアント Lv<mob.level>'
+  Health: 600
+  Armor: 50
+  Damage: 15
+  BossBar:
+    Enabled: true
+    Title: '&a&L古代のジャイアント Lv<mob.level>'
+    Range: 40
+    Color: RED
+  Options:
+    AlwaysShowName: true
+    AttackSpeed:
+    Despawn: false
+    FollowRange: 50
+    Glowing: false
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    PreventItemPickup: true
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  -  0 clear
+  -  1 lookatplayers
+  -  2 meleeattack
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  Equipment:
+  -  ender_eye:0
+  Drops:
+  -  mmoitems{type=MATERIAL;id=KODAINOHOUSEKI} 1-3 70%
+  -  mmoitems{type=ARMOR;id=HUBBEL_HELMET} 1 2%
+  -  mmoitems{type=ARMOR;id=HUBBELL_ARMOR} 1 2%
+  -  mmoitems{type=ARMOR;id=HUBBELL_LEGGINGS} 1 2%
+  -  mmoitems{type=ARMOR;id=HUBBELL_BOOTS} 1 2%
+  LevelModifiers:
+  - Health: 200
+  - Armor: 10
+  Skills:
+  - threat{amount=10000} @NearestPlayer ~onSpawn
+  - skill{s=Kodaino_beam} @self ~onTimer:150
+  - look{headOnly=flase;immediately=true} @target ~onTimer:20
+  - currencygive{amount=5000} @pir{r=60} ~onDeath
+  - skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  KillMessages:
+  - '&l&4<DeadLog>&f<target.name>は<mob.name>に古代の魔法で焼かれた!'
+  - '&l&4<DeadLog>&f<target.name>は圧倒された'
+  - '&l&4<DeadLog>&f<mob.name>は<target.name>を溶かしてしまった！'

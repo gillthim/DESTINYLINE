@@ -1,0 +1,157 @@
+JUDGMENT_WAND:
+  base:
+    material: STICK
+    name: 裁きの杖
+    magic-damage: 10.0
+    ability:
+      ability1:
+        type: ARCANE_HAIL
+        mode: SHIFT_LEFT_CLICK
+        duration: 8.0
+        damage: 10.0
+        radius: 5.0
+        mana: 30.0
+      ability2:
+        type: LIFE_ENDER
+        mode: SHIFT_RIGHT_CLICK
+        damage: 15.0
+        mana: 20.0
+        radius: 8.0
+    attack-damage: 14.0
+    max-mana: 50.0
+    attack-speed: 1.2
+    required-level: 20.0
+    mana-cost: 3.0
+MAGMA_WAND:
+  base:
+    material: BLAZE_ROD
+    defense: -2.0
+    range: 15.0
+    magic-damage: 12.0
+    max-mana: 120.0
+    movement-speed: -0.002
+    attack-damage: 24.0
+    name: '&9マグマの杖'
+    required-level: 30.0
+    mana-cost: 4.0
+    ability:
+      ability2:
+        type: MAGMA_FISSURE
+        mode: SHIFT_LEFT_CLICK
+        damage: 80.0
+        mana: 20.0
+        cooldown: 10.0
+        ignite: 5.0
+      ability1:
+        type: TARGETED_FIREBALL
+        mode: SHIFT_RIGHT_CLICK
+        damage: 80.0
+        mana: 25.0
+        cooldown: 8.0
+        ignite: 6.0
+    tier: RARE
+    element:
+      fire:
+        damage: 10.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - BLUE
+VAJRA_WAND:
+  base:
+    material: CARROT_ON_A_STICK
+    tier: LEGENDARY
+    name: '&bヴァジュラの杖'
+    ability:
+      ability1:
+        type: TARGETED_FIREBALL
+        mode: SHIFT_LEFT_CLICK
+        ignite: 4.0
+        damage: 120.0
+        mana: 30.0
+        cooldown: 4.0
+      ability2:
+        type: FREEZING_CURSE
+        mode: RIGHT_CLICK
+        duration: 8.0
+        damage: 150.0
+        mana: 50.0
+        cooldown: 10.0
+        radius: 5.0
+      ability3:
+        type: CURSED_BEAM
+        mode: SHIFT_RIGHT_CLICK
+        damage: 120.0
+        mana: 40.0
+        cooldown: 8.0
+    attack-damage: 40.0
+    mana-cost: 5.0
+    max-mana: 300.0
+    magic-damage: 20.0
+    defense: 0.1
+    required-level: 40.0
+    unbreakable: true
+    range: 15.0
+    element:
+      fire:
+        damage: 10.0
+      ice:
+        damage: 10.0
+      darkness:
+        damage: 10.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - BLUE
+    mana-regeneration: 8.0
+    max-mana-regeneration: 2.0
+    movement-speed: -2.0E-4
+    pve-damage: 10.0
+    skill-damage: 10.0
+CURSE_WAND:
+  base:
+    material: STICK
+    name: '&9怨嗟の錫杖'
+    ability:
+      ability1:
+        type: CURSED_BEAM
+        mode: SHIFT_LEFT_CLICK
+        damage: 39.0
+        mana: 30.0
+        cooldown: 10.0
+      ability2:
+        type: CORRUPTED_FANGS
+        mode: SHIFT_RIGHT_CLICK
+        mana: 35.0
+        fangs: 8.0
+        cooldown: 13.0
+        damage: 40.0
+    attack-damage: 37.5
+    attack-speed: 1.2
+    required-level: 40.0
+    range: 10.0
+    mana-cost: 2.0
+    skill-damage: 8.5
+    magic-damage: 13.0
+    tier: RARE
+    gem-sockets:
+    - '1'
+    - '1'
+    - BLUE
+    element:
+      darkness:
+        damage: 50.0
+    unbreakable: true
+    armor: -0.3
+    max-mana: 180.0
+    defense: -0.3
+    mana-regeneration: 0.3
+    enchants:
+      looting: 1.0
+    hide-enchants: true
+    lore:
+    - '&fその昔、僧侶が使用していた杖'
+    - '&fしかし仲間から裏切りに会い、命を落とした。'
+    - '&fその僧侶は人を恨み続け、その怨嗟が杖に宿った'
+    required-class:
+    - マジシャン

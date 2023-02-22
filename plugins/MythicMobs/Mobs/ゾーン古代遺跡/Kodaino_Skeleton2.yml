@@ -1,0 +1,60 @@
+Kodaino_Skeleton2:
+  Mobtype: SKELETON
+  Display: '&b&L古代のスケルトン Lv<mob.level>'
+  Disguise: WITHER_SKELETON
+  Health: 10000
+  Damage: 2000
+  BossBar: 
+    Enabled: true
+    Title: '&5&L古代のスケルトン Lv<mob.level>'
+    Range: 30
+    Color: YELLOW
+  Options:
+    Despawn: false
+    AttackSpeed: 1.3
+    MovementSpeed: 0.4
+    PreventSunburn: true
+    PrevventItemPickup: true
+    FollowRange: 50
+    PreventMobkillDrops: true
+    PreventOtherDrops: true
+    Silent: true
+  Equipment:
+  -  mmoitems{type=SWORD;id=KODAINOTURUGI}:0
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  -  2 hurtbytarget
+  AIGoalSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  2 avoidarrows
+  LevelModifiers:
+  -  Damage: 5
+  -  Health: 50
+  Drops:
+  -  mmoitems{type=ARMOR;id=HUBBEL_HELMET} 1 10%
+  -  mmoitems{type=ARMOR;id=HUBBELL_ARMOR} 1 10%
+  -  mmoitems{type=ARMOR;id=HUBBELL_BOOTS} 1 10%
+  -  mmoitems{type=ARMOR;idHUBBELL_LEGGINGS} 1 10%
+  -  mmoitems{type=MATERIAL;id=KODAINOHOUSEKI} 1-5 5%
+  -  mmoitems{type=MUSKET;id=MP5_J} 1 3%
+  -  mmoitems{type=WAND;id=MAGUMA_WAND} 1 3%
+  -  mmoitems{type=SWORD;id=KODAINOTURUGI} 1 2%
+  -  mmoitems{type=GEM_STONE;id=ARCHER_C} 1-2 5%
+  -  mmoitems{type=GEM_STONE;id=ASSASIN_C} 1-2 5%
+  -  mmoitems{type=GEM_STONE;id=DIFFENCER_C} 1-2 5%
+  -  mmoitems{type=GEM_STONE;id=GUARDIAN_C} 1-2 5%
+  -  mmoitems{type=GEM_STONE;id=ATTACK_C} 1-2 5%
+  -  mmoitems{type=GEM_STONE;id=MAGICAL_C} 1-2 5%
+  Skills:
+  -  skill{s=Kodaino_Waterwall} @self ~onTimer:521
+  -  skill{s=Kodaino_Sunderlight} @self ~onTimer:1001
+  -  skill{s=Kodaino_FireBalls} @self ~onTimer:332
+  -  currencygive{amount=10000} @pir{r=20} ~onDeath
+  -  skill{s=Kodaino_syunsin} @self ~onDamaged <50% 0.07
+  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に古代の技を見せつけた！'
+  -  '&l&4<DeadLog>&f<target.name>は古代の魔法を喰らった！'
+  -  '&l&4<DeadLog>&f<mob.name>は<target.name>を溶かしてしまった！'

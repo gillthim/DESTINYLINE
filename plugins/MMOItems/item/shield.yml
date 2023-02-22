@@ -1,0 +1,190 @@
+BLOCKSHIELD:
+  base:
+    material: SHIELD
+    name: '&a硬い盾'
+    max-health: 10.0
+    required-level: 5.0
+    lore:
+    - '&f比較的に使えそうな硬い盾'
+    tier: UNCOMMON
+    max-durability: 800.0
+    defense: 2.0
+ATHENAE_SHIELD:
+  base:
+    material: SHIELD
+    name: '&bアテネの聖盾'
+    required-level: 3.0
+    block-power: 25.0
+    block-rating: 10.0
+    block-cooldown-reduction: 8.0
+    damage-reduction: 11.0
+    tier: LEGENDARY
+    armor: 5.0
+    max-health: 80.0
+    ability:
+      ability1:
+        type: MAGICAL_SHIELD
+        mode: DAMAGED
+        duration: 10.0
+        cooldown: 24.0
+        power: 20.0
+        radius: 8.0
+    gem-sockets:
+    - '1'
+    - DEEPBLUE
+    - LIGHTBLUE
+    shield-pattern:
+      color: WHITE
+      '0':
+        pattern: STRAIGHT_CROSS
+        color: RED
+      '1':
+        pattern: TRIANGLE_BOTTOM
+        color: RED
+      '2':
+        pattern: TRIANGLE_TOP
+        color: RED
+    max-durability: 900.0
+    lore:
+    - '&f天上の使者アテネが装備していた大盾'
+    defense: 11.0
+    projectile-damage-reduction: 20.0
+    fire-damage-reduction: 10.0
+    unbreakable: true
+    knockback-resistance: 0.1
+    two-handed: true
+    element:
+      fire:
+        defense: 15.0
+      ice:
+        defense: 15.0
+      earth:
+        defense: 15.0
+      thunder:
+        defense: 15.0
+    required-dexterity: 5.0
+FUGOUNOSHIELD:
+  base:
+    material: SHIELD
+    shield-pattern: {}
+    enchants:
+      fortune: 3.0
+    max-health: 1.0
+    custom-model-data: 125.0
+    max-durability: 125.0
+    name: '&E富豪の盾'
+    tier: UNIQUE
+    lore:
+    - ミニゲーム報酬
+SHIELD_OF_GLORY:
+  base:
+    material: SHIELD
+    name: '&9栄誉の盾'
+    movement-speed: -0.004
+    required-level: 35.0
+    defense: 6.0
+    max-health: 100.0
+    tier: RARE
+    magic-damage-reduction: 10.0
+    fire-damage-reduction: 15.0
+    damage-reduction: 8.0
+    projectile-damage-reduction: 5.0
+    knockback-resistance: 0.2
+    block-power: 35.0
+    block-rating: 10.0
+    shield-pattern:
+      color: GRAY
+      '0':
+        pattern: STRAIGHT_CROSS
+        color: BLACK
+      '1':
+        pattern: BRICKS
+        color: BLACK
+    gem-sockets:
+    - '1'
+    - DEEPBLUE
+    - DEEPBLUE
+    unbreakable: true
+    max-stamina: 50.0
+    lore:
+    - '&fかつて一人のために作られた栄誉の証'
+    - '&f非常に重いが、盾としては最高だ'
+SUNSHIELD:
+  base:
+    material: SHIELD
+    name: '&e太陽の盾'
+    shield-pattern:
+      color: YELLOW
+      '0':
+        pattern: FLOWER
+        color: RED
+      '1':
+        pattern: BORDER
+        color: PURPLE
+      '2':
+        pattern: STRAIGHT_CROSS
+        color: RED
+SEIREI_SHIELD:
+  base:
+    material: SHIELD
+    name: '&9精霊の盾'
+    required-level: 30.0
+    defense: 5.0
+    damage-reduction: 8.0
+    projectile-damage-reduction: 10.0
+    magic-damage-reduction: 8.0
+    element:
+      wind:
+        defense: 10.0
+      earth:
+        defense: 10.0
+      fire:
+        defense: 10.0
+      ice:
+        defense: 10.0
+      darkness:
+        defense: 10.0
+      thunder:
+        defense: 10.0
+      water:
+        defense: 10.0
+      lightness:
+        defense: 10.0
+    knockback-resistance: 0.12
+    max-stamina: 25.0
+    max-health: 80.0
+    block-power: 30.0
+    movement-speed: -0.003
+    lore:
+    - '&f精霊の加護が施された盾'
+    - '&f加護により、属性ダメージを軽減する'
+    unbreakable: true
+    tier: RARE
+    gem-sockets:
+    - '1'
+    - '1'
+TREEGOD_SHIELD:
+  base:
+    material: SHIELD
+    name: '&9樹神の盾'
+    health-regeneration: 0.2
+    knockback-resistance: 0.05
+    defense: 3.0
+    block-power: 25.0
+    block-rating: 3.0
+    required-level: 20.0
+    max-health: 25.0
+    unbreakable: true
+    tier: RARE
+    damage-reduction: 3.0
+    magic-damage-reduction: 5.0
+    max-stamina: 15.0
+    movement-speed: -0.001
+    lore:
+    - '&f時を経て、神々しい樹木を利用した盾'
+    - '&f加護により、常時傷が癒えていく'
+    element:
+      fire:
+        damage: -10.0
+    gem-sockets:
+    - '1'

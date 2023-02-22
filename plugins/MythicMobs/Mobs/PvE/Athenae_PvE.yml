@@ -1,0 +1,45 @@
+AthenaePvE: 
+  Mobtype: BLAZE
+  Display: '&E&Lアテネ神 Lv<mob.level>'
+  Health: 2000
+  Damage: 30
+  Equipment:
+  Options:
+    AlwaysShowName: true
+    FollowRange: 1000
+    Glowing: true
+    KnockbackResistance: 100
+    MaxCombatDistance: 20
+    PreventItemPickup: true
+    Despawn: false
+    AttackSpeed: 1.4
+    MovementSpeed: 0.37
+    Arrmor: 10
+    Disguise: Player Pukkie2009
+  BossBar:
+    Enabled: true
+    Title: '&E&Lアテネ神'
+    Range: 20
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelectors:
+  -  0 clear
+  -  1 meleeattack
+  -  2 randomstroll
+  Drops:
+  Skills:
+  -  skill{s=Athenae_FireBalls} @target ~onTimer:440
+  -  skill{s=Athenae_RandomTeleport} @PIR{r=20} ~onDamaged 0.1
+  -  skill{s=Athenae_Talk} ~onTimer:250
+  -  skill{s=EpicTitle_Athenae} @PIR{r=25} ~onDeath onEnterComba
+  -  skill{s=Athenae_Sunderlight} ~onTimer:260 <45%
+  -  skill{s=Athenae_Arrow} @target ~onTimer:160 0.62
+  LevelModifiers:
+    Health: 100
+    Damage: 10
+    Power: 10
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は戦神の裁きを受けた！!'
+  -  '&l&4<DeadLog>&f<target.name>は魂をそぎ落とされた！!'
+  -  '&l&4<DeadLog>&f<target.name>は神罰を受けた！！'

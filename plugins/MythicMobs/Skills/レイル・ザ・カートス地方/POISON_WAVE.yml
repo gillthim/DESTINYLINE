@@ -1,0 +1,31 @@
+POISON_WAVE:
+  Conditions: 
+  - playernotwithin{d=20} false
+  Skills:
+  - potion{t=SLOW;d=50;l=5} @self
+  - delay 18
+  - missile{ot=POISON_WAVE_TICK;oh=POISON_WAVE_HIT;v=8;i=4;hR=0.8;vR=0.8;in=100;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 5
+  - missile{ot=POISON_WAVE_TICK;oh=POISON_WAVE_HIT;v=8;i=4;hR=0.8;vR=0.8;in=100;md=40;mr=45} @PlayersInRadius{r=10;sort=NEAREST}
+  - delay 15
+POISON_WAVE_TICK:
+  Skills:
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#47684c;a=15:hs=2;vs=2} @origin
+  - effect:particlering{p=DUST_COLOR_TRANSITION;color=#47684c;radius=0.8;uel=true} @origin
+  - sound{s=minecraft:block.wet_grass.place;p=0.9;v=0.6} @origin
+POISON_WAVE_HIT:
+  Skills:
+  - effect:particles{p=DUST_COLOR_TRANSITION;color=#47684c;a=30:hs=4;vs=4}
+  - sound{s=minecraft:block.wet_grass.place;p=0.2;v=2} 
+  - damage{a=4;type=POISON;i=true}
+  - potion{t=POISON;d=50;l=10}
+  - delay 10
+  - damage{a=3;type=POISON;i=true;pk=true}
+  - delay 10
+  - damage{a=3;type=POISON;i=true;pk=true}
+  - delay 10
+  - damage{a=3;type=POISON;i=true;pk=true}
+  - delay 10
+  - damage{a=3;type=POISON;i=true;pk=true}
+  - delay 10
+  - damage{a=3;type=POISON;i=true;pk=true}

@@ -1,0 +1,13 @@
+FLAME_KEEP:
+  Conditions:
+  - hastag{t=FLAMEINRADIUS} false
+  - hastag{t=FLAME_LOCK} false
+  - playernotwithin{d=30} false
+  Skills:
+  - addtag{t=FLAME_KEEP} @self
+  - potion{t=SLOW;d=160;l=5} @self
+  - sound{s=minecraft:entity.blaze.shoot;v=0.1;p=0.8;Repeat=8;RepeatInterval=20} @self
+  - sound{s=minecraft:entity.blaze.shoot;v=0.1;p=0.8;Repeat=8;RepeatInterval=20} @PIR{r=10;target=players;limit=1}
+  - effect:particleline{particle=flame;radius=0.1;points=5;amount=1;hS=0.1;vS=0.1;zz=true;maxdistance=10;syo=2;zo=1;Repeat=16;RepeatInterval=10} @PIR{r=10;target=players;limit=1}
+  - damage{amount=200;ignoreArmor=false;pkb=true;type=Fire;Repeat=16;RepeatInterval=10} @PIR{r=10;target=players;;limit=1}
+  - removetag{t=FLAME_KEEP} @self

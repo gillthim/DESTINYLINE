@@ -1,0 +1,29 @@
+OrgGrandHeal:
+  Conditions:
+  - hastag{t=runeflame} false
+  Skills:
+  - addtag{t=grandheal} @self
+  - setvariable{var=skill.a;value="%mmocore_stat_magic_damage%";type=INTEGER} @self
+  - variableMath{var=skill.a;eqation="<skill.var.a>"}
+  - setvariable{var=skill.c;value="%mmocore_stat_max_mana%";type=FLOAT} @self
+  - variableMath{var=skill.c;equation="(<skill.var.a>*<skill.var.c>)"}
+  - sound{s=spelln5sec;v=2;p=1} @self
+  - potion{t=SLOW;d=100;l=4} @self
+  - effect:particleorbital{particle=reddust;color=#77ff22;r=1;p=40;t=100;in=0.2;rotY=0;reverse=true;offy=2} @self
+  - delay 2
+  - effect:particleorbital{particle=reddust;color=#77ff226;r=1;p=40;t=100;in=2;rotY=10;reverse=true;offy=1} @self
+  - delay 8
+  - effect:particleorbital{particle=reddust;color=#77ff226;r=2;p=50;t=90;in=0.5;rotY=0;reverse=false;offy=2} @self
+  - delay 3
+  - effect:particleorbital{particle=reddust;color=#333eee;r=2;p=50;t=90;in=1;rotY=0;reverse=false;offy=1} @self
+  - delay 6
+  - effect:particleorbital{particle=reddust;color=#77ff22;r=3;p=60;t=80;in=4;rotY=0;reverse=true;offy=1} @self
+  - delay 4
+  - effect:particleorbital{particle=reddust;color=#333eee;r=3;p=60;t=80;in=0.1;rotY=0;reverse=true;offy=3} @self
+  - delay 80
+  - sound{s=spellout;v=1;p=2} @self
+  - sound{s=grandheal;v=2;p=1} @self
+  - effect:particles{particle=Villager_happy;amount=500;hS=10;vS=1} @self
+  - heal{a="<skill.var.c>/5+800"} @EntitiesNearOrigin{r=16;limit=5;target=player}
+  - heal{a="<skill.var.c>/5+800"} @self
+  - removetag{t=grandheal} @self

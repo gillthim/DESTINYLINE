@@ -1,0 +1,48 @@
+NOTHINGNESS_TOME:
+  base:
+    material: ENCHANTED_BOOK
+    required-level: 25.0
+    tier: RARE
+    name: '&9虚無の魔導書'
+    magic-damage: 15.0
+    skill-damage: 15.0
+    attack-speed: 17.0
+SACRED_FLAME:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 10.0
+    name: '&9聖炎の魔導書'
+    tier: RARE
+    required-level: 40.0
+    magic-damage: 20.0
+    skill-damage: 20.0
+    lore:
+    - '&f特殊な文字が使用されている魔導書'
+    - '&f聖なる炎の加護を宿す'
+    - '&f左手に装備することで能力を発揮する'
+    ability:
+      ability1:
+        type: TARGETED_FIREBALL
+        mode: DAMAGED_BY_ENTITY
+        ignite: 8.0
+        damage: 100.0
+        mana: 0.0
+        cooldown: 5.0
+    movement-speed: 4.0E-4
+SUMMON_YUKIDARUMA_BOOK:
+  base:
+    material: BOOK
+    name: '&6ユキダルマー召喚の書'
+    tier: VERY_RARE
+    lore:
+    - '&fビッグユキダルマーから授かった力'
+    - '&fユキダルマーを召喚し'
+    - '&f敵の動きを鈍くさせる範囲魔法を発動させる'
+    - '&f左手装備推奨'
+    ability:
+      ability1:
+        type: SUMMON_YUKIDARUMA
+        mode: ATTACK
+        cooldown: 18.0
+        mana: 0.0
+    required-level: 25.0

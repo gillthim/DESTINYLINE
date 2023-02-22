@@ -1,0 +1,23 @@
+witcher_explo: 
+  Conditions: 
+  - playernotwithin{d=16} false
+  Skills:
+  - throw{velocity=5;velocityY=5} @PIR{r=10}
+  - damage{a=300;i=true} @PIR{r=10}
+  - effect:particles{p=hugeexplode;a=5;vs=0.5;hs=0.5;s=0;y=1} @Self
+  - effect:sound{s=entity.generic.explode;v=2;p=0.5} @Self
+  - effect:sound{s=entity.generic.explode;v=2;p=1;repeat=7;repeatInterval=2} @Self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=1} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=3} @Self
+  - damage{a=800;i=false} @PIR{r=10}
+  - delay 2
+  - damage{a=800;i=false} @PIR{r=10}
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=5} @Self
+  - delay 2 
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=7} @Self
+  - delay 2
+  - damage{a=1000;i=true} @PIR{r=10}
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=9} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=11} @Self

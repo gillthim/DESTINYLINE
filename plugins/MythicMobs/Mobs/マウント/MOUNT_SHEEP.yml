@@ -1,0 +1,11 @@
+MOUNT_SHEEP:
+  Mobtype: SHEEP
+  Display: '&5&L一般的なヒツジ'
+  Health: 500
+  Options:
+    Despawn: false
+    MovementSpeed: 0.2
+  LevelModifiers:
+  -  Health: 50
+  Skills:
+  - mount{type=SHEEP} @self ~onSpawn

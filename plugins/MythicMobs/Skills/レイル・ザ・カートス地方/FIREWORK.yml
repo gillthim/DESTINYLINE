@@ -1,0 +1,11 @@
+FIREWORK:
+  Conditions:
+  - playernotwithin{d=14} false
+  Skills:
+  - potion{t=SLOW;d=80;l=5} @self
+  - delay 40
+  - sound{s=minecraft:entity.blaze.shoot;v=2;p=0.2} @self
+  - effect:particlering{particle=flame;radius=0.1;points=16;amount=10;hS=1;vS=1} @self
+  - effect:particlering{particle=flame;radius=0.3;points=16;amount=10;hS=2;vS=1} @self
+  - effect:particlering{particle=flame;radius=0.4;points=16;amount=10;hS=3;vS=1} @self
+  - damage{amount=400;ignoreArmor=true} @PIR{r=5}

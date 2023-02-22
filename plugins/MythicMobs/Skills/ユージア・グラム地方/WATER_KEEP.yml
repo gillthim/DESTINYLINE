@@ -1,0 +1,12 @@
+WATER_KEEP:
+  Conditions:
+  - hastag{t=WATERBURST} false
+  - playernotwithin{d=30} false
+  Skills:
+  - addtag{t=WATER_KEEP} @self
+  - potion{t=SLOW;d=160;l=5} @self
+  - sound{s=inecraft:item.bottle.fill;v=1;p=1.8;Repeat=8;RepeatInterval=20} @self
+  - sound{s=inecraft:item.bottle.fill;v=1;p=1.8;Repeat=8;RepeatInterval=20} @PIR{r=10;target=players;limit=3}
+  - effect:particleline{particle=REDDUST;c=c=#4925f6;radius=0.1;points=5;amount=1;hS=0.1;vS=0.1;zz=true;maxdistance=10;syo=2;zo=1;Repeat=16;RepeatInterval=10} @PIR{r=10;target=players;limit=1}
+  - potion{t=SLOW;d=20;l=1;Repeat=8;RepeatInterval=20} @PIR{r=10;target=players;limit=1}
+  - removetag{t=WATER_KEEP} @self

@@ -1,0 +1,4 @@
+EpicTitle_Sasurai:
+  Skills:
+  - sound{s=killingthegod;v=0.7} @self
+  - sendtitle{title="&e&lさすらいの流儀";subtitle="偉業を成し遂げた！";d=200;fi=20fo=60} @PlayersInRadius{r=30}

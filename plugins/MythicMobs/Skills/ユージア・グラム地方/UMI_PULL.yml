@@ -1,0 +1,19 @@
+UMI_PULL:
+  Conditions: 
+  - playernotwithin{d=40} false
+  Skills:
+  - disengage @target
+  - potion{t=SLOW;d=40;l=7} @self
+  - delay 20
+  - missile{ot=UMI_PULL_TICK;oh=UMI_PULL_HIT;v=12;i=2;hR=0.3;vR=0.2;in=20;md=40;mr=45;syo=2} @PlayersInRadius{r=20;limit=1}
+  - delay 20
+UMI_PULL_TICK:
+  Skills:
+  - effect:particlebox{p=drip_water;a=100:hs=2;vs=2} @origin
+  - effect:particlesphere{p=water_splash;a=50;radius=0.6} @self
+  - effect:sound{s=minecraft:entity.puffer_fish.blow_up;v=2;p=1.5} @origin
+UMI_PULL_HIT:
+  Skills:
+  - effect:particlesphere{p=water_splash;a=100;radius=0.6}
+  - effect:sound{s=minecraft:entity.puffer_fish.blow_up;v=2;p=0.8}
+  - pull{velocity=50} @target

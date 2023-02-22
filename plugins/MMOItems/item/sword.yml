@@ -1,0 +1,507 @@
+DEBUGSWORD:
+  base:
+    material: GOLDEN_SWORD
+    will-break: true
+    name: ※使用厳禁_デバックソード
+    attack-damage: 1000.0
+    weapon-damage: 1000.0
+    unbreakable: true
+    mana-regeneration: 100.0
+    max-mana-regeneration: 100.0
+    health-regeneration: 100.0
+    max-health-regeneration: 100.0
+    stamina-regeneration: 100.0
+    max-stamina-regeneration: 100.0
+    ability:
+      ability1:
+        type: BLINK
+        mode: RIGHT_CLICK
+        range: 100.0
+        cooldown: 1.0
+GORLDEN_KNIFE:
+  base:
+    material: GOLDEN_SWORD
+    name: '&9ゴールデンナイフ'
+    required-level: 7.0
+    weapon-damage: 4.0
+    max-health: 50.0
+    armor: 4.0
+    tier: RARE
+    gem-sockets:
+    - '1'
+    health-regeneration: 2.0
+    lore:
+    - '&f空の上ではありふれたキッチンナイフ'
+    - '&fそれなりに武器としても扱える'
+    critical-strike-chance: 0.2
+    critical-strike-power: 10.0
+    max-mana: 20.0
+    movement-speed: 0.001
+    element:
+      fire:
+        damage: 20.0
+    max-durability: 3000.0
+    attack-damage: 12.0
+ELUCIDATOR:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cエリュシデータ'
+    lore:
+    - 異界の者がこの世界に持ち込んだ、黒く光る硬質な剣
+    required-level: 50.0
+    attack-damage: 150.0
+    attack-speed: 2.6
+    critical-strike-chance: 5.0
+    critical-strike-power: 30.0
+    weapon-damage: 10.0
+    skill-damage: 20.0
+    physical-damage: 5.0
+    tier: UNIQUE
+    ability:
+      ability2:
+        type: CIRCULAR_SLASH
+        mode: SHIFT_LEFT_CLICK
+        damage: 200.0
+        mana: 20.0
+        cooldown: 6.0
+        knockback: 2.0
+        radius: 3.0
+      ability1:
+        type: LIGHT_DASH
+        mode: SHIFT_RIGHT_CLICK
+        damage: 300.0
+        mana: 80.0
+        cooldown: 12.0
+        length: 0.67
+    enchants:
+      smite: 5.0
+      sharpness: 5.0
+    mana-regeneration: 2.0
+    will-break: true
+    skill-critical-strike-chance: 10.0
+    skill-critical-strike-power: 40.0
+    unbreakable: true
+    movement-speed: 0.005
+    required-strength: 30.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED
+    - RED
+    - RED
+    custom-model-data: 5.0
+TEXTURESWORD1:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 2.0
+SIRIUSUSWORD:
+  base:
+    material: IRON_SWORD
+GRETELSWORD:
+  base:
+    material: DIAMOND_SWORD
+    item-damage: 10.0
+    attack-damage: 20.0
+    displayed-type: SWORD
+    critical-strike-chance: 4.8
+    name: '&6レイル・ジ・ソード'
+    ability:
+      ability1:
+        type: STUN
+        mode: RIGHT_CLICK
+        cooldown: 8.0
+      ability2:
+        type: LIGHT_DASH
+        mode: SHIFT_RIGHT_CLICK
+        mana: 8.0
+        stamina: 2.0
+        cooldown: 8.0
+        length: 0.4
+    critical-strike-power: 5.0
+    weapon-damage: 5.0
+    tier: VERY_RARE
+    unbreakable: true
+    required-level: 18.0
+    max-health: 20.0
+    max-mana: 15.0
+    custom-model-data: 2.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - '1'
+    lore:
+    - '&fレイル・ジ・コンバットに伝わる伝統の剣'
+    max-durability: 1500.0
+    will-break: true
+ZYURYOKUKEN1:
+  base:
+    material: IRON_SWORD
+    will-break: true
+    name: '&9呪力の溜まった剣'
+    required-level: 5.0
+    attack-damage: 6.0
+    critical-strike-chance: 0.1
+    critical-strike-power: 0.2
+    pve-damage: 4.0
+    weapon-damage: 3.0
+    tier: RARE
+    unbreakable: true
+    enchants:
+      sharpness: 1.0
+    lore:
+    - '&fとある術師が呪力を蓄積させた剣'
+    - '&f剣の扱いに慣れていない者には向かない'
+    gem-sockets:
+    - '1'
+
+PLATINUMSWORD:
+  base:
+    material: IRON_SWORD
+    name: '&aプラチナソード'
+    unbreakable: true
+    tier: UNCOMMON
+    weapon-damage: 2.7
+    attack-damage: 14.0
+    required-level: 15.0
+    critical-strike-chance: 2.3
+    critical-strike-power: 2.4
+    ability:
+      ability1:
+        type: THRUST
+        mode: RIGHT_CLICK
+        damage: 13.0
+        stamina: 3.0
+        mana: 3.0
+    max-health: 5.0
+    max-mana: 5.0
+    lore:
+    - '&f白金で作られた剣'
+    - '&fその刃は白く非常に美しい'
+    gem-sockets:
+    - '1'
+    - '1'
+    max-durability: 700.0
+MITHRILSWORD:
+  base:
+    material: DIAMOND_SWORD
+    name: '&aミスリルソード'
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        mode: RIGHT_CLICK
+        cooldown: 7.0
+        knockback: 2.0
+        mana: 4.0
+        stamina: 4.0
+        damage: 7.0
+    required-level: 10.0
+    attack-damage: 9.0
+    tier: UNCOMMON
+    weapon-damage: 1.3
+    critical-strike-chance: 1.4
+    critical-strike-power: 1.2
+    unbreakable: true
+    lore:
+    - '&fミスリルで作られた剣'
+    gem-sockets:
+    - '1'
+    max-durability: 600.0
+NPCIRONSWORD:
+  base:
+    material: IRON_SWORD
+    name: 鉄の剣
+    unbreakable: true
+    tier: COMMON
+    weapon-damage: 0.0
+    attack-damage: 7.0
+LONGSWORD:
+  base:
+    material: IRON_SWORD
+    required-level: 5.0
+    name: ロングソード
+    tier: COMMON
+    weapon-damage: 4.0
+    lore:
+    - '&f標準の剣'
+    attack-damage: 8.0
+    gem-sockets: []
+    max-durability: 400.0
+NPCSWORD2:
+  base:
+    material: GOLDEN_SWORD
+    name: '&9かまいたち'
+    attack-damage: 20.0
+    pve-damage: 30.0
+    unbreakable: true
+    tier: RARE
+    defense: 5.0
+    max-health: 500.0
+KODAINOTURUGI:
+  base:
+    material: NETHERITE_SWORD
+    lore:
+    - '&f古代のスケルトンが持っていた剣'
+    enchants:
+      protection: 4.0
+      sharpness: 3.0
+    attack-damage: 27.0
+    critical-strike-chance: 0.5
+    critical-strike-power: 11.0
+    skill-critical-strike-chance: 0.2
+    skill-critical-strike-power: 35.0
+    skill-damage: 6.5
+    tier: VERY_RARE
+    max-mana: 100.0
+    ability:
+      ability1:
+        type: LIFE_ENDER
+        mode: SHIFT_RIGHT_CLICK
+        timer: 0.0
+        damage: 80.0
+        mana: 80.0
+        cooldown: 7.2
+        knockback: 2.0
+        radius: 3.0
+      ability2:
+        type: FREEZING_CURSE
+        mode: SHIFT_LEFT_CLICK
+        duration: 3.0
+        damage: 100.0
+        stamina: 15.0
+        cooldown: 7.0
+        radius: 7.0
+        mana: 40.0
+    element:
+      darkness:
+        damage: 10.0
+      thunder:
+        damage: 10.0
+    required-level: 30.0
+    max-durability: 5000.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED
+    will-break: true
+    unbreakable: true
+    name: '&6古代の剣'
+    hide-enchants: true
+REAPER_SWORD:
+  base:
+    material: NETHERITE_SWORD
+    lore:
+    - '&f死神の力が宿っている剣'
+    - '&fその刃は斬った相手の生命力を奪い衰弱させる'
+    name: '&5死神の剣'
+    required-level: 35.0
+    max-mana: 200.0
+    critical-strike-chance: 5.0
+    critical-strike-power: 15.0
+    lifesteal: 15.0
+    tier: MYTHICAL
+    attack-speed: 1.5
+    mana-regeneration: 0.3
+    ability:
+      ability1:
+        type: WEAKEN_TARGET
+        mode: ATTACK
+        cooldown: 6.0
+        mana: 50.0
+        extra-damage: 80.0
+        duration: 6.0
+      ability2:
+        type: CURSED_BEAM
+        mode: SHIFT_RIGHT_CLICK
+        duration: 10.0
+        damage: 120.0
+        mana: 80.0
+        cooldown: 12.0
+      ability3:
+        type: ARCANE_HAIL
+        duration: 4.5
+        damage: 80.0
+        mana: 50.0
+        cooldown: 6.0
+        radius: 5.0
+        mode: SHIFT_LEFT_CLICK
+    weapon-damage: 8.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED
+    - RED
+    attack-damage: 30.0
+    unbreakable: true
+    will-break: true
+DURANDAL:
+  base:
+    material: NETHERITE_SWORD
+    attack-damage: 23.0
+    critical-strike-chance: 3.5
+    critical-strike-power: 12.0
+    weapon-damage: 5.0
+    attack-speed: 1.7
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: SHIFT_RIGHT_CLICK
+        damage: 30.0
+        mana: 30.0
+        cooldown: 8.0
+        length: 0.6
+      ability2:
+        type: WEAKEN_TARGET
+        cooldown: 10.0
+        extra-damage: 40.0
+        mana: 12.0
+        mode: ATTACK
+    required-level: 25.0
+    tier: RARE
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED
+    lore:
+    - '&f純粋な力を宿している剣'
+    - '&f力こそパワー、パワーこそ暴力だ'
+    unbreakable: true
+    name: '&9デュランダル'
+    will-break: true
+RUNE_BRADE:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 4.0
+    lore:
+    - '&fルーン文字が意匠されている剣'
+    - '&f世界樹の加護により少しずつ回復する'
+    name: '&bルーンブレイド'
+    required-level: 12.0
+    attack-speed: 1.4
+    ability:
+      ability2:
+        type: EARTHQUAKE
+        damage: 50.0
+        mana: 25.0
+        cooldown: 15.0
+        mode: SHIFT_RIGHT_CLICK
+      ability1:
+        type: MAGICAL_SHIELD
+        mana: 20.0
+        cooldown: 30.0
+        power: 40.0
+        radius: 10.0
+        mode: SHIFT_LEFT_CLICK
+      ability3:
+        type: WITHER
+        mode: ATTACK
+        amplifier: 0.2
+        duration: 1.0
+    critical-strike-chance: 4.0
+    critical-strike-power: 8.0
+    health-regeneration: 0.2
+    tier: LEGENDARY
+    weapon-damage: 5.0
+    element:
+      earth:
+        damage: 10.0
+    amphibian: DRY
+    attack-damage: 22.0
+    will-break: true
+    unbreakable: true
+DEBUGSWORD2:
+  base:
+    material: IRON_SWORD
+    attack-damage: 100000.0
+    magic-damage: 100.0
+BIGFIRECHARGE:
+  base:
+    material: FIRE_CHARGE
+    lore:
+    - '&fリヴァイアサン・コンバットで'
+    - '&f昔に戦争で使われた砲弾'
+    - '&f対人利用が主だったが町を悩ませる'
+    - '&f巨大なマンタに対しても使われていた'
+    name: 砲弾
+    tier: COMMON
+    enchants:
+      power: 100.0
+BIGCROSSBOLT:
+  base:
+    material: ARROW
+    enchants:
+      power: 100.0
+    attack-damage: 9999.0
+    projectile-damage: 9999.0
+    pve-damage: 9999.0
+SORRYSWORD:
+  base:
+    material: STONE_SWORD
+    name: '&9お詫びの剣'
+    attack-speed: 20.0
+    lore:
+    - '&fこの世界の神のお詫びの精神によって生み出された剣'
+    will-break: true
+    attack-damage: 8.0
+    unbreakable: true
+WALK_HIMAWARI2:
+  base:
+    material: SUNFLOWER
+    enchants:
+      depth_strider: 5.0
+TESTB:
+  base:
+    material: IRON_AXE
+    custom-model-data: 1.0
+    ability:
+      ability1:
+        type: VACIOA
+        mode: SHIFT_RIGHT_CLICK
+ABYSS_SWORD:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000002E7
+    name: '&c深淵の王剣'
+    tier: UNIQUE
+    required-level: 40.0
+    attack-damage: 40.0
+    attack-speed: 1.4
+    critical-strike-chance: 11.0
+    critical-strike-power: 24.0
+    weapon-damage: 14.0
+    unbreakable: true
+    max-mana: 320.0
+    element:
+      darkness:
+        damage: 100.0
+    max-health: 140.0
+    gem-sockets:
+    - RED
+    - RED
+    skill-damage: 12.0
+    cooldown-reduction: 8.0
+    ability:
+      ability1:
+        type: MAGICAL_SHIELD
+        mode: DAMAGED_BY_ENTITY
+        duration: 8.0
+        mana: 30.0
+        cooldown: 30.0
+      ability3:
+        type: ATTACK_STANCE
+        mode: RIGHT_CLICK
+        cooldown: 24.0
+        level: 1.0
+        mana: 40.0
+      ability2:
+        type: LIGHT_DASH
+        mode: SHIFT_RIGHT_CLICK
+        damage: 20.0
+        cooldown: 2.5
+        stamina: 8.0
+      ability4:
+        type: LOCK_FIRE
+        mode: SHIFT_LEFT_CLICK
+        cooldown: 40.0
+    enchants:
+      sharpness: 5.0
+    hide-enchants: true

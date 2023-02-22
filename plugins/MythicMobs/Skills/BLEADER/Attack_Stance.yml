@@ -1,0 +1,33 @@
+Attack_Stance:
+  Conditions:
+  - offgcd
+  - hastag{Gurad_Stance} false
+  Skills:
+  - addtag{Attack_Stance}
+  - gcd 210
+  - delay 10
+#  - potionclear{} @self
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.3;points=12}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.6;points=14}
+  - sound{s=minecraft:entity.blaze.ambient;v=2;p=1.2} @self
+  - potion{type=INCREASE_DAMAGE;duration=400;level=5} @self
+  - potion{type=SPEED;duration=400;level=1} @self
+  - potion{type=NIGHT_VISION;duration=400;level=3} @self
+  - delay 50
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.3;points=12}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.6;points=14}
+  - delay 50
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.3;points=12}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.6;points=14}
+  - delay 50
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.3;points=12}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=20} @Ring{r=0.6;points=14}
+  - delay 50
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=3} @Ring{r=0.1;points=12}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=4} @Ring{r=0.2;points=13}
+  - effect:particleline{p=reddust;color=#fe2131;db=1;ys=3;a=5} @Ring{r=0.3;points=14}
+  - removetag{Attack_Stance}

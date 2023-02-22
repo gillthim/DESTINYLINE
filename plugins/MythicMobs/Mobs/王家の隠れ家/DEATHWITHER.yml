@@ -1,0 +1,26 @@
+DEATHWITHER:
+  Type: WITHER
+  Display: '&cデス・ウィザー Lv<mob.level>'
+  Health: 5000
+  Damage: 3000
+  Optioons: 
+    AtacckSpeed: 1.6
+    AlwaysShowName: true
+    Despawn: false
+    FollowRange: 6
+    MovementSpeed: 0.14
+    PreventItemPickup: false
+    PreventOtherDrops: true
+    Silent: false
+    ImmuneToZombification: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelector: 
+  -  0 clear
+  -  2 randomstrolls
+  Skills:
+  -  skill{s=DEATHDANCE} @self ~onTimer:200
+  LevelModifiers:
+  -  Damage: 25
+  -  Health: 25

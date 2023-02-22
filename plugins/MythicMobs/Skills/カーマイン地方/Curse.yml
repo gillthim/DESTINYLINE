@@ -1,0 +1,3 @@
+skills:
+  -  Damage {amount 2; ignoreArmor = true} @target
+  -  effect:particlebox{particle=flame;amount=150;radius5} @target

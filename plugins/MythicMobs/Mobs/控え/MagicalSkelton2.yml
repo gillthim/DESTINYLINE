@@ -1,0 +1,38 @@
+MagicalSkeleton2:
+  Mobtype: SKELETON
+  Display: '&A&Lスケルトンマジシャン Lv<mob.level>'
+  Health: 40
+  PROJECTILE: 20
+  Options:
+    Despawn: true
+    AttackSpeed: 0.7
+    MovementSpeed: 0.2
+    PreventSunburn: true
+  AITargetSelectors:
+  -  0 clear
+  -  1 players
+  AIGoalSelectors:
+  -  0 clear
+  -  2 randomstroll
+  LevelModifiers:
+  -  Health: 5
+  -  Damage: 50
+  DamageModifiers:
+  Drops:
+  -  exp 12 0.7
+  -  lapis_lazuli 5 0.2
+  -  DT_EXPRANK1
+  -  mmoitems{type=BOW;id=LOXLEYBOW} 1 2%
+  -  mmoitems{type=MATERIAL;id=SKELETONBONE} 1-3 5%
+  -  mmoitems{type=GEM_STONE;id=MAGICAL_B} 1 1.5%
+  -  mmoitems{type=GEM_STONE;id=ARCHER_B} 1 1.5%
+  -  mmoitems{type=GEM_STONE;id=GUARDIAN_B} 1 3%
+  Skills:
+  -  skill{s=FireBalls} @target ~onTimer:220
+  -  delay 60
+  -  skill{s=SingleTargetFire} @target ~onTimer:400
+  -  currencygive{amount=500-600} @pir{r=20} ~onDeath
+  KillMessages:
+  -  '&l&4<DeadLog>&f<target.name>は<mob.name>に呪われた！！!'
+  -  '&l&4<DeadLog>&f<target.name>はエーテルに溶けた！'
+  -  '&l&4<DeadLog>&f<mob.name>たちは<target.name>を追い詰めた！'

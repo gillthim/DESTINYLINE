@@ -1,0 +1,44 @@
+OVERLORD_AXE:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000005E7
+    name: '&5覇王の大斧'
+    two-handed: true
+    max-stamina: 50.0
+    physical-damage: 18.0
+    defense: -2.0
+    attack-damage: 32.0
+    required-level: 40.0
+    attack-speed: 1.8
+    unbreakable: true
+    movement-speed: -0.002
+    disable-attack-passive: true
+    stamina-cost: 3.0
+    tier: MYTHICAL
+    ability:
+      ability3:
+        type: CIRCULAR_SLASH
+        mode: SHIFT_RIGHT_CLICK
+        damage: 35.0
+        stamina: 15.0
+        cooldown: 15.0
+        knockback: 2.0
+        radius: 4.0
+      ability2:
+        type: SKY_SMASH
+        damage: 35.0
+        stamina: 20.0
+        cooldown: 12.0
+        knock-up: 2.0
+        mode: SHIFT_LEFT_CLICK
+      ability1:
+        type: EARTHQUAKE
+        mode: LEFT_CLICK
+        duration: 33.0
+        damage: 33.0
+        stamina: 15.0
+        cooldown: 15.0
+    skill-damage: 18.0
+    lore:
+    - '&f昔、この世を統べる覇王が使用していたという大斧'
+    - '&f純粋な技が多く、当時の強さが垣間見える'
