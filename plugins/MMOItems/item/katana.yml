@@ -125,7 +125,6 @@ IRON_SWORD:
     name: '&9鉄刀'
     unbreakable: true
     tier: RARE
-    max-health: 50.0
     required-level: 10.0
     required-class:
     - ブレイダー
@@ -154,3 +153,8 @@ IRON_SWORD:
     weapon-damage: 3.0
     physical-damage: 2.8
     health-regeneration: 0.3
+    lore:
+    - '&fとある無名の刀鍛冶が打った刀'
+    - '&f斬れ味がよく、駆け出しのブレイダーには良い武器だ。'
+    stamina-cost: 4.0
+    max-health: 100.0

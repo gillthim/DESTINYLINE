@@ -37,7 +37,7 @@ ARCANA_GOLEM_WATER:
   Drops:
   -  mmoitems{type=MATERIAL;id=GOLEM_HUSK} 1-5 50%
   -  mmoitems{type=MATERIAL;id=MANAWATER} 1-3 50%
-  -  mmoitems{type=MATERIAL;id=RAREWATER} 1-2 10%
+  -  mmoitems{type=MATERIAL;id=RAREWATER} 1-2 20%
   Skills:
   -  currencygive{amount=5000} @pir{r=20} ~onDeath
   -  skill{s=WATEREFFECT_BIG} @self ~onTimer:5

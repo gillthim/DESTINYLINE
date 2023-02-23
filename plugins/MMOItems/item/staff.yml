@@ -53,7 +53,6 @@ RUNE_STAFF:
 CRYSTAL_WAND:
   base:
     material: STICK
-    mana-cost: 2.5
     range: 12.0
     required-level: 10.0
     attack-damage: 10.0
@@ -61,7 +60,6 @@ CRYSTAL_WAND:
     disable-repairing: true
     disable-enchanting: true
     name: '&9結晶杖'
-    max-mana: 30.0
     tier: RARE
     unbreakable: true
     skill-damage: 4.0
@@ -88,6 +86,8 @@ CRYSTAL_WAND:
     armor: -0.3
     required-class:
     - マジシャン
+    max-mana: 100.0
+    mana-cost: 8.0
 ROARING_SEA_WAND:
   base:
     material: DIAMOND_HOE
@@ -109,7 +109,6 @@ ROARING_SEA_WAND:
     attack-damage: 19.0
     attack-speed: 1.2
     range: 14.0
-    mana-cost: 2.5
     required-level: 20.0
     skill-damage: 5.0
     magic-damage: 8.0
@@ -118,7 +117,6 @@ ROARING_SEA_WAND:
       water:
         damage: 30.0
     mana-regeneration: 0.3
-    max-mana: 45.0
     armor: -0.3
     disable-enchanting: true
     disable-repairing: true
@@ -130,3 +128,5 @@ ROARING_SEA_WAND:
     - '&f自分を中心に相手の行動を低下させる'
     required-class:
     - マジシャン
+    max-mana: 200.0
+    mana-cost: 16.0

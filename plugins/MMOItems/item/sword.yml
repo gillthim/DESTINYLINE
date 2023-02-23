@@ -451,8 +451,9 @@ SORRYSWORD:
 WALK_HIMAWARI2:
   base:
     material: SUNFLOWER
-    enchants:
-      depth_strider: 5.0
+    revision-id: 6
+    attack-damage: 65.0
+    required-level: 99.0
 TESTB:
   base:
     material: IRON_AXE
@@ -521,7 +522,6 @@ KNIGHT'S_SWORD:
     physical-damage: 5.0
     unbreakable: true
     tier: RARE
-    max-health: 80.0
     health-regeneration: 0.3
     skill-damage: 2.0
     ability:
@@ -545,6 +545,11 @@ KNIGHT'S_SWORD:
     - '1'
     - '1'
     - RED
+    lore:
+    - '&fとある騎士が使用していた剣'
+    - '&f汎用性が高く、熟練の剣技が使える。'
+    stamina-cost: 6.0
+    max-health: 200.0
 LIGHTNING_SWORD:
   base:
     material: DIAMOND_SWORD
@@ -557,7 +562,6 @@ LIGHTNING_SWORD:
     weapon-damage: 6.0
     physical-damage: 7.0
     tier: RARE
-    max-health: 100.0
     enchants:
       channeling: 1.0
     gem-sockets:
@@ -583,3 +587,8 @@ LIGHTNING_SWORD:
         damage: 28.0
         cooldown: 6.0
         stamina: 5.0
+    lore:
+    - '&f雷の力を宿した剣'
+    - '&f雷を操り、天から雷を落とす。'
+    max-health: 300.0
+    stamina-cost: 8.0

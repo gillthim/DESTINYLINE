@@ -9,7 +9,7 @@ hatred_turkey_dg:
     AlwaysShowName: true
     Despawn: false
     FollowRange: 30
-    MovementSpeed: 0.4
+    MovementSpeed: 0.24
     PreventItemPickup: false
     PreventOtherDrops: true
     Silent: true

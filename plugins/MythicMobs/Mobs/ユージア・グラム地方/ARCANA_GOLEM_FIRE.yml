@@ -35,7 +35,8 @@ ARCANA_GOLEM_FIRE:
   Modules:
     ThreatTable: true
   Drops:
-  -  mmoitems{type=CONSUMABLE;id=ARICANAFIREGOLEM_FIRESTONE} 1-3 5%
+  -  mmoitems{type=MATERIAL;id=GOLEM_HUSK} 1-5 50%
+  -  mmoitems{type=CONSUMABLE;id=ARICANAFIREGOLEM_FIRESTONE} 1-3 20%
   -  mmoitems{type=MATERIAL;id=FRAGMENT} 1-5 50%
   Skills:
   -  currencygive{amount=5000} @pir{r=20} ~onDeath

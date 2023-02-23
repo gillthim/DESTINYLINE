@@ -13,7 +13,7 @@ ARC2GSS1:
   MobLevel: '1'
   MobsPerSpawn: 1
   Cooldown: 18
-  CooldownTimer: 3
+  CooldownTimer: 0
   Warmup: 0
   WarmupTimer: 0
   CheckForPlayers: true
@@ -25,4 +25,4 @@ ARC2GSS1:
   ShowFlames: false
   Breakable: false
   Conditions: []
-  ActiveMobs: 2
+  ActiveMobs: 0

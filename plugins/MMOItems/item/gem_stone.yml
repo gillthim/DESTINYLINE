@@ -438,3 +438,33 @@ GUARDIAN_C:
     gem-color: DEEPBLUE
     armor: 0.3
     hide-enchants: true
+ATTACK_D:
+  base:
+    material: Coal Ore
+    name: '&a火力の根源Ⅳ'
+    required-level: 20
+    weapon-damage: 6-8
+    skill-damage: 7
+    tier: RARE
+    unbreakable: true
+    success-rate: 80
+    lore:
+    - '&f力の源である天上のユミルが'
+    - '&f生み出した魔法の宝石'
+    - '&c※REDのソケットにしか入らない'
+    - '&a使用可能なもの'
+    - '&cSWORD,LONGSWORD,HANMMER,SPEAR'
+    - '&cGREATSWORD,AXE,GREATAXE,GREATHUMMER'
+    - '&cWHIP,GUNTLET'
+    item-type-restriction:
+    - SWORD
+    - LONG_SWORD
+    - GAUNTLET
+    - HAMMER
+    - SPEAR
+    - GREATSWORD
+    - AXE
+    - GREATAXE
+    - GREATHAMMER
+    - WHIP
+    gem-color: RED
