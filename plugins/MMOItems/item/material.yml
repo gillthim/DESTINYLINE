@@ -639,6 +639,7 @@ RAREWATER:
 MANAWATER:
   base:
     material: POTION
+    name: '&aアルカナゴーレムの魔水'
     tier: UNCOMMON
     potion-color: 20 200 20
     vanilla-eating: true
@@ -656,7 +657,7 @@ MANAWATER:
 GOLEM_HUSK:
   base:
     material: nether_brick
-    name: '&a&lアルカナゴーレムの外殻'
+    name: '&aアルカナゴーレムの外殻'
     tier: UNCOMMON
     lore:
     - '&f魔力を通すと硬くなる奇妙な外殻。'
@@ -664,4 +665,116 @@ GOLEM_HUSK:
     disable-enchanting: true
     disable-smithing: true
     disable-smelting: true
+    
+SOUPSTOCK_KELP:
+  base:
+    material: dried_kelp
+    name: '&a乾燥した昆布'
+    vanilla-eating: true
+    tier: UNCOMMON
+    lore:
+    - '&fうま味が凝縮された乾燥昆布。'
+    - '&f鍋で煮込めば、優しい出汁が取れるだろう。'
+    - '&a【調理用アイテム】'
 
+SPICES_BERRIES:
+  base:
+    material: sweet_berries
+    name: '&aペイパーベリー'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - '&f香辛料として広く使われる木の実。'
+    - '&a【調理用アイテム】'
+
+DRY_FEALOW_HERB:
+  base:
+    material: wither_rose
+    name: '&a乾燥させたフェアロー草'
+    tier: UNCOMMON
+    lore:
+    - '香草であるフェアロー草を乾燥させたもの。'
+    - '好みの分かれる独特な香りがする。'
+    - '&a【調理用アイテム】'
+
+DANGEROUS_MUSHROOM:
+  base:
+    material: crimson_fungus
+    name: '&a危なげなキノコ'
+    tier: UNCOMMON
+    lore:
+    - '明らかに危ない配色をしたキノコ。'
+    - '身体能力が一時的に上昇する効果がある。'
+    - '&a【調理用アイテム】'
+
+SIENEW_FISH:
+  base:
+    material: cod
+    name: '&aティプロンフィッシュ'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - '非常に栄養価が高いことで知られる魚。'
+    - '老若男女に親しまれる淡白な味わい。'
+    - '&a【調理用アイテム】'
+
+PGU:
+  base:
+    material: pufferfish
+    name: '&aプグ'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - '丸みを帯びた毒性の魚。'
+    - '然るべき者が調理すれば。それは至高の一品となる。'
+    - '&a【調理用アイテム】'
+
+VELIA_PORK:
+  base:
+    material: porkchop
+    name: '&aべリアポーク'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - 'ほどよく脂の乗ったべリア豚の肉。'
+    - '安価で癖のない味わいの扱いやすい食材。'
+    - '&a【調理用アイテム】'
+
+CORAD_TURNIP:
+  base:
+    material: beetroot
+    name: '&aコラッドの赤カブ'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - '寒さに強い赤みがかったカブ。'
+    - '「コラッド」の名は生産者の名前から来ている。'
+    - '&a【調理用アイテム】'
+
+NORMAL_CARROT:
+  base:
+    material: carrot
+    name: '&aふつうのニンジン'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - 'どこでも売られている普通のニンジン。'
+    - '主張しすぎず、ただ静かに料理を彩る。'
+    - '&a【調理用アイテム】'
+
+GRAYSHEEP_MUTTON:
+  base:
+    material: mutton
+    name: '&a灰羊の肉'
+    tier: UNCOMMON
+    vanilla-eating: true
+    lore:
+    - '一般的な灰羊の肉。'
+    - 'ヘルシーで、女性からの人気が高い。'
+    - '&a【調理用アイテム】'
+
+TEST_DIAMOND:
+  base:
+    material: diamond
+    name: '&eダイアモンド(テスト)'
+    tier: COMMON
