@@ -1,0 +1,9 @@
+'1':
+  base:
+    material: GOLD_ORE
+    name: '&aテスト鉱石'
+    require-power-to-break: true
+    required-power: 2
+    min-xp: 15
+    max-xp: 25
+    block-id: 1.0
