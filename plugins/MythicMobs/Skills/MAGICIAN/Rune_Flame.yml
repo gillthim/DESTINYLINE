@@ -23,15 +23,15 @@ Rune_Flame:
   - delay 55
   - sound{s=spellnout;v=2;p=1} @self
   - sound{s=minecraft:entity.firework_rocket.large_blast;v=2;p=1} @self
-  - missile{ot=Rune_Flame_Tick;oh=Rune_Flame_Hit;v=10;i=1;hR=0.6;vR=0.6;in=20;md=40;mr=45} @EntitiesNearOrigin{r=25;limit=1;sort=NEAREST;ignore=players}
+  - missile{ot=Rune_Flame_Tick;oh=Rune_Flame_Hit;v=10;i=1;hR=0.6;vR=0.6;in=20;md=40;mr=45} @EntitiesNearOrigin{r=25;limit=1;sort=NEAREST;ignore=players,animals}
   - delay 10
   - sound{s=minecraft:entity.firework_rocket.large_blast;v=2;p=1} @self
-  - missile{ot=Rune_Flame_Tick;oh=Rune_Flame_Hit;v=20;i=1;hR=0.6;vR=0.6;in=20;md=40;mr=45} @EntitiesNearOrigin{r=25;limit=1;sort=NEAREST;ignore=players}
+  - missile{ot=Rune_Flame_Tick;oh=Rune_Flame_Hit;v=20;i=1;hR=0.6;vR=0.6;in=20;md=40;mr=45} @EntitiesNearOrigin{r=25;limit=1;sort=NEAREST;ignore=players,animals}
   - delay 10
   - sound{s=minecraft:entity.firework_rocket.large_blast;v=2;p=1} @self
   - delay 1
   - sound{s=minecraft:entity.firework_rocket.large_blast;v=2;p=1} @self
-  - missile{ot=Rune_Flame_Tick;oh=Rune_Flame_Hit;v=30;i=1;hR=0.6;vR=0.6;in=20;md=40;mr=45} @EntitiesNearOrigin{r=25;limit=2;sort=NEAREST;ignore=players}
+  - missile{ot=Rune_Flame_Tick;oh=Rune_Flame_Hit;v=30;i=1;hR=0.6;vR=0.6;in=20;md=40;mr=45} @EntitiesNearOrigin{r=25;limit=2;sort=NEAREST;ignore=players,animals}
   - delay 50
   - removetag{t=runeflame} @self
 Rune_Flame_Tick:

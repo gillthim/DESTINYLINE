@@ -32,7 +32,7 @@ GROUNDSKELETONSEEKER:
   -  Health: 15
   -  Damage: 8
   Drops:
-  -  mmoitems{type=MATERIAL;id=DASIBONE} 1-2 2%
+  -  mmoitems{type=MATERIAL;id=DASIBONE} 1-2 3%
   Skills:
   -  skill{s=SEEKERATTACK} @self ~onDamaged 0.2
   -  skill{s=SEEKERDASH} @self ~onTimer:450

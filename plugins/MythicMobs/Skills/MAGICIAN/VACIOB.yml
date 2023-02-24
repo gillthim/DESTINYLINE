@@ -21,11 +21,11 @@ vahit2:
   Skills:
   - effect:particles{p=reddust;color=#000000;y=0.5;amount=57;speed=0.1;hS=0.7;vS=0.3} @Origin
   - effect:particles{p=smoke;y=0.5;amount=50;speed=0.1;hS=0.8;vS=0.2} @Origin
-  - damage{a=1;ignorearmor=false} @EntitiesNearOrigin{r=1.7;target=monsters}
-  - damage{a=1;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=1.7;target=monsters}
-  - damage{a=0;ignorearmor=true} @EntitiesNearOrigin{r=2;target=monsters;ignore=players}
-  - potion{type=SLOW;duration=10;lvl=2;p=false} @EntitiesNearOrigin{r=1}
-  - potion{type=SLOW;duration=10;lvl=1;delay=10;p=false} @EntitiesNearOrigin{r=1}
+  - damage{a=1;ignorearmor=false} @EntitiesNearOrigin{r=1.7;target=monsters;ignore=players}
+  - damage{a=1;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=1.7;target=monsters;ignore=players}
+  - damage{a=0;ignorearmor=true} @EntitiesNearOrigin{r=2;target=monsters;ignore=players;ignore=players}
+  - potion{type=SLOW;duration=10;lvl=2;p=false} @EntitiesNearOrigin{r=1;ignore=players}
+  - potion{type=SLOW;duration=10;lvl=1;delay=10;p=false} @EntitiesNearOrigin{r=1;ignore=players}
   - sound{s=entity.player.attack.crit;volume=2;pitch=0.6;cooldown=1} @EntitiesNearOrigin{r=1}
   - effect:bloodyScreen{d=30} @EntitiesNearOrigin{r=1.6}
 vaend2:
@@ -52,8 +52,8 @@ vaend2:
   - effect:particlesphere{p=reddust;color=#000000;amount=100;radius=10;delay=18;size=1.2} @origin
   - effect:particles{p=explosion_large;color=#fff400;y=0;amount=2;speed=0.2;hS=0.8;vS=0.8} @Origin
   - sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=0.6} @origin
-  - damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=2.2;target=monsters}
-  - damage{a=2;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2;target=monsters}
+  - damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=2.2;target=monsters;ignore=players}
+  - damage{a=2;preventknockback=true;ignorearmor=true} @EntitiesNearOrigin{r=2.2;target=monsters;ignore=players}
   - sound{s=entity.player.attack.crit;volume=2;pitch=0.6;cooldown=1} @origin
   - totem{charges=1;onStart=ueco}
   - summon{type=vac2;amount=1;radius=0} @origin
@@ -91,23 +91,23 @@ vaend2:
 uecoab2:
   Cooldown: 0
   Skills:
-  - pull{velocity=1.1;to=true} @EntitiesNearOrigin{r=15}
-  - pull{velocity=1.6;to=true} @EntitiesNearOrigin{r=10}
-  - pull{velocity=2;to=true} @EntitiesNearOrigin{r=7}
-  - pull{velocity=5.3;to=true} @EntitiesNearOrigin{r=5}
-  - potion{type=WEAKNESS;duration=10;lvl=0;p=false;force=true} @EntitiesNearOrigin{r=5}
-  - potion{type=CONFUSION;duration=30;lvl=0;p=false} @EntitiesNearOrigin{r=5}
-  - potion{type=BLINDNESS;duration=30;lvl=1;p=false} @EntitiesNearOrigin{r=8}
-  - potion{type=SLOW_FALLING;duration=2;lvl=1;p=false;force=true} @EntitiesNearOrigin{r=5}
+  - pull{velocity=1.1;to=true} @EntitiesNearOrigin{r=15;ignore=players}
+  - pull{velocity=1.6;to=true} @EntitiesNearOrigin{r=10;ignore=players}
+  - pull{velocity=2;to=true} @EntitiesNearOrigin{r=7;ignore=players}
+  - pull{velocity=5.3;to=true} @EntitiesNearOrigin{r=5;ignore=players}
+  - potion{type=WEAKNESS;duration=10;lvl=0;p=false;force=true} @EntitiesNearOrigin{r=5;ignore=players}
+  - potion{type=CONFUSION;duration=30;lvl=0;p=false} @EntitiesNearOrigin{r=5;ignore=players}
+  - potion{type=BLINDNESS;duration=30;lvl=1;p=false} @EntitiesNearOrigin{r=8;ignore=players}
+  - potion{type=SLOW_FALLING;duration=2;lvl=1;p=false;force=true} @EntitiesNearOrigin{r=5;ignore=players}
 bamdr:
   Cooldown: 0
   Skills:
-  - Damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=15;ignore=samefaction;target=monsters}
-  - Damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=10;ignore=samefaction;target=monsters}
-  - Damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=7;ignore=samefaction;target=monsters}
+  - Damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=15;ignore=samefaction,players;target=monsters}
+  - Damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=10;ignore=samefaction,players;target=monsters}
+  - Damage{a=2;ignorearmor=false} @EntitiesNearOrigin{r=7;ignore=samefaction,players;target=monsters}
   - signal{s=BAM} @EntitiesNearOrigin{r=100}
   - delay 1
-  - Damage{a=2;ignorearmor=true} @EntitiesNearOrigin{r=4.5;ignore=samefaction;target=monsters}
-  - Damage{a=2;ignorearmor=true} @EntitiesNearOrigin{r=3;ignore=samefaction;target=monsters}
-  - throw{velocity=35;velocityY=2} @EntitiesNearOrigin{r=10}
-  - throw{velocity=56;velocityY=2} @EntitiesNearOrigin{r=8}
+  - Damage{a=2;ignorearmor=true} @EntitiesNearOrigin{r=4.5;ignore=samefaction,players;target=monsters}
+  - Damage{a=2;ignorearmor=true} @EntitiesNearOrigin{r=3;ignore=samefaction,players;target=monsters}
+  - throw{velocity=35;velocityY=2} @EntitiesNearOrigin{r=10;ignore=players}
+  - throw{velocity=56;velocityY=2} @EntitiesNearOrigin{r=8;ignore=players}
