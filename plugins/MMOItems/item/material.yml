@@ -693,8 +693,8 @@ DRY_FEALOW_HERB:
     name: '&a乾燥させたフェアロー草'
     tier: UNCOMMON
     lore:
-    - '香草であるフェアロー草を乾燥させたもの。'
-    - '好みの分かれる独特な香りがする。'
+    - '&f香草であるフェアロー草を乾燥させたもの。'
+    - '&f好みの分かれる独特な香りがする。'
     - '&a【調理用アイテム】'
 
 DANGEROUS_MUSHROOM:
@@ -703,8 +703,8 @@ DANGEROUS_MUSHROOM:
     name: '&a危なげなキノコ'
     tier: UNCOMMON
     lore:
-    - '明らかに危ない配色をしたキノコ。'
-    - '身体能力が一時的に上昇する効果がある。'
+    - '&f明らかに危ない配色をしたキノコ。'
+    - '&f身体能力が一時的に上昇する効果がある。'
     - '&a【調理用アイテム】'
 
 SIENEW_FISH:
@@ -714,8 +714,8 @@ SIENEW_FISH:
     tier: UNCOMMON
     vanilla-eating: true
     lore:
-    - '非常に栄養価が高いことで知られる魚。'
-    - '老若男女に親しまれる淡白な味わい。'
+    - '&f非常に栄養価が高いことで知られる魚。'
+    - '&f老若男女に親しまれる淡白な味わい。'
     - '&a【調理用アイテム】'
 
 PGU:
@@ -725,8 +725,8 @@ PGU:
     tier: UNCOMMON
     vanilla-eating: true
     lore:
-    - '丸みを帯びた毒性の魚。'
-    - '然るべき者が調理すれば。それは至高の一品となる。'
+    - '&f丸みを帯びた毒性の魚。'
+    - '&f然るべき者が調理すれば。それは至高の一品となる。'
     - '&a【調理用アイテム】'
 
 VELIA_PORK:
@@ -736,8 +736,8 @@ VELIA_PORK:
     tier: UNCOMMON
     vanilla-eating: true
     lore:
-    - 'ほどよく脂の乗ったべリア豚の肉。'
-    - '安価で癖のない味わいの扱いやすい食材。'
+    - '&fほどよく脂の乗ったべリア豚の肉。'
+    - '&f安価で癖のない味わいの扱いやすい食材。'
     - '&a【調理用アイテム】'
 
 CORAD_TURNIP:
@@ -747,8 +747,8 @@ CORAD_TURNIP:
     tier: UNCOMMON
     vanilla-eating: true
     lore:
-    - '寒さに強い赤みがかったカブ。'
-    - '「コラッド」の名は生産者の名前から来ている。'
+    - '&f寒さに強い赤みがかったカブ。'
+    - '&f「コラッド」の名は生産者の名前から来ている。'
     - '&a【調理用アイテム】'
 
 NORMAL_CARROT:
@@ -758,8 +758,8 @@ NORMAL_CARROT:
     tier: UNCOMMON
     vanilla-eating: true
     lore:
-    - 'どこでも売られている普通のニンジン。'
-    - '主張しすぎず、ただ静かに料理を彩る。'
+    - '&fどこでも売られている普通のニンジン。'
+    - '&f主張しすぎず、ただ静かに料理を彩る。'
     - '&a【調理用アイテム】'
 
 GRAYSHEEP_MUTTON:
@@ -769,8 +769,8 @@ GRAYSHEEP_MUTTON:
     tier: UNCOMMON
     vanilla-eating: true
     lore:
-    - '一般的な灰羊の肉。'
-    - 'ヘルシーで、女性からの人気が高い。'
+    - '&f一般的な灰羊の肉。'
+    - '&fヘルシーで、女性からの人気が高い。'
     - '&a【調理用アイテム】'
 
 TEST_DIAMOND:
