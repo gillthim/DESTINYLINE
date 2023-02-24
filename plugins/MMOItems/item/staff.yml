@@ -120,7 +120,6 @@ ROARING_SEA_WAND:
     armor: -0.3
     disable-enchanting: true
     disable-repairing: true
-    disable-interaction: true
     unbreakable: true
     defense: -0.3
     lore:
@@ -130,3 +129,4 @@ ROARING_SEA_WAND:
     - マジシャン
     max-mana: 200.0
     mana-cost: 16.0
+    disable-interaction: true
