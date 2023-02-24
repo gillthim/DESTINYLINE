@@ -130,11 +130,9 @@ CURSE_WAND:
     attack-speed: 1.2
     required-level: 40.0
     range: 10.0
-    mana-cost: 2.0
     skill-damage: 8.5
     magic-damage: 13.0
     tier: RARE
-    repair-type: マジシャン
     gem-sockets:
     - '1'
     - '1'
@@ -144,7 +142,6 @@ CURSE_WAND:
         damage: 50.0
     unbreakable: true
     armor: -0.3
-    max-mana: 180.0
     defense: -0.3
     mana-regeneration: 0.3
     enchants:
@@ -154,3 +151,7 @@ CURSE_WAND:
     - '&fその昔、僧侶が使用していた杖'
     - '&fしかし仲間から裏切りに会い、命を落とした。'
     - '&fその僧侶は人を恨み続け、その怨嗟が杖に宿った'
+    required-class:
+    - マジシャン
+    max-mana: 400.0
+    mana-cost: 32.0

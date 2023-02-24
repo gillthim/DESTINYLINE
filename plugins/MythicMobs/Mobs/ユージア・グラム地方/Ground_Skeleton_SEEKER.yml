@@ -27,7 +27,7 @@ GROUNDSKELETONSEEKER:
   -  1 players
   AIGoalSelectors:
   -  0 clear
-  -  2 randomstroll
+  -  1 randomstroll
   LevelModifiers:
   -  Health: 15
   -  Damage: 8

@@ -11,7 +11,7 @@ vac:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   KillMessages:
   - '<target.name> was consumed by a supermassive black hole.'
   - 'A supermassive black hole sucked <target.name>.'
@@ -57,7 +57,7 @@ vac1:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   KillMessages:
   - '<target.name> was consumed by a supermassive black hole.'
   - 'A supermassive black hole sucked <target.name>.'
@@ -108,7 +108,7 @@ vac2dr:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   KillMessages:
   Equipment:
   - air:4
@@ -155,7 +155,7 @@ vac2:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   KillMessages:
   Equipment:
   - air:4
@@ -202,7 +202,7 @@ vac3:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   KillMessages:
   Equipment:
   - air:4
@@ -240,7 +240,7 @@ vac4:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   Skills:
    - potion{type=INVISIBILITY;duration=99999;level=1;p=false} @Self ~onSpawn 1
    - pull{velocity=100;to=true;repeat=70;repeatInterval=1} @Parent ~onSpawn
@@ -269,7 +269,7 @@ vac5:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   Skills:
    - skill{s=chuvaplodehitwave;sync=true} @Self ~onSpawn 1
    - projectile{onTick=chuvaplodehittick;v=15;i=1;hR=1;vR=1;g=0;md=41;mr=5;syo=-2;tyo=-2} @Cone{angle=180;points=56;range=90;rotation=360}
@@ -308,7 +308,7 @@ vac6:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   KillMessages:
   Equipment:
   - air:4
@@ -353,7 +353,7 @@ vac7:
   DamageModifiers:
   - FIRE 0
   - MAGIC 2.7
-  Damage: 300
+  Damage: 1
   KillMessages:
   Equipment:
   - air:4

@@ -28,7 +28,7 @@ GROUNDSKELETONKNIGHT:
   -  1 players
   AIGoalSelectors:
   -  0 clear
-  -  2 randomstroll
+  -  1 randomstroll
   LevelModifiers:
   -  Health: 20
   -  Damage: 5

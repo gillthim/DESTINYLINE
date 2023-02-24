@@ -118,3 +118,43 @@ DARKHAZY:
     required-level: 35.0
     stamina-regeneration: 5.0
     max-stamina-regeneration: 2.0
+IRON_SWORD:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000003E7
+    name: '&9鉄刀'
+    unbreakable: true
+    tier: RARE
+    required-level: 10.0
+    required-class:
+    - ブレイダー
+    attack-damage: 10.5
+    skill-critical-strike-power: 34.0
+    skill-critical-strike-chance: 4.5
+    knockback-resistance: 0.06
+    gem-sockets:
+    - YELLOW
+    - YELLOW
+    ability:
+      ability1:
+        type: SKY_SMASH
+        mode: SHIFT_LEFT_CLICK
+        damage: 12.0
+        stamina: 5.0
+        cooldown: 8.0
+        knock-up: 1.0
+      ability2:
+        type: CIRCULAR_SLASH
+        mode: SHIFT_RIGHT_CLICK
+        damage: 11.0
+        stamina: 7.0
+        cooldown: 11.0
+        radius: 2.0
+    weapon-damage: 3.0
+    physical-damage: 2.8
+    health-regeneration: 0.3
+    lore:
+    - '&fとある無名の刀鍛冶が打った刀'
+    - '&f斬れ味がよく、駆け出しのブレイダーには良い武器だ。'
+    stamina-cost: 4.0
+    max-health: 100.0

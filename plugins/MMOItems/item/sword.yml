@@ -94,6 +94,11 @@ TEXTURESWORD1:
   base:
     material: DIAMOND_SWORD
     custom-model-data: 2.0
+    ability:
+      ability1:
+        type: STUN
+        mode: LEFT_CLICK
+        cooldown: 0.0
 SIRIUSUSWORD:
   base:
     material: IRON_SWORD
@@ -446,8 +451,9 @@ SORRYSWORD:
 WALK_HIMAWARI2:
   base:
     material: SUNFLOWER
-    enchants:
-      depth_strider: 5.0
+    revision-id: 6
+    attack-damage: 65.0
+    required-level: 99.0
 TESTB:
   base:
     material: IRON_AXE
@@ -505,3 +511,84 @@ ABYSS_SWORD:
     enchants:
       sharpness: 5.0
     hide-enchants: true
+KNIGHT'S_SWORD:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000002E7
+    name: '&9騎士の直剣'
+    required-level: 20.0
+    attack-damage: 20.0
+    weapon-damage: 4.5
+    physical-damage: 5.0
+    unbreakable: true
+    tier: RARE
+    health-regeneration: 0.3
+    skill-damage: 2.0
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: SHIFT_LEFT_CLICK
+        damage: 22.0
+        length: 1.5
+        cooldown: 6.0
+        stamina: 6.0
+      ability2:
+        type: SHOCKWAVE
+        mode: SHIFT_RIGHT_CLICK
+        stamina: 4.0
+        cooldown: 6.0
+        length: 12.0
+        knock-up: 3.0
+    required-class:
+    - ブレイダー
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED
+    lore:
+    - '&fとある騎士が使用していた剣'
+    - '&f汎用性が高く、熟練の剣技が使える。'
+    stamina-cost: 6.0
+    max-health: 200.0
+LIGHTNING_SWORD:
+  base:
+    material: DIAMOND_SWORD
+    custom-model-data: 1.0000002E7
+    name: '&9ライトニングソード'
+    required-level: 30.0
+    required-class:
+    - ブレイダー
+    attack-damage: 28.0
+    weapon-damage: 6.0
+    physical-damage: 7.0
+    tier: RARE
+    enchants:
+      channeling: 1.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - RED
+    element:
+      thunder:
+        damage: 40.0
+    health-regeneration: 0.3
+    unbreakable: true
+    ability:
+      ability1:
+        type: LIGHTNING_BEAM
+        mode: SHIFT_LEFT_CLICK
+        damage: 30.0
+        stamina: 12.0
+        cooldown: 10.0
+        radius: 6.0
+      ability2:
+        type: SMITE
+        mode: SHIFT_RIGHT_CLICK
+        damage: 28.0
+        cooldown: 6.0
+        stamina: 5.0
+    lore:
+    - '&f雷の力を宿した剣'
+    - '&f雷を操り、天から雷を落とす。'
+    max-health: 300.0
+    stamina-cost: 8.0
