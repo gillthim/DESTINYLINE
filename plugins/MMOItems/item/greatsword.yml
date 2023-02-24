@@ -86,3 +86,30 @@ BATTLE_BAMBOO:
     - '1'
     - '1'
     - RED
+WOODEN_BAT:
+  base:
+    material: STICK
+    attack-damage: 10.0
+    name: '&9木製バット'
+    enchants:
+      knockback: 10.0
+    two-handed: true
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        mode: RIGHT_CLICK
+        damage: 15.0
+        cooldown: 4.0
+        stamina: 5.0
+        radius: 3.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-smelting: true
+    unbreakable: true
+    tier: RARE
+    required-level: 5.0
+    lore:
+    - '&f木製の普通のバット'
+    - '&f相手に打つとぶっ飛ばすことが可能だが、そのために使う物ではない'
+    - 非売品
+    disable-attack-passive: true

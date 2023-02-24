@@ -1773,3 +1773,364 @@ PVP_HELMEY_BLUE:
     disable-repairing: true
     pvp-damage: 500.0
     unbreakable: true
+KNIGHT_HELMET:
+  base:
+    material: IRON_HELMET
+    required-level: 20.0
+    max-health: 175.0
+    tier: RARE
+    name: '&9騎士の兜'
+    defense: 0.5
+    armor: 0.7
+    unbreakable: true
+    required-class:
+    - ブレイダー
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smithing: true
+    health-regeneration: 0.2
+    max-stamina: 10.0
+    knockback-resistance: 0.025
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    lore:
+    - '&f騎士たちが着ていた兜。'
+    - '&f汎用性が高く、慣れたブレイダーにはよい。'
+KNIGHT_ARMOR:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&9騎士の鎧'
+    required-level: 20.0
+    required-class:
+    - ブレイダー
+    max-health: 175.0
+    armor: 0.7
+    defense: 0.5
+    unbreakable: true
+    tier: RARE
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-stamina: 10.0
+    health-regeneration: 0.2
+    knockback-resistance: 0.025
+    lore:
+    - '&f騎士たちが着ていた鎧。'
+    - '&f汎用性が高く、慣れたブレイダーにはよい。'
+KNIGHT_LEGGINGS:
+  base:
+    material: IRON_LEGGINGS
+    name: '&9騎士のレギンス'
+    required-level: 20.0
+    required-class:
+    - ブレイダー
+    tier: RARE
+    max-health: 175.0
+    armor: 0.7
+    defense: 0.5
+    knockback-resistance: 0.025
+    health-regeneration: 0.2
+    max-stamina: 10.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    unbreakable: true
+    lore:
+    - '&f騎士たちが着ていたレギンス。'
+    - '&f汎用性が高く、慣れたブレイダーにはよい。'
+KNIGHT_BOOTS:
+  base:
+    material: IRON_BOOTS
+    name: '&9騎士の靴'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 20.0
+    required-class:
+    - ブレイダー
+    defense: 0.5
+    max-health: 175.0
+    unbreakable: true
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    armor: 0.7
+    knockback-resistance: 0.025
+    health-regeneration: 0.2
+    max-stamina: 10.0
+    tier: RARE
+    lore:
+    - '&f騎士たちが着ていた靴。'
+    - '&f汎用性が高く、慣れたブレイダーにはよい。'
+GLADIATOR_HELMET:
+  base:
+    material: NETHERITE_HELMET
+    name: '&9グラディエーターヘルメット'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 40.0
+    required-class:
+    - ブレイダー
+    defense: 1.0
+    unbreakable: true
+    tier: RARE
+    max-health: 250.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    knockback-resistance: 0.025
+    armor: 1.2
+    max-stamina: 15.0
+    health-regeneration: 0.3
+    physical-damage-reduction: 2.5
+GLADIATOR_ARMOR:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&9グラディエーターアーマー'
+    required-level: 40.0
+    required-class:
+    - ブレイダー
+    physical-damage-reduction: 2.5
+    max-health: 250.0
+    defense: 1.0
+    knockback-resistance: 0.025
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    armor: 1.2
+    health-regeneration: 0.3
+    max-stamina: 15.0
+    disable-smithing: true
+    disable-enchanting: true
+    tier: RARE
+GLADIATOR_LEGGINGS:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&9グラディエーターレギンス'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 40.0
+    required-class:
+    - ブレイダー
+    defense: 1.0
+    armor: 1.2
+    physical-damage-reduction: 2.5
+    tier: RARE
+    unbreakable: true
+    max-health: 250.0
+    health-regeneration: 0.3
+    max-stamina: 15.0
+    knockback-resistance: 0.025
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+GLADIATOR_BOOTS:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&9グラディエーターブーツ'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 40.0
+    required-class:
+    - ブレイダー
+    physical-damage-reduction: 2.5
+    defense: 1.0
+    armor: 1.2
+    max-health: 250.0
+    tier: RARE
+    unbreakable: true
+    max-stamina: 15.0
+    health-regeneration: 0.3
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    knockback-resistance: 0.025
+SHAMAN_HOOD:
+  base:
+    material: LEATHER_HELMET
+    dye-color: 255 255 255
+    required-level: 20.0
+    required-class:
+    - マジシャン
+    name: '&9祈祷師のフード'
+    unbreakable: true
+    tier: RARE
+    dodge-rating: 2.5
+    defense: 0.4
+    armor: 0.6
+    mana-regeneration: 0.15
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-mana: 180.0
+    disable-smithing: true
+    disable-enchanting: true
+SHAMAN_ROBE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&9祈祷師のローブ'
+    dye-color: 255 255 255
+    disable-smithing: true
+    disable-enchanting: true
+    required-level: 20.0
+    required-class:
+    - マジシャン
+    dodge-rating: 2.5
+    defense: 0.4
+    armor: 0.6
+    tier: RARE
+    unbreakable: true
+    max-mana: 180.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    mana-regeneration: 0.15
+SHAMAN_PANTS:
+  base:
+    material: LEATHER_LEGGINGS
+    dye-color: 255 255 255
+    name: '&9祈祷師のズボン'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 20.0
+    required-class:
+    - マジシャン
+    dodge-rating: 2.5
+    defense: 0.4
+    armor: 0.6
+    tier: RARE
+    unbreakable: true
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-mana: 180.0
+    mana-regeneration: 0.15
+SHAMAN_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: '&9祈祷師のブーツ'
+    dye-color: 255 255 255
+    required-level: 20.0
+    required-class:
+    - マジシャン
+    dodge-rating: 2.5
+    defense: 0.4
+    armor: 0.6
+    tier: RARE
+    unbreakable: true
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    mana-regeneration: 0.15
+    max-mana: 180.0
+SAGE_HOOD:
+  base:
+    material: LEATHER_HELMET
+    dye-color: 170 170 170
+    name: '&9賢者のフード'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 40.0
+    required-class:
+    - マジシャン
+    defense: 0.8
+    armor: 1.0
+    tier: RARE
+    unbreakable: true
+    max-mana: 380.0
+    mana-regeneration: 0.4
+    dodge-rating: 2.5
+    cooldown-reduction: 2.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    element:
+      darkness:
+        defense: 10.0
+SAGE_ROBE:
+  base:
+    material: LEATHER_CHESTPLATE
+    disable-enchanting: true
+    disable-smithing: true
+    name: '&9賢者のローブ'
+    required-level: 40.0
+    required-class:
+    - マジシャン
+    dodge-rating: 2.5
+    cooldown-reduction: 2.0
+    defense: 0.8
+    armor: 1.0
+    tier: RARE
+    unbreakable: true
+    max-mana: 350.0
+    mana-regeneration: 0.4
+    dye-color: 170 170 170
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    element:
+      darkness:
+        defense: 10.0
+SAGE_PANTS:
+  base:
+    material: LEATHER_LEGGINGS
+    dye-color: 170 170 170
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-mana: 380.0
+    mana-regeneration: 0.4
+    tier: RARE
+    unbreakable: true
+    defense: 0.8
+    armor: 1.0
+    cooldown-reduction: 2.0
+    dodge-rating: 2.5
+    element:
+      darkness:
+        defense: 10.0
+    required-level: 40.0
+    required-class:
+    - マジシャン
+    name: '&9賢者のズボン'
+SAGE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    dye-color: 170 170 170
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-mana: 380.0
+    required-level: 40.0
+    required-class:
+    - マジシャン
+    dodge-rating: 2.5
+    cooldown-reduction: 2.0
+    defense: 0.8
+    tier: RARE
+    unbreakable: true
+    armor: 1.0
+    name: '&9賢者のブーツ'
+    mana-regeneration: 0.4
+    element:
+      darkness:
+        defense: 10.0

@@ -25,4 +25,4 @@ RTC_WF_12:
   ShowFlames: false
   Breakable: false
   Conditions: []
-  ActiveMobs: 0
+  ActiveMobs: 1
