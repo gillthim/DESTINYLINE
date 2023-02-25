@@ -1,7 +1,7 @@
 '1':
   base:
     material: GOLD_ORE
-    name: '&aテスト鉱石'
+    name: テスト鉱石
     require-power-to-break: true
     required-power: 2
     min-xp: 15
