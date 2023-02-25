@@ -20,4 +20,4 @@ RAINBURST_HIT:
   Skills:
   - effect:sound{s=minecraft:item.bottle.fill;v=2;p=1;repeat=5;repeatInterval=5}
   - effect:sound{s=minecraft:entity.tropical_fish.hurt.blow_up;v=2;p=0.5}
-  - damage{a=800;i=true;type=Water}
+  - damage{a=800*<caster.level>/7;i=true;type=Water}

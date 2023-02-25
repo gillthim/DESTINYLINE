@@ -43,6 +43,7 @@ bonemaster:
   -  effect:particlering{p=reddust;color=#191616;a=100;hS=1;vS=0.2;radius=1.1} @self ~onTimer:100 <35%
   -  effect:particlering{p=reddust;color=#b71722;a=100;hS=0.8;vS=0.2;radius=1} @self ~onTimer:100 <35%
   -  skill{s=SUNLIGHTNING2} @self ~onTimer:458
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  skill{s=BONEMASTER_WORLD_FIRE} @self ~onTimer:251
   -  skill{s=BONEWEB} @self ~onTimer:986
   -  skill{s=FORCUSLIGHT} @self ~onTimer:308

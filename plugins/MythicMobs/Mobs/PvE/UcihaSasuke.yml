@@ -35,6 +35,7 @@ UcihaSasukePvE:
   -  Health: 50
   Skills:
   -  threat{amount=10000} @NearestPlayer ~onSpawn
+  -  skill{s=Changetarget} ~onTimer:120 <99%
   -  skill{s=sasuke_housenka} @self ~onTimer:289
   -  skill{s=sasuke_kawarimi} @self ~onDamaged 0.09
   -  skill{s=sasuke_goukakyu} @self ~onAttack 0.06

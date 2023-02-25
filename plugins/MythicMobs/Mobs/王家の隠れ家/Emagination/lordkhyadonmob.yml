@@ -444,6 +444,7 @@ garo: ##### THe core of the boss.
   - mmoitems{type=SWORD;id=ABYSS_SWORD} 1 1%
   Skills:
   - model{mid=gononeita;s=idle;n=false} @self ~onSpawn 1
+  - skill{s=Changetarget} ~onTimer:240 <99%
   - skill{s=garoBolt} @target ~onTimer:78 >0 0.72
   - skill{s=nullsave2} @target ~onSignal:NULLSAVE
   - skill{s=cancelatacgaro;sync=true} @self ~onAttack 1

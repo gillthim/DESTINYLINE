@@ -383,12 +383,12 @@ EXPCRYSTAL5000:
     material: END_CRYSTAL
     name: '&b経験値クリスタル(5000EXP)'
     unbreakable: true
-    required-level: 25.0
     commands:
       cmd0:
         format: mmocore admin exp give %player_name% main 5000
         delay: 0.0
     displayed-type: トレード不可
+    required-level: 10.0
 KINLINGOLV4:
   base:
     material: GOLDEN_APPLE
@@ -611,3 +611,16 @@ MANAHARBLV4:
     required-level: 40.0
     item-cooldown: 10.0
     restore-mana: 500.0
+EXPCRYSTAL10000:
+  base:
+    material: END_CRYSTAL
+    displayed-type: トレード不可
+    required-level: 15.0
+    commands:
+      cmd0:
+        format: mmocore admin exp give %player_name% main 10000
+        delay: 0.0
+    lore:
+    - '&f経験値が詰まった結晶'
+    - '&f使用することによって10,000経験値を獲得できる'
+    name: '&bEXPCRYSTAL10000'

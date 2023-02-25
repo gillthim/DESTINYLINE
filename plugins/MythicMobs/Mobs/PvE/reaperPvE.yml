@@ -19,6 +19,7 @@ reaperPvE:
   Drops:
   Skills:
   -  model{mid=reaper;n=false} @self ~onSpawn
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  threat{amount=10000} @NearestPlayer ~onSpawn
   -  randomskill{skills=slashone,slashtwo,dash;sync=true} ~onAttack
   -  skill{s=Kodaino_lockfire} @self ~onDamaged <50% 0.08

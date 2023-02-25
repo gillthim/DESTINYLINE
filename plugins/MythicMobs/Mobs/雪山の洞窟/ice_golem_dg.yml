@@ -28,6 +28,7 @@ ICE_GOLEM_dg:
   Skills:
   -  threat{amount=10000} @NearestPlayer ~onSpawn
   -  skill{s=ICE_EFFECT_BIG} @self ~onTimer:5
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  skill{s=HEAL_GOLEM} @self ~onTimer:500
   -  skill{s=ELEMENT_ICE2} @self ~onTimer:200
   -  skill{s=PULL_GOLEM} @self ~onTimer:350

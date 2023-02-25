@@ -41,6 +41,7 @@ ARCANA_GOLEM_WATER:
   Skills:
   -  currencygive{amount=5000} @pir{r=20} ~onDeath
   -  skill{s=WATEREFFECT_BIG} @self ~onTimer:5
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  skill{s=WATERBURST} @self ~onTimer:421
   -  skill{s=WATER_KEEP} @self ~onTimer:301
   KillMessages:

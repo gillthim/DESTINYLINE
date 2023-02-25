@@ -41,6 +41,7 @@ ARCANA_GOLEM_FIRE:
   Skills:
   -  currencygive{amount=5000} @pir{r=20} ~onDeath
   -  skill{s=FIREEFFECT_BIG} @self ~onTimer:5
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  skill{s=FLAMEINRADIUS} @self ~onTimer:821
   -  skill{s=FLAME_LOCK} @self ~onTimer:461
   -  skill{s=FLAME_KEEP} @self ~onTimer:201

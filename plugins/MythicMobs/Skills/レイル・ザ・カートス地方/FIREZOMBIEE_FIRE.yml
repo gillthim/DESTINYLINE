@@ -16,4 +16,4 @@ FIREZOMBIEE_FIRE__HIT:
   Skills:
   - effect:explosion{a=5;hs=1.5;vs=2} 
   - sound{s=minecraft:entity.generic.extinguish_fire;p=0.2;v=2} 
-  - damage{a=300;i=false;type=Fire} 
+  - damage{a="500*<caster.level>/5";i=true;type=FIRE}

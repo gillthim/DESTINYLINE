@@ -30,6 +30,7 @@ DARK_REINDEER_dg:
   -  mmoitems{type=MATERIAL;id=DARK_REINDEER} 1-5 100%
   Skills:
   -  skill{s=BOX_EFFECT_BIG} @self ~onTimer:5
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  currencygive{amount=3000-5000} @pir{r=20} ~onDeath
   -  skill{s=HELL_WORLD_FIRE} @self ~onTimer:300
   -  skill{s=TARKYZYUSO} @self ~onTimer:250

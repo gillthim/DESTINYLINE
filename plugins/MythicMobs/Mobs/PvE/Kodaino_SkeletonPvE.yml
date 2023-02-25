@@ -35,6 +35,7 @@ Kodaino_SkeletonPvE:
   -  Health: 50
   Skills:
   -  skill{s=Kodaino_Waterwall} @self ~onTimer:521
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  skill{s=Kodaino_Sunderlight} @self ~onTimer:1001
   -  skill{s=Kodaino_FireBalls} @self ~onTimer:332
   -  currencygive{amount=10000} @pir{r=20} ~onDeath

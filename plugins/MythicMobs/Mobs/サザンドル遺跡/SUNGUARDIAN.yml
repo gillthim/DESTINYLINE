@@ -52,6 +52,7 @@ SUNGUARDIAN:
   Skills:
   -  threat{amount=10000} @NearestPlayer ~onTimer:60
   -  skill{s=SUN_EFFECT} @self ~onTimer:5
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  skill{s=SUNENAGEY} @self ~onTimer:1000
   -  skill{s=SUNBREAK} @self ~onTimer:300
   -  skill{s=SUNLIGHTNING} @self ~onTimer:250

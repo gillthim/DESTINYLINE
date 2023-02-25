@@ -26,6 +26,7 @@ BLAZEN2:
   Skills:
   -  skill{s=BLAZEN_FIRE} @self ~onDamaged 25%
   -  skill{s=BLAZEN_WORLD_FIRE} @self ~onTimer:250
+  -  skill{s=Changetarget} ~onTimer:160 <99%
   -  currencygive{amount=1000-2000} @pir{r=20} ~onDeath
   -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
   Drops:
