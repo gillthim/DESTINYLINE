@@ -1,8 +1,9 @@
 GROUNDSKELETONSEEKER:
   Mobtype: SKELETON
   Display: '&A&L平野のスケルトンシーカー Lv<mob.level>'
-  Health: 1200
-  Damage: 1400
+  Health: 500
+  Damage: 420
+  Faction: Skeleton
   Equipment:
   -  iron_sword HAND
   -  leather_helmet HEAD

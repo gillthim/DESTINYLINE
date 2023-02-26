@@ -529,16 +529,15 @@ KNIGHT'S_SWORD:
         type: LIGHT_DASH
         mode: SHIFT_LEFT_CLICK
         damage: 22.0
-        length: 1.5
+        length: 0.6
         cooldown: 6.0
         stamina: 6.0
       ability2:
-        type: SHOCKWAVE
+        type: THRUST
         mode: SHIFT_RIGHT_CLICK
-        stamina: 4.0
-        cooldown: 6.0
-        length: 12.0
-        knock-up: 3.0
+        damage: 21.0
+        cooldown: 10.0
+        stamina: 10.0
     required-class:
     - ブレイダー
     gem-sockets:

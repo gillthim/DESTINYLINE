@@ -130,3 +130,7 @@ ROARING_SEA_WAND:
     max-mana: 200.0
     mana-cost: 16.0
     disable-interaction: true
+    gem-sockets:
+    - '1'
+    - '1'
+    - BLUE

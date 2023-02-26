@@ -11,8 +11,9 @@ Guard_Stance:
   - effect:particleline{p=reddust;color=#4b4fd2;db=1;ys=3;a=20} @Ring{r=0.5;points=13}
   - effect:particleline{p=reddust;color=#4b4fd2;db=1;ys=3;a=20} @Ring{r=0.6;points=14}
   - sound{s=minecraft:block.anvil.place;v=2;p=1.4} @self
-  - potion{type=HEALTH_BOOST;duration=400;level=100} @self
-  - potion{type=REGENERATION;duration=400;level=50} @self
+  - potion{type=HEALTH_BOOST;duration=400;level=200} @self
+  - potion{type=REGENERATION;duration=400;level=80} @self
+  - potion{type=DAMAGE_RESISTANCE;duration=400;level=2} @self
   - potion{type=SLOW;duration=400;level=2} @self
   - delay 50
   - effect:particleline{p=reddust;color=#4b4fd2;db=1;ys=3;a=20} @Ring{r=0.3;points=12}

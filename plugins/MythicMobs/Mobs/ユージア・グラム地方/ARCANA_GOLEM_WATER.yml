@@ -1,8 +1,8 @@
 ARCANA_GOLEM_WATER:
   Mobtype: IRON_GOLEM
   Display: '&b&L水没のアルカナ・ゴーレムLv<mob.level>'
-  Health: 7000
-  Damage: 700
+  Health: 5000
+  Damage: 300
   BossBar:
     Enabled: true
     Title: '&d&l水没のアルカナ・ゴーレムLv<mob.level>'

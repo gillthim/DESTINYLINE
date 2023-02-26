@@ -1,8 +1,9 @@
 GROUNDSKELETONKNIGHT:
   Mobtype: SKELETON
   Display: '&A&L平野のスケルトンナイト Lv<mob.level>'
-  Health: 1580
-  Damage: 1280
+  Health: 700
+  Damage: 400
+  Faction: Skeleton
   Equipment:
   -  iron_sword HAND
   -  iron_helmet HEAD

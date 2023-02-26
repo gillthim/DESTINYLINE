@@ -2,8 +2,8 @@ UMIKAGE:
   Mobtype: SILVERFISH
   Disguise: AXOLOTL
   Display: '&A&L海影Lv<mob.level>'
-  Health: 1120
-  Damage: 1000
+  Health: 300
+  Damage: 200
   Options:
     Despawn: true
     AttackSpeed: 0.9

@@ -1,8 +1,8 @@
 Zombiee2:
   Mobtype: ZOMBIE
   Display: '&A&Lゾンビー Lv<mob.level>'
-  Health: 1000
-  Damage: 1000
+  Health: 300
+  Damage: 200
   Modules:
     ThreatTable: true
   Options:

@@ -19,5 +19,5 @@ FLAMEINRADIUS:
   - effect:particlering{particle=flame;radius=0.3;points=16;amount=50;hS=1;vS=1} @self
   - effect:particlering{particle=flame;radius=0.6;points=16;amount=50;hS=2;vS=1} @self
   - effect:particlering{particle=flame;radius=0.8;points=16;amount=50;hS=3;vS=1} @self
-  - damage{amount=500*<caster.level>/6;ignoreArmor=true;type=Fire} @PIR{r=8}
+  - damage{amount=410*<caster.level>/6;ignoreArmor=true;type=Fire} @PIR{r=8}
   - removetag{t=FLAMEINRADIUS} @self

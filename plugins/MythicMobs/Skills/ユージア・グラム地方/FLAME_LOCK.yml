@@ -23,5 +23,5 @@ FLAME_LOCK:
   - effect:particlering{particle=flame;radius=0.1;points=16;amount=50;hS=0.5;vS=1} @PIR{r=12;target=players}
   - effect:particlering{particle=flame;radius=0.1;points=16;amount=50;hS=1;vS=1} @PIR{r=12;target=players}
   - effect:particlering{particle=flame;radius=0.1;points=16;amount=50;hS=2;vS=1} @PIR{r=12;target=players}
-  - damage{amount=1000*<caster.level>/8;ignoreArmor=false;type=Fire} @PIR{r=12;target=players}
+  - damage{amount=400*<caster.level>/8;ignoreArmor=false;type=Fire} @PIR{r=12;target=players}
   - removetag{t=FLAME_LOCK} @self

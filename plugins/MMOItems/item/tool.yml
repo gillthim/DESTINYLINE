@@ -87,6 +87,7 @@ MININGKING_PICKAXE:
     lore:
     - '&f採掘を極めた者のみが扱えるピッケル'
     - '&f高く飛び上がり、爆弾も設置できる'
+    commands: {}
     required-level: 30.0
 HIMA:
   base:

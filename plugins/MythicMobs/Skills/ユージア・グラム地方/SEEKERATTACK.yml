@@ -8,11 +8,11 @@ SEEKERATTACK:
   - delay 10
   - jump{velocity=0.5} @target
   - sound{s=item.trident.throw;p=1.5;v=1.2} @self
-  - damage{amount="800*<caster.level>/5"} @EntitiesInRadius{r=3;target=players}
+  - damage{amount="100*<caster.level>/5"} @EntitiesInRadius{r=3;target=players}
   - delay 5
   - sound{s=item.trident.throw;p=1.5;v=1.6} @self
-  - damage{amount="1000*<caster.level>/5"} @EntitiesInRadius{r=3;target=players}
+  - damage{amount="100*<caster.level>/5"} @EntitiesInRadius{r=3;target=players}
   - delay 5
   - sound{s=item.trident.throw;p=1.5;v=1.1} @self
-  - damage{amount="1300*<caster.level>/8"} @EntitiesInRadius{r=3;target=players}
+  - damage{amount="100*<caster.level>/8"} @EntitiesInRadius{r=3;target=players}
   - removetag{t=SEEKERATTACK} @self
