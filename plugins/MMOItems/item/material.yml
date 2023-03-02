@@ -490,16 +490,15 @@ UMIKAGE_AMULET:
 FRAGMENT:
   base:
     material: IRON_NUGGET
-    name: '&a業火のアルカナ・ゴーレムのかけら'
-    lore:
-    - '&f業火のアルカナ・ゴーレムのかけら'
-    - '&f手に持つとほんのり暖かい'
     tier: UNCOMMON
     unbreakable: true
     disable-smithing: true
     disable-enchanting: true
     disable-repairing: true
     disable-smelting: true
+    name: '&aアルカナゴーレムのかけら'
+    lore:
+    - '&fアルカナゴーレムの体の一部'
 MOUNTCHCKET1:
   base:
     material: NAME_TAG
@@ -639,7 +638,6 @@ RAREWATER:
 MANAWATER:
   base:
     material: POTION
-    name: '&aアルカナゴーレムの魔水'
     tier: UNCOMMON
     potion-color: 20 200 20
     vanilla-eating: true
@@ -665,7 +663,7 @@ GOLEM_HUSK:
     disable-enchanting: true
     disable-smithing: true
     disable-smelting: true
-    
+
 SOUPSTOCK_KELP:
   base:
     material: dried_kelp

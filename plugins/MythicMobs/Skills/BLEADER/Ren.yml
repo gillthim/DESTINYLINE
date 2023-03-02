@@ -1,6 +1,6 @@
 Ren:
   Skills:
-  - addtag{t=Ren} true
+  - addtag{t=Ren} @self
   - setvariable{var=skill.a;value="%mmocore_stat_attack_damage%";type=FLOAT} @self
   - variableMath{var=skill.a;equation="<skill.var.a>"} 
   - setvariable{var=skill.c;value="%mmocore_stat_weapon_damage%";type=FLOAT} @self
@@ -9,38 +9,39 @@ Ren:
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=0;vs=0;s=0;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/200+40";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/200+80";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
   - delay 6
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=;vs=0;s=5;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/400+40";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/400+80";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
   - delay 2
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=;vs=0;s=5;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/400+40";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/400+80";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
   - delay 2
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=;vs=0;s=5;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/400+40";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/400+80";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
   - delay 3
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=;vs=0;s=5;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/360+50";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/360+100";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
   - delay 1
   - removetag{t=Ren} true
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=;vs=0;s=5;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/400+20";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/400+50";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
   - delay 6
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - sound{s=minecraft:entity.arrow.shoot;p=0.9;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=;vs=0;s=5;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/300+60";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/300+60";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
   - delay 5
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - sound{s=minecraft:entity.arrow.shoot;p=2;v=2} @selflocation
   - sound{s=minecraft:entity.arrow.shoot;p=1.2;v=2} @selflocation
   - sound{s=minecraft:entity.arrow.shoot;p=2;v=2} @selflocation
   - Effect:Particles{p=crit;color=#9fffff;a=200;hs=;vs=0;s=5;y=1;size=1;d=false;fromOrigin=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
-  - damage{a="<skill.var.c>/300+100";i=false} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - damage{a="<skill.var.c>/300+200";i=false;pk=true} @EntitiesNearOrigin{r=7;limit=1;ignore=players}
+  - removetag{t=Ren} @self

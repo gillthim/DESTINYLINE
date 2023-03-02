@@ -1,5 +1,5 @@
 EXPScalingbat:
   Skills:
-  - setvariable{var=caster.a;value="<caster.level>";type=INTEGER} @self
+  - setvariable{var=caster.a;value="<caster.level>";type=FLOAT} @self
   - variableMath{var=caster.a;equation="<caster.var.a>*20"} 
   - command{c="mmocore admin exp give %player% main <caster.var.a>"} @self

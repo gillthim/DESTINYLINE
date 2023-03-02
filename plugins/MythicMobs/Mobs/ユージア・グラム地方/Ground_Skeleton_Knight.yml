@@ -39,3 +39,4 @@ GROUNDSKELETONKNIGHT:
   -  skill{s=SWORDATTACK} @self ~onDamaged 0.2
   -  skill{s=KNIGHTGUARD} @self ~onTimer:300
   -  currencygive{amount=1500-2600} @pir{r=20} ~onDeath
+  -  skill{s=EXPSCALING_USIA} @pir{r=20} ~onDeath

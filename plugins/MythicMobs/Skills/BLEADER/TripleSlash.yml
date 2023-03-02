@@ -1,17 +1,17 @@
 Triple_Slash:
   Skills:
-  - addtag{t=Triple_Slash} true
+  - addtag{t=TripleSlash} @self
   - setvariable{var=skill.a;value="%mmocore_stat_attack_damage%";type=FLOAT} @self
   - variableMath{var=skill.a;equation="<skill.var.a>"} 
   - setvariable{var=skill.c;value="%mmocore_stat_wepon_damage%";type=FLOAT} @self
   - variableMath{var=skill.c;equation="(<skill.var.a>*<skill.var.c>)"}
   - sound{s=minecraft:item.trident.throw;p=1.2;v=2;repeat=2;repeatinterval=10} @self
   - Effect:Particles{p=crit_magic;color=#9fffff;a=200;hs=2;vs=0;s=0;y=1;size=1;d=false;fromOrigin=true} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
-  - damage{a="<skill.var.c>/50+50"} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
+  - damage{a="<skill.var.c>+180/2"} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
   - delay 10
   - Effect:Particles{p=crit_magic;color=#9fffff;a=200;hs=2;vs=0;s=0;y=1;size=1;d=false;fromOrigin=true} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
-  - damage{a="<skill.var.c>/50+50"} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
+  - damage{a="<skill.var.c>+180/2"} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
   - delay 10
   - Effect:Particles{p=crit_magic;color=#9fffff;a=200;hs=2;vs=0;s=0;y=1;size=1;d=false;fromOrigin=true} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
-  - damage{a="<skill.var.c>/50+50"} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
-  - removetag{t=Triple_Slash} true 
+  - damage{a="<skill.var.c>+180/2"} @LivingInCone{a=120;r=8;rot=0.0;ignore=players}
+  - removetag{t=TripleSlash} @self 

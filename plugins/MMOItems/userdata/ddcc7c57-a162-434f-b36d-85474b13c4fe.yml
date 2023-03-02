@@ -1,2 +1,19 @@
-crafting-queue: {}
+crafting-queue:
+  reillthecartos-station:
+    recipe-3cf0a1d5-78d4-46ef-93a3-6b89d9d1b811:
+      recipe: reachin_tomatojuice
+      started: 1677399892158
+      delay: 10000
+    recipe-ebfeeccb-626b-4350-85c3-525f91aeac63:
+      recipe: reachin_tomatojuice
+      started: 1677399892387
+      delay: 19771
+    recipe-a18a2b0f-c243-4fed-9cf8-5d7799784406:
+      recipe: reachin_tomatojuice
+      started: 1677399892689
+      delay: 29469
+    recipe-7b1dbcb8-86c2-4779-bf79-bc172b19f7d7:
+      recipe: reachin_tomatojuice
+      started: 1677399892808
+      delay: 39350
 permissions-from-items: []

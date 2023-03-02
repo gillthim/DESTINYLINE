@@ -90,7 +90,7 @@ WOODEN_BAT:
   base:
     material: STICK
     attack-damage: 10.0
-    name: '&9木製バット'
+    name: '&9ホームランバット'
     enchants:
       knockback: 10.0
     two-handed: true
@@ -102,14 +102,14 @@ WOODEN_BAT:
         cooldown: 4.0
         stamina: 5.0
         radius: 3.0
+        knockback: 5.0
     disable-smithing: true
     disable-enchanting: true
     disable-smelting: true
     unbreakable: true
     tier: RARE
     required-level: 5.0
-    lore:
-    - '&f木製の普通のバット'
-    - '&f相手に打つとぶっ飛ばすことが可能だが、そのために使う物ではない'
-    - 非売品
     disable-attack-passive: true
+    hide-enchants: true
+    lore:
+    - ホームランを常に打つことができる最強のバット
