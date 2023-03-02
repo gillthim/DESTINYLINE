@@ -776,19 +776,109 @@ TEST_DIAMOND:
     material: diamond
     name: '&eダイアモンド(テスト)'
     tier: COMMON
-MAGICCRYSTAL_LOW1:
+
+RAW_MANAIRON:
   base:
-    material: LAPIS_LAZULI
-    custom-model-data: 1.0
-    name: 最低品質のマナ結晶
-MAGICCRYSTAL_LOW2:
+    material: raw_iron
+    name: '&a魔鉄鉱の原石'
+    tier: UNCOMMON
+    lore:
+    - '&f確かな魔力を宿した鉄の原石。'
+    - '&fこのままでは何かに使うことはできない。'
+    - '&a【鍛冶用アイテム】'
+
+RAW_GIRNEYLA:
   base:
-    material: LAPIS_LAZULI
-    custom-model-data: 2.0
-    name: '&a低品質のマナ結晶'
-ONFIRE1_ADD:
+    material: raw_copper
+    name: '&aジルネイアの原石'
+    tier: UNCOMMON
+    lore:
+    - '&fジルネイアと呼ばれる金属の原石。'
+    - '&fこのままでは何かに使うことはできない。'
+    - '&a【鍛冶用アイテム】'
+   
+RAW_HOLLONARUIN:
   base:
-    material: BOOK
-    custom-nbt: []
-    enchants:
-      onfire: 3.0
+    material: raw_gold
+    name: '&aホロナルインの原石'
+    tier: UNCOMMON
+    lore:
+    - '&fホロナルインと呼ばれる金属の原石。'
+    - '&fこのままでは何かに使うことはできない。'
+    - '&a【鍛冶用アイテム】'
+
+RAW_GLAWREM:
+  base:
+    material: netherite_scrap
+    name: '&aグラウレムの原石'
+    tier: UNCOMMON
+    lore:
+    - '&fグラウレムと呼ばれる金属の原石。'
+    - '&fこのままでは何かに使うことはできない。'
+    - '&a【鍛冶用アイテム】'
+
+MANAIRON_INGOT:
+  base:
+    material: iron_ingot
+    name: '&aミアル魔鉄鉱'
+    tier: UNCOMMON
+    lore:
+    - '&f魔力が宿ったことで硬度が増した鉄鉱石。'
+
+GIRNEYLA_INGOT:
+  base:
+    material: copper_ingot
+    name: '&aジルネイア導石'
+    tier: UNCOMMON
+    lore:
+    - '&f不思議な色合いをした鉱石。'
+    - '&f比較的脆いが、マナが伝わりやすい性質を持つ。'
+
+
+HOLLONARUIN_INGOT:
+  base:
+    material: gold_ingot
+    name: '&aホロナルイン輝宝石'
+    tier: UNCOMMON
+    lore:
+    - '&f太陽のように輝く金色の宝石。'
+    - '&f主に装飾品として使われるが、武器素材としても使われる。'
+
+GLAWREM_INGOT:
+  base:
+    material: netherite_ingot
+    name: '&aグラウレム隕黒石'
+    tier: UNCOMMON
+    lore:
+    - '&f光を飲み込む濃い黒色が特徴的な鉱石。'
+    - '&fとても硬く、加工が難しい。'
+
+CKRAD_OPTY:
+  base:
+    material: lapis_lazuli
+    name: '&aクラッド・オプティ'
+    tier: UNCOMMON
+    lore:
+    - '&f広く一般的に使われる精錬石。'
+    - '&f使用すると、武器の性能を引き上げることができる。'
+    - '&b【精錬用アイテム】'
+
+CKRAD_GLOW:
+  base:
+    material: emerald
+    name: '&9クラッド・グロウ'
+    tier: RARE
+    lore:
+    - '&f一部でしか取引されない高品位な精錬石。'
+    - '&f使用すると、武器の性能を数段階昇華させられる。'
+    - '&b【精錬用アイテム】'
+
+CKRAD_ELVA:
+  base:
+    material: diamond
+    name: '&eクラッド・エルヴァ'
+    tier: VERYRARE
+    lore:
+    - '&f滅多に見られない奇跡の精錬石。'
+    - '&f使用すると、どんな武器も一級の物に生まれ変わる。'
+    - '&b【精錬用アイテム】'
