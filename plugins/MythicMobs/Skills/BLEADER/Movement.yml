@@ -1,11 +1,11 @@
 Movement:
   Skills:
-  - addtag{t=Movement} true
+  - addtag{t=Movement} @self
   - setvariable{var=skill.a;value="%mmocore_stat_attack_damage%";type=FLOAT} @self
   - variableMath{var=skill.a;equation="<skill.var.a>"} 
   - setvariable{var=skill.c;value="%mmocore_stat_wepon_damage%";type=FLOAT} @self
   - variableMath{var=skill.c;equation="(<skill.var.a>*<skill.var.c>)"}
   - leap{velocity=300} @TL
   - effect:sound{s=minecraft:item.trident.riptide_1;y=2;v=2;p=0.7;repeat=2;repeatInterval=5} @self
-  - damage{a="<skill.var.c>/10+30";i=false} @LivingInCone{a=6;r=15;rot=0.0;ignore=players}
-  - removetag{t=Movement} true
+  - damage{a="<skill.var.c>/10+200";i=false} @LivingInCone{a=6;r=15;rot=0.0;ignore=players}
+  - removetag{t=Movement} @self

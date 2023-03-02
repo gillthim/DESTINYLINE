@@ -427,6 +427,9 @@ BLACKKNIGHT_ARMOR:
     armor: 0.7
     disable-enchanting: true
     disable-repairing: true
+    element:
+      fire:
+        defense: 100.0
 BLACKKNIGHT:
   base:
     material: NETHERITE_LEGGINGS
@@ -1881,14 +1884,14 @@ GLADIATOR_HELMET:
     defense: 1.0
     unbreakable: true
     tier: RARE
-    max-health: 250.0
+    max-health: 350.0
     gem-sockets:
     - '1'
     - '1'
     - DEEPBLUE
     knockback-resistance: 0.025
     armor: 1.2
-    max-stamina: 15.0
+    max-stamina: 20.0
     health-regeneration: 0.3
     physical-damage-reduction: 2.5
 GLADIATOR_ARMOR:
@@ -1899,7 +1902,7 @@ GLADIATOR_ARMOR:
     required-class:
     - ブレイダー
     physical-damage-reduction: 2.5
-    max-health: 250.0
+    max-health: 350.0
     defense: 1.0
     knockback-resistance: 0.025
     gem-sockets:
@@ -1908,7 +1911,7 @@ GLADIATOR_ARMOR:
     - DEEPBLUE
     armor: 1.2
     health-regeneration: 0.3
-    max-stamina: 15.0
+    max-stamina: 20.0
     disable-smithing: true
     disable-enchanting: true
     tier: RARE
@@ -1926,9 +1929,9 @@ GLADIATOR_LEGGINGS:
     physical-damage-reduction: 2.5
     tier: RARE
     unbreakable: true
-    max-health: 250.0
+    max-health: 350.0
     health-regeneration: 0.3
-    max-stamina: 15.0
+    max-stamina: 20.0
     knockback-resistance: 0.025
     gem-sockets:
     - '1'
@@ -1946,10 +1949,10 @@ GLADIATOR_BOOTS:
     physical-damage-reduction: 2.5
     defense: 1.0
     armor: 1.2
-    max-health: 250.0
+    max-health: 350.0
     tier: RARE
     unbreakable: true
-    max-stamina: 15.0
+    max-stamina: 20.0
     health-regeneration: 0.3
     gem-sockets:
     - '1'
@@ -2134,3 +2137,408 @@ SAGE_BOOTS:
     element:
       darkness:
         defense: 10.0
+BONE_HELMET:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&9骨の兜'
+    required-level: 23.0
+    required-class:
+    - ブレイダー
+    disable-smithing: true
+    disable-enchanting: true
+    tier: RARE
+    unbreakable: true
+    defense: 0.7
+    max-health: 200.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    health-regeneration: 0.3
+    knockback-resistance: 0.025
+    max-stamina: 12.0
+    undead-damage: 2.0
+    armor: 0.8
+BONE_ARMOR:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    required-level: 23.0
+    required-class:
+    - ブレイダー
+    disable-smithing: true
+    disable-enchanting: true
+    defense: 0.7
+    armor: 0.8
+    max-health: 200.0
+    tier: RARE
+    unbreakable: true
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-stamina: 12.0
+    health-regeneration: 0.3
+    knockback-resistance: 0.025
+    undead-damage: 2.0
+    name: '&9骨の鎧'
+BONE_LEGGINGS:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: '&9骨の膝あて'
+    required-level: 23.0
+    required-class:
+    - ブレイダー
+    defense: 0.7
+    undead-damage: 2.0
+    max-health: 200.0
+    tier: RARE
+    unbreakable: true
+    disable-smithing: true
+    disable-enchanting: true
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-stamina: 12.0
+    knockback-resistance: 0.025
+    armor: 0.8
+    health-regeneration: 0.3
+BONE_SHOES:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: '&9骨の靴'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 23.0
+    required-class:
+    - ブレイダー
+    defense: 0.7
+    undead-damage: 2.0
+    tier: RARE
+    unbreakable: true
+    max-health: 200.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    knockback-resistance: 0.025
+    max-stamina: 12.0
+    health-regeneration: 0.3
+    armor: 0.8
+BONE_HOOD:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&9骨模様のフード'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 23.0
+    max-mana: 240.0
+    enchants:
+      fire_aspect: 1.0
+    hide-enchants: true
+    unbreakable: true
+    tier: RARE
+    defense: 0.5
+    dodge-rating: 2.5
+    mana-regeneration: 0.2
+    armor: 0.7
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    undead-damage: 2.0
+    required-class:
+    - マジシャン
+BONE_TOPS:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    enchants:
+      fire_aspect: 1.0
+    hide-enchants: true
+    name: '&9骨模様のトップス'
+    required-level: 23.0
+    required-class:
+    - マジシャン
+    disable-enchanting: true
+    disable-smithing: true
+    dodge-rating: 2.5
+    undead-damage: 2.0
+    defense: 0.5
+    tier: RARE
+    unbreakable: true
+    armor: 0.7
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-mana: 240.0
+    mana-regeneration: 0.2
+BONE_PANTS:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    enchants:
+      fire_aspect: 1.0
+    hide-enchants: true
+    name: '&9骨模様のズボン'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 23.0
+    required-class:
+    - マジシャン
+    dodge-rating: 2.5
+    defense: 0.5
+    tier: RARE
+    unbreakable: true
+    armor: 0.7
+    undead-damage: 2.0
+    max-mana: 240.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    mana-regeneration: 0.2
+BONE_BOOTS:
+  base:
+    material: CHAINMAIL_BOOTS
+    enchants:
+      fire_aspect: 1.0
+    name: '&9骨模様の靴'
+    disable-smithing: true
+    disable-enchanting: true
+    required-level: 23.0
+    required-class:
+    - マジシャン
+    dodge-rating: 2.5
+    undead-damage: 2.0
+    defense: 0.5
+    armor: 0.7
+    unbreakable: true
+    tier: RARE
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-mana: 240.0
+    mana-regeneration: 0.2
+    hide-enchants: true
+KASU:
+  base:
+    material: IRON_CHESTPLATE
+    max-health: 1000.0
+    element:
+      fire: {}
+WATERSKY_HOOD:
+  base:
+    material: LEATHER_HELMET
+    dye-color: 85 255 255
+    name: '&6水紋模様のフード'
+    disable-smithing: true
+    required-level: 25.0
+    required-class:
+    - マジシャン
+    unbreakable: true
+    tier: VERY_RARE
+    defense: 0.7
+    max-mana: 290.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    mana-regeneration: 0.35
+    dodge-rating: 3.2
+    element:
+      water:
+        defense: 20.0
+    armor: 0.8
+    disable-enchanting: true
+    skill-damage: 3.0
+    cooldown-reduction: 2.5
+WATERPATTERN_TOPS:
+  base:
+    material: LEATHER_CHESTPLATE
+    dye-color: 85 255 255
+    name: '&6水紋模様のトップス'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 25.0
+    skill-damage: 3.0
+    defense: 0.7
+    armor: 0.8
+    unbreakable: true
+    tier: VERY_RARE
+    max-mana: 290.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    mana-regeneration: 0.35
+    dodge-rating: 3.2
+    cooldown-reduction: 2.5
+    element:
+      water:
+        defense: 20.0
+    required-class:
+    - マジシャン
+    ability:
+      ability1:
+        type: SHADOW_VEIL
+        mode: DAMAGED_BY_ENTITY
+        duration: 5.0
+        mana: 20.0
+        cooldown: 30.0
+WATERPATTERN_PANTS:
+  base:
+    material: LEATHER_LEGGINGS
+    dye-color: 85 255 255
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-mana: 290.0
+    mana-regeneration: 0.35
+    required-level: 25.0
+    required-class:
+    - マジシャン
+    dodge-rating: 3.2
+    defense: 0.7
+    armor: 0.8
+    tier: VERY_RARE
+    unbreakable: true
+    skill-damage: 3.0
+    cooldown-reduction: 2.5
+    name: '&6水紋模様のズボン'
+    element:
+      water:
+        defense: 20.0
+WATERPATTERN_SHOOSE:
+  base:
+    material: LEATHER_BOOTS
+    name: '&6水紋模様のシューズ'
+    dye-color: 85 255 255
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    mana-regeneration: 0.35
+    max-mana: 290.0
+    armor: 0.8
+    defense: 0.7
+    tier: VERY_RARE
+    unbreakable: true
+    skill-damage: 3.0
+    cooldown-reduction: 2.5
+    dodge-rating: 3.2
+    element:
+      water:
+        defense: 20.0
+    required-level: 25.0
+    required-class:
+    - マジシャン
+FLAMENITRATE_HELMET:
+  base:
+    material: LEATHER_HELMET
+    name: '&6焔硝の兜'
+    dye-color: 255 85 85
+    defense: 0.9
+    health-regeneration: 0.4
+    max-stamina: 14.0
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    element:
+      fire:
+        defense: 20.0
+    max-health: 250.0
+    required-level: 25.0
+    required-class:
+    - ブレイダー
+    armor: 1.0
+    unbreakable: true
+    tier: VERY_RARE
+    fire-damage-reduction: 5.0
+    knockback-resistance: 0.025
+    damage-reduction: 4.0
+    disable-smithing: true
+    disable-enchanting: true
+FLAMENITRATE_ARMOR:
+  base:
+    material: LEATHER_CHESTPLATE
+    dye-color: 255 85 85
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    required-level: 25.0
+    required-class:
+    - ブレイダー
+    name: '&6焔硝の鎧'
+    disable-enchanting: true
+    disable-smithing: true
+    defense: 0.9
+    armor: 1.0
+    max-health: 250.0
+    tier: VERY_RARE
+    unbreakable: true
+    knockback-resistance: 0.025
+    element:
+      fire:
+        defense: 20.0
+    fire-damage-reduction: 5.0
+    damage-reduction: 4.0
+    health-regeneration: 0.4
+    max-stamina: 14.0
+    ability:
+      ability1:
+        type: MAGICAL_SHIELD
+        mode: DAMAGED_BY_ENTITY
+        cooldown: 30.0
+        stamina: 20.0
+FLAMENITRATE_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    dye-color: 255 85 85
+    knockback-resistance: 0.025
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    health-regeneration: 0.4
+    max-stamina: 14.0
+    defense: 0.9
+    damage-reduction: 4.0
+    fire-damage-reduction: 5.0
+    tier: VERY_RARE
+    unbreakable: true
+    max-health: 250.0
+    required-level: 25.0
+    required-class:
+    - ブレイダー
+    name: '&6焔硝の膝あて'
+    element:
+      fire:
+        defense: 20.0
+FLAMENITRATE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: '&6焔硝の靴'
+    disable-enchanting: true
+    disable-smithing: true
+    required-level: 25.0
+    required-class:
+    - ブレイダー
+    defense: 0.9
+    damage-reduction: 4.0
+    fire-damage-reduction: 5.0
+    tier: VERY_RARE
+    unbreakable: true
+    max-health: 250.0
+    knockback-resistance: 0.025
+    gem-sockets:
+    - '1'
+    - '1'
+    - DEEPBLUE
+    max-stamina: 14.0
+    health-regeneration: 0.4
+    armor: 1.0
+    dye-color: 255 85 85

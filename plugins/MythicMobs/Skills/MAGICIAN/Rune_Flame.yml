@@ -42,4 +42,4 @@ Rune_Flame_Hit:
   Skills:
   - effect:particles{p=lava;a=50;hS=1;vS=1}
   - effect:sound{s=entity.generic.explode;v=1;p=0}
-  - damage{a="<skill.var.c>/5+180";i=false;type=Fire}
+  - damage{a="<skill.var.c>+180/2";i=false;type=CUSTOM}

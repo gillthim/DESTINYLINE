@@ -25,7 +25,7 @@ POLARBEAR_dg:
   -  skill{s=STUN_DASH} @self ~onTimer:140
   -  skill{s=ICE_WORLD_WAVE} @self ~onDamaged 0.3
   -  currencygive{amount=1500-2000} @pir{r=20} ~onDeath
-  -  skill{s=EXPScaling20} @pir{r=20} ~onDeath
+
   Drops:
   -  mmoitems{type=MATERIAL;id=POLARBEAR_HAIR} 5-10 70%
   -  mmoitems{type=ARMOR;id=BLACKKNIGHT} 1 5%

@@ -38,3 +38,4 @@ GROUNDSKELETONSEEKER:
   -  skill{s=SEEKERATTACK} @self ~onDamaged 0.2
   -  skill{s=SEEKERDASH} @self ~onTimer:450
   -  currencygive{amount=1500-2600} @pir{r=20} ~onDeath
+  -  skill{s=EXPSCALING_USIA} @pir{r=20} ~onDeath
